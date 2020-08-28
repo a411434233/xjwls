@@ -340,7 +340,6 @@ function getMyLocations() {
   });
 }
 
-
 /**
  * @function AliPay  唤起支付
  * @param {String} TradeNo  订单号
