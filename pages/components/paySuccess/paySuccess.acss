@@ -1,0 +1,74 @@
+.moneys {
+  color: #ff2740;
+}
+.share {
+  width: 100%;
+  height: 180rpx;
+  margin-top: 36rpx;
+}
+page {
+  background: #fff;
+}
+.successbox {
+  width: 100%;
+  overflow: hidden;
+}
+
+.success-t {
+  width: 100%;
+  text-align: center;
+  margin-top: 73rpx;
+}
+
+.success-t image {
+  width: 189rpx;
+  height: 170rpx;
+}
+
+.success-m1,
+.success-m2,
+.success-m3,
+.success-m4 {
+  width: 100%;
+  text-align: center;
+}
+
+.success-m1 {
+  font-size: 36rpx;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  line-height: 42rpx;
+  margin-top: 89rpx;
+}
+
+.success-m2 {
+  font-size: 30rpx;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  line-height: 30rpx;
+  margin-top: 19rpx;
+}
+
+.success-m3 {
+  width: 566rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 2rpx;
+  background: rgba(255, 39, 64, 1);
+  border-radius: 44rpx;
+  margin: 0 auto;
+  margin-top: 77rpx;
+}
+
+.success-m4 {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  line-height: 28rpx;
+  letter-spacing: 2rpx;
+  margin-top: 36rpx;
+}

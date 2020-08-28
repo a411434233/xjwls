@@ -1,0 +1,110 @@
+<view class="boxwrap">
+  <view class="cash-top">
+    <image mode="scaleToFill" src="http://image.smjpin.cn/cashbonusbck.png" />
+    <view class="cash-topb">
+      <view class="cash-topbl">
+        <view class="advert">
+          <view class="advert-r">
+            <swiper style="height:48rpx" autoplay="{{autoplay}}" vertical="{{vertical}}" interval="{{interval1}}" circular="{{circular}}">
+              <block a:for="{{lb}}">
+                <swiper-item key="swiper-item-{{index}}">
+                  <view class="swiper-item bc_{{item}}">{{item}}</view>
+                </swiper-item>
+              </block>
+            </swiper>
+          </view>
+        </view>
+      </view>
+      <view class="cash-topbr" onTap="gocashbonusmy">我的奖品</view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="cash-centert">
+    <view class="cash-centertt">
+      <view class="cash-centertt1">闲九味送你现金大红包</view>
+      <view class="cash-centertt2">恭喜发财 大吉大利</view>
+    </view>
+    <view class="cash-centertc">
+      <view class="cash-centertcl">
+        <form onSubmit="onSubmit" report-submit="true" data-id>
+          <button formType="submit" hover-class="button-hover">
+            <image mode="scaleToFill" onTap="handleRedPacket1" src="{{fengmian01}}" a:if="{{fengmian01=='http://image.smjpin.cn/fengmian.png' && (nums!=0 || nums<0)}}" />
+            <image mode="scaleToFill" onTap="ontoast" src="{{fengmian01}}" a:else />
+          </button>
+        </form>
+      </view>
+      <view class="cash-centertcm">
+        <form onSubmit="onSubmit" report-submit="true" data-id>
+          <button formType="submit" hover-class="button-hover">
+            <image mode="scaleToFill" onTap="handleRedPacket2" src="{{fengmian02}}" a:if="{{fengmian02=='http://image.smjpin.cn/fengmian.png' && (nums!=0 || nums<0)}}" />
+            <image mode="scaleToFill" onTap="ontoast" src="{{fengmian02}}" a:else />
+          </button>
+        </form>
+      </view>
+      <view class="cash-centertcr">
+        <form onSubmit="onSubmit" report-submit="true" data-id>
+          <button formType="submit" hover-class="button-hover">
+            <image mode="scaleToFill" onTap="handleRedPacket3" src="{{fengmian03}}" a:if="{{fengmian03=='http://image.smjpin.cn/fengmian.png' && (nums!=0 || nums<0)}}" />
+            <image mode="scaleToFill" onTap="ontoast" src="{{fengmian03}}" a:else />
+          </button>
+        </form>
+      </view>
+    </view>
+    <view class="cash-centertb">今日剩余机会：{{nums}}次</view>
+  </view>
+  <view class="cash-centerb1">
+    <view class="cash-centerbl">
+      <view class="cash-centerblt">
+        <image mode="scaleToFill" src="/images/icon/shoucang.png" />
+      </view>
+      <view class="cash-centerblb">收藏小程序</view>
+    </view>
+    <view class="cash-centerbr">
+      <view class="cash-centerbrt" a:if="{{showcollect==0}}">抽奖+1</view>
+      <view class="shoucang" a:if="{{showcollect==1}}" onTap="gocollect1">
+        <text>已收藏</text>
+      </view>
+      <view class="shoucang" a:if="{{showcollect==0}}" onTap="gocollect">
+        <text>收藏</text>
+      </view>
+    </view>
+  </view>
+  <view class="cash-centerbwrap">
+    <view class="lifetop">
+      <lifestyle publicId="2019091967601333" onFollow="guanzhu" />
+      <view class="lifetop-w" a:if="{{isCollected==0}}">抽奖+1</view>
+    </view>
+  </view>
+  <view class="cash-centerb cash-centerbbb">
+    <view class="cash-centerbl">
+      <view class="cash-centerblt">
+        <image mode="scaleToFill" src="/images/icon/fenxiang.png" />
+      </view>
+      <view class="cash-centerblb">邀请好友</view>
+    </view>
+    <view class="cash-centerbr">
+      <view class="cash-centerbrt cash-centerbrt1" a:if="{{isShared==0}}">抽奖+1</view>
+      <view class="cash-centerbrb">
+        <button open-type="share" onTap="onClickShare">{{ isShared==1? '已分享' : '分享' }}</button>
+      </view>
+    </view>
+  </view>
+  <view class="cash-bottom">
+    <view class="cash-bottomt" onTap="goindex">
+      <form onSubmit="onSubmit" report-submit="true" data-id>
+        <button formType="submit" hover-class="button-hover">
+          <image mode="scaleToFill" src="http://image.smjpin.cn/cashbonusbottom.png" />
+        </button>
+      </form>
+    </view>
+    <view class="cash-bottomb" onTap="goindex">去挑选特价零食</view>
+  </view>
+</view>
+<view class="pop-wrap" disable-scroll="true" a:if="{{isShowRedPacket==1}}">
+  <view class="pop" onTap="godetail">
+    <image mode="scaleToFill" src="{{popdraw}}" />
+  </view>
+  <view class="popclose" onTap="closepop">
+    <image mode="scaleToFill" src="/images/icon/closepop.png" />
+  </view>
+</view>

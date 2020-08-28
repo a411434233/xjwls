@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "购物车",
+  "allowsBounceVertical": "YES",
+  "pullRefresh": true,
+  "usingComponents": {
+    "goods-item": "/components/goodsItem/goodsItem"
+  }
+}

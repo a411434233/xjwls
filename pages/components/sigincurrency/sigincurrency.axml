@@ -1,0 +1,27 @@
+<view>
+  <view class="currency-t">
+    <view class="currency-tt">现有味币</view>
+    <view class="currency-tm">
+      {{VCoinNum}}
+      <text>个</text>
+    </view>
+    <view class="currency-tb">你现在有{{(VCoinNum/100).toFixed(2)}}元可减免</view>
+  </view>
+  <view class="currency-m" a:for="{{list}}" a:key="index">
+    <view class="currency-mw">
+      <view class="currency-ml">
+        <image mode="scaleToFill" a:if="{{item.ChangeType==1}}" src="/images/icon/info02.svg" />
+        <image mode="scaleToFill" a:if="{{item.ChangeType==2}}" src="/images/icon/info04.svg" />
+        <image mode="scaleToFill" a:if="{{item.ChangeType==3}}" src="/images/icon/info03.svg" />
+      </view>
+      <view class="currency-mm">
+        <view class="currency-mmt">{{item.Remark}}</view>
+        <view class="currency-mmb">{{item.CreateTime}}</view>
+      </view>
+    </view>
+    <view class="{{item.ChangeVaule>0?'currency-mr':'currency-mrr'}}">
+      <text a:if="{{item.ChangeVaule>0}}">+</text>
+      {{item.ChangeVaule}}
+    </view>
+  </view>
+</view>

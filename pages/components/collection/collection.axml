@@ -1,0 +1,25 @@
+<view class="box-wrap">
+	<view class="coupon1" a:if="{{list.length == 0}}">
+		<image mode="scaleToFill" src="http://image.smjpin.cn/cartimg.png" />
+		<view class="coupon1t">亲，您还暂未收藏商品！</view>
+	</view>
+	<view class="collection" a:for="{{list}}" a:key="index" onTap="godetail" data-id="{{item.ProductId}}">
+		<view class="collection-m">
+			<view class="collection-ml">
+				<view class="collection-mll">
+					<image mode="scaleToFill" src="{{item.ImageUrl}}" />
+				</view>
+				<view class="collection-mlr">
+					<view class="collection-mlrt">{{item.ProductName}}</view>
+					<view class="collection-mlrb">{{item.CategoryNames}}</view>
+				</view>
+			</view>
+			<view class="collection-mr">
+				<view class="collection-mrt ">¥{{item.SalesPrice}}</view>
+				<view class="collection-mrb ">¥{{item.Price}}</view>
+			</view>
+		</view>
+	</view>
+	<!--  -->
+	<view class="bottom_tips" a:if="{{showdb}}">~ 人家也是有底线的呢 ~</view>
+</view>

@@ -1,0 +1,7 @@
+<view class="item" a:for='{{storeList}}' a:key='index' key="{{index}}" data-item='{{item}}'>
+  <view class="item_name">
+    <view class="{{index==0?'item_jin':''}}">{{item.ShopName}}</view>
+    <view class="addLocation">距离您{{item.Distance}}</view>
+  </view>
+  <view class="item_add">{{item.ShopAddress}}</view>
+</view>

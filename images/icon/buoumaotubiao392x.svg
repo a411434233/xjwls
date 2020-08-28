@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>物流icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="连贯" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="订单详情备份-2" transform="translate(-30.000000, -586.000000)">
+            <g id="个人信息" transform="translate(0.000000, 343.000000)">
+                <g id="物流icon" transform="translate(30.000000, 243.000000)">
+                    <circle id="Oval" fill="#FF2740" cx="40" cy="40" r="40"></circle>
+                    <g id="Group-2" transform="translate(7.000000, 21.000000)">
+                        <path d="M19.5206473,34 L14.9939684,34 C13.3404453,34 12,32.6566876 12,30.9976416 L12,30.0694754 M12,11.922433 L12,8.44670759 L12,0.00235842587 L41.9999809,0 L42,34 L29.5814732,34" id="Rectangle-2" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></path>
+                        <path d="M58,22 L57.9991283,34 L53.1439732,34 M46.3696987,34 L43.0008717,34 C42.4481055,34 42,33.5719676 42,33.0420324 L42,24.3735146" id="Rectangle-2-Copy" stroke="#FFFFFF" stroke-width="3"></path>
+                        <circle id="Oval-2" stroke="#FFFFFF" stroke-width="3" cx="50.5" cy="35.5" r="4.5"></circle>
+                        <circle id="Oval-2-Copy" stroke="#FFFFFF" stroke-width="3" cx="24.5" cy="35.5" r="4.5"></circle>
+                        <path d="M42,22 L42,14.9970301 C42,14.4463856 42.4619659,14 43.0091632,14 L52.4196705,14 L58,22" id="Rectangle-2-Copy" stroke="#FFFFFF" stroke-width="3"></path>
+                        <path d="M59,22 L57.0415752,22 L48.9790664,22 C48.438343,22 48,21.5562956 48,21.00022 L48,15" id="Rectangle-4" stroke="#FFFFFF" stroke-width="2.4"></path>
+                        <rect id="Rectangle-16" fill="#FFFFFF" x="5" y="18" width="8" height="2"></rect>
+                        <rect id="Rectangle-16" fill="#FFFFFF" x="0" y="23" width="13" height="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

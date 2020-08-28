@@ -1,0 +1,52 @@
+<!-- <life-follow sceneId="56e6aca08490452bb6ab19330e0de824" /> -->
+<image src="http://image.smjpin.cn/activity/superc.png" class="superc" />
+<image src="/images/snacks/super1.png" class="super1" />
+<view class="item" a:for="{{host}}" a:key='index' key='{{index}}' onTap='goodsDetail' data-item='{{item}}'>
+  <image class="goods_image" src="{{item.ImageUrl}}" lazy-load="{{true}}" />
+  <view class="goods_info">
+    <view class="goods_lijian">限时立减{{item.DiscountAmount}}元</view>
+    <view class="goods_daoshoujia">到手价仅{{(item.SalesPrice-item.DiscountAmount).toFixed(2)}}元</view>
+    <view class="goods_name">
+      <text number-of-lines='1'>{{item.ProductName}}</text>
+    </view>
+    <view class="goods_btn">
+      <view class="goods_price">{{(item.SalesPrice-item.DiscountAmount).toFixed(2)}}</view>
+      <view class="goods_add">立即抢购</view>
+    </view>
+  </view>
+</view>
+<block>
+  <image src="/images/snacks/super2.png" class="super3" />
+  <view class="goods_list">
+    <view class="goods_item2" a:for='{{song}}' a:key='index' key='{{index}}' onTap='goodsDetail' data-item='{{item}}'>
+      <image class="goods_image2" src="{{item.ImageUrl}}" lazy-load="{{true}}" />
+      <view class="goods_info2">
+        <view class="goods_name2">
+          <text number-of-lines='2'>{{item.ProductName}}</text>
+        </view>
+        <view class="goods_btn2">
+          <view class="goods_price2">{{item.SalesPrice}}</view>
+          <image src="/images/icon/plus.svg" class="plus" catchTap='addShopCat' data-item='{{item}}' />
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+<block a:for='{{list2}}' >
+  <image src="{{item.img}}" class="super2" />
+  <view class="goods_list">
+    <view class="goods_item2" a:for='{{item.list}}' a:for-item='val' a:for-index='idx' a:key='idx' key='{{idx}}' onTap='goodsDetail' data-item='{{val}}' a:if="{{idx<item.showNum}}">
+      <image class="goods_image2" src="{{val.ImageUrl}}" lazy-load="{{true}}" />
+      <view class="goods_info2">
+        <view class="goods_name2">
+          <text number-of-lines='2'>{{val.ProductName}}</text>
+        </view>
+        <view class="goods_btn2">
+          <view class="goods_price2">{{val.SalesPrice}}</view>
+          <image src="/images/icon/plus.svg" class="plus" catchTap='addShopCat' data-item='{{val}}' />
+        </view>
+      </view>
+    </view>
+  </view>
+  <image src="/images/snacks/siyuan.gif" class="siyuan" data-index='{{index}}' onTap='showMore' />
+</block>

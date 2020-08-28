@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "闲九味打卡领红包",
+  "titleBarColor": "#fff",
+  "pullRefresh": false,
+  "usingComponents": {
+    "footer": "mini-ali-ui/es/footer/index",
+    "goods-item": "../../../components/goodsItem/goodsItem"
+  }
+}

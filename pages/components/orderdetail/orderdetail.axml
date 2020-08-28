@@ -1,0 +1,166 @@
+<view class="box-wrap">
+  <view class="order-t">
+    <image mode="scaleToFill" src="" />
+    <view class="order-tpa" a:if="{{detail.Status==0}}">
+      <image mode="scaleToFill" src="/images/icon/orderdetail002.png" />
+      <text>待付款</text>
+    </view>
+    <view class="order-tpa" a:if="{{detail.Status==1}}">
+      <image mode="scaleToFill" src="/images/icon/orderdetail001.png" />
+      <text>待发货</text>
+    </view>
+    <view class="order-tpa" a:if="{{detail.Status==2}}">
+      <image mode="scaleToFill" src="/images/icon/orderdetail003.png" />
+      <text>待收货</text>
+    </view>
+    <view class="order-tpa" a:if="{{detail.Status==3}}">
+      <image mode="scaleToFill" src="/images/icon/orderdetail005.png" />
+      <text>待评价</text>
+    </view>
+    <view class="order-tpa" a:if="{{detail.Status==4}}">
+      <image mode="scaleToFill" src="/images/icon/orderdetail005.png" />
+      <text>交易完成</text>
+    </view>
+    <view class="order-tpa" a:if="{{detail.Status==5}}">
+      <image mode="scaleToFill" src="/images/icon/orderdetail001.png" />
+      <text>退款中</text>
+    </view>
+    <view class="order-tpa" a:if="{{detail.Status==6}}">
+      <image mode="scaleToFill" src="/images/icon/orderdetail001.png" />
+      <text>退款成功</text>
+    </view>
+    <view class="order-tpa" a:if="{{detail.Status==7}}">
+      <image mode="scaleToFill" src="/images/icon/orderdetail001.png" />
+      <text>退款失败</text>
+    </view>
+    <view class="djs" a:if="{{status==0}}">请在{{time}}内完成支付</view>
+    <view class="djs" a:if="{{status==1}}">请您耐心等待，仓库正在紧急打包中</view>
+    <view class="djs" a:if="{{status==2}}">剩余{{time}}确认收货</view>
+    <view class="djs" a:if="{{status==3}}">交易完毕，期待您的评价</view>
+    <view class="djs" a:if="{{status==4}}">您已收到货，订单状态已完成，欢迎下次光临</view>
+    <view class="djs" a:if="{{status==5}}">请您耐心等待，正在处理中</view>
+    <view class="djs" a:if="{{status==6}}">退款成功，交易关闭，如有疑问请联系客服</view>
+    <view class="djs" a:if="{{status==7}}">退款失败，如有疑问请联系客服</view>
+    <view class="djs djs1" a:if="{{status==0}}">超时将自动取消订单</view>
+  </view>
+  <!-- 顶部 -->
+  <!-- 信息 -->
+  <view class="orderaddress">
+    <view class="orderaddress1-t">
+      <view class="orderaddress1-tt">
+        <text>{{address.UserName}}</text>
+        <text>{{address.Tel}}</text>
+      </view>
+      <view class="orderaddress1-tb">
+        <image mode="scaleToFill" src="/images/icon/icon-test2x.png" />
+        <text>{{address.Province}}{{address.City}}{{address.Area}}{{address.Address}}</text>
+      </view>
+      <view class="kadaoCoupone" a:if='{{order.KadaCode}}'>
+        <view class="duihuanma">兑换码</view>
+        <view class="kadaoCoupone_left">网易有道卡搭体验课</view>
+        <view class="kadaoCoupone_right">{{order.KadaCode}}</view>
+        <view class="kadaoCoupone_btn" onTap='looks'>查看</view>
+      </view>
+    </view>
+    <!--  -->
+    <view class="orderaddress-b flex_sc" a:if="{{detail.Status!=0 && detail.Status!=1 && detail.Status!=5 && detail.Status!=6 && detail.Status!=7}}">
+      <view class="orderaddress-bl">
+        <image mode="scaleToFill" src="/images/icon/buoumaotubiao392x.svg" />
+      </view>
+      <view class="orderaddress-br">
+        <view class="orderaddress-brt">
+          <text>物流公司：</text>
+          <text class="ovhide">{{ShipCompany}}</text>
+        </view>
+        <view class="orderaddress-brb">
+          <text>物流单号：</text>
+          <text class="ovhide">{{ShipOrderId}}</text>
+          <text class="copydanh" onTap="copydan" data-ShipOrderId="{{ShipOrderId}}">复制</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="ordergoods">
+    <view class="ordergoods-t flex_bc">
+      <view class="ordergoods-tl">
+        <image mode="scaleToFill" src="{{detail.HeadUrl}}" />
+        <text>{{detail.BrandNanme}}食品</text>
+      </view>
+      <view class="ordergoods-tr" a:if="{{detail.Status==0}}">待付款</view>
+      <view class="ordergoods-tr" a:if="{{detail.Status==1}}">待发货</view>
+      <view class="ordergoods-tr" a:if="{{detail.Status==2}}">待收货</view>
+      <view class="ordergoods-tr" a:if="{{detail.Status==3}}">待评价</view>
+      <view class="ordergoods-tr" a:if="{{detail.Status==4}}">交易完成</view>
+    </view>
+    <view class="ordergoods-c" a:for="{{detail.subSaleOrder}}" a:key="index">
+      <image mode="scaleToFill" src="{{item.ImageUrl}}" />
+      <view class="orderInfo">
+        <view class="proName">{{item.ProductName}}</view>
+        <view class="proLabel">{{item.CategoryName}}</view>
+      </view>
+      <view class="proPro_box">
+        <view class="proSales price_app">¥{{item.ShopingSalesPrice}}</view>
+        <view class="proNum">x{{item.ShopingCount}}</view>
+      </view>
+    </view>
+    <view class="ordergoods-b">
+      共{{detail.subSaleOrder.length}}件商品
+      <text class="kongg"></text>
+      运费：
+      <text class="ordergoods-bl price_app">¥{{detail.MailPrice}}</text>
+      订单金额：
+      <text>¥</text>
+      <text class="price_app">{{(detail.OrderPrice - detail.DiscountPrice).toFixed(2)}}</text>
+    </view>
+    <view class="ordergoods-anniu" a:if="{{detail.Status==1}}">
+      <text onTap="gothk" data-status="{{detail.Status}}" data-orderid="{{detail.OrderCode}}">
+        退款
+      </text>
+    </view>
+    <view class="ordergoods-anniu" a:if="{{detail.Status==2}}">
+      <text onTap="gothk" data-status="{{detail.Status}}" data-orderid="{{detail.OrderCode}}">
+        退货/款
+      </text>
+    </view>
+    <view class="ordergoods-anniu" a:if="{{detail.Status==3}}">
+      <text onTap="goevaluate" data-orderid="{{detail.OrderCode}}">去评价</text>
+    </view>
+  </view>
+  <!-- 商品 -->
+  <view class="ordergoods-foot">
+    <view class="ordergoods-foot-top">
+      <!-- <view class="ordergoods-foot-toptit">订单信息</view> -->
+      <view class="ordergoods-foot-topm">
+        <text>下单时间：</text>
+        {{detail.CreateTime}}
+      </view>
+      <view class="ordergoods-foot-topm">
+        <text>订单编号：</text>
+        {{detail.OrderCode}}
+      </view>
+    </view>
+  </view>
+</view>
+<view class="detailorder-f">
+  <view class="ordergoods-foot-bot" a:if="{{detail.Status==0}}">
+    <text class="ordergoods-foot-bot1" onTap="godel" data-orderid="{{detail.OrderCode}}">删除订单</text>
+    <text class="ordergoods-foot-bot2" onTap="gopay" data-OrderCode="{{detail.OrderCode}}" data-TransOrderCode="{{detail.TransOrderCode}}">
+      去支付
+    </text>
+  </view>
+  <view class="ordergoods-foot-bot" a:if="{{detail.Status==2}}">
+    <contact-button tnt-inst-id="3p3_vrqX" scene="SCE00067269" alipay-card-no="{{user_id}}" size="85" icon="/images/icon/orderdetail00001.png" />
+    <text class="ordergoods-foot-bot1" onTap="golog" data-orderid="{{detail.OrderCode}}">查看物流</text>
+    <text class="ordergoods-foot-bot2" onTap="gosure" data-orderid="{{detail.OrderCode}}">
+      确认收货
+    </text>
+  </view>
+  <view class="ordergoods-foot-bot" a:if="{{detail.Status==3 ||detail.Status==4}}">
+    <contact-button tnt-inst-id="3p3_vrqX" scene="SCE00067269" alipay-card-no="{{user_id}}" size="85" icon="/images/icon/orderdetail00001.png" />
+    <text class="ordergoods-foot-bot1" onTap="golog" data-orderid="{{detail.OrderCode}}">查看物流</text>
+  </view>
+  <view class="ordergoods-foot-bot" a:if="{{detail.Status==1 || detail.Status==5 || detail.Status==6 || detail.Status==7}}">
+    <contact-button tnt-inst-id="3p3_vrqX" scene="SCE00067269" alipay-card-no="{{user_id}}" size="85" icon="/images/icon/orderdetail00001.png" />
+  </view>
+</view>

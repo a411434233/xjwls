@@ -1,0 +1,48 @@
+<view class="box-wrap">
+  <view class="coupontop">
+    <image mode="scaleToFill" src="http://image.smjpin.cn/youhuiquan0003.png" />
+  </view>
+  <view class="coupon2wrap">
+    <view class="coupon2" a:if="{{list.length!=0}}">
+      <view class="coupon2-c flex_bc" a:for="{{list}}" a:key="index">
+        <view class="coupon2-cl flex_sc">
+          <view class="coupon2-cll">
+            <view class="coupon2-cllt">
+              ¥
+              <text>{{item.DiscountAmount}}</text>
+            </view>
+            <view class="coupon2-cllb">满{{item.MinAmount}}可用</view>
+          </view>
+          <view class="coupon2-clr">
+            <view class="coupon2-clrt">{{item.DiscountTitle}}</view>
+            <view class="coupon2-clrb">领取后{{item.UserDeadline}}天内有效</view>
+            <view class="coupon2-clrb">{{item.DiscountDescription}}</view>
+          </view>
+        </view>
+        <view class="coupon2-cr" a:if="{{item.Status==0}}" onTap="golq" data-id="{{item.DiscountId}}">
+          领取
+        </view>
+        <view class="coupon2-cr coupon2-crm" onTap="gofenl" data-id="{{item.ProductId}}" a:if="{{item.Status!=0}}" data-ProductType="{{item.ProductType}}" data-Type="{{item.Type}}">
+          去使用
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="listbox">
+    <view class="listbox-t">
+      <view>
+        <image mode="scaleToFill" src="/images/icon/xptuij01.png" />
+      </view>
+    </view>
+    
+    <view class="goods_item_list">
+      <goods-item a:for="{{newlist}}" a:key="index" key='{{index}}' item='{{item}}' />
+    </view>
+  </view>
+  <!-- 新品推荐结束 -->
+  <view class="bottom_tips">
+    <text class="bottom_tipstext"></text>
+    我是有底线的
+    <text class="bottom_tipstext"></text>
+  </view>
+</view>

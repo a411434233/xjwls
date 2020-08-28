@@ -1,0 +1,113 @@
+<view class="box ">
+  <view class="userinfo {{isiPhoneX?'isiPhoneX':''}}">
+    <view class="userinfo_box">
+      <view class="user" onTap="goEditinfo">
+        <image class='userinfo_header_image' src="{{info.avatar||'/images/icon/header.png'}}" />
+        <view class="userName">{{info.nickName||'游客'}}</view>
+        <view class="userId">ID:{{info.Id||"000"}}</view>
+      </view>
+      <view class="singin" onTap='goSigin'></view>
+      <view class="tabs">
+        <view class="right_line">
+          <view class="num">0</view>
+          <view class="label">余额</view>
+        </view>
+        <view class="right_line" onTap="goCurrency">
+          <view class="num">{{VCoinNum||0}}</view>
+          <view class="label">味币</view>
+        </view>
+        <view class="right_line">
+          <view class="num">0</view>
+          <view class="label">兑换券</view>
+        </view>
+        <view class onTap="goCoupon">
+          <view class="num">{{jremark.DiscountNum||0}}</view>
+          <view class="label">优惠券</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="order">
+    <view class="order_title">
+      <view class="order_name">我的订单</view>
+      <view class onTap="goMyOrder" data-ind="0">
+        <text class="order_lab">全部订单</text>
+        <image class="back2" src="/images/icon/back.svg" />
+      </view>
+    </view>
+    <view class="order_tabs">
+      <view class onTap="goMyOrder" data-ind="1">
+        <view class="order_tabs_image"></view>
+        <view class>待支付</view>
+        <view class="order_num" a:if="{{jremark.IsPayOkNum&&jremark.IsPayOkNum!=0}}">
+          {{jremark.IsPayOkNum}}
+        </view>
+      </view>
+      <view class onTap="goMyOrder" data-ind="2">
+        <view class="order_tabs_image" style="background-position: -0rpx -0;"></view>
+        <view class>待发货</view>
+        <view class="order_num" a:if="{{jremark.IsDeliverOkNum&&jremark.IsDeliverOkNum!=0}}">
+          {{jremark.IsDeliverOkNum}}
+        </view>
+      </view>
+      <view class onTap="goMyOrder" data-ind="3">
+        <view class="order_tabs_image" style="background-position: -120rpx -0;"></view>
+        <view class>待收货</view>
+        <view class="order_num" a:if="{{jremark.IsTakeOkNum&&jremark.IsTakeOkNum!=0}}">
+          {{jremark.IsTakeOkNum}}
+        </view>
+      </view>
+      <view class onTap="goMyOrder" data-ind="4">
+        <view class="order_tabs_image" style="background-position: -0 -60rpx;"></view>
+        <view class>待评价</view>
+        <view class="order_num" a:if="{{jremark.IsEvaluateNum&&jremark.IsEvaluateNum!=0}}">
+          {{jremark.IsEvaluateNum}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <swiper a:if="{{guangbo.length}}" autoplay='{{true}}' vertical="{{true}}" class="swiperBox" interval="{{3000}}" circular="{{true}}">
+    <swiper-item a:for="{{guangbo}}" a:key='{{index}}' key='index'>
+      <view class="wuliuInfo" onTap='detail' data-index='{{index}}'>
+        <view class="wuliuBox">
+          <image src="/images/icon/wuliuuser.svg" class="wuliuUser" lazy-load="{{true}}" />
+          <text>{{item.ProgressDes}}</text>
+        </view>
+        <view class="wuliuLabel">{{item.DealTime}}</view>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class="service">
+    <!-- 我的服务 -->
+    <view class="service_tit">我的服务</view>
+    <view class="service_list">
+      <view class="order_item" onTap="goMessgae">
+        <view class="message"></view>
+        <view class>客服</view>
+      </view>
+      <view class="order_item" onTap="goMyaddress">
+        <view class="message" style=" background-position: -60rpx -0;"></view>
+        <view class>收货地址</view>
+      </view>
+      <!-- todo -->
+      <!-- <view class="order_item" onTap="goStoreOrder">
+        <view class="message" style=" background-position:-60rpx -150rpx;"></view>
+        <view class>门店订单</view>
+      </view> -->
+    </view>
+  </view>
+</view>
+<!--  -->
+<view class="prop" a:if="{{canIUseAuthButton}}">
+  <view class="propwrap">
+    <view class="propwrap-t">需要您的授权</view>
+    <view class="propwrap-c">为了提供更好的服务</view>
+    <view class="propwrap-b">请在稍后提示框中点击“同意”</view>
+    <view class="propwrap-m">
+      <image mode="scaleToFill" src="/images/icon/suresq.png" />
+    </view>
+    <button open-type="getAuthorize" onGetAuthorize="onGetAuthorize" onError="onAuthError" scope="userInfo">
+      立即授权
+    </button>
+  </view>
+</view>

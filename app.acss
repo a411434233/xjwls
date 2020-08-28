@@ -1,0 +1,111 @@
+page {
+  background: #f7f7f7;
+}
+
+* {
+  font-style: normal;
+  font-weight: normal;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+}
+
+
+
+.css_sprites_store {
+  background: url('/images/icon/css_sprites_store.png') no-repeat;
+  background-size: 36rpx 24rpx;
+  width: 14rpx;
+  height: 20rpx;
+  margin-left: 5rpx;
+}
+
+.box-wrap {
+  background: #f7f7f7;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.goods_item_list {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  width: 710rpx;
+  margin: 0 auto;
+  grid-row-gap: 20rpx;
+  grid-column-gap: 20rpx;
+  margin-top: 20rpx;
+}
+
+/* 布局 */
+
+.flex_cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_sc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex_bs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex_bc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 到底提示 */
+
+.bottom_tips {
+  height: 54rpx;
+  line-height: 54rpx;
+  font-size: 24rpx;
+  color: #cccccc;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+
+.bottom_tipstext {
+  display: inline-block;
+  width: 60rpx;
+  height: 2rpx;
+  background: #ccc;
+  vertical-align: middle;
+}
+
+.bottom_tipstext:nth-of-type(1) {
+  margin-right: 30rpx;
+}
+
+.bottom_tipstext:nth-of-type(2) {
+  margin-left: 30rpx;
+}
+
+button {
+  width: auto;
+  height: auto;
+  line-height: normal !important;
+  background: none;
+  border: none;
+  display: inline-block;
+  box-shadow: none;
+  text-align: left;
+  overflow: auto;
+}
+
+.button-hover {
+  color: #fff;
+}
+
+.price_app {
+  font-family: DIN Alternate, serif !important;
+}

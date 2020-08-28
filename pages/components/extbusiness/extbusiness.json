@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "插件",
+  "usingComponents": {
+    "shop-card": "plugin://shopPlugin/boom"
+  }
+}

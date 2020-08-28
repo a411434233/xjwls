@@ -1,0 +1,12 @@
+{
+  "defaultTitle": "",
+  "pullRefresh": false,
+  "allowsBounceVertical": "NO",
+  "titleBarColor":"#fff",
+  "titlePenetrate":"YES",
+  "transparentTitle":"always",
+  "usingComponents": {
+    "popup": "mini-ali-ui/es/popup/index",
+    "quan-popup":"/components/quanPopup/quanPopup"
+  }
+}

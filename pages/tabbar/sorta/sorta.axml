@@ -1,0 +1,59 @@
+<view>
+  <view class="nav_search">
+    <navigator url="/pages/components/search/search" class="searchBox flex_cc">
+      <view class="css_sprites_home sora_sousou"></view>
+      <view class="m_l_10 c_gray_q">鸭舌</view>
+    </navigator>
+  </view>
+  <view class="navicon_box">
+    <view class="navicon_boxitem">
+      <scroll-view class="navicon_list" scroll-x="{{true}}" scroll-left="{{left}}" scroll-with-animation="{{true}}" scroll-animation-duration="{{300}}">
+        <view class="nav_icon" a:for="{{Categorys}}" key='{{index}}' a:key="index">
+          <view class="nav_flex" onTap="SerchProducts" data-index="{{index}}">
+            <image class="navimg_con" mode="aspectFit" src="{{item.ImgUrl}}"></image>
+            <view class="{{index==currIndex?'navicon_img':''}}"></view>
+          </view>
+          <view class="navicon_con {{index==currIndex?'':''}}">{{item.CategoryName}}</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="twoTab">
+    <view class="twoTab_item {{sortIndex==0?'active':''}}" data-index="0" onTap="sortDeal">综合</view>
+    <view class="twoTab_item {{sortIndex==1?'active':''}}" data-index="1" onTap="sortDeal">销量</view>
+    <view class="arrow twoTab_item {{sortIndex==2?'active':''}}" data-index="2" onTap="sortDeal">
+      <view>{{price_title}}</view>
+      <view style="margin-left:5rpx">
+        <view class="arrow_asc {{sortIndex==2&&!sort?'arrow_active2':''}}"></view>
+        <view class="arrow_desc {{sortIndex==2&&sort?'arrow_active':''}}"></view>
+      </view>
+    </view>
+  </view>
+  <view class="vtabs_box_left" a:if="{{productsLeft.length}}">
+    <view a:for="{{productsLeft}}" key='{{index}}' a:key="index" class="{{activeTab==index?'vtabs_box_left_active':''}}" data-index="{{index}}" onTap="handleChange">
+      {{item.CategoryName}}
+    </view>
+  </view>
+  <view class="vtabs_box_right">
+    <block a:if="{{productList.length}}">
+      <view a:for="{{productList}}" a:key="index" key='{{index}}'>
+        <view class="proItem" data-id="{{item.ProductId}}" onTap="godetail">
+          <image class="proImage" mode="aspectFit" lazy-load="{{true}}" a:if='{{item.ImageUrl}}' default-source="/images/icon/default-source.png" src="{{item.ImageUrl}}"></image>
+          <view class="sortProMsg">
+            <view class="title_bold">
+              <text number-of-lines="1">{{item.ProductName}}</text>
+            </view>
+            <view class="title_mark">
+              <text number-of-lines="1">{{item.Remark}}</text>
+            </view>
+            <view class="priceBox">
+              <view class="newPrice">{{item.SalesPrice}}</view>
+              <view class="oldPrice">¥{{item.Price}}</view>
+            </view>
+          </view>
+          <image class="price_img" mode="scaleToFill" src="/images/icon/plus2.svg" catchTap="gocart" data-item="{{item}}"></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

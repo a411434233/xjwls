@@ -1,0 +1,100 @@
+page {
+  background: #f2f2f2;
+  box-sizing: border-box;
+  padding-top: 20rpx;
+}
+.proImage {
+  width: 212rpx;
+  height: 204rpx;
+  background: #f9f9f9;
+}
+
+.label {
+  height: 34rpx;
+  border-radius: 4rpx;
+  border: 2rpx solid rgba(255, 39, 64, 1);
+  box-sizing: border-box;
+  padding: 0 12rpx;
+  font-size: 22rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 39, 64, 1);
+  line-height: 34rpx;
+  margin-right: 12rpx;
+}
+
+.couPoneList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8rpx;
+}
+
+.items {
+  display: flex;
+  width: 710rpx;
+  border-radius: 18rpx;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  height: 204rpx;
+  margin-bottom: 20rpx;
+}
+.item_title {
+  font-size: 30rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: rgba(33, 33, 33, 1);
+}
+
+.item_info {
+  margin-left: 20rpx;
+  padding-top: 14rpx;
+  position: relative;
+  height: 204rpx;
+}
+
+.quanhou {
+  font-size: 36rpx;
+  font-family: DINAlternate-Bold, DINAlternate;
+  font-weight: bold;
+  color: rgba(247, 27, 45, 1);
+  position: absolute;
+  left: 0;
+  bottom: 22rpx;
+}
+.quanhou::before {
+  content: '券后';
+  font-size: 24rpx;
+  color: #666666;
+  margin-right: 6rpx;
+}
+
+.btnBox {
+  position: absolute;
+  right: 34rpx;
+  bottom: 25rpx;
+  margin: auto;
+  text-align: center;
+}
+.btn_label {
+  font-size: 22rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(102, 102, 102, 1);
+  margin-top: 8rpx;
+}
+
+.btn {
+  width: 158rpx;
+  height: 54rpx;
+  background: rgba(255, 39, 64, 1);
+  border-radius: 27rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}

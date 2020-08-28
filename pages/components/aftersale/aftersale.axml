@@ -1,0 +1,75 @@
+<view class="box-wrap">
+  <view class="thk-t">
+    <view class="ordergoods-c" a:for="{{orderlist[0].subOrderList}}" a:key="index">
+      <view class="ordergoods-cl">
+        <image mode="scaleToFill" src="{{item.ImageUrl}}" />
+        <text>{{item.ProductName}}</text>
+      </view>
+      <view class="ordergoods-cr">
+        <view class="price_app">¥{{item.ShopingSalesPrice}}</view>
+        <view>×{{item.ShopingCount}}</view>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="thk-lx">售后类型</view>
+  <!--  -->
+  <view class="thk-lxt">
+    <view class="thk-lxtl">退款</view>
+    <view class="thk-lxtr">
+      <image mode="scaleToFill" src="/images/icon/icon_xuanzhong.png" />
+    </view>
+  </view>
+  <!--  -->
+  <view class="thk-lxje price_app">
+    <text>退款金额{{orderlist[0].OrderPrice}}元（此次售后不支持修改金额）</text>
+  </view>
+  <!--  -->
+  <view class="thk-lxt1">
+    <view class="thk-lxtl1">退款原因</view>
+    <view class="thk-lxtr1" onTap="showpop">
+      <text>{{yuanyin}}</text>
+      <image mode="scaleToFill" src="/images/icon/right.svg" />
+    </view>
+  </view>
+  <!--  -->
+  <view class="thk-sm">
+    <input class="input" focus="{{focus}}" onInput="shuominginp" value="{{shuoming}}" placeholder="退款说明" />
+  </view>
+  <view class="thk-sm" a:if="{{status!=1}}">
+    <input class="input" focus="{{focus}}" onInput="wuliuinp" value="{{wuliu}}" placeholder="请输入物流单号" />
+  </view>
+  <!--  -->
+  <view class="uplodeimg" a:if="{{status!=1}}">
+    <view class="myback-bc">上传凭证</view>
+    <view class="allImgBox">
+      <block a:for="{{imgUrls}}" index="{{index}}" name="{{file}}" id="{{file}}">
+        <view class="imgBox">
+          <image src="{{item}}" />
+          <view data-index="{{index}}" onTap="delImg" class="delImg">
+            <icon type="cancel" color="red" size="18" />
+          </view>
+        </view>
+      </block>
+      <view class="addImgBox" onTap="addImg" a:if="{{canAddImg}}">
+        <text>{{addImgText}}</text>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class="dibu" onTap="tj">提交申请</view>
+</view>
+<view class="pop-wrap" a:if="{{popshow}}">
+  <view class="pop">
+    <view class="pop-m">
+      <view class="pop-ml" onTap="closepop">取消</view>
+      <view class="pop-mr" onTap="surepop">确定</view>
+    </view>
+    <view class="pop-c">
+      <view class="pop-cm {{active==index?'pop-cmactive':''}}" a:for="{{listyy}}" a:key="index" onTap="tabqh" data-index="{{index}}" data-val="{{item}}">
+        {{item}}
+      </view>
+    </view>
+  </view>
+</view>
+<!--  -->

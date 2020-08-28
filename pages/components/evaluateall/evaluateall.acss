@@ -1,0 +1,66 @@
+.evaluate-c{
+  padding: 20rpx 32rpx;
+  background: #fff;
+  margin-top: 10rpx;
+}
+
+.evaluate-ctl{
+  width: 520rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.evaluate-ctl image{
+  width: 47rpx;
+  height: 47rpx;
+  vertical-align: middle;
+}
+.evaluate-ctl text{
+  display: inline-block;
+  margin-left: 16rpx;
+  line-height: 47rpx;
+  margin-top: 6rpx;
+}
+.evaluate-ctr image{
+  display: inline-block;
+  width: 27rpx;
+  height: 27rpx;
+  vertical-align: middle;
+  margin-right: 6rpx;
+  margin-top: 6rpx;
+}
+.evaluate-cimg image{
+  margin-top: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 47rpx;
+}
+.evaluate-cimg image:nth-last-child(1){
+ margin-right: 0;
+}
+.evaluate-cimg{
+  margin-left: 47rpx;
+}
+.evaluate-cdsc{
+  margin-left: 47rpx;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #333;
+}
+.coupon1{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: calc(50% - 85rpx);
+  text-align: center;
+}
+.coupon1 image{
+  width: 290rpx;
+  height: 300rpx;
+}
+.coupon1t{
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #666;
+}

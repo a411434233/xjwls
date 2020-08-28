@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>编组 5备份</title>
+    <desc>Created with Sketch.</desc>
+    <g id="连贯" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="商品详情" transform="translate(-688.000000, -1260.000000)">
+            <rect fill="#F2F2F2" x="0" y="0" width="750" height="2979"></rect>
+            <g id="编组-5备份" transform="translate(0.000000, 1224.000000)">
+                <rect id="r" fill="#FFFFFF" x="0" y="0" width="750" height="98"></rect>
+                <g id="返回" transform="translate(701.000000, 49.000000) scale(-1, 1) translate(-701.000000, -49.000000) translate(688.000000, 36.000000)" fill-rule="nonzero">
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="1" width="24" height="24"></rect>
+                    <polygon id="路径" fill="#CCCCCC" points="5 13.1744 16.886875 25 18 23.888 7.052375 13 18 2.11199999 16.886875 1 5 12.8256"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

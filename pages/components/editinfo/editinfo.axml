@@ -1,0 +1,28 @@
+<view class="box-wrap">
+  <view class="editinfo">
+    <view class="editinfo-t">
+      <view class="editinfo-tl">昵称</view>
+      <view class="editinfo-tr">{{nackname||'游客'}}</view>
+    </view>
+    <view class="editinfo-t">
+      <view class="editinfo-tl">ID</view>
+      <view class="editinfo-tr">{{userid||"000"}}</view>
+    </view>
+    <view class="editinfo-m" onTap="goaddress">
+      <view class="editinfo-ml">
+        <view class="editinfo-mll">地址</view>
+        <view class="editinfo-mlr" a:if="{{addressdetail.length!=0}}">
+          {{addressdetail[0].Province}}{{addressdetail[0].City}}{{addressdetail[0].Area}}{{addressdetail[0].Address}}
+        </view>
+        <view class="editinfo-mlr " a:if="{{addressdetail.length==0}}">请添加地址</view>
+      </view>
+      <view class="editinfo-mr">
+        <image mode="scaleToFill" src="/images/icon/system-backnew2x.png" />
+      </view>
+    </view>
+  </view>
+  <button class="btn" open-type="getAuthorize" onGetAuthorize="onGetAuthorize" onError="onAuthError" scope='userInfo'>
+    清除小程序缓存
+  </button>
+</view>
+<!--  -->

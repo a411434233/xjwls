@@ -1,0 +1,27 @@
+<view class="myorder-t">
+  <view class="{{activeinx==index?'myorderactice':''}}" a:for="{{arr}}" a:key="index" onTap="tabqh" data-inx="{{index}}">
+    {{item}}
+  </view>
+</view>
+<!-- 头部 -->
+<view class="coupon1" a:if="{{show}}">
+  <image mode="scaleToFill" src="http://image.smjpin.cn/coupon010.png" />
+  <view class="coupon1t">暂无优惠券</view>
+</view>
+<!--  -->
+<scroll-view scroll-y="{{true}}" class="scroll">
+  <view class="detailq_m0 {{activeinx==0?'detailq_m':''}} {{activeinx==1?'detailq_m1':''}} {{activeinx==2?'detailq_m2':''}}" a:for="{{list}}" a:key="index" data-discountid="{{item.RecordId}}" data-money="{{item.DiscountAmount}}" onTap="goDetail" data-id="{{item.ProductId}}">
+    <view class="detailq_ml">
+      <view class="detailq_price">
+        <view class="discountAmountNum price_app">{{item.DiscountAmount}}</view>
+        <view class="discount_min">满{{item.MinAmount}}元可用</view>
+      </view>
+      <view class="detailq_desc">
+        <view class="detailq_title">{{item.DiscountTitle}}</view>
+        <view>有效期至{{item.UseEndTime}}</view>
+      </view>
+    </view>
+    <view class="ispab" a:if="{{activeinx==0}}">去使用</view>
+    <view class="quanLabel">满减券</view>
+  </view>
+</scroll-view>

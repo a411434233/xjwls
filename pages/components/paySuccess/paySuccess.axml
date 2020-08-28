@@ -1,0 +1,13 @@
+<view class="success-t">
+  <image mode="scaleToFill" src="/images/icon/success.svg" />
+</view>
+<view class="success-m1">恭喜你,下单成功</view>
+<view class="success-m2">
+  收货确认后您可获得
+  <text class="moneys">{{VCoinsNum||10}}味</text>
+  币，味币可抵现金
+</view>
+<view class="success-m3" onTap="gomine">查看订单</view>
+<view class="success-m4" onTap="gohome">继续购买</view>
+<image class="share" src="http://image.smjpin.cn/lingshi.png" lazy-load="{{false}}" onTap="detayl"></image>
+<life-follow sceneId="8503ebd0cfdb4655924bd00f676d2276" />

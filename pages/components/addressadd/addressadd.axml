@@ -1,0 +1,29 @@
+<view class="box">
+  <view class="address-wrap">
+    <view class="address-ditydetail">
+      <view>收货人</view>
+      <input type="text" onInput="name" value="{{name}}" placeholder="请输入姓名" auto-focus />
+    </view>
+    <view class="address-ditydetail">
+      <view>手机号</view>
+      <input type="number" onInput="telphone" value="{{telphone}}" placeholder="请输入电话" auto-focus />
+    </view>
+    <view class="address-city address-ditydetail" onTap="city">
+      <view style="flex:0 0 20%">收货地址</view>
+      <view class="address-cityl">{{provinces}} {{city}} {{area}}</view>
+      <view class="address-cityr">
+        <image src="/images/icon/system-backnew2x.png" mode="scaleToFill" />
+      </view>
+    </view>
+    <view class="address-ditydetail">
+      <input type="text" onInput="addressdetail" value="{{addressdetail}}" placeholder="请输入详细地址" auto-focus />
+    </view>
+    <view class="address-moren">
+      <text>设置为默认收货地址</text>
+      <switch color="#FF2740" aria-label="{{is_default ? 'switch opened' : 'switch closed'}}" onChange="switchChange" />
+    </view>
+  </view>
+  <view class="deladdress1" onTap="del" a:if="{{isShowDel}}">删除地址</view>
+  <view class="saveaddress1" onTap="save" a:if="{{showsave}}">保存</view>
+  <view class="saveaddress1" onTap="save" a:if="{{showsave==false}}">保存</view>
+</view>

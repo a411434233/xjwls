@@ -1,0 +1,26 @@
+<popup position="bottom" onClose="onPopupClosequan" zIndex="{{200}}" show="{{showCoupone}}">
+  <view class="quanwrap">
+    <view class="quanwrap-t">
+      优惠券
+      <image mode="scaleToFill" src="/images/icon/close01.png" onTap="onPopupClosequan" />
+    </view>
+    <form onSubmit="onSubmit" class="form" report-submit="{{true}}" data-id="{{ProductId}}">
+      <button formType="submit" hover-class="button-hover">
+        <view class="detailq_m0 " a:for="{{MinAmount}}" a:key="index" data-id="{{item.DiscountId}}" data-index="{{index}}" onTap="golq">
+          <view class="detailq_ml">
+            <view class="detailq_price">
+              <view class="discountAmountNum price_app">{{item.DiscountAmount}}</view>
+              <view class="discount_min">满{{item.MinAmount}}元可用</view>
+            </view>
+            <view class="detailq_desc">
+              <view class="detailq_title">{{item.DiscountName}}</view>
+              <view>有效期{{item.UserDeadline}}天</view>
+            </view>
+          </view>
+          <view class="ispab">领取</view>
+          <view class="quanLabel">满减券</view>
+        </view>
+      </button>
+    </form>
+  </view>
+</popup>

@@ -1,0 +1,90 @@
+{
+  "pages": [
+    "pages/tabbar/index/index",
+    "pages/tabbar/cart/cart",
+    "pages/tabbar/sorta/sorta",
+    "pages/tabbar/minea/minea",
+    "pages/tabbar/Circle/Circle",
+    "pages/actives/actives",
+    "pages/components/storeList/storeList",
+    "pages/components/couponList/couponList",
+    "pages/components/lmember/lmember",
+    "pages/components/pro_detail/pro_detail",
+    "pages/components/search/search",
+    "pages/components/buyorder/buyorder",
+    "pages/components/address/address",
+    "pages/components/addressadd/addressadd",
+    "pages/components/coupno/coupno",
+    "pages/components/coupnosm/coupnosm",
+    "pages/components/myorder/myorder",
+    "pages/components/orderdetail/orderdetail",
+    "pages/components/goodslist/goodslist",
+    "pages/components/aftersale/aftersale",
+    "pages/components/aftersaledetail/aftersaledetail",
+    "pages/components/evaluate/evaluate",
+    "pages/components/collection/collection",
+    "pages/components/evaluateall/evaluateall",
+    "pages/components/coupnoall/coupnoall",
+    "pages/components/paySuccess/paySuccess",
+    "pages/components/cashbonusmycopy/cashbonusmycopy",
+    "pages/components/sigincurrency/sigincurrency",
+    "pages/components/service/service",
+    "pages/components/onesurprisec/onesurprisec",
+    "pages/components/chajian/chajian",
+    "pages/components/logisDetail/logisDetail",
+    "pages/components/extbusiness/extbusiness",
+    "pages/components/channelcoupon/channelcoupon",
+    "pages/components/editinfo/editinfo",
+    "pages/components/storeOrder/storeOrder",
+    "pages/components/signin/signin",
+    "pages/components/storeOrderDetails/storeOrderDetails",
+    "pages/components/store/store",
+    "pages/components/pieceTogether/pieceTogether",
+    "pages/components/cartBuyTwo/cartBuyTwo"
+  ],
+  "window": {
+    "defaultTitle": "闲九味",
+    "titleBarColor": "#fff",
+    "allowsBounceVertical": true,
+    "showTitleLoading": "YES",
+    "pullRefresh": false
+  },
+  "tabBar": {
+    "textColor": "#999",
+    "selectedColor": "#FF2740",
+    "backgroundColor": "#fff",
+    "items": [
+      {
+        "pagePath": "pages/tabbar/index/index",
+        "icon": "images/dibu/index.png",
+        "activeIcon": "images/dibu/index_active.png",
+        "name": "首页"
+      },
+      {
+        "pagePath": "pages/tabbar/Circle/Circle",
+        "icon": "images/dibu/lingshi2.png",
+        "activeIcon": "images/dibu/lingshi.png",
+        "name": "零食圈"
+      },
+      {
+        "pagePath": "pages/tabbar/sorta/sorta",
+        "icon": "images/dibu/sort.png",
+        "activeIcon": "images/dibu/sort_active.png",
+        "name": "分类"
+      },
+      {
+        "pagePath": "pages/tabbar/cart/cart",
+        "icon": "images/dibu/cart.png",
+        "activeIcon": "images/dibu/cart_active.png",
+        "name": "购物车"
+      },
+      {
+        "pagePath": "pages/tabbar/minea/minea",
+        "icon": "images/dibu/mine.png",
+        "activeIcon": "images/dibu/mine_active.png",
+        "name": "我的"
+      }
+    ]
+  },
+  "useDynamicPlugins": true
+}

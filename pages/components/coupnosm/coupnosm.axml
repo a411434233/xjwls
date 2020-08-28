@@ -1,0 +1,9 @@
+<view class="box-wrap">
+  <view class="sm-t">优惠券</view>
+  <block a:for="{{detail}}" >
+    <view class="sm-title">{{item.DiscountTitle}}</view>
+    <view class="sm-title">活动规则：</view>
+    <view class="sm-m">{{item.DiscountRule}}</view>
+  </block>
+  <!--  -->
+</view>

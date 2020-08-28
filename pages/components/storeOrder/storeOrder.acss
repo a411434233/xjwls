@@ -1,0 +1,227 @@
+page {
+  background: #f5f5f5;
+}
+
+page view {
+  box-sizing: border-box;
+}
+
+.order-content {
+  position: relative;
+  padding: 10rpx 20rpx 0;
+}
+
+.common-sty {
+  padding: 0 30rpx;
+}
+
+/* 选中的样式 */
+
+.active-sty .tap-tit {
+  color: #ff4b34;
+  font-weight: 700;
+  line-height: 48rpx;
+}
+
+.split {
+  width: 56rpx;
+  height: 6rpx;
+  background: #ff4b34;
+  margin: 8rpx 0 0 214rpx;
+  border-radius: 3rpx;
+}
+
+.split2 {
+  width: 56rpx;
+  height: 6rpx;
+  background: #ff4b34;
+  margin: 8rpx 0 0 40rpx;
+  border-radius: 3rpx;
+}
+
+/* 列表 */
+
+.order-list {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 20rpx;
+}
+
+.order-item {
+  background: #ffffff;
+  border-radius: 16rpx;
+  margin-top: 20rpx;
+  padding-bottom: 23rpx;
+}
+
+.order-top {
+  height: 78rpx;
+  border-bottom: 1rpx solid #e4e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+
+.order-top-l {
+  display: flex;
+  align-items: center;
+}
+
+.order-top-l image {
+  width: 32rpx;
+  height: 33rpx;
+}
+
+.order-top-l view {
+  color: #333333;
+  font-size: 28rpx;
+  margin-left: 8rpx;
+}
+
+.order-top-r {
+  color: #999999;
+  font-size: 26rpx;
+}
+
+.order-con {
+  margin-top: 30rpx;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-name {
+  color: #333333;
+  font-weight: bold;
+}
+
+.order-price {
+  color: #ff4b34;
+}
+
+/* 下单时间 */
+
+.order-time {
+  color: #999999;
+  font-size: 26rpx;
+  margin: 12rpx 0 14rpx 0;
+}
+
+.order-ms {
+  color: #666;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+/* 订单状态列表 */
+
+.order-status-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 70rpx;
+}
+
+.order-status-list view {
+  width: 168rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border: 1rpx solid #979797;
+  background: #f6f6f6;
+  border-radius: 8rpx;
+  color: #333333;
+  font-size: 26rpx;
+  display: inline-block;
+  margin-left: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 无订单 */
+
+.no-data {
+  width: 100%;
+  margin-top: 288rpx;
+  text-align: center;
+}
+
+.no-data image {
+  margin-top: 20rpx;
+  width: 319rpx;
+  height: 266rpx;
+}
+
+.no-data view {
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: rgba(153, 153, 153, 1);
+}
+
+/* 点击取消弹窗 */
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.modal-content {
+  width: 554rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 28rpx 0 45rpx 0;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 4;
+}
+
+.modal-tit1 {
+  color: #333333;
+  font-size: 34rpx;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal-tit2 {
+  color: #333333;
+  font-size: 30rpx;
+  margin-top: 33rpx;
+  text-align: center;
+}
+
+.bottom-btn {
+  width: 100%;
+  font-size: 0;
+  padding-left: 66rpx;
+  margin-top: 56rpx;
+}
+
+.bottom-btn view {
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bottom-btn view:nth-child(1) {
+  background: #e6e6e6;
+  color: #b4b4b4;
+}
+
+.bottom-btn view:nth-child(2) {
+  background: #ff4b34;
+  color: #fff;
+  margin-left: 22rpx;
+}

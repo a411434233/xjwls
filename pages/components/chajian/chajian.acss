@@ -1,0 +1,9 @@
+page {
+  background: #FFFFFF;
+}
+
+.nav {
+  height: 160rpx;
+  display: flex;
+  align-items: center;
+}

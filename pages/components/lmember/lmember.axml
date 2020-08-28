@@ -1,0 +1,33 @@
+<view class="member-wrap">
+  <view class="member-t" onTap="goqhy">
+    <image mode="scaleToFill" src="/images/icon/newlmember01.png"></image>
+  </view>
+  <view class="member-m member-mh">
+    <view class="member-mt">
+      <text>送30元优惠券</text>
+      <image mode="scaleToFill" src="http://image.smjpin.cn/newlmember03.png"></image>
+    </view>
+    <view class="member-mt1">
+      共
+      <text>6张</text>，可与满减/折扣同享
+    </view>
+    <view class="member-mmwrap">
+      <view class="member-30" onTap="goqhy">
+        <image mode="scaleToFill" src="http://image.smjpin.cn/newlmember02.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="member-m">
+    <view class="member-mt">
+      <text>新品免费试吃</text>
+      <image mode="scaleToFill" src="http://image.smjpin.cn/newlmember04.png"></image>
+    </view>
+    <view class="member-mt1">好吃不容错过</view>
+    <view class="member-mmbwrap">
+      <view class="member-mmb" a:for="{{list}}" a:key="index">
+        <image mode="scaleToFill" src="{{item.images}}"></image>
+        <view>{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>

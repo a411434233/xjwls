@@ -1,0 +1,25 @@
+<view class="box">
+  <view class="logistics-t">
+    <view class="logistics-tl">
+      <view class="logistics-tll">
+        <image src="/images/icon/wuliu.jpg" mode="scaleToFill" />
+      </view>
+      <view class="logistics-tm">
+        <view class="logistics-tmt">快递公司：{{name}}</view>
+        <view class="logistics-tmb">快递单号：{{no}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 头部 -->
+  <view class="uni-timeline">
+    <block a:for="{{wuliuDetail}}">
+      <view class="uni-timeline-item {{index==0 ? 'uni-timeline-first-item' :''}} {{index==wuliuDetail.length-1 ? 'uni-timeline-last-item' :''}}">
+        <view class="uni-timeline-item-divider"></view>
+        <view class="uni-timeline-item-content">
+          <view class="itemcontent {{index==0 ? 'first-item-content' :''}}">{{item.ProcessInfo}}</view>
+          <view class="datetime">{{item.Upload_Time}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

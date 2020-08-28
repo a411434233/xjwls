@@ -1,0 +1,27 @@
+<view class="box">
+  <view class="boxwrap">
+    <view class="searchbox">
+      <view class="searchboxl">
+        <image class="provinceimg03" onTap="goSearch" mode="scaleToFill" src="/images/icon/sousuo.svg" />
+        <input class="inp" onInput="getInputVal" value="{{searchVal}}" placeholder="输入想要的宝贝" onConfirm='goSearch' />
+      </view>
+      <view class="searchboxr" onTap="back">取消</view>
+    </view>
+    <view class="title_boldtitle">
+      搜索历史
+      <image class="delSvg" src="/images/icon/del.svg" onTap='delStrong'></image>
+    </view>
+    <view class="hotSearchList">
+      <view class="" a:for="{{liSh}}" a:key='{{index}}' data-index='{{index}}' a:if="{{index<=7}}" onTap='search'>
+        <text number-of-lines='1'>{{item.name}}</text>
+      </view>
+      <view a:if="{{liSh.length==0}}">无</view>
+    </view>
+    <view class="title_boldtitle">热门搜索</view>
+    <view class="hotSearchList">
+      <view class="" a:for="{{hotSearchArr}}" a:key="index" data-index='{{index}}' a:if="{{index<=7}}" onTap='search2'>
+        <text number-of-lines='1'>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

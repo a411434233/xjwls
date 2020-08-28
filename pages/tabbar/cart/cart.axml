@@ -1,0 +1,131 @@
+<view class="">
+    <view class="shop_top" onTap='choudan'>
+        <view class="shop_top_btn">全场搭配</view>
+        <view class="shop_top_label" a:if="{{allmoney<39}}">
+            满39元包邮，还差{{(39 - allmoney).toFixed(2)}}元
+        </view>
+        <view class="shop_top_label" a:if="{{allmoney>=39}}">已满39元，可换购9.9元超值商品</view>
+        <view class="shop_top_right ">去凑单</view>
+    </view>
+</view>
+<view class="choudan_box">
+    <view class="choudan_item" a:for="{{ActiveGoodsList}}" a:key='{{index}}' key='index' data-item='{{item}}'
+          onTap='addShop'>
+        <image class="choudan_item_image" src="{{item.ImageUrl}}"></image>
+        <view class="choudan_item_box">
+            <view class="choudan_item_name">
+                <text number-of-lines='1'>{{item.ProductName}}</text>
+            </view>
+            <view class="choudan_item_oldprice price_app">¥{{item.Price}}</view>
+            <view class="choudan_item_info">
+                <view class="choudan_item_price price_app">¥{{item.SalesPrice}}</view>
+                <view class="choudan_item_label">搭配价</view>
+                <image src="/images/icon/plus3.svg" class="plus2"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="cart" a:for="{{suclist}}" a:key="index">
+    <view class="cart-m">
+        <view class="cart-mt">
+            <view class="cart-mtl">
+                <checkbox checked="{{item.checked}}" value="{{item.checked}}" data-storeindex="{{index}}"
+                          onChange="setStore"></checkbox>
+                <text>{{item.BrandNanme}}食品</text>
+            </view>
+        </view>
+        <view class="cart-mc" a:for="{{item.shopCartList}}" a:for-item="val" a:for-index="idx" a:key="idx">
+            <movable-area>
+                <movable-view class="movable-view" x="{{isLeft}}" direction="horizontal" inertia="{{true}}"
+                              friction="{{0.1}}" damping="{{0.01}}" animation="{{false}}">
+                    <view class="cart-mcm">
+                        <checkbox data-storeindex="{{index}}" data-index="{{idx}}" value="{{val.checked}}"
+                                  checked="{{val.checked}}" onChange="setItem"></checkbox>
+                        <view class="cart-mcmm" onTap="godetail" data-id="{{val.ProductId}}">
+                            <image mode="aspectFill" src="{{val.ImageUrl}}"></image>
+                        </view>
+                        <view class="cart-mcmr">
+                            <view class="cart-mcmrt">{{val.ProductName}}</view>
+                            <view class="cart-mcmr_label">{{val.CategoryName}}</view>
+                            <view class="cart-mcmrb">
+                                <view class="cart-mcmrbl price_app">
+                                    <text>¥</text>
+                                    {{val.ShopingSalesPrice}}
+                                </view>
+                                <view class="cart-mcmrbr">
+                                    <view class="add_cat_left" catchTap="reduce" data-storeindex="{{index}}"
+                                          data-index="{{idx}}"></view>
+                                    <view class="ShopingCount">{{val.ShopingCount}}</view>
+                                    <view class="add_cat_right" catchTap="plus" data-storeindex="{{index}}"
+                                          data-index="{{idx}}"></view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="del" catchTap="del" data-id="{{val.ShopId}}">删除</view>
+                </movable-view>
+            </movable-area>
+            <view class="activity" a:if="{{val.DiscountDesc}}">
+                <view class="activity_name">活动</view>
+                <view class="activity_info">{{val.DiscountDesc}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<!--  -->
+<view class="coupon1" a:if="{{suclist.length == 0}}">
+    <image class="coupon112" mode="scaleToFill" src="http://image.smjpin.cn/newcartimg.png"></image>
+    <view class="coupon1t">暂无商品</view>
+    <view class="buttoncar" onTap="goshop">去逛逛～</view>
+</view>
+<!--  -->
+<view class="closecart" a:if="{{errlist.length != 0}}">
+    <view class="closecart-m">
+        <view class="closecart-mt">
+            <view class="closecart-mtl">失效商品</view>
+            <view class="closecart-mtr" onTap="delall">
+                <text>清空失效商品</text>
+            </view>
+        </view>
+        <view class="cart-mc" a:for="{{errlist}}" a:key="index">
+            <view class="cart-mcm">
+                <view class="cart-mcml">
+                    <text>失效</text>
+                </view>
+                <view class="cart-mcmm">
+                    <image mode="scaleToFill" src="{{item.ImageUrl}}"></image>
+                </view>
+                <view class="cart-mcmr">
+                    <view class="cart-mcmrt">{{item.ProductName}}</view>
+                    <view class="cart-mcmrb price_app">¥{{item.ShopingSalesPrice}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 导航 -->
+<view class="nav">
+    <image class="cainixiahuan" src="/images/icon/cart_left.svg"></image>
+    <view>猜你喜欢</view>
+    <image class="cainixiahuan" src="/images/icon/cart_right.svg"></image>
+</view>
+<!--  -->
+<view class="list" a:if="{{newlist.length>0}}">
+    <goods-item a:for="{{newlist}}" a:key="index" key='{{index}}' item='{{item}}'></goods-item>
+</view>
+<!--  -->
+<view class="cart-dwrap" a:if="{{suclist.length != 0}}">
+    <view class="cart-d">
+        <view class="cart-dl" catchTap="allselect">
+            <checkbox value="{{selcetall}}" checked="{{selcetall}}"></checkbox>
+            <text>全选</text>
+        </view>
+        <view class="cart-dm">
+            <text></text>
+            <text>合计：</text>
+            ¥
+            <text>{{allmoney}}</text>
+        </view>
+        <view class="cart-dr" onTap="goToPayOrder">结算</view>
+    </view>
+</view>

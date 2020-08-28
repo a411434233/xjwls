@@ -1,0 +1,117 @@
+.goodsItem_listbox_cmt_box {
+  box-sizing: border-box;
+  padding: 0 19rpx;
+}
+
+.goodsItem_listbox_remark {
+  font-size: 22rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 600;
+  color: rgba(153, 153, 153, 1);
+  margin-top: 4rpx;
+  width: 260rpx;
+}
+.goodsItem_listbox_btn {
+  width: 100%;
+  height: auto;
+}
+
+.goodsItem_listbox-cmbl {
+  display: flex;
+  align-items: baseline;
+  margin-top: 30rpx;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 24rpx;
+  box-sizing: border-box;
+  padding-left: 19rpx;
+}
+
+.goodsItem_listbox_addPng {
+  width: 46rpx !important;
+  height: 46rpx !important;
+  background-position: -4rpx -4rpx;
+  position: absolute;
+  z-index: 10;
+  right: 26rpx;
+  bottom: 2rpx;
+}
+
+.listbox_addPng {
+  width: 46rpx !important;
+  height: 46rpx !important;
+  position: absolute;
+  z-index: 10;
+  right: 26rpx;
+  bottom: 0rpx;
+}
+
+.goodsItem_listbox_label {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  grid-column-gap: 10rpx;
+  grid-row-gap: 10rpx;
+  margin-top: 6rpx;
+}
+.goodsItem_listbox_image {
+  width: 100%;
+  height: 330rpx;
+}
+.goodsItem_listbox-cmt {
+  margin-left: 0;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  width: 100%;
+  line-height: 1.3;
+}
+.goodsItem_listbox_label > view {
+  height: 30rpx;
+  background: linear-gradient(225deg, rgba(255, 96, 5, 1) 0%, rgba(255, 39, 64, 1) 38%, rgba(255, 39, 64, 1) 100%);
+  border-image: linear-gradient(225deg, rgba(255, 96, 5, 1), rgba(255, 39, 64, 1), rgba(255, 39, 64, 1)) 2 2;
+  border: 2rpx solid;
+  border-radius: 8rpx;
+  font-size: 20rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goodsItem_listbox-cmblt_oldPrice {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  text-decoration: line-through;
+  margin-left: 12rpx;
+  font-family: 'DIN Alternate';
+}
+
+.goodsItem_listbox-cmblt_newPrice {
+  font-size: 34rpx;
+  font-family: 'DIN Alternate';
+  font-weight: 500;
+  color: rgba(247, 27, 45, 1);
+}
+
+.goodsItem_listbox-cm {
+  box-sizing: border-box;
+  padding-bottom: 20rpx;
+  margin-top: 0;
+  border-radius: 10rpx;
+  height: 540rpx;
+  position: relative;
+}
+
+.goodsItem_listbox_card {
+  width: 345rpx;
+  height: 540rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 16rpx;
+  overflow: hidden;
+}

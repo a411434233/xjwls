@@ -1,0 +1,580 @@
+page {
+  padding-bottom: 200rpx;
+  padding-top: 1rpx;
+  box-sizing: border-box;
+}
+.cart,
+.closecart {
+  width: 710rpx;
+  padding: 28rpx 0 0;
+  background: #fff;
+  border-radius: 24rpx;
+  margin: 0 auto;
+  margin-top: 10rpx;
+  overflow: hidden;
+  padding-bottom: 15rpx;
+}
+
+
+.cart-m,
+.closecart-m {
+  margin: 0 32rpx;
+}
+
+.cart-mt {
+  padding-bottom: 30rpx;
+  /* border-bottom: 2rpx solid #eee; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-mt image:nth-of-type(1) {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 24rpx;
+  vertical-align: middle;
+}
+
+.cart-mt image:nth-of-type(2) {
+  width: 53rpx;
+  height: 53rpx;
+  vertical-align: middle;
+  margin-left: 40rpx;
+}
+
+.cart-mt text {
+  margin-left: 6rpx;
+}
+
+
+.del {
+  width: 120rpx;
+  height: 160rpx;
+  background: #ff3c3c;
+  color: #fff;
+  font-size: 28rpx;
+  line-height: 160rpx;
+  text-align: center;
+}
+
+.cart-mcm {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+.cart-mcmm {
+  margin: 0 24rpx;
+}
+
+.cart-mcmm image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.cart-mcmrt {
+  font-weight: 600;
+  color: #000;
+  font-size: 28rpx;
+  line-height: 32rpx;
+  letter-spacing: 2rpx;
+  width: 400rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cart-mcmr {
+  width: 400rpx;
+}
+
+.cart-mcmr_label {
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  width: 350rpx;
+  line-height: 1.4;
+  margin-top: 6rpx;
+}
+
+
+.cart-mcmrb {
+  margin-top: 30rpx;
+  font-weight: 600;
+  color: #ee1525;
+  font-size: 36rpx;
+  line-height: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.cart-mcmrb text {
+  font-size: 20rpx;
+}
+.ShopingCount {
+  width: 78rpx;
+  text-align: center;
+  border-top: solid 2rpx #999999;
+  border-bottom: solid 2rpx #999999;
+  font-family: HelveticaNeue-Medium, HelveticaNeue;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: rgba(51, 51, 51, 1);
+}
+
+.cart-mcmrbr {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  position: absolute;
+  right: 20rpx;
+}
+.add_cat_left {
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2rpx solid rgba(153, 153, 153, 1);
+  border-radius: 10rpx 0 0 10rpx;
+}
+
+.add_cat_left::after {
+  content: '';
+  width: 18rpx;
+  height: 3rpx;
+  background: #999999;
+  display: inline-block;
+}
+
+.add_cat_right::after {
+  content: '';
+  width: 18rpx;
+  height: 3rpx;
+  background: #999999;
+  display: inline-block;
+}
+
+.add_cat_right::before {
+  content: '';
+  width: 3rpx;
+  height: 18rpx;
+  background: #999999;
+  display: inline-block;
+  position: absolute;
+}
+.add_cat_right {
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2rpx solid rgba(153, 153, 153, 1);
+  border-radius: 0px 10rpx 10rpx 0px;
+  position: relative;
+}
+
+/*  */
+
+
+
+
+
+.closecart-m {
+  background: #fff;
+  opacity: 0.84;
+}
+
+.closecart-mt {
+  display: flex;
+  color: #666;
+  justify-content: space-between;
+  padding-bottom: 24rpx;
+  font-size: 28rpx;
+}
+
+.closecart-mtr image {
+  width: 17rpx;
+  height: 32rpx;
+  vertical-align: middle;
+}
+
+.closecart-mtr text {
+  margin-right: 6rpx;
+  font-size: 28rpx;
+}
+
+.cart-mcml text {
+  display: block;
+  background: #f4f4f4;
+  color: #fff;
+  padding: 6rpx;
+  width: 61rpx;
+  height: 32rpx;
+  font-size: 22rpx;
+  text-align: center;
+  line-height: 32rpx;
+  border-radius: 7rpx;
+}
+
+/*  */
+
+.cart-dwrap {
+  width: 100%;
+  background: #fff;
+  height: 124rpx;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  box-shadow: 0px -1px 7px 0px rgba(0, 0, 0, 0.07);
+}
+
+.cart-d {
+  line-height: 124rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35rpx 0 55rpx;
+}
+
+.cart-dl image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 10rpx;
+  vertical-align: middle;
+}
+
+.cart-dl text {
+  margin-left: 20rpx;
+  /* vertical-align: middle; */
+  font-size: 28rpx;
+  color: rgba(102, 102, 102, 1);
+}
+
+.cart-dm {
+  font-size: 20rpx;
+  color: #ee1525;
+}
+
+.cart-dm text:nth-of-type(1) {
+  font-size: 20rpx;
+  color: #999;
+}
+
+.cart-dm text:nth-of-type(2) {
+  font-size: 28rpx;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 600;
+}
+
+.cart-dm text:nth-of-type(3) {
+  font-size: 38rpx;
+  color: #ee1525;
+  font-weight: 600;
+}
+
+.cart-dr {
+  width: 198rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  text-align: center;
+  background: #ee1525;
+  border-radius: 46px;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 26rpx;
+  margin-right: 30rpx;
+}
+
+
+.coupon1 {
+  width: 100%;
+  padding-top: 180rpx;
+  text-align: center;
+}
+
+.coupon1 .coupon1-tt {
+  margin-top: 20rpx;
+}
+
+.coupon1 .coupon1-tt image {
+  width: 23rpx;
+  height: 23rpx;
+}
+
+.coupon1 .coupon1-tt text {
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.coupon112 {
+  margin-top: 70rpx;
+  width: 289rpx;
+  height: 248rpx;
+}
+
+.coupon1t {
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.buttoncar {
+  width: 290rpx;
+  height: 70rpx;
+  background: rgba(255, 39, 64, 1);
+  border-radius: 40rpx;
+  color: #fff;
+  line-height: 72rpx;
+  text-align: center;
+  font-size: 28rpx;
+  margin-left: calc(50% - 145rpx);
+  margin-top: 73rpx;
+  margin-bottom: 50rpx;
+}
+
+.cart-mcmrbl {
+  font-weight: 600;
+  font-family: 'DIN Alternate';
+  font-size: 36rpx;
+  color: rgba(238, 21, 37, 1);
+}
+
+/* 超值换购 */
+.cainixiahuan {
+  width: 14rpx;
+  height: 19rpx;
+}
+
+.nav {
+  color: #ee1525;
+  font-size: 32rpx;
+  font-weight: 600;
+  margin-top: 34rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav view{
+  margin: 0 16rpx;
+}
+
+/*  重写 checkbox 样式  */
+
+movable-view {
+  height: 200rpx;
+  width: 780rpx;
+  display: flex;
+}
+
+movable-area {
+  width: 650rpx;
+  height: 200rpx;
+  overflow: hidden;
+}
+
+checkbox {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  color: white;
+}
+
+.a-checkbox-checked {
+  width: 30rpx;
+  height: 30rpx;
+  background: #ee1525;
+  text-align: center;
+  color: white;
+  border: #ee1525 2rpx solid;
+}
+
+.a-icon-svg {
+  width: 20rpx !important;
+  height: 20rpx !important;
+}
+
+checkbox .a-icon-success_no_circle {
+  fill: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0rpx;
+  margin: auto;
+}
+
+/*  */
+.list {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 710rpx;
+  margin: 0 auto;
+  grid-row-gap: 20rpx;
+  grid-column-gap: 20rpx;
+  margin-top: 20rpx;
+}
+
+/*  */
+.activity {
+  width: 680rpx;
+  height: 60rpx;
+  background: rgba(255, 243, 206, 1);
+  display: flex;
+  align-items: center;
+  padding-left: 29rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  position: relative;
+  left: -15rpx;
+}
+
+.activity_name {
+  width: 56rpx;
+  height: 27rpx;
+  background: linear-gradient(315deg, rgba(255, 96, 5, 1) 0%, rgba(247, 27, 45, 1) 100%);
+  border-radius: 4rpx;
+  font-size: 22rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  line-height: 27rpx;
+}
+
+.activity_info {
+  font-size: 22rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  margin-left: 24rpx;
+}
+
+.shop_top {
+  display: flex;
+  align-items: center;
+  height: 81rpx;
+  position: relative;
+}
+.shop_top_btn {
+  width: 140rpx;
+  height: 45rpx;
+  font-size: 26rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(225deg, rgba(255, 96, 5, 1) 0%, rgba(255, 39, 64, 1) 38%, rgba(255, 39, 64, 1) 100%);
+  border-radius: 23rpx;
+  text-align: center;
+  line-height: 45rpx;
+  margin-left: 21rpx;
+}
+.shop_top_label {
+  font-size: 22rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  margin-left: 16rpx;
+}
+
+.shop_top_right {
+  font-size: 22rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(247, 27, 45, 1);
+  position: absolute;
+  right: 36rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  line-height: 81rpx;
+  margin-right: 8rpx;
+}
+
+.shop_top_right::after {
+  content: '';
+  width: 14rpx;
+  height: 14rpx;
+  display: inline-block;
+  border-top: solid 4rpx #f71b2d;
+  border-right: solid 4rpx #f71b2d;
+  transform: rotate(45deg);
+}
+
+.choudan_box {
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 21rpx;
+}
+.choudan_item {
+  width: 353rpx;
+  height: 136rpx;
+  border-radius:10rpx;
+  background: white;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 17rpx;
+  padding-top: 18rpx;
+  padding-bottom: 18rpx;
+  margin-right: 16rpx;
+}
+
+.choudan_item_image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 19rpx;
+  border-radius:16rpx;
+}
+.choudan_item_name {
+  font-size: 26rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+
+.choudan_item_oldprice {
+  font-size: 22rpx;
+  font-family: DIN-Regular, DIN;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  text-decoration: line-through;
+  margin-top: 18rpx;
+}
+
+.plus2 {
+  width: 33rpx;
+  height: 33rpx;
+  display: block;
+  margin-left: 16rpx;
+}
+.choudan_item_info {
+  display: flex;
+  align-items: center;
+}
+.choudan_item_price {
+  font-size: 30rpx;
+  font-family: DIN-Regular, DIN;
+  font-weight: 400;
+  color: rgba(247, 27, 45, 1);
+}
+
+.choudan_item_label {
+  font-size: 26rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  margin-left: 8rpx;
+}
+
+.choudan_item_box{
+  width: 200rpx;
+}

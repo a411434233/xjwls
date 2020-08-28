@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "天天领券",
+  "usingComponents": {
+    "goods-item": "/components/goodsItem/goodsItem"
+  }
+}

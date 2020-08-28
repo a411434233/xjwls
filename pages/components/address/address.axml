@@ -1,0 +1,21 @@
+<view class="box">
+  <scroll-view scroll-x="{{true}}" class="address {{item.is_default==1?'addressactive':''}}" a:for="{{addressdetail}}" a:key="index">
+    <view class="address_con">
+      <view class="address-l" onTap="goback" data-id="{{item.Id}}" data-province="{{item.Province}}" data-city="{{item.City}}" data-area="{{item.Area}}" data-address="{{item.Address}}" data-name="{{item.UserName}}" data-telephone="{{item.Tel}}">
+        <view class="address-box">
+          <view class="address-lt">{{item.Area}}{{item.Address}}</view>
+          <view class="default" a:if="{{item.IsDefault==1}}">默认</view>
+        </view>
+        <view class="address-lb">
+          <text>{{item.UserName}}</text>
+          <text style="margin-left:20rpx">{{item.Tel}}</text>
+        </view>
+      </view>
+      <view class="address_edit" catchTap="edit" data-id="{{item.Id}}">
+        <image mode="scaleToFill" src="/images/icon/bianji.png" />
+      </view>
+    </view>
+  </scroll-view>
+  <!--  -->
+  <view class="dibu" onTap="goaddressadd">添加地址</view>
+</view>

@@ -1,0 +1,75 @@
+<view class="search_box" onTap="search">
+  <view class="search">
+    <view class="css_sprites_home sousou"></view>
+    <view class='search_title'>请输入商品关键字进行搜索</view>
+  </view>
+</view>
+<scroll-view class="tabs2 {{itemShow?'show':'hiden'}}" scroll-x="{{true}}" scroll-left="{{left}}" scroll-with-animation="{{true}}" scroll-animation-duration="{{250}}">
+  <view class="tabs2_item" a:for="{{sorllTabs}}" key='{{index}}' a:key="index">
+    <view class="tabs2_view {{index==tabsIndex?'tabs2_active':''}}" data-index="{{index}}" onTap="clickTab">
+      {{item.ChannelName}}
+    </view>
+  </view>
+</scroll-view>
+<view class="search_box2">
+  <swiper class="swiperBox" circular="{{true}}" autoplay="{{true}}" indicator-dots="{{true}}">
+    <swiper-item a:for='{{BannerConfig}}' a:key='index' key='{{index}}'>
+      <image src="{{item.Pic}}" onTap='goBannerTop' data-index="{{index}}" lazy-load="{{true}}" mode="aspectFill" />
+    </swiper-item>
+  </swiper>
+  <view class="newindex-promise_box">
+    <view class="newindex-promise">
+      <view class="newindex-promise-m">
+        <view class="css_sprites_home css_sprites_home_size1"></view>
+        <view class="newindex-promise-mr">私人定制</view>
+      </view>
+      <view class="newindex-promise-m">
+        <view class="css_sprites_home css_sprites_home_size2"></view>
+        <view class="newindex-promise-mr">正品保证</view>
+      </view>
+      <view class="newindex-promise-m ">
+        <view class="css_sprites_home css_sprites_home_size3"></view>
+        <view class="newindex-promise-mr">闪电配送</view>
+      </view>
+      <view class="newindex-promise-m ">
+        <view class="css_sprites_home css_sprites_home_size4"></view>
+        <view class="newindex-promise-mr">天天特价</view>
+      </view>
+    </view>
+    <view class="newindex-icon">
+      <view class="newindex-icon-m" a:for="{{CategorysConfig}}" a:key="index" key='{{index}}' onTap="gotablist" data-pagetype="{{item.PageType}}" data-appId="{{item.ExtField1}}" data-pageurl="{{item.PageUrl}}">
+        <image class="newindex-icon-mt" src="{{item.ImgUrl}}" a:if="{{item.ImgUrl}}" mode="aspectFit" />
+        <view class="newindex-icon-mb">{{item.ChannelName}}</view>
+      </view>
+    </view>
+    <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}" duration="{{500}}" circular="{{true}}">
+      <swiper-item a:for="{{CenterBannerConfig}}" a:key="index" key='{{index}}'>
+        <image onTap="golingq" data-index="{{index}}" src="{{item.Pic}}" mode="aspectFill" lazy-load="{{true}}" />
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+<view class="proList" id="proList_box">
+  <scroll-view class="proList_tabs" scroll-x="{{true}}" scroll-left="{{left}}" scroll-with-animation="{{true}}" scroll-animation-duration="{{250}}">
+    <view class="tabs_item {{index==tabsIndex?'tabs_active':''}}" a:for="{{sorllTabs}}" key='{{index}}' a:key="index" data-index="{{index}}" onTap="clickTab">
+      <view class="tabs_itemName">{{item.ChannelName}}</view>
+      <view class="tabs_itemLabel">{{item.SubChannelName}}</view>
+    </view>
+  </scroll-view>
+  <view class="Index_list">
+    <view class="newActive" onTap='newActive' data-index='1'>
+      <image src="http://image.smjpin.cn/activity/pubuliu.png" mode="aspectFill" />
+    </view>
+    <block a:for="{{newlist}}">
+      <view class="newActive" a:if='{{index==4}}' onTap='newActive' data-index='2'>
+        <image src="http://image.smjpin.cn/activity/active1.png" mode='aspectFill' lazy-load="{{true}}" />
+      </view>
+      <goods-item item="{{item}}" />
+    </block>
+  </view>
+  <view class="bottom_tips" a:if="{{showdb}}">
+    <text class="bottom_tipstext"></text>
+    我是有底线的
+    <text class="bottom_tipstext"></text>
+  </view>
+</view>

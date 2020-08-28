@@ -1,0 +1,24 @@
+<view>
+  <view class="coupon1" a:if="{{evaluate.length==0}}">
+    <image mode="scaleToFill" src="http://image.smjpin.cn/orderbck.png" />
+    <view class="coupon1t">暂无评价</view>
+  </view>
+  <view class="evaluate-c" a:for="{{evaluate}}" a:key="index" a:if="{{evaluate.length!=0}}">
+    <view class="evaluate-ct flex_bs">
+      <view class="evaluate-ctl">
+        <image mode="scaleToFill" src="{{item.HeadImage}}" />
+        <text>{{item.UserName}}</text>
+        <text>{{item.CreateTime}}</text>
+      </view>
+      <view class="evaluate-ctr">
+        <image mode="scaleToFill" src="/images/icon/star2x.png" a:for="{{item.evaluatearr}}" a:key="index" />
+      </view>
+    </view>
+    <view class="evaluate-cdsc">{{item.Content}}</view>
+    <view class="evaluate-cimg">
+      <block a:for="{{item.evaluateImagesView}}" a:for-item="items" a:if="{{item.evaluateImagesView.length != 0}}">
+        <image mode="scaleToFill" src="{{items.ImageUrl}}" />
+      </block>
+    </view>
+  </view>
+</view>

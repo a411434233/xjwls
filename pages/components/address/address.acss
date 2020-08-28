@@ -1,0 +1,143 @@
+.box {
+  background: #f7f7f7;
+  width: 100%;
+  min-height: calc(100vh - 98rpx);
+  padding-bottom: 98rpx;
+  overflow: hidden;
+}
+
+.address-r {
+  margin-left: 30rpx;
+}
+
+.address-r image {
+  width: 42rpx;
+  height: 42rpx;
+}
+
+.address {
+  overflow-x: auto;
+  position: relative;
+  background: #fff;
+  width: 100%;
+  /* height: 176rpx; */
+  margin-top: 10rpx;
+}
+
+.address-l {
+  margin-top: 10rpx
+}
+
+.address-lt {
+  width: 500rpx;
+  margin-top: 10rpx;
+  display: inline-block;
+  align-items: center;
+  font-size: 32rpx;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.address-ltl {
+  font-weight: 600;
+}
+
+.address-lb {
+  font-size: 26rpx;
+  color: #575757;
+  margin-bottom: 20rpx
+}
+
+.address-r {
+  margin-right: 24rpx;
+}
+
+.addressactive {
+  background: #f9f9f9;
+}
+
+.addressactive .address-lt {
+  color: #02CFA7 !important;
+}
+
+.addressactive .address-lb {
+  color: #02CFA7 !important;
+}
+
+.dibu {
+  position: fixed;
+  bottom: 30rpx;
+  left: 45rpx;
+  width: 660rpx;
+  line-height: 88rpx;
+  background: #FF2740;
+  color: #fff;
+  text-align: center;
+  height: 88rpx;
+  font-size: 30rpx;
+  border-radius:44rpx;
+}
+
+.del {
+  background: #f00;
+  position: absolute;
+  right: -176rpx;
+  top: 0;
+  width: 176rpx;
+  text-align: center;
+  line-height: 176rpx;
+  font-size: 32rpx;
+  color: #fff;
+  height: 100%;
+}
+
+.address-lbd {
+  display: flex;
+  justify-content: space-between;
+  line-height: 60rpx;
+}
+
+.address-lbd image {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+}
+
+.address-lbd text {
+  font-size: 28rpx;
+  color: #666;
+  margin-left: 6rpx;
+}
+
+.default {
+  width: 66rpx;
+  height: 30rpx;
+  background-color: #FF2740;
+  border-radius: 2rpx;
+  text-align: center;
+  line-height: 30rpx;
+  color: #fff;
+  font-size: 22rpx;
+  margin-left: 20rpx
+}
+
+.address_con {
+  display: flex;
+  height: 128rpx;
+  align-items: center;
+  padding: 0 30rpx;
+  justify-content: space-between
+}
+
+.address_edit image {
+  width: 40rpx;
+  height: 40rpx
+}
+
+.address-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rpx
+}

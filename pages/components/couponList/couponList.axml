@@ -1,0 +1,22 @@
+<view class="items" a:for="{{list}}" a:key="index">
+  <image class="proImage" src="{{item.ProductImgUrl}}" lazy-load="{{true}}" mode="aspectFit" />
+  <view class="item_info">
+    <view class="item_title">
+      <text number-of-lines="1">{{item.DiscountTitle}}</text>
+    </view>
+    <view class="couPoneList">
+      <view class="label">24小时发货</view>
+      <view class="label">包邮到家</view>
+    </view>
+    <view class="quanhou">¥{{item.AfterProductPrice}}</view>
+  </view>
+  <view class="btnBox">
+    <view class="btn" onTap="getCoupone" data-index="{{index}}">立即领取</view>
+    <view class="btn_label">{{item.Receives}}人已领取</view>
+  </view>
+</view>
+<view class="bottom_tips" a:if="{{more}}">
+  <text class="bottom_tipstext"></text>
+  没有更多了
+  <text class="bottom_tipstext"></text>
+</view>

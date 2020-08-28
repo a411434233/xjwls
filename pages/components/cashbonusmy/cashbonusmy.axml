@@ -1,0 +1,22 @@
+<view>
+	<tabs tabs="{{tabs}}" showPlus="{{true}}" activeCls="activeCls" onTabClick="handleTabClick" activeTab="{{activeTab}}" swipeable="{{false}}">
+		<block a:for="{{tabs}}">
+			<tab-content a:key="index" tabId="{{index}}" activeTab="{{activeTab}}">
+				<view class="myprize" a:for="{{list}}" a:key="index" onTap="godetail" data-id="{{item.ProductId}}">
+					<image mode="scaleToFill" src="{{activeTab==0?'http://image.smjpin.cn/mybck02.png':'http://image.smjpin.cn/mybck01.png'}}" />
+					<view class="myprize-c">
+						<view class="myprize-cl">
+							<view class="myprize-clt">{{item.PrizeName}}</view>
+							<view class="myprize-clb">{{item.CreateTime}}</view>
+						</view>
+						<view class="myprize-cr">
+							<text>¥</text>
+							{{item.Price}}
+						</view>
+					</view>
+				</view>
+				<view class="myprizefalse" a:if="{{list.length==0}}">亲~暂无奖品！</view>
+			</tab-content>
+		</block>
+	</tabs>
+</view>

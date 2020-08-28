@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "客服与帮助",
+  "allowsBounceVertical": "NO",
+  "usingComponents": {
+    "collapse": "mini-ali-ui/es/collapse/index",
+    "collapse-item": "mini-ali-ui/es/collapse/collapse-item/index"
+  }
+}

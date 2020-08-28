@@ -1,0 +1,67 @@
+page {
+  background: #ffffff;
+}
+.item {
+  width: 680rpx;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 196rpx auto;
+  grid-column-gap: 22rpx;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 26rpx;
+  border-bottom: solid 2rpx #f0f0f0;
+  padding-top: 20rpx;
+}
+.item > view {
+  height: 196rpx;
+  position: relative;
+}
+.itemImage {
+  width: 196rpx;
+  height: 196rpx;
+  background: #e5e5e5;
+  border-radius: 10rpx;
+}
+.itemName {
+  font-size: 30rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: rgba(34, 34, 34, 1);
+}
+.smallLabel {
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  margin-top: 10rpx;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.huangou {
+  font-size: 26rpx;
+  font-family: PingFangSC-Regular, PingFang SC,serif;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+}
+.huangou_Price {
+  font-size: 30rpx;
+  font-family: HelveticaNeue-Bold, HelveticaNeue, serif;
+  font-weight: bold;
+  color: rgba(247, 27, 45, 1);
+}
+
+.plus2{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 19rpx;
+  bottom: 0;
+  z-index: 10;
+}

@@ -1,0 +1,3 @@
+<view>
+  <shop-card options="{{pluginOptions}}"></shop-card>
+</view>

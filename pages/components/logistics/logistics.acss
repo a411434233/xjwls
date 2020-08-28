@@ -1,0 +1,143 @@
+.box {
+  background: #f7f7f7;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.logistics-t {
+  width: 100%;
+  height: 156rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logistics-tl {
+  margin-left: 24rpx;
+  margin-top: 24rpx;
+  display: flex;
+}
+
+.logistics-tl image {
+  width: 104rpx;
+  height: 104rpx;
+  border-radius: 20rpx;
+}
+
+.logistics-tm {
+  margin-left: 24rpx;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 40rpx;
+}
+.logistics-tmb{
+  margin-top: 24rpx;
+}
+
+.logistics-tr {
+  margin-top: 24rpx;
+  margin-right: 24rpx;
+  width: 116rpx;
+  height: 40rpx;
+  font-size: 20rpx;
+  line-height: 40rpx;
+  text-align: center;
+  background: #ECFBF8;
+  border-radius: 50%;
+  color: #02CFA7;
+
+}
+
+
+
+
+
+.uni-timeline {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 15px;
+    background: white;
+    border-radius: 20rpx;   
+}
+
+.uni-timeline-item {                              /*----时间轴--每列---*/
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.uni-timeline-item .uni-timeline-item-divider {  /*----item-左圆点-----*/
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #bbb;
+}
+
+
+
+.uni-timeline-item-divider::after {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 0.5px;
+    height: 100vh;
+    content: '';
+    background: inherit;
+}
+
+ .uni-timeline-item-divider::before {
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    width: 0.5px;
+    height: 100vh;
+    content: '';
+    background: inherit;
+} 
+
+.uni-timeline-first-item .uni-timeline-item-divider::before{
+  height: 0
+}
+
+.uni-timeline-last-item .uni-timeline-item-divider::after{
+  height: 0
+}
+
+.uni-timeline-first-item .uni-timeline-item-divider {
+    background-color: #EF3342;
+}
+
+.uni-timeline-first-item .first-item-content{
+  color: #EF3342;
+}
+
+.uni-timeline-item .uni-timeline-item-content {   /*-----item--右内容----------*/
+    padding-left: 10px;
+}
+
+.uni-timeline-item-content .itemcontent{
+  font-size: 28rpx;
+}
+
+.uni-timeline-item-content .datetime {
+  color: #CCCCCC;
+  font-size: 24rpx;
+}

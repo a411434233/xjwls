@@ -1,0 +1,6 @@
+{
+  "pullRefresh": true,
+  "usingComponents": {
+    "goods-item": "/components/goodsItem/goodsItem"
+  }
+}

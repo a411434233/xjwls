@@ -1,0 +1,138 @@
+.quanwrap form {
+  text-align: center;
+}
+.quanwrap {
+  width: 100%;
+  height: 900rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  background: #f2f2f2;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.quanwrap-t {
+  width: 100%;
+  text-align: center;
+  margin-top: 44rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333333;
+  position: relative;
+}
+
+.quanwrap-t image {
+  position: absolute;
+  top: -6rpx;
+  right: 44rpx;
+  width: 27rpx;
+  height: 27rpx;
+}
+
+.detailq_m0 {
+  margin: 0 auto;
+  margin-top: 20rpx;
+  width: 700rpx;
+  height: 150rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background: url('/images/icon/coupon08.png');
+  background-size: 100% 100%;
+}
+
+.discount_min {
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 39, 64, 1);
+  text-align: center;
+}
+
+.quanLabel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 34rpx;
+  width: 90rpx;
+  border-radius: 8rpx 0 8rpx 0;
+  font-size: 22rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #ff2740;
+  text-align: center;
+  line-height: 34rpx;
+  background: rgba(255, 75, 52, 0.15);
+}
+
+.detailq_ml {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.ispab {
+  width: 135rpx;
+  height: 50rpx;
+  background: #ff2740;
+  border-radius: 27rpx;
+  position: absolute;
+  right: 32rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
+  font-size: 26rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.detailq_title {
+  font-size: 26rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: #ff2740;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-bottom: 4rpx;
+}
+
+.detailq_price {
+  width: 197rpx;
+  height: 114rpx;
+  color: #ffffff;
+  font-size: 80rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-right: dashed #ff4b34 2rpx;
+}
+
+.detailq_desc {
+  font-size: 26rpx;
+  color: #ff2740;
+  margin-right: 29rpx;
+  margin-left: 32rpx;
+}
+
+.discountAmountNum {
+  color: #ff2740;
+}
+
+.discountAmountNum::before {
+  content: '¥';
+  font-size: 29rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #ff2740;
+}

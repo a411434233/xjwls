@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "红包福利",
+  "usingComponents": {
+    "bc-module": "miniapp-bc-user/es/bc-module/bc-module"
+  }
+}

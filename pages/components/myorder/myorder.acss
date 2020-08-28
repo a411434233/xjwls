@@ -1,0 +1,233 @@
+.myorder-t {
+  width: 100%;
+  line-height: 88rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  font-size: 32rpx;
+  color: #999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.myorderactice {
+  color: #ff2740;
+  border-bottom: 4rpx solid #ff2740;
+}
+
+.coupon1 {
+  width: 100%;
+  margin-top: 288rpx;
+  text-align: center;
+}
+
+.coupon1 image {
+  margin-top: 20rpx;
+  width: 319rpx;
+  height: 266rpx;
+}
+
+.coupon1t {
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: rgba(153, 153, 153, 1);
+}
+
+
+/*  */
+
+.myorder-c {
+  width: 710rpx;
+  background: #fff;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+
+.top1 {
+  width: 100%;
+  height: 90rpx;
+}
+
+.myorder-ct {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 24rpx;
+  /* border-bottom: 2rpx solid #ebebeb; */
+  line-height: 80rpx;
+}
+
+.myorder-ctl {
+  color: #999;
+  font-size: 24rpx;
+}
+
+.myorder-ctr {
+  margin-right: 24rpx;
+  color: #02cfa7;
+}
+
+.myorder-cc {
+  margin-top: 10rpx;
+}
+
+.goodsinfo-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* border-bottom: 2rpx solid #eee; */
+  padding-bottom: 20rpx;
+}
+
+.goodsinfo-cl {
+  margin-left: 24rpx;
+  display: flex;
+}
+
+.goodsinfo-cl image {
+  width: 138rpx;
+  height: 138rpx;
+  border-radius: 10rpx;
+}
+
+.goodsinfo-cr {
+  margin-left: 24rpx;
+}
+
+.goodsinfo-crt {
+  font-size: 28rpx;
+  color: #000;
+  letter-spacing: 2rpx;
+  font-weight: 600;
+  width: 370rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.goodsinfo-crm {
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: rgba(153, 153, 153, 1);
+}
+
+.goodsinfo-crb {
+  margin-top: 44rpx;
+  font-size: 24rpx;
+  color: #ff2740;
+  display: flex;
+  justify-content: space-between;
+}
+
+.goodsinfo-crbr {
+  margin-right: 24rpx;
+  color: #000;
+  font-size: 28rpx;
+}
+
+.goodsinfo-crbl text {
+  font-size: 20rpx;
+}
+
+.myorder-cb {
+  width: 100%;
+  text-align: right;
+  line-height: 58rpx;
+  font-size: 24rpx;
+  color: rgba(153, 153, 153, 1);
+}
+
+.myorder-cb text:nth-of-type(1) {
+  margin-left: 40rpx;
+}
+
+.myorder-cb text:nth-of-type(2) {
+  color: #f71b2d;
+  font-size: 20rpx;
+}
+
+.myorder-cb text:nth-of-type(3) {
+  margin-right: 24rpx;
+  color: #ff2740;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.anniu {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20rpx;
+}
+
+.anniu-r {
+  color: #999999;
+  font-size: 28rpx;
+  border: 2rpx solid #999999;
+  margin-right: 24rpx;
+  border-radius: 30rpx;
+  width: 160rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anniu-rsure {
+  border: none;
+}
+
+.anniu-rr {
+  border: 2rpx solid #ff2740;
+  color: #fff;
+  background: #ff2740;
+  border-radius: 39rpx;
+}
+
+.anniu-l {
+  margin-right: 24rpx;
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  background: #fff;
+  border: 2rpx solid #ebebeb;
+  color: #666;
+  font-size: 28rpx;
+}
+
+.anniu-rsure {
+  color: #fff;
+  background: #ff2740;
+}
+
+.lease-boxtr {
+  color: #ff2740;
+  font-size: 24rpx;
+  margin-right: 24rpx;
+}
+
+.lease-boxtr1 {
+  color: #333;
+  font-size: 24rpx;
+  margin-right: 24rpx;
+}
+
+.lease-boxtr2 {
+  color: #ff2740;
+  font-size: 24rpx;
+  margin-right: 24rpx;
+}
+
+.lease-boxtr1 text {
+  
+  color: #02cfa7;
+}
+
+.goodsinfo-crbrb {
+  text-align: right;
+  color: #999;
+  line-height: 46rpx;
+}

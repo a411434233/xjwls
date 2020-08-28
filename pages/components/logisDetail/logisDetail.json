@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "物流详情",
+  "usingComponents":{
+    "page-result": "mini-ali-ui/es/page-result/index"
+  }
+}

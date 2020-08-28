@@ -1,0 +1,256 @@
+.myorder-t {
+  width: 100%;
+  line-height: 88rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  font-size: 28rpx;
+  color: #999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  border-bottom: 2rpx solid rgba(246, 246, 246, 1);
+}
+
+.myorder-tm {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 32rpx;
+}
+
+.myorder-tm image {
+  width: 20rpx;
+  height: 12rpx;
+  line-height: 12rpx;
+}
+
+.myorderactice {
+  color: rgba(249, 67, 11, 1);
+  border-bottom: 2rpx solid rgba(249, 67, 11, 1);
+}
+
+.jt-pa {
+  position: absolute;
+  top: 28rpx;
+  right: 36rpx;
+  line-height: 12rpx;
+}
+
+.jt-pa image {
+  width: 24rpx;
+  height: 29rpx;
+}
+
+.recommendProwrap {
+  background: #fff;
+  margin-top: 88rpx;
+}
+
+/*  */
+
+.listbox {
+  margin: 0 24rpx;
+}
+
+.listbox:nth-of-type(1),
+.listbox:nth-of-type(2) {
+  margin-top: 90rpx;
+}
+
+.listbox-t {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30rpx 0 10rpx;
+}
+
+.listbox-tl {
+  width: 47rpx;
+  height: 4rpx;
+  background: linear-gradient(138deg, rgba(153, 206, 146, 1) 0%, rgba(89, 193, 200, 1) 100%);
+  box-shadow: 2px 2px 4px 0px rgba(153, 201, 147, 1);
+}
+
+.listbox-tm {
+  padding: 0 20rpx;
+  color: #64c5cb;
+  font-size: 28rpx;
+}
+
+.listbox-c {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listbox-cm {
+  margin-top: 20rpx;
+  width: 336rpx;
+  height: 499rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 2rpx 2rpx 4rpx 0rpx rgba(204, 204, 204, 1);
+  border-radius: 24rpx;
+  overflow: hidden;
+}
+
+.listbox-cm:nth-of-type(even) {
+  margin-left: 20rpx;
+}
+
+.listbox-cm image {
+  width: 336rpx;
+  height: 336rpx;
+}
+
+.listbox-cmt {
+  width: 90%;
+  margin: 20rpx 0 0;
+  margin-left: 5%;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.listbox-cmm {
+  width: 90%;
+  margin: 10rpx 0 0;
+  margin-left: 5%;
+  line-height: 33rpx;
+  color: #999;
+  font-size: 24rpx;
+  font-weight: 600;
+  text-decoration: line-through;
+  font-family: 'DIN Alternate';
+}
+
+.listbox-cmb {
+  width: 90%;
+  margin-left: 5%;
+  line-height: 40rpx;
+  color: #ff3c3c;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.coupon1 {
+  width: 100%;
+  margin-top: 288rpx;
+  text-align: center;
+}
+
+.coupon1 image {
+  margin-top: 20rpx;
+  width: 289rpx;
+  height: 248rpx;
+}
+
+.coupon1t {
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+
+/*  */
+
+.info-bottom {
+  background: #fff;
+  margin-top: 19rpx;
+  overflow: hidden;
+  padding-bottom: 30rpx;
+}
+
+.info-bottom-t {
+  height: 63rpx;
+  margin: 27rpx 0 0 46rpx;
+  font-size: 28rpx;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 600;
+  line-height: 40rpx;
+}
+
+.info-bottom-m {
+  margin: 20rpx 32rpx 0;
+  display: flex;
+  border-bottom: 2rpx solid rgba(236, 236, 236, 1);
+  padding-bottom: 20rpx;
+}
+
+.info-bottom-m:nth-last-of-type(1) {
+  border-bottom: none;
+}
+
+.info-bottom-ml {
+  padding: 12rpx;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 8rpx;
+  background: #fff;
+}
+
+.info-bottom-ml image {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 8rpx;
+}
+
+.info-bottom-mrb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-bottom-mrbr image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.info-bottom-mr {
+  margin-left: 31rpx;
+}
+
+.info-bottom-mrt {
+  margin-top: 12rpx;
+  width: 450rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 2rpx;
+}
+
+.info-bottom-mrm {
+  margin-top: 6rpx;
+  width: 450rpx;
+  line-height: 33rpx;
+  font-size: 24rpx;
+  color: rgba(153, 153, 153, 1);
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 2rpx;
+}
+
+.info-bottom-mrb {
+  margin-top: 28rpx;
+}
+
+.info-bottom-mrbl {
+  font-size: 38rpx;
+  color: rgba(249, 67, 11, 1);
+  font-weight: 500;
+}
+
+.info-bottom-mrbl text {
+  font-size: 28rpx;
+}
+
+.bottom_tips {
+  background: #fff;
+}

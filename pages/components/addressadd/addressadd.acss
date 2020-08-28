@@ -1,0 +1,133 @@
+.box {
+  background: #f7f7f7;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.address-wrap {
+  width: 100%;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-top: 10rpx
+}
+
+.address-t {
+  line-height: 80rpx;
+  font-size: 32rpx;
+  color: #333;
+  font-weight: 600;
+  margin-left: 24rpx;
+}
+
+.address-city {
+  line-height: 98rpx;
+}
+
+.address-cityr {
+  flex: 0 0 15%;
+  text-align: center
+}
+
+.address-cityl {
+  font-size: 35rpx;
+  margin-left: 15rpx;
+  color: #ccc;
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 0 0 65%
+}
+
+.address-cityr image {
+  width: 17rpx;
+  height: 32rpx;
+}
+
+.address-ditydetail {
+  padding-left: 30rpx;
+  font-size: 32rpx;
+  color: #333;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #ebebeb;
+}
+
+.address-ditydetail input {
+  width: 600rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+}
+
+.address-name, .address-tel, .address-email {
+  line-height: 98rpx;
+  margin-left: 24rpx;
+  border-bottom: 2rpx solid #ebebeb;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.address-moren {
+  margin-left: 24rpx;
+  line-height: 98rpx;
+  width: 726rpx;
+  border-bottom: 2rpx solid #ebebeb;
+}
+
+.address-moren image {
+  width: 40rpx;
+  height: 50rpx;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+
+.address-moren text {
+  margin-left: 20rpx;
+  margin-right: 280rpx;
+  vertical-align: middle;
+  font-size: 32rpx;
+  color: #666666;
+}
+
+.delect {
+  line-height: 120rpx;
+  color: #FF7B56;
+  font-size: 28rpx;
+  margin-left: 24rpx;
+}
+
+.saveaddress1 {
+  margin: 0 auto;
+  font-size: 30rpx;
+  width: 660rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  background: rgba(255, 39, 64, 1);
+  border-radius: 44rpx;
+  position: fixed;
+  left: 45rpx;
+  bottom: 30rpx;
+}
+
+
+.deladdress1 {
+  margin: 0 auto;
+  font-size: 30rpx;
+  width: 660rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-weight: 600;
+  color: #919191;
+  text-align: center;
+  position: fixed;
+  left: 45rpx;
+  bottom: 158rpx;
+  background: rgba(216, 216, 216, 1);
+  border-radius: 44rpx;
+}

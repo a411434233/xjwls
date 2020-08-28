@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="177px" height="167px" viewBox="0 0 177 167" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>编组</title>
+    <desc>Created with Sketch.</desc>
+    <g id="连贯" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="下单成功--copy备份" transform="translate(-305.000000, -203.000000)">
+            <g id="编组" transform="translate(305.000000, 201.275313)">
+                <g id="Group-2" transform="translate(149.423914, 32.000000) rotate(18.000000) translate(-149.423914, -32.000000) translate(115.923914, 10.000000)" fill="#FF2740">
+                    <rect id="Rectangle-28" transform="translate(33.231233, 15.689726) rotate(27.000000) translate(-33.231233, -15.689726) " x="30.4712331" y="4.64972581" width="5.52" height="22.08" rx="2.76"></rect>
+                    <rect id="Rectangle-28-Copy" transform="translate(55.053865, 35.807722) rotate(64.000000) translate(-55.053865, -35.807722) " x="52.2938654" y="24.7677224" width="5.52" height="22.08" rx="2.76"></rect>
+                    <rect id="Rectangle-28-Copy-2" transform="translate(5.706825, 11.457658) rotate(-11.000000) translate(-5.706825, -11.457658) " x="2.94682527" y="0.417658246" width="5.52" height="22.08" rx="2.76"></rect>
+                </g>
+                <circle id="Oval" fill="#FF2740" cx="70.5" cy="98.2246873" r="70.5"></circle>
+                <polyline id="Rectangle" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" transform="translate(70.895811, 90.540682) rotate(-45.000000) translate(-70.895811, -90.540682) " points="96.7916214 104.356677 45 104.356677 45.9400528 76.7246873"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

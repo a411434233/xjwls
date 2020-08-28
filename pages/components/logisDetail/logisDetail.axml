@@ -1,0 +1,5 @@
+<view>
+    <component a:if="{{isReady}}" diviceType="{{DeviceType}}" is="dynamic-plugin://2021001155688526/express-find-helper" logisticsCode="{{LogisticsCode}}" tradeNo="{{TradeNo}}" waybillNo="{{WaybillNo}}"></component>
+</view>
+
+<page-result a:if="{{!isReady}}" type="empty" title="什么都没有" brief=""></page-result>

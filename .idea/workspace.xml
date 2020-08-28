@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="sortByName" value="true" />
+  </component>
+  <component name="ProjectId" id="1gOK3JeC2Po7eHDAMqaIluw43dJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../exp" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.常规" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\y\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="" />
+      <created>1597979998658</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597979998658</updated>
+      <workItem from="1597979999852" duration="105000" />
+      <workItem from="1597980113294" duration="468000" />
+      <workItem from="1597980594649" duration="48000" />
+      <workItem from="1597980654016" duration="38000" />
+      <workItem from="1597980750050" duration="1064000" />
+      <workItem from="1597982309283" duration="886000" />
+      <workItem from="1597992117070" duration="875000" />
+      <workItem from="1598261181800" duration="1593000" />
+      <workItem from="1598316632932" duration="1745000" />
+      <workItem from="1598318387111" duration="1008000" />
+      <workItem from="1598319440787" duration="1196000" />
+      <workItem from="1598321401860" duration="3731000" />
+      <workItem from="1598327970705" duration="3054000" />
+      <workItem from="1598338935435" duration="89000" />
+      <workItem from="1598339919968" duration="1714000" />
+      <workItem from="1598343720178" duration="3398000" />
+      <workItem from="1598349010514" duration="183000" />
+      <workItem from="1598349201557" duration="423000" />
+      <workItem from="1598403326214" duration="5114000" />
+      <workItem from="1598577008268" duration="106000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="907" y="382" key="#Inspections" timestamp="1598321781093">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="907" y="382" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1598321781093" />
+    <state x="1029" y="526" key="#Notifications" timestamp="1598322675191">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1029" y="526" key="#Notifications/0.0.2560.1400@0.0.2560.1400" timestamp="1598322675191" />
+    <state x="736" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598403707932">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="736" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598403707932" />
+    <state x="1022" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598318410240">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1022" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1598318410240" />
+    <state x="1346" y="519" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1598349191659">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1346" y="519" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598349191659" />
+    <state x="1011" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598322949311">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1011" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598322949311" />
+    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1598327993319">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1598327993319" />
+    <state x="1061" y="455" key="FileChooserDialogImpl" timestamp="1598349187988">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1598349187988" />
+    <state x="383" y="487" width="992" height="773" key="SettingsEditor" timestamp="1598405712482">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="383" y="487" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1598405712482" />
+    <state x="979" y="298" width="603" height="804" key="find.popup" timestamp="1598328092457">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="979" y="298" width="603" height="804" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1598328092457" />
+    <state x="1073" y="559" width="478" height="401" key="scopes" timestamp="1598334690976">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1073" y="559" width="478" height="401" key="scopes/0.0.2560.1400@0.0.2560.1400" timestamp="1598334690976" />
+  </component>
+</project>

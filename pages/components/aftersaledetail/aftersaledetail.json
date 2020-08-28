@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "售后详情",
+  "usingComponents": {
+    "steps": "mini-ali-ui/es/steps/index"
+  }
+}

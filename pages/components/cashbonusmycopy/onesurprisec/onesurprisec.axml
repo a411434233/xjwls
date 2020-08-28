@@ -1,0 +1,174 @@
+<view class="box">
+  <view class="onesurprisea-t">
+    <view class="onesurprisea-twrap">
+      <view class="onesurprisea-tl">闲九味 X 余额宝一分惊喜</view>
+      <view class="onesurprisea-tr">昨日有收益 今日抽大奖</view>
+    </view>
+  </view>
+  <view class="onesurprisea-timg" onTap="gocollectf">
+    <form onSubmit="onSubmit" report-submit="true" data-id="">
+      <button formType="submit" hover-class="button-hover">
+        <image mode="scaleToFill" src="http://image.smjpin.cn/onesurprisea01.png" />
+      </button>
+    </form>
+  </view>
+  <view class="onesurprisea-timg1">
+    <form onSubmit="onSubmit" report-submit="true" data-id="">
+      <button formType="submit" hover-class="button-hover">
+        <view class="onesurprisea-timg1t">每日必买特惠专区</view>
+        <view class="onesurprisea-cwrap onesurprisea-cmwrap">
+          <view class="onesurprisea-c onesurprisea-cm" a:for="{{list}}" a:key='{{index}}' onTap="golqs" data-id="{{item.product.ProductId}}" data-DiscountId="{{item.DiscountId}}">
+            <view class="onesurprisea-cimg">
+              <form onSubmit="onSubmit" report-submit="true" data-id="{{item.product.ProductId}}">
+                <button formType="submit" hover-class="button-hover">
+                  <image mode="scaleToFill" src="{{item.product.ProductImageUrl}}" />
+                </button>
+              </form>
+            </view>
+            <view class="onesurprisea-cname">{{item.product.ProductName}}</view>
+            <view class="onesurprisea-cprice price_app">
+              特惠价 ¥
+              <text>{{(item.product.SalesPrice - item.DiscountPrice).toFixed(2)}}</text>
+            </view>
+            <view class="onesurprisea-cbutton onesurprisea-cmbutton">立即购买</view>
+            <view class="onesurprisea-cposion" a:if="{{item.DiscountPrice>0}}">
+              领券减{{item.DiscountPrice}}
+            </view>
+          </view>
+        </view>
+      </button>
+    </form>
+  </view>
+  <view class="onesurprisec-luck" onTap="goluck">
+    <form onSubmit="onSubmit" report-submit="true" data-id="">
+      <button formType="submit" hover-class="button-hover">
+        <image mode="scaleToFill" src="http://image.smjpin.cn/newsuprise01.png" />
+      </button>
+    </form>
+  </view>
+  <view class="onesurprisec-else onesurprisec-else1">
+    <form onSubmit="onSubmit" report-submit="true" data-id="">
+      <button formType="submit" hover-class="button-hover">
+        <view class="onesurprisec-elset">数据线</view>
+        <view class="onesurprisec-elsem">
+          <view class="onesurprisec-elseml1" onTap="gocollectsjx">
+            <image mode="scaleToFill" src="http://image.smjpin.cn/typec.png" />
+          </view>
+          <view class="onesurprisec-elsemr2" onTap="gocollectsjxcopy">
+            <image mode="scaleToFill" src="http://image.smjpin.cn/typec01.png" />
+          </view>
+        </view>
+        <view class="onesurprisec-elseb onesurprisec-elseb1">
+          <view class="onesurprisec-elsebl">快速充电数据线</view>
+          <view class="onesurprisec-elsebr">免费领</view>
+        </view>
+      </button>
+    </form>
+  </view>
+  <view class="onesurprisec-else" onTap="gocollectsjk">
+    <form onSubmit="onSubmit" report-submit="true" data-id="">
+      <button formType="submit" hover-class="button-hover">
+        <view class="onesurprisec-elset">免费定制手机壳</view>
+        <view class="onesurprisec-elsem">
+          <view class="onesurprisec-elseml">
+            <image mode="scaleToFill" src="http://image.smjpin.cn/newsuprise02.png" />
+          </view>
+          <view class="onesurprisec-elsemr">
+            <view class="onesurprisec-elsemrt">
+              <image mode="scaleToFill" src="http://image.smjpin.cn/newsuprise03.png" />
+            </view>
+            <view class="onesurprisec-elsemrb">
+              <image mode="scaleToFill" src="http://image.smjpin.cn/newsuprise04.png" />
+            </view>
+          </view>
+        </view>
+        <view class="onesurprisec-elseb">
+          <view class="onesurprisec-elsebl">可打印照片/手机壳等生活小物件</view>
+          <view class="onesurprisec-elsebr">免费领</view>
+        </view>
+      </button>
+    </form>
+  </view>
+  <view class="onesurprisec-else" onTap="gocollectzj">
+    <form onSubmit="onSubmit" report-submit="true" data-id="">
+      <button formType="submit" hover-class="button-hover">
+        <view class="onesurprisec-elset">免费领一本畅销书</view>
+        <view class="onesurprisec-elsem">
+          <view class="onesurprisec-elseml">
+            <image mode="scaleToFill" src="http://image.smjpin.cn/newsuprise05.png" />
+          </view>
+          <view class="onesurprisec-elsemr">
+            <view class="onesurprisec-elsemrt">
+              <image mode="scaleToFill" src="http://image.smjpin.cn/newsuprise06.png" />
+            </view>
+            <view class="onesurprisec-elsemrb">
+              <image mode="scaleToFill" src="http://image.smjpin.cn/newsuprise07.png" />
+            </view>
+          </view>
+        </view>
+        <view class="onesurprisec-elseb">
+          <view class="onesurprisec-elsebl">所有好书任意看</view>
+          <view class="onesurprisec-elsebr">免费领</view>
+        </view>
+      </button>
+    </form>
+  </view>
+  <view class="onesurprisea-ring" onTap="gorings">
+    <form onSubmit="onSubmit" report-submit="true" data-id="">
+      <button formType="submit" hover-class="button-hover">
+        <view class="onesurprisea-ring-t">送祝福 抖音热铃榜单</view>
+        <view class="onesurprisea-ring-b">
+          <view class="onesurprisea-ring-bl">
+            <view class="onesurprisea-ring-bll">
+              <image mode="scaleToFill" src="http://image.smjpin.cn/newsuprise08.png" />
+            </view>
+            <view class="onesurprisea-ring-blr">
+              <view class="onesurprisea-ring-blt">百花香</view>
+              <view class="onesurprisea-ring-blb">魏新雨 — 爱情海汹涌…</view>
+            </view>
+          </view>
+          <view class="onesurprisea-ring-br">设铃声</view>
+        </view>
+        <view class="onesurprisea-ring-b">
+          <view class="onesurprisea-ring-bl">
+            <view class="onesurprisea-ring-bll">
+              <image mode="scaleToFill" src="http://image.smjpin.cn/newsuprise09.png" />
+            </view>
+            <view class="onesurprisea-ring-blr">
+              <view class="onesurprisea-ring-blt">一个人挺好</view>
+              <view class="onesurprisea-ring-blb">孟颖-爱情这东西…</view>
+            </view>
+          </view>
+          <view class="onesurprisea-ring-br">设铃声</view>
+        </view>
+        <view class="onesurprisea-ring-b">
+          <view class="onesurprisea-ring-bl">
+            <view class="onesurprisea-ring-bll">
+              <image mode="scaleToFill" src="http://image.smjpin.cn/newsuprise10.png" />
+            </view>
+            <view class="onesurprisea-ring-blr">
+              <view class="onesurprisea-ring-blt">你笑起来真好看</view>
+              <view class="onesurprisea-ring-blb">李昕融/樊桐舟-像春…</view>
+            </view>
+          </view>
+          <view class="onesurprisea-ring-br">设铃声</view>
+        </view>
+      </button>
+    </form>
+  </view>
+  <view class="onesurprisea-timg2" onTap="gohl">
+    <form onSubmit="onSubmit" report-submit="true" data-id="">
+      <button formType="submit" hover-class="button-hover">
+        <image mode="scaleToFill" src="http://image.smjpin.cn/onesurprisea05.png" />
+      </button>
+    </form>
+  </view>
+</view>
+<view class="imgfixed" onTap="goluck">
+  <form onSubmit="onSubmit" report-submit="true" data-id="">
+    <button formType="submit" hover-class="button-hover">
+      <image mode="scaleToFill" src="http://image.smjpin.cn/newsuprise11.gif" />
+    </button>
+  </form>
+</view>
+<life-follow a:if="{{show}}" sceneId="32753c51f71b443da4e354cbc2782346" />

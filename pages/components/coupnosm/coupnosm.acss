@@ -1,0 +1,22 @@
+.box-wrap{
+  overflow: hidden;
+  background: #fff;
+}
+.sm-t{
+  margin: 30rpx 0 10rpx 32rpx;
+  font-size: 24rpx;
+  font-weight: 600;
+  color: #666;
+}
+.sm-title{
+  margin-left:32rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.sm-m{
+  margin:0 32rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #666;
+}

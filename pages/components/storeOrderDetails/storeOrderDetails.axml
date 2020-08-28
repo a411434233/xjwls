@@ -1,0 +1,86 @@
+<view class="order-details-content">
+  <!-- 头部信息 -->
+  <view class="top-content">
+    <!-- 取货信息 -->
+    <view class="pick-up-content" a:if="{{OrderType==2}}">
+      <view class="tit1">商品正在整理中，请凭取货码取货</view>
+      <view class="tit2">取货码：{{PickUpCode}}</view>
+      <!-- 已失效 -->
+      <view class="invalid-status" a:if="{{OrderStatus!=1}}">取货码已失效</view>
+      <image mode="scaleToFill" src="{{codeUrl}}" class="code-pic" onTap="showCode" />
+      <view class="pick-tit">取货信息</view>
+      <view class="pick-time pick-time-top">
+        <!-- 取货时间: -->
+        <view class="pick-tit1">取货时间:</view>
+        <view class="pick-tit2">{{Delivery}}</view>
+        <view class="pick-tit3"></view>
+      </view>
+      <view class="pick-time pick-time-top">
+        <view class="pick-tit1">商家地址:</view>
+        <view class="pick-tit2">{{storeInfo.ShopAddress}}</view>
+        <view class="pick-tit3"></view>
+      </view>
+      <view class="pick-time ">
+        <view class="pick-tit1 color" onTap='pickSale'>查看其余可自提门店</view>
+      </view>
+      <view onTap="goStore" class="go-address"></view>
+    </view>
+    <!-- 清单列表 -->
+    <view class="detailed-list">
+      <view class="data-tit">{{ShopName}}</view>
+      <view class="data-content ">
+        <view class="data-item" a:for="{{ShopOrderProductList}}" a:key="index" a:for-index="index">
+          <view class="data-item-l">
+            <view class="item-tit">{{item.ProductName}}</view>
+          </view>
+          <view class="data-item-r">
+            <view class="data-item-count">x{{item.Qty}}</view>
+            <view class="data-item-price">¥{{item.Price}}</view>
+          </view>
+        </view>
+      </view>
+      <!-- 商家代金券 -->
+      <view class="discount-con discount-con-top" a:if="{{Discount}}">
+        <view class="discount-l">
+          <view class="discount-type">减</view>
+          <view class="discount-tit">商家代金券</view>
+        </view>
+        <view class="discount-r">-¥{{DiscountPrice}}</view>
+      </view>
+      <!-- 优惠金额 -->
+      <view class="discount-money" a:if="{{Discount}}">
+        <view class="dis1">已优惠</view>
+        <view class="dis2">-¥{{DiscountPrice}}</view>
+        <view class="dis3">小计¥{{(DiscountPrice-OrderPrice).toFixed(2)}}</view>
+      </view>
+      <view class="order-status-list">
+        <view onTap="payment" a:if="{{OrderStatus==0}}">付款</view>
+        <view onTap="tapCancelOrder" a:if="{{OrderStatus==1}}">取消订单</view>
+      </view>
+    </view>
+    <view class="order-mes">
+      <view class="order-tit">订单信息</view>
+      <view class="pick-time order-time">
+        <view class="pick-tit1">下单时间:</view>
+        <view class="pick-tit2">{{CreateTime}}</view>
+      </view>
+      <view class="pick-time order-code">
+        <view class="pick-tit1">订单编号:</view>
+        <view class="pick-tit2">{{orderCode}}</view>
+      </view>
+      <view class="pick-time order-code">
+        <view class="pick-tit1">备注信息:</view>
+        <view class="pick-tit2">{{!Remark?'暂无备注信息':Remark}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="modal" onTap="tapCloseModeal" a:if="{{cancelModel==true}}"></view>
+  <view class="modal-content" a:if="{{cancelModel==true}}">
+    <view class="modal-tit1">取消订单并退款</view>
+    <view class="modal-tit2">退款将原路返回到你的支付账户</view>
+    <view class="bottom-btn">
+      <view onTap="tapCancel">取消订单</view>
+      <view onTap="tapCloseModeal">考虑一下</view>
+    </view>
+  </view>
+</view>

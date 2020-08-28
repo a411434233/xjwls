@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="20px" viewBox="0 0 15 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Combined Shape备份</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="77.1468144%" x2="1.6189487%" y2="23.7321716%" id="linearGradient-1">
+            <stop stop-color="#FF6005" offset="0%"></stop>
+            <stop stop-color="#F71B2D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="连贯" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="购物车-空状态备份-6" transform="translate(-454.000000, -1899.000000)" fill="url(#linearGradient-1)">
+            <path d="M471,1916 L452,1916 L452,1903.15373 C452.130317,1902.49593 452.710539,1902 453.406593,1902 C453.713331,1902 453.997574,1902.09631 454.230733,1902.26034 L459.485073,1907.51468 C460.605067,1908.63467 462.420936,1908.63467 463.54093,1907.51468 L468.830974,1902.22464 C469.053601,1902.08242 469.318114,1902 469.601878,1902 C470.283831,1902 470.854598,1902.47604 471,1903.11395 L471,1916 Z" id="Combined-Shape备份" transform="translate(461.500000, 1909.000000) rotate(90.000000) translate(-461.500000, -1909.000000) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,186 @@
+page {
+  background: rgba(109, 152, 254, 1);
+}
+.superc {
+  width: 100%;
+  height: 752rpx;
+  display: block;
+}
+.super1 {
+  width: 375rpx;
+  height: 84rpx;
+  display: block;
+  margin: auto;
+  margin-top: 30rpx;
+}
+
+.goods_image {
+  width: 303rpx;
+  height: 303rpx;
+  background: rgba(216, 216, 216, 1);
+  border-radius: 16rpx 0rpx 0rpx 16rpx;
+}
+
+.item {
+  width: 710rpx;
+  height: 303rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 16rpx;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 24rpx;
+  display: flex;
+}
+.goods_info {
+  margin-left: 26rpx;
+}
+.goods_lijian {
+  font-size: 34rpx;
+  font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+  margin-top: 24rpx;
+}
+.goods_daoshoujia {
+  font-size: 38rpx;
+  font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
+  font-weight: 800;
+  color: rgba(253, 20, 44, 1);
+  height: 60rpx;
+  background: rgba(255, 235, 102, 1);
+  border-radius: 16rpx;
+  line-height: 60rpx;
+  box-sizing: border-box;
+  padding-left: 14rpx;
+  margin-top: 14rpx;
+}
+
+.goods_name {
+  font-size: 34rpx;
+  font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+  margin-top: 18rpx;
+}
+.goods_btn {
+  display: flex;
+  align-items: center;
+  height: 70rpx;
+  background: linear-gradient(180deg, rgba(253, 121, 48, 1) 0%, rgba(255, 33, 43, 1) 49%, rgba(252, 14, 44, 1) 100%);
+  border-radius: 35rpx;
+  box-sizing: border-box;
+  padding-right: 40rpx;
+  margin-top: 24rpx;
+}
+.goods_price {
+  font-size: 38rpx;
+  font-family: HelveticaNeue-Bold, HelveticaNeue;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  border-right: dashed 2rpx #ffffff;
+  box-sizing: border-box;
+  padding-left: 23rpx;
+  padding-right: 15rpx;
+}
+.goods_price::before {
+  content: '¥';
+  font-size: 20rpx;
+  font-family: HelveticaNeue;
+  color: rgba(255, 255, 255, 1);
+  margin-right: 4rpx;
+}
+
+.goods_add {
+  font-size: 32rpx;
+  font-family: FZLTDHK--GBK1-0, FZLTDHK--GBK1;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 17rpx;
+}
+
+.super2 {
+  width: 245rpx;
+  height: 84rpx;
+  margin: auto;
+  display: block;
+  background-size: cover;
+  margin-top: 30rpx;
+  margin-bottom: 24rpx;
+}
+
+.super3 {
+  width: 435rpx;
+  height: 84rpx;
+  margin: auto;
+  display: block;
+  background-size: cover;
+  margin-top: 30rpx;
+  margin-bottom: 24rpx;
+}
+
+/*  */
+.goods_item2 {
+  width: 230rpx;
+  height: 380rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 8rpx;
+  overflow: hidden;
+  position: relative;
+}
+.goods_image2 {
+  width: 230rpx;
+  height: 230rpx;
+}
+.goods_name2 {
+  font-size: 24rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+}
+
+.goods_info2 {
+  box-sizing: border-box;
+  padding-left: 14rpx;
+  margin-top: 9rpx;
+  padding-right: 24rpx;
+}
+.plus {
+  width: 50rpx;
+  height: 50rpx;
+}
+.goods_btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13rpx;
+}
+.goods_price2 {
+  font-size: 34rpx;
+  font-family: HelveticaNeue-Bold, HelveticaNeue;
+  font-weight: bold;
+  color: rgba(247, 27, 45, 1);
+}
+.goods_price2::before {
+  content: '¥';
+  font-size: 24rpx;
+  font-family: HelveticaNeue-Medium, HelveticaNeue;
+  font-weight: 500;
+  color: rgba(247, 27, 45, 1);
+  margin-right: 4rpx;
+}
+.goods_list {
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  display: grid;
+  grid-template-columns: 230rpx 230rpx 230rpx;
+  grid-column-gap: 10rpx;
+  grid-row-gap: 10rpx;
+}
+
+.siyuan {
+  width: 500rpx;
+  height: 124rpx;
+  display: block;
+  margin: auto;
+  margin-top: 30rpx;
+}

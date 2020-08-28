@@ -1,0 +1,14 @@
+<view class="item" a:for="{{ActiveGoodsList}}" a:key='index' key="{{index}}">
+  <image class="itemImage" lazy-load="{{true}}" src="{{item.ImageUrl}}" />
+  <view>
+    <view class="itemName">
+      <text number-of-lines='1'>{{item.ProductName}}</text>
+    </view>
+    <view class="smallLabel">{{item.Remark}}</view>
+    <view class="info">
+      <view class="huangou">换购价：</view>
+      <view class="huangou_Price">¥{{item.SalesPrice}}</view>
+    </view>
+    <image src='/images/icon/plus2.svg' lazy-load="{{true}}" class="plus2" data-item="{{item}}" onTap='addShopCat' />
+  </view>
+</view>

@@ -1,0 +1,26 @@
+<view>
+  <view class="servi-title">猜你想问</view>
+  <collapse class="colclass" collapseKey="collapse1">
+    <block a:for="{{serviceData}}" a:for-item="seritem">
+      <collapse-item header="{{seritem.sertitleData}}" collapseKey="collapse1" titleClass="sercol_title">
+        <view class="item-content">
+          <block a:for="{{seritem.serConData}}" a:for-item="contitem">
+            <view class="ser_name">{{contitem.name}}</view>
+            <view class="ser_con">{{contitem.ask}}</view>
+            <view class="ser_con" a:for="{{contitem.askcContent}}" a:key="index">
+              {{item.cont}}
+            </view>
+          </block>
+        </view>
+      </collapse-item>
+    </block>
+  </collapse>
+  <view class="service_bottom">
+    <view>
+      <view class="service_btn">
+        <contact-button tnt-inst-id="3p3_vrqX" scene="SCE00067269" alipay-card-no="{{aliuser_id}}" size="330*44" icon="/images/icon/service_icon.png" />
+      </view>
+      <view class="serbtn_cont">温馨提示：客服在线时间9:00-18:00</view>
+    </view>
+  </view>
+</view>

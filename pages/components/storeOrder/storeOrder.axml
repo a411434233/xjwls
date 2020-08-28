@@ -1,0 +1,43 @@
+<view class="order-content">
+  <view class="order-list">
+    <view class="order-item" onTap="tapDetails" a:for="{{list}}" key="index" data-id="{{item.OrderCode}}">
+      <view class="order-top">
+        <view class="order-top-l">
+          <image mode="scaleToFill" src="/images/order-pre.png" />
+          <view>{{selectIndex==2?'自提':'配送'}}订单: {{item.OrderCode}}</view>
+        </view>
+        <view class="order-top-r">{{item.OrderStatusDes}}</view>
+      </view>
+      <view class="order-con common-sty">
+        <view class="order-name">{{storeInfo.ShopName}}</view>
+        <view class="order-price">¥{{item.OrderPrice}}</view>
+      </view>
+      <view class="order-time common-sty">{{item.CreateTime}}</view>
+      <view class="order-ms common-sty">
+        {{item.ShopOrderProductList[0].ProductName}}等共{{item.TotalProducts}}件商品
+      </view>
+      <view class="order-status-list common-sty">
+        <!-- 待付款 -->
+        <view a:if="{{item.OrderStatus==0}}" catchTap="payment" data-OrderCode="{{item.OrderCode}}" data-TransOrderCode="{{item.TransOrderCode}}">
+          付款
+        </view>
+        <view a:if="{{item.OrderStatus==0}}" catchTap="tapShowCancel" data-OrderCode="{{item.OrderCode}}">
+          取消订单
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="no-data" a:if="{{list.length == 0}}">
+    <image mode="scaleToFill" src="http://image.smjpin.cn/myorder010.png" />
+    <view>暂无订单</view>
+  </view>
+  <view class="modal" onTap="tapCloseModeal" a:if="{{cancelModel==true}}"></view>
+  <view class="modal-content" a:if="{{cancelModel==true}}">
+    <view class="modal-tit1">取消订单并退款</view>
+    <view class="modal-tit2">退款将原路返回到你的支付账户</view>
+    <view class="bottom-btn">
+      <view onTap="tapCancel">取消订单</view>
+      <view onTap="tapCloseModeal">考虑一下</view>
+    </view>
+  </view>
+</view>

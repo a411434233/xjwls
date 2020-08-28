@@ -1,0 +1,151 @@
+<view class='add_box' a:if="{{SelfRaising==1}}">
+  <view class="add_top">
+    <view class="{{addFlag?'add_top_active':''}}" onTap='setadd' data-index='1'>到店自取</view>
+    <view class="{{!addFlag?'add_top_active':''}}" onTap='setadd' data-index='2'>快递到家</view>
+  </view>
+  <view class="add_info" a:if="{{addFlag}}" onTap='setStore'>
+    <view class="add_store_name">{{storeInfo.ShopName}}</view>
+    <view class="add_store_add">{{storeInfo.ShopAddress}}</view>
+    <view class="add_store_num" a:if='{{storeNum>0}}'>其余{{storeNum}}家门店</view>
+    <view class="add_store_time">自提时间:3天内</view>
+    <view class="add_store_Km">{{storeInfo.Distance}}</view>
+  </view>
+  <view class="address address2" onTap="goaddress" a:if='{{!addFlag}}'>
+    <view class="address-l">
+      <view class="address-lr" a:if="{{addressManage.UserName}}">
+        <view class="address-lrb">
+          <text>{{addressManage.Area}}{{addressManage.Address}}</text>
+          <view class="address-default">默认</view>
+        </view>
+        <view class="address-lrt">{{addressManage.UserName}} {{addressManage.Tel}}</view>
+      </view>
+      <view class="address-lr" a:if="{{!addressManage.UserName}}">
+        <view class="address-lrt">添加收货地址</view>
+      </view>
+    </view>
+    <view class="address-r">
+      <image src="/images/icon/right.svg" mode="scaleToFill"></image>
+    </view>
+    <view class="address-pos">
+      <image mode="scaleToFill" src="/images/icon/buyorder02.png"></image>
+    </view>
+  </view>
+</view>
+<view class="address" onTap="goaddress" a:if="{{SelfRaising==0}}">
+  <view class="address-l">
+    <view class="address-lr" a:if="{{addressManage.UserName}}">
+      <view class="address-lrb">
+        <text>{{addressManage.Area}}{{addressManage.Address}}</text>
+        <view class="address-default">默认</view>
+      </view>
+      <view class="address-lrt">{{addressManage.UserName}} {{addressManage.Tel}}</view>
+    </view>
+    <view class="address-lr" a:if="{{!addressManage.UserName}}">
+      <view class="address-lrt">添加收货地址</view>
+    </view>
+  </view>
+  <view class="address-r">
+    <image src="/images/icon/right.svg" mode="scaleToFill"></image>
+  </view>
+  <view class="address-pos">
+    <image mode="scaleToFill" src="/images/icon/buyorder02.png"></image>
+  </view>
+</view>
+<!-- 灰色背景 -->
+<view a:for='{{previewOrderView}}' a:key='index' class="store">
+  <view class="goodsinfo">
+    <view class="goodsinfo-t">
+      <view class="goodsinfo-tr">
+         <image mode="scaleToFill" src="/images/icon/storelogo.svg"></image>
+        <text>{{item.BrandNanme}}食品</text>
+      </view>
+    </view>
+    <view class="goodsinfo-m" a:for="{{item.subSaleOrder}}" a:for-item="val" a:for-index='idx' a:key="idx">
+      <view class="goodsinfo-c">
+        <view class="goodsinfo-cl">
+          <image src="{{val.ImageUrl}}" mode="scaleToFill"></image>
+        </view>
+        <view class="goodsinfo-cr">
+          <view class="goodsinfo-crt">{{val.ProductName}}</view>
+          <view class="goodsinfo-crm">规格：{{val.CategoryName}}</view>
+          <view class="goodsinfo-crb">
+            <view class="goodsinfo-crbl price_app">
+              <text>¥</text>
+              {{val.ShopingSalesPrice}}
+            </view>
+            <view class="goodsinfo-crbr">
+              <view>x{{val.ShopingCount}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 商品 -->
+  <view class="coupon-wrap">
+    <view class="coupon">
+      <view class="coupon-l">优惠券</view>
+      <view class="coupon-r" onTap="gocoupon" data-money="{{item.OrderPrice}}" data-index="{{index}}">
+        <view class="coupon-rl coupon-rl2 price_app" a:if="{{item.discountRecord!=null}}">
+          -¥
+          <text>{{item.discountRecord.DiscountAmount}}</text>
+        </view>
+        <view class="coupon-rl coupon-rll" a:if="{{item.discountRecord==null}}">选择可用优惠券</view>
+        <view>
+          <image src="/images/icon/right.svg" mode="scaleToFill" style=" margin-left: 10rpx;width: 28rpx;height: 28rpx;vertical-align: middle;"></image>
+        </view>
+      </view>
+    </view>
+    <view class="coupon">
+      <view class="coupon-l">运费</view>
+      <view class="coupon-r">
+        <view class="coupon-rl price_app">¥{{item.MailPrice}}</view>
+      </view>
+    </view>
+    <view class="coupon">
+      <view class="coupon-l"></view>
+      <view class="coupon-r">
+        <view class="coupon-rl price_app order_smallPrice">
+          <text>共{{item.goodsNum}}件小计:</text>
+          <view class="price_app">¥{{item.AllOrderPrice}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 附加信息 -->
+<view class="coupon-wrap margin_top" a:if="{{VCoinsAmount>0}}">
+  <view class="coupon" style="display:flex">
+    <label for="a1">
+      <view class="coupon-l price_app">
+        使用{{VCoinsAmount}}味币可抵¥{{(VCoinsAmount/100).toFixed(2)}}元
+      </view>
+    </label>
+    <checkbox value="1" id="a1" onChange='change'></checkbox>
+  </view>
+</view>
+<!-- 返利卡 todo -->
+<!-- <view class="card_content">
+  <view class="card_content_l">
+    <view class="card_content1">返利卡</view>
+    <view class="card_content2">返利卡专享</view>
+  </view>
+  <image mode="scaleToFill" src="/images/icon/right.svg" class="card_content_arrow"/>
+</view> -->
+<!-- 优惠 -->
+<view class="order-db">
+  <view class="order-dbr" onTap="gopay">结算</view>
+  <view class="order-dbm">
+    实付
+    <text>¥</text>
+    <text>{{allmoney}}</text>
+  </view>
+</view>
+<!--  -->
+<view class="banns" onTap='detail'>
+  <view>
+    <image src="/images/icon/kada.png" class="kada"></image>
+    <text>满59返59还送399元有道卡搭启蒙课</text>
+  </view>
+  <view class="right"></view>
+</view>

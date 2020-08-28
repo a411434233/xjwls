@@ -1,0 +1,72 @@
+<view class="box-wrap">
+  <view class="evaluate">
+    <view class="evaluate-t">您对商家食品满意吗</view>
+    <view class="pingf">
+      <text class="pingfl">包装</text>
+      <block a:for="{{imgs1}}">
+        <image class="star" src="{{item.id<=starId1?src:src1}}" onTap="chenkpf1" data-ind="{{index}}"></image>
+      </block>
+      <text class="pingfr" a:if="{{starId==0}}">很差</text>
+      <text class="pingfr" a:if="{{starId==1}}">一般</text>
+      <text class="pingfr" a:if="{{starId==2}}">满意</text>
+      <text class="pingfr" a:if="{{starId==3}}">非常满意</text>
+      <text class="pingfr" a:if="{{starId==4}}">无可挑剔</text>
+    </view>
+    <view class="pingf">
+      <text class="pingfl">口味</text>
+      <block a:for="{{imgs2}}">
+        <image class="star" src="{{item.id<=starId2?src:src1}}" onTap="chenkpf2" data-ind="{{index}}"></image>
+      </block>
+      <text class="pingfr" a:if="{{starId==0}}">很差</text>
+      <text class="pingfr" a:if="{{starId==1}}">一般</text>
+      <text class="pingfr" a:if="{{starId==2}}">满意</text>
+      <text class="pingfr" a:if="{{starId==3}}">非常满意</text>
+      <text class="pingfr" a:if="{{starId==4}}">无可挑剔</text>
+    </view>
+    <view class="pingf">
+      <text class="pingfl">物流</text>
+      <block a:for="{{imgs3}}">
+        <image class="star" src="{{item.id<=starId3?src:src1}}" onTap="chenkpf3" data-ind="{{index}}"></image>
+      </block>
+      <text class="pingfr" a:if="{{starId==0}}">很差</text>
+      <text class="pingfr" a:if="{{starId==1}}">一般</text>
+      <text class="pingfr" a:if="{{starId==2}}">满意</text>
+      <text class="pingfr" a:if="{{starId==3}}">非常满意</text>
+      <text class="pingfr" a:if="{{starId==4}}">无可挑剔</text>
+    </view>
+    <view class="pjgoods">
+      <image mode="scaleToFill" src="/images/icon/logo.png" />
+      <text>闲九味</text>
+    </view>
+    <view class="evalbox">
+      <block a:for="{{listarr}}">
+        <view class="listtop">
+          <image mode="scaleToFill" src="{{item.ImageUrl}}" />
+          <text>{{item.ProductName}}</text>
+        </view>
+        <view class="thk-sm">
+          <textarea onBlur="inpval" value="{{valuearr[index]}}" data-index="{{index}}" auto-height placeholder="请输入评价内容" />
+        </view>
+        <!--  -->
+        <view class="uplodeimg">
+          <view class="myback-bc">上传图片</view>
+          <view class="allImgBox">
+            <block a:for="{{imgUrls[index]}}" a:for-index="indexs" name="{{file}}" id="{{file}}">
+              <view class="imgBox">
+                <image src="{{item}}"></image>
+                <view data-indexs="{{indexs}}" data-ind="{{index}}" onTap="delImg" class="delImg">
+                  <icon type="cancel" color="red" size="18" />
+                </view>
+              </view>
+            </block>
+            <view class="addImgBox" onTap="addImg" data-index="{{index}}" a:if="{{canAddImg}}">
+              <text>{{addImgText}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+    <!--  -->
+  </view>
+  <view class="dibu" onTap="tj">提交评价</view>
+</view>

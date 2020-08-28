@@ -1,0 +1,41 @@
+<view class="box-wrap">
+  <view class="sale-head">
+    <view class="sale-headt">售后进度</view>
+    <steps direction="{{direction}}" activeIndex="{{activeIndex}}" items="{{items}}"></steps>
+  </view>
+  <!--  -->
+  <view class="sale-m">
+    <view class="sale-mt">退款明细</view>
+    <view class="sale-mb">
+      <view class="sale-mbl">支付宝</view>
+      <view class="sale-mbr price_app">¥{{detail.ApplyPrice}}</view>
+    </view>
+  </view>
+  <view class="sale-mm">
+    <view class="sale-mt">售后信息</view>
+    <view class="sale-mb">
+      <view class="sale-mbl">订单编号</view>
+      <view class="sale-mbr">{{detail.OrderCode}}</view>
+    </view>
+    <view class="sale-mb">
+      <view class="sale-mbl">售后类型</view>
+      <view class="sale-mbr">退货/款</view>
+    </view>
+    <view class="sale-mb">
+      <view class="sale-mbl">退款金额</view>
+      <view class="sale-mbr price_app">¥{{detail.ApplyPrice}}</view>
+    </view>
+    <view class="sale-mb">
+      <view class="sale-mbl">退回方式</view>
+      <view class="sale-mbr">支付宝</view>
+    </view>
+    <view class="sale-mb">
+      <view class="sale-mbl">退款原因</view>
+      <view class="sale-mbr">{{detail.RefundReason}}</view>
+    </view>
+    <view class="sale-mb">
+      <view class="sale-mbl">退回说明</view>
+      <view class="sale-mbr">{{detail.RefundExplain}}</view>
+    </view>
+  </view>
+</view>

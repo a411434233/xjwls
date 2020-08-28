@@ -1,0 +1,98 @@
+.box {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.boxwrap {
+  width: 100%;
+  background: #fff;
+  padding-bottom: 30rpx;
+  overflow: hidden;
+}
+
+.searchbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx 32rpx 0;
+}
+
+.searchboxl {
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  width: 600rpx;
+  height: 72rpx;
+  background: #eee;
+  border-radius: 36rpx;
+  display: flex;
+  align-items: center;
+}
+
+.provinceimg03 {
+  width: 34rpx;
+  height: 34rpx;
+}
+
+.inp {
+  width: 508rpx;
+  height: 64rpx;
+  margin-left: 6rpx;
+  line-height: 64rpx;
+  border: none;
+  background: transparent;
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.searchboxr {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+}
+
+.title_boldtitle {
+  margin: 40rpx 32rpx 0;
+  font-size: 30rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  position: relative;
+}
+
+/*  */
+
+.hotSearchList {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-column-gap: 20rpx;
+  box-sizing: border-box;
+  grid-row-gap: 22rpx;
+  padding: 0 24rpx;
+  margin-top: 40rpx;
+}
+
+.hotSearchList>view {
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  height: 57rpx;
+  background: rgba(234, 233, 233, 1);
+  border-radius: 29rpx;
+  border: 2rpx solid rgba(227, 227, 227, 1);
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(113, 113, 113, 1);
+  line-height: 57rpx;
+  text-align: center;
+}
+
+.delSvg {
+  width: 42rpx;
+  height: 42rpx;
+  position: absolute;
+  right: 42rpx;
+}

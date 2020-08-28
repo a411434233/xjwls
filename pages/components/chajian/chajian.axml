@@ -1,0 +1,18 @@
+<view class="page">
+  <bc-module a:if="{{ showComponent }}" code="suite://bc.suite.union618/bc.template.banner" name="block-banner" onError="bcError" />
+</view>
+<view class="page nav">
+  <bc-module a:if="{{ showComponent }}" code="suite://bc.suite.union618/bc.template.nav" name="block-nav" onError="bcError" />
+</view>
+<view class="page">
+  <bc-module a:if="{{ showComponent }}" code="suite://bc.suite.union618/bc.template.dialog" name="block-dialog" onError="bcError" />
+</view>
+<view class="page">
+  <bc-module a:if="{{ showComponent }}" code="suite://bc.suite.union618/bc.template.icon" name="block-icon" onError="bcError" />
+</view>
+<view>
+  <component is="dynamic-plugin://2021001157622718/boom" a:if="{{shopCard}}" options="{{pluginOptions}}"></component>
+</view>
+<view>
+  <component is="dynamic-plugin://2021001131694653/boom" loadMoreTime='{{loadMoreTime}}' a:if="{{guess}}" pluginOptions="{{pluginOptionsg}}"></component>
+</view>

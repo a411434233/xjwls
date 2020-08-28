@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="20px" viewBox="0 0 15 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Combined Shape Copy 3备份</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="77.1468144%" x2="1.6189487%" y2="23.7321716%" id="linearGradient-1">
+            <stop stop-color="#FF6005" offset="0%"></stop>
+            <stop stop-color="#F71B2D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="连贯" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="购物车-空状态备份-6" transform="translate(-280.000000, -1898.000000)" fill="url(#linearGradient-1)">
+            <path d="M297,1915 L278,1915 L278,1902.15373 C278.130317,1901.49593 278.710539,1901 279.406593,1901 C279.713331,1901 279.997574,1901.09631 280.230733,1901.26034 L285.485073,1906.51468 C286.605067,1907.63467 288.420936,1907.63467 289.54093,1906.51468 L294.830974,1901.22464 C295.053601,1901.08242 295.318114,1901 295.601878,1901 C296.283831,1901 296.854598,1901.47604 297,1902.11395 L297,1915 Z" id="Combined-Shape-Copy-3备份" transform="translate(287.500000, 1908.000000) scale(-1, 1) rotate(90.000000) translate(-287.500000, -1908.000000) "></path>
+        </g>
+    </g>
+</svg>

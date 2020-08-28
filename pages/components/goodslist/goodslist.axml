@@ -1,0 +1,47 @@
+<view class="box-wrap">
+  <view class="myorder-t">
+    <view class="myorder-tm {{activeinx==index?'myorderactice':''}}" a:for="{{arr}}" a:key="index" onTap="tabqh" data-inx="{{index}}">
+      {{item}}
+    </view>
+    <view class="jt-pa" onTap="tabqh" data-inx="{{3}}">
+      <view>
+        <image mode="scaleToFill" a:if="{{(showp1 && showp2)}}" src="/images/icon/paixu01.png" />
+        <image mode="scaleToFill" a:if="{{(showp1==false)&&(showp2==true)}}" src="/images/icon/paixu03.png" />
+        <image mode="scaleToFill" a:if="{{(showp2==false)&&(showp1==true)}}" src="/images/icon/paixu02.png" />
+      </view>
+    </view>
+  </view>
+  <!-- 头部 -->
+  <view class="coupon1" a:if="{{list.length==0}}">
+    <image mode="scaleToFill" src="http://image.smjpin.cn/newcartimg.png" />
+    <view class="coupon1t">亲，换个关键字试试呢~</view>
+  </view>
+  <view class="info-bottom" a:if="{{list.length!=0}}">
+    <view class="info-bottom-t">
+      <!-- 推荐商品 -->
+    </view>
+    <view class="info-bottom-m" a:for="{{list}}" a:key="index" onTap="godetail" data-id="{{item.ProductId}}" data-Type="{{item.Type}}" data-ProductType="{{item.ProductType}}">
+      <view class="info-bottom-ml">
+        <image mode="scaleToFill" src="{{item.ImageUrl}}" />
+      </view>
+      <view class="info-bottom-mr">
+        <view class="info-bottom-mrt">{{item.ProductName}}</view>
+        <view class="info-bottom-mrm">{{item.Remark}}</view>
+        <view class="info-bottom-mrb">
+          <view class="info-bottom-mrbl">
+            <text>¥</text>
+            {{item.SalesPrice}}
+          </view>
+          <view class="info-bottom-mrbr" catchTap="gocart" data-item="{{item}}">
+            <image mode="scaleToFill" src="/images/icon/plus2.svg" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom_tips" a:if="{{showdb}}">
+    <text class="bottom_tipstext"></text>
+    我是有底线的
+    <text class="bottom_tipstext"></text>
+  </view>
+</view>

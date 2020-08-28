@@ -1,0 +1,53 @@
+<view class="page-box">
+  <view class="channelcoupon">
+    <view class="channelcoupon1">
+      <view class="channelcoupon-t1">闲九味</view>
+      <view class="channelcoupon-t2">邀你领优惠券</view>
+      <view class="channelcoupon-m">
+        <view class="channelcoupon-ml">
+          <view class="channelcoupon-mlt">{{detail.DiscountTitle}}</view>
+          <view class="channelcoupon-mlm">
+            <text>{{detail.DiscountAmount}}</text>
+            元
+          </view>
+          <view class="channelcoupon-mlb">领取后{{detail.UserDeadline}}天可用</view>
+        </view>
+        <form onSubmit="onSubmit" report-submit="true" data-id="">
+          <button formType="submit" hover-class="button-hover">
+            <view class="channelcoupon-mr" onTap="golingqu" data-DiscountId="{{detail.DiscountId}}" data-ProductId="{{detail.ProductId}}" data-ProductType="{{detail.ProductType}}" data-Type="{{detail.Type}}">
+              领取
+            </view>
+          </button>
+        </form>
+      </view>
+      <view class="channelcoupon-mbck">
+        <image mode="scaleToFill" src="/images/icon/channelcoupon02.png" />
+      </view>
+    </view>
+    <view class="channelcoupon-mf">
+      <image mode="scaleToFill" src="/images/icon/channelcoupon03.png" />
+    </view>
+    <view class="channelcoupon2">
+      <view class="channelcoupon-b">
+        <view class="channelcoupon-bt">
+          <view class="channelcoupon-btl">
+            <view class="channelcoupon-btlt">收藏小程序</view>
+            <view class="channelcoupon-btlb">免费领取各种好礼</view>
+          </view>
+        </view>
+      </view>
+      <view class="channelcoupon-bot">
+        <view class="channelcoupon-botm" a:for="{{listarr}}" a:key="index" data-kpid="{{item.ICouponId}}" onTap="gosc">
+          <view class="channelcoupon-botmt">
+            <form onSubmit="onSubmit" report-submit="true" data-id="">
+              <button formType="submit" hover-class="button-hover">
+                <image mode="scaleToFill" src="{{item.ImageUrl}}" />
+              </button>
+            </form>
+          </view>
+          <view class="channelcoupon-botmb">{{item.ActivitiesName}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
