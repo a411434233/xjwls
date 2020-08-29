@@ -1,5 +1,7 @@
 page {
   background: rgba(109, 152, 254, 1);
+  box-sizing: border-box;
+  padding-bottom: 120rpx;
 }
 .superc {
   width: 100%;
@@ -183,4 +185,51 @@ page {
   display: block;
   margin: auto;
   margin-top: 30rpx;
+}
+
+.follow {
+  width: 710rpx;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 40rpx;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 25rpx;
+}
+
+.life {
+  position: absolute;
+  top: 25rpx;
+  bottom: 0;
+  right: 85rpx;
+  margin: auto;
+}
+
+.title {
+  font-size: 32rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #ffffff;
+  margin-left: 15rpx;
+}
+.close {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 30rpx;
+}
+
+.logo2 {
+  width: 70rpx;
+  height: 70rpx;
 }

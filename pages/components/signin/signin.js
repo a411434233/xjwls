@@ -31,7 +31,7 @@ Page({
       my.loadPlugin({
         plugin: '2019102468552682@*', // 指定要加载的插件id和版本号，为*则每次拉取最新版本
         success: () => {
-          resolve();
+          resolve(1);
         }
       });
     });
@@ -261,7 +261,7 @@ Page({
     } else if (index == 2) {
       NavigateToMiniProgram('2018082861122674', 'pages/buyZero/buyZero?scene_id=2261');
     } else if (index == 3) {
-      await this.loadPlug();
+      let p = await this.loadPlug();
       NavigateTo('dynamic-plugin://2019102468552682/index?pid=2088631273892854&appId=2019092367680987');
     }
     let qdcode = GetChannelCode();

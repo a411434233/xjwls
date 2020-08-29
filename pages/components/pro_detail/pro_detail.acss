@@ -867,21 +867,22 @@ button {
 }
 
 .add_cat_Image {
-  width: 168rpx;
-  height: 168rpx;
+  width: 184rpx;
+  height: 184rpx;
   border-radius: 10rpx;
-  background: rgba(231, 231, 231, 1);
+  background: #e7e7e7;
 }
 
 .add_cat_price {
-  font-size: 42rpx;
-  font-weight: 600;
-  color: rgba(238, 21, 37, 1);
+  font-size: 52rpx;
+  font-family: DINAlternate-Bold, DINAlternate;
+  font-weight: bold;
+  color: #ee1525;
 }
 
 .add_cat_price::before {
   content: '¥';
-  font-size: 24rpx;
+  font-size: 50rpx;
 }
 
 .add_cat_header {
@@ -928,16 +929,20 @@ button {
 }
 
 .add_cat_info {
-  width: calc(100% - 191rpx);
-  font-size: 22rpx;
+  width: calc(100% - 220rpx);
+  font-size: 26rpx;
   font-weight: 400;
   color: rgba(153, 153, 153, 1);
   margin-left: 25rpx;
-  height: 168rpx;
 }
 
 .add_cat_kucu {
   margin-top: 60rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: #999999;
+}
+.yuxuanze{
+  margin-top: 5rpx;
 }
 
 .add_cat_title {
@@ -995,12 +1000,12 @@ button {
 }
 
 .add_cat_left {
-  width: 40rpx;
-  height: 40rpx;
+  width: 50rpx;
+  height: 54rpx;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2rpx solid rgba(153, 153, 153, 1);
+  border: 2rpx solid #999999;
   border-radius: 10rpx 0 0 10rpx;
 }
 
@@ -1030,12 +1035,12 @@ button {
 }
 
 .add_cat_right {
-  width: 40rpx;
-  height: 40rpx;
+  width: 50rpx;
+  height: 54rpx;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2rpx solid rgba(153, 153, 153, 1);
+  border: 2rpx solid #999999;
   border-radius: 0px 10rpx 10rpx 0px;
   position: relative;
 }

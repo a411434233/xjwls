@@ -96,7 +96,7 @@
   </view>
   <view class="icon_list" a:if="{{jfbData.Registered==false||jfbData.Registered==true}}">
     <block a:for="{{5}}" a:index="{{index}}" a:if="{{index!=0}}">
-      <image mode="scaleToFill" src="{{'/images/icon/icon'+index+'.png'}}"  lazy-load="{{true}}" class="icon"></image>
+      <image mode="scaleToFill" src="{{'/images/icon/icon'+index+'.png'}}" lazy-load="{{true}}" class="icon"></image>
       <view class="icon_text">{{['','购买商品','完成支付','返集分宝','领取到账'][index]}}</view>
       <image mode="scaleToFill" src="/images/icon/arrowSplit.png" class="split" a:if="{{index!=4}}"></image>
     </block>
@@ -126,11 +126,13 @@
 </view>
 <!--  -->
 <view class="items_2">
-  <view class="items margin_top " >
+  <view class="items margin_top ">
     <view class="item_label">送至</view>
     <view class="item_box">
       <image src="/images/icon/locations.svg" class="locations"></image>
-      <view class="item_fahuodi" onTap='getMyAddress' a:if="{{myadd.Province}}">{{myadd.Province}} {{myadd.City}} {{myadd.Area}}</view>
+      <view class="item_fahuodi" onTap='getMyAddress' a:if="{{myadd.Province}}">
+        {{myadd.Province}} {{myadd.City}} {{myadd.Area}}
+      </view>
       <view class="item_fahuodi" onTap='getMyadd' a:if="{{!myadd.Province}}">点击获取我的地址</view>
     </view>
     <image src="/images/icon/right.svg" class="right"></image>
@@ -152,7 +154,7 @@
     <view class="tuijian_item" a:for="{{recProductList}}" a:if='{{index<=2}}' a:key="index" onTap="goodsDetail" data-index="{{index}}">
       <form onSubmit="onSubmit" report-submit="{{true}}" data-id="{{item.ProductId}}">
         <button formType="submit" hover-class="button-hover" style="width:100%">
-          <image class="tuijian_Image" src="{{item.ImageUrl}}"  lazy-load="{{true}}"></image>
+          <image class="tuijian_Image" src="{{item.ImageUrl}}" lazy-load="{{true}}"></image>
           <view class="tuijian_info">
             <view class="tuijian_info_name">
               <text number-of-lines="2" class="tuijian_name">{{item.ProductName}}</text>
@@ -178,7 +180,7 @@
 </view>
 <form onSubmit="onSubmit" report-submit="{{true}}" data-id="{{ProductId}}">
   <button formType="submit" hover-class="button-hover">
-    <image src="{{item.ImageUrl}}"  lazy-load="{{index>2}}"  a:for="{{DetailImagesView}}" class="adetailImage" a:key="index" mode="widthFix" onTap="showImages"></image>
+    <image src="{{item.ImageUrl}}" lazy-load="{{index>2}}" a:for="{{DetailImagesView}}" class="adetailImage" a:key="index" mode="widthFix" onTap="showImages"></image>
   </button>
 </form>
 <!--  -->
@@ -205,23 +207,23 @@
 </view>
 <!-- 领券组件 -->
 <quan-popup MinAmount='{{MinAmount}}' ref='quanpoup'></quan-popup>
-<!--  -->
+<!-- 购买选择弹框 -->
 <popup position="bottom" zIndex="{{200}}" show="{{shopModel}}" onClose="closeShopmodel">
   <view class="add_cat">
     <image src="/images/icon/close2.svg" class="close2" onTap="closeShopmodel"></image>
     <view class="add_cat_header">
-      <image src="{{difference.ImageUrl}}" class="add_cat_Image" ></image>
+      <image src="{{difference.ImageUrl}}" class="add_cat_Image"></image>
       <view class="add_cat_info">
         <view class="add_cat_price_box">
           <view class="add_cat_price price_app">{{difference.SalesPrice}}</view>
-          <view class="add_cat_old price_app">¥{{difference.Price}}</view>
+          <!-- <view class="add_cat_old price_app">¥{{difference.Price}}</view> -->
           <view class="goods_label" a:if="{{jfbData.Registered==true||jfbData.Registered==false}}">
             <view>返利</view>
             <view>{{jfbData.RebateJfb||0}}集分宝</view>
           </view>
         </view>
         <view class="add_cat_kucu">库存{{difference.Nums}}件</view>
-        <view>已选择：{{guige}}</view>
+        <view class="yuxuanze">已选择：{{guige}}</view>
       </view>
     </view>
     <view a:for="{{specifications}}" a:key="index">

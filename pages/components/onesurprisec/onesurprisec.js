@@ -1,6 +1,8 @@
 import { SetStorage, Get, api, Product, NavigateTo } from '../../../utils/common';
 Page({
-  data: {},
+  data: {
+    checkFollow: false
+  },
   onLoad(options) {
     if (options.id) {
       SetStorage('qdmc', { qdcode: options.id });
@@ -54,5 +56,16 @@ Page({
     let item = this.data.list2[index];
     item.showNum += 9;
     this.$spliceData({ list2: [index, 1, item] });
+  },
+  closeCb(e) {
+    const { followed } = e.detail;
+    this.setData({
+      checkFollow: followed
+    });
+  },
+  close(){
+    this.setData({
+      checkFollow:true
+    })
   }
 });

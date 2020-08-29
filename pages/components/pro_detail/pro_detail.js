@@ -19,7 +19,6 @@ Page({
   },
   onLoad(options) {
     let id = options.id;
-
     this.getproInfo(id);
     this.getProductTaste(id);
     this.getProductsBydptCode(id);
@@ -249,7 +248,7 @@ Page({
       ImageUrl: difference.ImageUrl,
       SouceChannel: channelCode
     };
-    return data;
+    return data ||false;
   },
   //加入购物车
   addShopCat(e) {
@@ -268,9 +267,12 @@ Page({
   pay() {
     this.pointData(['buyProOne', '购买_' + this.data.ProductId]);
     let data = this.getAddQuery();
+    if (data == false) return ;
+    if (typeof  data != 'object')return ;
     Post(api.PostDirectLoadOrderInfo, data, true).then(res => {
       if (res.data.Code == 1) {
         this.setData({ shopModel: false });
+        if (res.data.Data == null) return ;
         let query = {
           orderdata: JSON.stringify(res.data.Data),
           activetype: 0,

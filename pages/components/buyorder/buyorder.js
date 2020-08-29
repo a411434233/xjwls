@@ -3,9 +3,7 @@ import Big from 'big.js/big';
 Page({
   data: { allmoney: 0, shop: 0, splice: my.canIUse('page.$spliceData'), isVCoins: false, addFlag: false },
   onLoad(query) {
-    if (typeof query.orderdata != 'string') {
-      return;
-    }
+    if (typeof query.orderdata != 'string') return;
     let data = JSON.parse(query.orderdata);
     if (query.shop) {
       let discountRecord = data.discountRecord;
@@ -57,14 +55,13 @@ Page({
         m.push({ ProductId: val.ProductId, Qty: val.ShopingCount, AddressId: addressManage.Id });
       });
     });
-    const res_1 = await Post(api.GetFreight, m);
+    const res_1 = await Post(api.GetFreight, m)
     if (res_1.data.Code == -1) return ShowNoneToast(res_1.data.Msg);
     if (res_1.data.Code == 1) {
       let ilist = res_1.data.Data;
       ilist = ilist.filter(value=>{return value.DiscountPrice>0||value.MailPrice>0})
       list.forEach(val_1 => {
         let item = ilist.find(a => a.DepositoryCode == val_1.DepositoryCode);
-        console.log(item)
         if (item) {
           val_1.MailPrice = item.MailPrice;
           val_1.DiscountPrice = item.DiscountPrice;
@@ -159,7 +156,7 @@ Page({
         SouceChannel: GetChannelCode(),
         shoppingOrderView: []
       };
-      let shoppingOrderView = previewOrderView.map(res => {
+      query.shoppingOrderView = previewOrderView.map(res => {
         let shoppingInfo = res.subSaleOrder.map(val => {
           return {
             ProductId: val.ProductId,
@@ -176,7 +173,6 @@ Page({
           shoppingInfo: shoppingInfo
         };
       });
-      query.shoppingOrderView = shoppingOrderView;
       Post(api.PostShopCartCreateOrder2, query, true).then(res => {
         my.hideLoading();
         if (res.data.Code == 1) {
@@ -210,7 +206,6 @@ Page({
   },
   //计算价格
   getAllMoney() {
-    console.log(1)
     let allmoney = 0;
     let previewOrderView = this.data.previewOrderView;
     previewOrderView.forEach(res => {

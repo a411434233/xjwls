@@ -111,6 +111,7 @@ function HttpRequest(url, method, data, user = false) {
       url: httpUrl,
       method: method,
       data: data,
+      timeout: 10000,
       success: res => {
         if (typeof resolve == 'function') {
           resolve(res);
