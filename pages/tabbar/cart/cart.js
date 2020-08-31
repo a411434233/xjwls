@@ -78,6 +78,7 @@ Page({
       this.watchData();
     });
   },
+  //计算总价
   getSumPrice() {
     let Sum = 0;
     let suclist = JSON.parse(JSON.stringify(this.data.suclist));
@@ -88,6 +89,7 @@ Page({
     }
     this.setData({ allmoney: Sum.toFixed(2) });
   },
+  //监听数据
   watchData(e) {
     let proList = JSON.parse(JSON.stringify(this.data.suclist));
     for (let item of proList) {

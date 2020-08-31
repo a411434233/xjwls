@@ -1,5 +1,6 @@
 import { Post, Get, NavigateTo, NavigateToMiniService, api, Token, NavigateToMiniProgram, SetStorage, SwitchTab, ShowNoneToast, Product } from '../../../utils/common';
 const app = getApp();
+
 Page({
   data: { newlist: [],domInfo:{top:468}, pageIndex: 1, showdb: false, nowIdx: 0, titleHeight: 72, tabsIndex: 0, left: 0, sorllTabs: [], BannerConfig: undefined },
   onLoad(options) {

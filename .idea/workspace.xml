@@ -6,16 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +86,7 @@
       <workItem from="1598403326214" duration="5114000" />
       <workItem from="1598577008268" duration="106000" />
       <workItem from="1598690293881" duration="2004000" />
+      <workItem from="1598856848967" duration="4718000" />
     </task>
     <servers />
   </component>
@@ -132,10 +126,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1598349187988" />
-    <state x="383" y="487" width="992" height="773" key="SettingsEditor" timestamp="1598405712482">
+    <state x="1101" y="207" width="992" height="773" key="SettingsEditor" timestamp="1598857176228">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="383" y="487" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1598405712482" />
+    <state x="1101" y="207" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1598857176228" />
     <state x="979" y="298" width="603" height="804" key="find.popup" timestamp="1598328092457">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
