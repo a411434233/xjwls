@@ -50,12 +50,12 @@ page {
 
 .del {
   width: 120rpx;
-  height: 160rpx;
   background: #ff3c3c;
   color: #fff;
   font-size: 28rpx;
-  line-height: 160rpx;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart-mcm {

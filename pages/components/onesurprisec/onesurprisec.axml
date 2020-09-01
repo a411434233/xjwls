@@ -15,7 +15,7 @@
   </view>
 </view>
 <block>
-  <image src="/images/snacks/super2.png" class="super3" />
+  <image src="/images/snacks/super2.png" lazy-load="{{true}}" class="super3" />
   <view class="goods_list">
     <view class="goods_item2" a:for='{{song}}' a:key='index' key='{{index}}' onTap='goodsDetail' data-item='{{item}}'>
       <image class="goods_image2" src="{{item.ImageUrl}}" lazy-load="{{true}}" />
@@ -25,14 +25,14 @@
         </view>
         <view class="goods_btn2">
           <view class="goods_price2">{{item.SalesPrice}}</view>
-          <image src="/images/icon/plus.svg" class="plus" catchTap='addShopCat' data-item='{{item}}' />
+          <image src="/images/icon/plus.svg" lazy-load="{{true}}" class="plus" catchTap='addShopCat' data-item='{{item}}' />
         </view>
       </view>
     </view>
   </view>
 </block>
 <block a:for='{{list2}}'>
-  <image src="{{item.img}}" class="super2" />
+  <image src="{{item.img}}" class="super2" lazy-load="{{true}}" />
   <view class="goods_list">
     <view class="goods_item2" a:for='{{item.list}}' a:for-item='val' a:for-index='idx' a:key='idx' key='{{idx}}' onTap='goodsDetail' data-item='{{val}}' a:if="{{idx<item.showNum}}">
       <image class="goods_image2" src="{{val.ImageUrl}}" lazy-load="{{true}}" />
@@ -42,12 +42,12 @@
         </view>
         <view class="goods_btn2">
           <view class="goods_price2">{{val.SalesPrice}}</view>
-          <image src="/images/icon/plus.svg" class="plus" catchTap='addShopCat' data-item='{{val}}' />
+          <image src="/images/icon/plus.svg" class="plus" catchTap='addShopCat' lazy-load="{{true}}" data-item='{{val}}' />
         </view>
       </view>
     </view>
   </view>
-  <image src="/images/snacks/siyuan.gif" class="siyuan" data-index='{{index}}' onTap='showMore' />
+  <image src="/images/snacks/siyuan.gif" lazy-load="{{true}}" class="siyuan" data-index='{{index}}' onTap='showMore' />
 </block>
 <view class="follow" a:if='{{!checkFollow}}'>
   <image src="/images/icon/logo2.png" class="logo2" />
