@@ -1,10 +1,6 @@
 import { api, ShowNoneToast, GetChannelCode, Post } from './common';
 
 /**
- * 商品模块
- */
-
-/**
  * @class  商品类
  * @param {object} goodInfo 单个商品信息对象
  * @param {object} options 其它参数
