@@ -5,59 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icon/cainixiahuan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icon/edd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icon/icon_weixuan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icon/kada.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icon/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icon/new.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icon/sousuo2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icon/system-guanzhu2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/actives/actives.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/actives/actives.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/actives/actives.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/actives/actives.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/actives/actives.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/actives/actives.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.acss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cartBuyTwo/cartBuyTwo.acss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cartBuyTwo/cartBuyTwo.axml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cartBuyTwo/cartBuyTwo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cartBuyTwo/cartBuyTwo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cashbonusmycopy/cashbonusmycopy.acss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cashbonusmycopy/cashbonusmycopy.axml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cashbonusmycopy/cashbonusmycopy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cashbonusmycopy/cashbonusmycopy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cashbonusmycopy/onesurprisec/onesurprisec.acss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cashbonusmycopy/onesurprisec/onesurprisec.axml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cashbonusmycopy/onesurprisec/onesurprisec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cashbonusmycopy/onesurprisec/onesurprisec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/evaluate/evaluate.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/evaluate/evaluate.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/product.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,12 +89,24 @@
       <workItem from="1598690293881" duration="2004000" />
       <workItem from="1598856848967" duration="6021000" />
       <workItem from="1598945200168" duration="9255000" />
-      <workItem from="1599008612586" duration="18493000" />
+      <workItem from="1599008612586" duration="19104000" />
     </task>
+    <task id="LOCAL-00001" summary="Default Changelist">
+      <created>1599033065174</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599033065174</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>
   <component name="WindowStateProjectService">
     <state x="907" y="382" key="#Inspections" timestamp="1598952578922">
@@ -176,10 +137,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1598952539711" />
-    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2" timestamp="1599032304538">
+    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2" timestamp="1599033061634">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1599032304538" />
+    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1599033061634" />
     <state x="1061" y="455" key="FileChooserDialogImpl" timestamp="1598952468914">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

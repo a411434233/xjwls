@@ -68,7 +68,7 @@
         </view>
         <view class="goodsinfo-cr">
           <view class="goodsinfo-crt">{{val.ProductName}}</view>
-          <view class="goodsinfo-crm">规格：{{val.CategoryName}}</view>
+          <view class="goodsinfo-crm">规格：{{val.SkuName?val.SkuName:val.CategoryName}}</view>
           <view class="goodsinfo-crb">
             <view class="goodsinfo-crbl price_app">
               <text>¥</text>
