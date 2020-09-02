@@ -1,3 +1,4 @@
+<loading a:if="{{!daylist.length}}"></loading>
 <view class="box ">
   <form onSubmit="onSubmit" report-submit="true" data-id="">
     <view class="moneyBox">

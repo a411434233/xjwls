@@ -182,7 +182,7 @@
   text-align: center;
   font-size: 28rpx;
   color: #fff;
-  background-image: url('/images/icon//channelcoupon04.png');
+  background-image: url('/images/icon/channelcoupon04.png');
   background-size: 216rpx 122rpx;
 }
 

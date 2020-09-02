@@ -48,6 +48,7 @@ Page({
           });
         }
       }
+      host.sort((a, b) => a.SalesPrice - b.SalesPrice);
       this.setData({ host, song, list2 });
     });
   },
@@ -63,9 +64,9 @@ Page({
       checkFollow: followed
     });
   },
-  close(){
+  close() {
     this.setData({
-      checkFollow:true
-    })
+      checkFollow: true
+    });
   }
 });

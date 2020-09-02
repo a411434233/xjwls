@@ -494,42 +494,6 @@ checkbox .a-icon-success_no_circle {
   bottom: 36rpx;
 }
 
-/*  */
-.banns {
-  width: 710rpx;
-  height: 88rpx;
-  background: rgba(255, 255, 255, 1);
-  border-radius: 10rpx;
-  font-size: 28rpx;
-  font-family: PingFangSC-Regular, PingFang SC;
-  font-weight: 400;
-  color: rgba(51, 51, 51, 1);
-  box-sizing: border-box;
-  padding: 0 19rpx;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-top: 20rpx;
-}
-.banns image {
-  width: 50rpx;
-  height: 50rpx;
-  margin-right: 22rpx;
-}
-
-.banns > view {
-  display: flex;
-  align-items: center;
-}
-
-.right {
-  width: 14rpx;
-  height: 14rpx;
-  border-top: solid 2rpx #999999;
-  border-right: solid 2rpx #999999;
-  transform: rotate(45deg);
-}
 
 /* 返利卡 */
 

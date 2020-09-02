@@ -1,4 +1,5 @@
-<view class="box-wrap">
+<loading a:if="{{!detail.Status}}"></loading>
+<view class="box-wrap" a:else>
   <view class="order-t">
     <image mode="scaleToFill" src="" />
     <view class="order-tpa" a:if="{{detail.Status==0}}">

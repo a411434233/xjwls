@@ -1,7 +1,6 @@
 page {
   padding-bottom: 150rpx;
 }
-
 /* .tab_top */
 
 .tab_top {
@@ -234,6 +233,11 @@ page {
 .card_price {
   display: inline-block;
   vertical-align: middle;
+}
+
+.huise{
+  background: #f5f5f5 !important;
+  color: #999999 !important;
 }
 
 .card_price1 {

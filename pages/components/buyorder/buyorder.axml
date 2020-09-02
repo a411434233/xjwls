@@ -1,3 +1,4 @@
+<loading a:if="{{!allmoney}}"></loading>
 <view class='add_box' a:if="{{SelfRaising==1}}">
   <view class="add_top">
     <view class="{{addFlag?'add_top_active':''}}" onTap='setadd' data-index='1'>到店自取</view>
@@ -142,10 +143,3 @@
   </view>
 </view>
 <!--  -->
-<view class="banns" onTap='detail'>
-  <view>
-    <image src="/images/icon/kada.png" class="kada"></image>
-    <text>满59返59还送399元有道卡搭启蒙课</text>
-  </view>
-  <view class="right"></view>
-</view>

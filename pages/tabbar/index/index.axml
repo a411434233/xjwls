@@ -12,7 +12,7 @@
   </view>
 </scroll-view>
 <view class="search_box2">
-  <swiper class="swiperBox" circular="{{true}}" interval="3500" duration="500"   autoplay="{{true}}" indicator-dots="{{true}}">
+  <swiper class="swiperBox" circular="{{true}}" duration="500" autoplay="{{true}}" indicator-dots="{{true}}">
     <swiper-item a:for='{{BannerConfig}}' a:key='index' key='{{index}}'>
       <image src="{{item.Pic}}" onTap='goBannerTop' data-index="{{index}}" lazy-load="{{true}}" mode="aspectFill" />
     </swiper-item>
@@ -42,7 +42,7 @@
         <view class="newindex-icon-mb">{{item.ChannelName}}</view>
       </view>
     </view>
-    <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}" duration="{{500}}" circular="{{true}}">
+    <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}"  circular="{{true}}">
       <swiper-item a:for="{{CenterBannerConfig}}" a:key="index" key='{{index}}'>
         <image onTap="golingq" data-index="{{index}}" src="{{item.Pic}}" mode="aspectFill" lazy-load="{{true}}" />
       </swiper-item>

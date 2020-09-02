@@ -26,7 +26,6 @@
     "pages/components/evaluateall/evaluateall",
     "pages/components/coupnoall/coupnoall",
     "pages/components/paySuccess/paySuccess",
-    "pages/components/cashbonusmycopy/cashbonusmycopy",
     "pages/components/sigincurrency/sigincurrency",
     "pages/components/service/service",
     "pages/components/chajian/chajian",
@@ -40,7 +39,7 @@
     "pages/components/storeOrderDetails/storeOrderDetails",
     "pages/components/store/store",
     "pages/components/pieceTogether/pieceTogether",
-    "pages/components/cartBuyTwo/cartBuyTwo"
+    "pages/errPage/notWifi/notWifi"
   ],
   "window": {
     "defaultTitle": "闲九味",

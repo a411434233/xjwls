@@ -35,7 +35,7 @@
       <text class="pingfr" a:if="{{starId==4}}">无可挑剔</text>
     </view>
     <view class="pjgoods">
-      <image mode="scaleToFill" src="/images/icon/logo.png" />
+      <image mode="scaleToFill" src="/images/icon/logo2.png" />
       <text>闲九味</text>
     </view>
     <view class="evalbox">

@@ -2,9 +2,9 @@
 
 const api = {
   //生产地址
-  BASE_URL: 'https://api.smjpin.cn/',
+  // BASE_URL: 'https://api.smjpin.cn/',
   // 开发地址
-  // BASE_URL: 'https://apitest.smjpin.cn/',
+  BASE_URL: 'https://apitest.smjpin.cn/',
 
   //首页轮播
   GetBannerConfig: '/Home/GetBannerConfig',
@@ -25,8 +25,8 @@ const api = {
   //购物车列表
   GetShopCartList: 'ShoppingT/GetShopCartList',
   //删除商品
-  GetDeleteShopCart: 'ShoppingT/GetDeleteShopCart',
-  //生成支付订单
+  DeleteShopCart: 'ShoppingT/DeleteShopCart',
+  //生成支付订单PostShopCart
   PostShopCartLoadOrderInfo: 'OrderForm/PostShopCartLoadOrderInfo',
   //清空失效商品
   GetClearLoseShop: 'ShoppingT/GetClearLoseShop',
@@ -37,9 +37,9 @@ const api = {
   //购物车底部推荐商品
   GetMyProductRecommend: 'Commodity/GetMyProductRecommend',
   //加入购物车
-  PostShopCart: 'ShoppingT/PostShopCart',
+  AddShopCart: 'ShoppingT/AddShopCart',
   //操作购物车数量
-  PostShopCartCount: 'ShoppingT/PostShopCartCount',
+  ModifyQty: 'ShoppingT/ModifyQty',
   //支付
   PostAliPayCreateOrder: 'PayOrder/PostAliPayCreateOrder',
 
@@ -241,7 +241,9 @@ const api = {
   //满减金额获取
   GetDiscountPrice: 'OrderForm/GetDiscountPrice',
   //
-  GetActiveGoods: 'ActiveGoods/GetActiveGoods'
+  GetActiveGoods: 'ActiveGoods/GetActiveGoods',
+  //根据规格返回价格
+  GetSkuInfo:"/OrderForm/GetSkuInfo",
 };
 
 export default api;

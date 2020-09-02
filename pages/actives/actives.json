@@ -1,4 +1,7 @@
 {
   "allowsBounceVertical":"NO",
-  "enableScrollBar": "NO"
+  "enableScrollBar": "NO",
+   "usingComponents": {
+    "loading": "/components/loading/loading"
+  }
 }

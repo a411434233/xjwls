@@ -38,7 +38,7 @@ export default class Product {
           ProductName: this.ProductName,
           SouceChannel: this.SouceChannel
         };
-        let res2 = await Post(api.PostShopCart, query, true);
+        let res2 = await Post(api.AddShopCart, query, false,true);
         ShowNoneToast(res2.data.Msg);
         success(res2);
       });

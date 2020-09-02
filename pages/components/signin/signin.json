@@ -4,6 +4,7 @@
   "pullRefresh": false,
   "usingComponents": {
     "footer": "mini-ali-ui/es/footer/index",
-    "goods-item": "../../../components/goodsItem/goodsItem"
+    "goods-item": "/components/goodsItem/goodsItem",
+    "loading": "/components/loading/loading"
   }
 }

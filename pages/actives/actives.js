@@ -3,7 +3,8 @@ Page({
   data: {
     qdcode: '',
     // src: 'http://192.168.0.159:8080/chihuochang/#/xjwSnacks'
-    src: 'https://m.smjpin.cn/chihuochang/#/xjwSnacks'
+    // src: 'https://m.smjpin.cn/chihuochang/#/xjwSnacks'
+    src:''
   },
   async onLoad(query) {
     this.webViewContext = my.createWebViewContext('web1');
@@ -43,6 +44,16 @@ Page({
       this.setData({
         src: src
       });
+    }else{
+      let src = 'https://m.smjpin.cn/chihuochang/#/xjwSnacks'
+      if (src.search(/[?]/) > -1) {
+        src += '&id=' + pathId + '&queryData=' + JSON.stringify(info);
+      } else {
+        src += '?id=' + pathId + '&queryData=' + JSON.stringify(info);
+      }
+      this.setData({
+        src:src
+      })
     }
   },
   // 接收来自H5的消息

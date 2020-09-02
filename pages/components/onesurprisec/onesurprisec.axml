@@ -1,7 +1,7 @@
 <image src="http://image.smjpin.cn/activity/superc.png" class="superc" />
 <image src="/images/snacks/super1.png" class="super1" />
 <view class="item" a:for="{{host}}" a:key='index' key='{{index}}' onTap='goodsDetail' data-item='{{item}}'>
-  <image class="goods_image" src="{{item.ImageUrl}}" lazy-load="{{true}}" />
+  <image class="goods_image" src="{{item.ImageUrl}}" lazy-load="{{true}}" default-source='/images/icon/default-source.png' />
   <view class="goods_info">
     <view class="goods_lijian">限时立减{{item.DiscountAmount}}元</view>
     <view class="goods_daoshoujia">到手价仅{{(item.SalesPrice-item.DiscountAmount).toFixed(2)}}元</view>
@@ -18,7 +18,7 @@
   <image src="/images/snacks/super2.png" lazy-load="{{true}}" class="super3" />
   <view class="goods_list">
     <view class="goods_item2" a:for='{{song}}' a:key='index' key='{{index}}' onTap='goodsDetail' data-item='{{item}}'>
-      <image class="goods_image2" src="{{item.ImageUrl}}" lazy-load="{{true}}" />
+      <image class="goods_image2" src="{{item.ImageUrl}}" lazy-load="{{true}}" default-source='/images/icon/default-source.png' />
       <view class="goods_info2">
         <view class="goods_name2">
           <text number-of-lines='2'>{{item.ProductName}}</text>
@@ -35,7 +35,7 @@
   <image src="{{item.img}}" class="super2" lazy-load="{{true}}" />
   <view class="goods_list">
     <view class="goods_item2" a:for='{{item.list}}' a:for-item='val' a:for-index='idx' a:key='idx' key='{{idx}}' onTap='goodsDetail' data-item='{{val}}' a:if="{{idx<item.showNum}}">
-      <image class="goods_image2" src="{{val.ImageUrl}}" lazy-load="{{true}}" />
+      <image class="goods_image2" src="{{val.ImageUrl}}" lazy-load="{{true}}" default-source='/images/icon/default-source.png' />
       <view class="goods_info2">
         <view class="goods_name2">
           <text number-of-lines='2'>{{val.ProductName}}</text>
@@ -55,3 +55,4 @@
   <life-follow sceneId="d11b5d1d1ba04c53a0368108c30edaf2" class="life" checkFollow="{{checkFollow}}" onClose="closeCb" />
   <image src="/images/icon/close.png" class="close" onTap='close' />
 </view>
+<image src="/images/snacks/alipay.png" class="alipayLogo" lazy-load="{{true}}" />

@@ -1,252 +1,255 @@
-<view class="tab_top" style="padding-top:{{statusBarHeight}}px;height:{{titleBarHeight}}px;" id="pageTop">
-  <view class="{{pageIndex==0?'tab_top_active':''}}" data-index='0' onTap='onPageTab'>宝贝</view>
-  <view class="{{pageIndex==1?'tab_top_active':''}}" data-index='1' onTap='onPageTab'>店铺</view>
-  <view class="{{pageIndex==2?'tab_top_active':''}}" data-index='2' onTap='onPageTab'>详情</view>
-</view>
-<view style="height:{{statusBarHeight+titleBarHeight}}px;"></view>
-<view class="banner_box">
-  <swiper class="banner" onChange='bannerChange'>
-    <swiper-item a:for="{{LunBoImagesView}}" a:key="index" key='index'>
-      <image src="{{item.ImageUrl}}" class="bannerImage" mode="aspectFill"></image>
-    </swiper-item>
-  </swiper>
-  <view class="banner_item">
-    <view class="{{index == current? 'banner_item_active':''}}" a:for="{{LunBoImagesView}}" a:key="index" key='index'></view>
+<loading a:if="{{!ProductId}}" ></loading>
+<block a:else>
+  <view class="tab_top" style="padding-top:{{statusBarHeight}}px;height:{{titleBarHeight}}px;" id="pageTop">
+    <view class="{{pageIndex==0?'tab_top_active':''}}" data-index='0' onTap='onPageTab'>宝贝</view>
+    <view class="{{pageIndex==1?'tab_top_active':''}}" data-index='1' onTap='onPageTab'>店铺</view>
+    <view class="{{pageIndex==2?'tab_top_active':''}}" data-index='2' onTap='onPageTab'>详情</view>
   </view>
-</view>
-<!--  -->
-<view class="goods_info">
-  <view class="price_box">
-    <view class="price_info">
-      <view class="price">{{SalesPrice}}</view>
-      <view class="quan">{{DiscountAmount?'':''}}</view>
-      <view class="price2" a:if="{{DiscountAmount}}">
-        券后
-        <text>{{(SalesPrice -DiscountAmount).toFixed(1)}}</text>
-        元
-      </view>
+  <view style="height:{{statusBarHeight+titleBarHeight}}px;"></view>
+  <view class="banner_box">
+    <swiper class="banner" onChange='bannerChange'>
+      <swiper-item a:for="{{LunBoImagesView}}" a:key="index" key='index'>
+        <image src="{{item.ImageUrl}}" class="bannerImage" mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+    <view class="banner_item">
+      <view class="{{index == current? 'banner_item_active':''}}" a:for="{{LunBoImagesView}}" a:key="index" key='index'></view>
     </view>
-    <image class="goods_share" src="/images/icon/share.svg" onTap='share'></image>
   </view>
-  <view class="goods_name">
-    <text number-of-lines="2">{{ProductName}}</text>
-  </view>
-  <view class="goods_remark_box">
-    <view class="goods_Remark">
-      <text number-of-lines='1'>{{Remark}}</text>
-    </view>
-    <view class="goods_sales">月销量{{SaleCount}}件</view>
-  </view>
-  <!-- 已办卡 -->
-  <view class="card_mes" a:if="{{jfbData.Registered==true}}">
-    <view class="card_mes_l">
-      <view class="card_price">
-        <view class="card_price1">
-          ¥
-          <text>{{(SalesPrice*(1-jfbData.RebateRate)*100/100).toFixed(2) ||0}}</text>
-          <!-- todo -->
-          <text>返利后</text>
-        </view>
-        <view class="card_price2">
-          价格
-          <text>¥ {{SalesPrice}}</text>
+  <!--  -->
+  <view class="goods_info">
+    <view class="price_box">
+      <view class="price_info">
+        <view class="price">{{SalesPrice}}</view>
+        <view class="quan">{{DiscountAmount?'':''}}</view>
+        <view class="price2" a:if="{{DiscountAmount}}">
+          券后
+          <text>{{(SalesPrice -DiscountAmount).toFixed(1)}}</text>
+          元
         </view>
       </view>
-      <view class="card_status">
-        <view class="status_pic" a:if="{{jfbData.SufficientBalance==true}}">
-          返{{jfbData.RebateJfb||0}}集分宝
+      <image class="goods_share" src="/images/icon/share.svg" onTap='share'></image>
+    </view>
+    <view class="goods_name">
+      <text number-of-lines="2">{{ProductName}}</text>
+    </view>
+    <view class="goods_remark_box">
+      <view class="goods_Remark">
+        <text number-of-lines='1'>{{Remark}}</text>
+      </view>
+      <view class="goods_sales">月销量{{SaleCount}}件</view>
+    </view>
+    <!-- 已办卡 -->
+    <view class="card_mes" a:if="{{jfbData.Registered==true}}">
+      <view class="card_mes_l">
+        <view class="card_price">
+          <view class="card_price1">
+            ¥
+            <text>{{(SalesPrice*(1-jfbData.RebateRate)*100/100).toFixed(2) ||0}}</text>
+            <!-- todo -->
+            <text>返利后</text>
+          </view>
+          <view class="card_price2">
+            价格
+            <text>¥ {{SalesPrice}}</text>
+          </view>
         </view>
-        <view class="status_net_err" a:if="{{jfbData.SufficientBalance==false}}">
-          <image mode="scaleToFill" src="/images/icon/face.png"></image>
-          <text>系统开小差了</text>
+        <view class="card_status">
+          <view class="status_pic" a:if="{{jfbData.SufficientBalance==true}}">
+            返{{jfbData.RebateJfb||0}}集分宝
+          </view>
+          <view class="status_net_err" a:if="{{jfbData.SufficientBalance==false}}">
+            <image mode="scaleToFill" src="/images/icon/face.png"></image>
+            <text>系统开小差了</text>
+          </view>
+        </view>
+      </view>
+      <view class="card_mes_r">
+        <view>返利卡</view>
+        <view>{{(1-jfbData.RebateRate)<=0?'花多少返多少':'100集分宝=1元'}}</view>
+      </view>
+    </view>
+    <!-- 未开卡 -->
+    <view class="open_card" a:if="{{jfbData.Registered==false}}">
+      <view class="card_left">
+        <view class="card_money">
+          <view class="card_1">
+            <!-- todo -->
+            <view class="card_1_big">{{fanliPrice[0]||0}}</view>
+            <view class="card_1_small" a:if='{{fanliPrice[1]}}'>.{{fanliPrice[1]}}</view>
+            <text>元购</text>
+          </view>
+          <view class="card_2">
+            价格
+            <text>¥ {{SalesPrice}}</text>
+          </view>
+        </view>
+        <view class="card_desc">
+          <view class="card_text1">现在领卡 下单后返{{SalesPrice*(jfbData.RebateRate) ||0}}元</view>
+          <view class="card_text2">卡主还能天天领红包</view>
+        </view>
+      </view>
+      <view class="card_right">
+        <view class="card_receive">
+          <text>限时免费领取</text>
+          <image mode="scaleToFill" src="/images/icon/cardRight.png"></image>
         </view>
       </view>
     </view>
-    <view class="card_mes_r">
-      <view>返利卡</view>
-      <view>{{(1-jfbData.RebateRate)<=0?'花多少返多少':'100集分宝=1元'}}</view>
+    <view class="icon_list" a:if="{{jfbData.Registered==false||jfbData.Registered==true}}">
+      <block a:for="{{5}}" a:index="{{index}}" a:if="{{index!=0}}">
+        <image mode="scaleToFill" src="{{'/images/icon/icon'+index+'.png'}}" lazy-load="{{true}}" class="icon"></image>
+        <view class="icon_text">{{['','购买商品','完成支付','返集分宝','领取到账'][index]}}</view>
+        <image mode="scaleToFill" src="/images/icon/arrowSplit.png" class="split" a:if="{{index!=4}}"></image>
+      </block>
     </view>
   </view>
-  <!-- 未开卡 -->
-  <view class="open_card" a:if="{{jfbData.Registered==false}}">
-    <view class="card_left">
-      <view class="card_money">
-        <view class="card_1">
-          <!-- todo -->
-          <view class="card_1_big">{{fanliPrice[0]||0}}</view>
-          <view class="card_1_small" a:if='{{fanliPrice[1]}}'>.{{fanliPrice[1]}}</view>
-          <text>元购</text>
-        </view>
-        <view class="card_2">
-          价格
-          <text>¥ {{SalesPrice}}</text>
-        </view>
-      </view>
-      <view class="card_desc">
-        <view class="card_text1">现在领卡 下单后返{{SalesPrice*(jfbData.RebateRate) ||0}}元</view>
-        <view class="card_text2">卡主还能天天领红包</view>
-      </view>
-    </view>
-    <view class="card_right">
-      <view class="card_receive">
-        <text>限时免费领取</text>
-        <image mode="scaleToFill" src="/images/icon/cardRight.png"></image>
-      </view>
-    </view>
+  <view class="items items_line2" onTap="addShop">
+    <view class="item_label">已选</view>
+    <view class="item_box is_label">{{guige||'请选择规格'}}</view>
+    <image src="/images/icon/right.svg" class="right"></image>
   </view>
-  <view class="icon_list" a:if="{{jfbData.Registered==false||jfbData.Registered==true}}">
-    <block a:for="{{5}}" a:index="{{index}}" a:if="{{index!=0}}">
-      <image mode="scaleToFill" src="{{'/images/icon/icon'+index+'.png'}}" lazy-load="{{true}}" class="icon"></image>
-      <view class="icon_text">{{['','购买商品','完成支付','返集分宝','领取到账'][index]}}</view>
-      <image mode="scaleToFill" src="/images/icon/arrowSplit.png" class="split" a:if="{{index!=4}}"></image>
-    </block>
-  </view>
-</view>
-<view class="items items_line2" onTap="addShop">
-  <view class="item_label">已选</view>
-  <view class="item_box is_label">{{guige||'请选择规格'}}</view>
-  <image src="/images/icon/right.svg" class="right"></image>
-</view>
-<view class="items margin_top  items_line2" onTap="lingquan" a:if="{{MinAmount.length}}">
-  <view class="item_label">领券</view>
-  <view class="item_box">
-    <view class="coupone" a:for="{{MinAmount}}" a:key="index">
-      满{{item.MinAmount}}减{{item.DiscountAmount}}
-    </view>
-  </view>
-  <image src="/images/icon/right.svg" class="right"></image>
-</view>
-<view class="items margin_top">
-  <view class="item_label">运费</view>
-  <view class="item_box">
-    <image src="/images/icon/express.svg" class="express"></image>
-    <view class="item_fahuodi">满39包邮</view>
-  </view>
-  <image src="/images/icon/right.svg" class="right"></image>
-</view>
-<!--  -->
-<view class="items_2">
-  <view class="items margin_top ">
-    <view class="item_label">送至</view>
+  <view class="items margin_top  items_line2" onTap="lingquan" a:if="{{MinAmount.length}}">
+    <view class="item_label">领券</view>
     <view class="item_box">
-      <image src="/images/icon/locations.svg" class="locations"></image>
-      <view class="item_fahuodi" onTap='getMyAddress' a:if="{{myadd.Province}}">
-        {{myadd.Province}} {{myadd.City}} {{myadd.Area}}
+      <view class="coupone" a:for="{{MinAmount}}" a:key="index">
+        满{{item.MinAmount}}减{{item.DiscountAmount}}
       </view>
-      <view class="item_fahuodi" onTap='getMyadd' a:if="{{!myadd.Province}}">点击获取我的地址</view>
     </view>
     <image src="/images/icon/right.svg" class="right"></image>
   </view>
-  <view class="item_info">
-    <text class="item_info_1">下单后</text>
-    <text class="item_info_2">24小时内发货</text>
-  </view>
-</view>
-<view class="tuijian_box" id="store">
-  <view class="store_box" a:if='{{storeInfo.BrandId}}'>
-    <view class="">
-      <image class="store_Image" src="{{storeInfo.BrandLogoUrl}}" mode='aspectFill'></image>
-      <view class="store_name">{{storeInfo.BrandName}}</view>
+  <view class="items margin_top">
+    <view class="item_label">运费</view>
+    <view class="item_box">
+      <image src="/images/icon/express.svg" class="express"></image>
+      <view class="item_fahuodi">满39包邮</view>
     </view>
-    <view class="into_store" onTap='intoStore' data-id="{{storeInfo.BrandId}}">进店逛逛</view>
+    <image src="/images/icon/right.svg" class="right"></image>
   </view>
-  <view class="tuijian_list">
-    <view class="tuijian_item" a:for="{{recProductList}}" a:if='{{index<=2}}' a:key="index" onTap="goodsDetail" data-index="{{index}}">
-      <form onSubmit="onSubmit" report-submit="{{true}}" data-id="{{item.ProductId}}">
-        <button formType="submit" hover-class="button-hover" style="width:100%">
-          <image class="tuijian_Image" src="{{item.ImageUrl}}" lazy-load="{{true}}"></image>
-          <view class="tuijian_info">
-            <view class="tuijian_info_name">
-              <text number-of-lines="2" class="tuijian_name">{{item.ProductName}}</text>
-            </view>
-            <view class="tuijian_box_">
-              <view class="tuijian_price">
-                <view a:if="{{item.DiscountAmount}}" class="price_app">
-                  {{(item.SalesPrice-item.DiscountAmount).toFixed(2)}}
-                </view>
-                <view class="price_app" a:else>{{item.SalesPrice}}</view>
+  <!--  -->
+  <view class="items_2">
+    <view class="items margin_top ">
+      <view class="item_label">送至</view>
+      <view class="item_box">
+        <image src="/images/icon/locations.svg" class="locations"></image>
+        <view class="item_fahuodi" onTap='getMyAddress' a:if="{{myadd.Province}}">
+          {{myadd.Province}} {{myadd.City}} {{myadd.Area}}
+        </view>
+        <view class="item_fahuodi" onTap='getMyadd' a:if="{{!myadd.Province}}">点击获取我的地址</view>
+      </view>
+      <image src="/images/icon/right.svg" class="right"></image>
+    </view>
+    <view class="item_info">
+      <text class="item_info_1">下单后</text>
+      <text class="item_info_2">24小时内发货</text>
+    </view>
+  </view>
+  <view class="tuijian_box" id="store">
+    <view class="store_box" a:if='{{storeInfo.BrandId}}'>
+      <view class="">
+        <image class="store_Image" src="{{storeInfo.BrandLogoUrl}}" mode='aspectFill'></image>
+        <view class="store_name">{{storeInfo.BrandName}}</view>
+      </view>
+      <view class="into_store" onTap='intoStore' data-id="{{storeInfo.BrandId}}">进店逛逛</view>
+    </view>
+    <view class="tuijian_list">
+      <view class="tuijian_item" a:for="{{recProductList}}" a:if='{{index<=2}}' a:key="index" onTap="goodsDetail" data-index="{{index}}">
+        <form onSubmit="onSubmit" report-submit="{{true}}" data-id="{{item.ProductId}}">
+          <button formType="submit" hover-class="button-hover" style="width:100%">
+            <image class="tuijian_Image" src="{{item.ImageUrl}}" lazy-load="{{true}}"></image>
+            <view class="tuijian_info">
+              <view class="tuijian_info_name">
+                <text number-of-lines="2" class="tuijian_name">{{item.ProductName}}</text>
               </view>
-              <view class="tuijian_old price_app">¥{{item.Price}}</view>
-              <image src="/images/icon/plus2.svg" class="plus2" catchTap="addtuijian" data-index="{{index}}"></image>
+              <view class="tuijian_box_">
+                <view class="tuijian_price">
+                  <view a:if="{{item.DiscountAmount}}" class="price_app">
+                    {{(item.SalesPrice-item.DiscountAmount).toFixed(2)}}
+                  </view>
+                  <view class="price_app" a:else>{{item.SalesPrice}}</view>
+                </view>
+                <view class="tuijian_old price_app">¥{{item.Price}}</view>
+                <image src="/images/icon/plus2.svg" class="plus2" catchTap="addtuijian" data-index="{{index}}"></image>
+              </view>
+            </view>
+          </button>
+        </form>
+      </view>
+    </view>
+  </view>
+  <view class="tuijian_box2" id='storeDetail'>
+    <view class="tuijian_box2_view">商品详情</view>
+  </view>
+  <form onSubmit="onSubmit" report-submit="{{true}}" data-id="{{ProductId}}">
+    <button formType="submit" hover-class="button-hover">
+      <image src="{{item.ImageUrl}}" lazy-load="{{index>2}}" a:for="{{DetailImagesView}}" class="adetailImage" a:key="index" mode="widthFix" onTap="showImages"></image>
+    </button>
+  </form>
+  <!--  -->
+  <view class="foot_box">
+    <view class="foot_left">
+      <view onTap="goHome">
+        <image src="/images/icon/home.svg" class="home"></image>
+        <view>首页</view>
+      </view>
+      <view onTap="goShopCart">
+        <image src="/images/icon/cart.svg" class="home"></image>
+        <view>购物车</view>
+        <view class="shopNum">{{shopNum}}</view>
+      </view>
+      <view onTap>
+        <contact-button tnt-inst-id="3p3_vrqX" scene="SCE00067269" alipay-card-no="{{user_id}}" size="48rpx" icon="/images/icon/kefu.svg"></contact-button>
+        <view>客服</view>
+      </view>
+    </view>
+    <view class="foot_right">
+      <view class="addShop" onTap="addShop" data-ispay="0">加入购物车</view>
+      <view class="pay" onTap="addShop" data-ispay="1">立即购买</view>
+    </view>
+  </view>
+  <!-- 领券组件 -->
+  <quan-popup MinAmount='{{MinAmount}}' ref='quanpoup'></quan-popup>
+  <!-- 购买选择弹框 -->
+  <popup position="bottom" zIndex="{{200}}" show="{{shopModel}}" onClose="closeShopmodel">
+    <view class="add_cat">
+      <image src="/images/icon/close2.svg" class="close2" onTap="closeShopmodel"></image>
+      <view class="add_cat_header">
+        <image src="{{difference.ImageUrl}}" class="add_cat_Image"></image>
+        <view class="add_cat_info">
+          <view class="add_cat_price_box">
+            <view class="add_cat_price price_app">{{difference.SalesPrice}}</view>
+            <!-- <view class="add_cat_old price_app">¥{{difference.Price}}</view> -->
+            <view class="goods_label" a:if="{{jfbData.Registered==true||jfbData.Registered==false}}">
+              <view>返利</view>
+              <view>{{jfbData.RebateJfb||0}}集分宝</view>
             </view>
           </view>
+          <view class="add_cat_kucu">库存{{difference.Nums}}件</view>
+          <view class="yuxuanze">已选择：{{guige}}</view>
+        </view>
+      </view>
+      <view a:for="{{specifications}}" a:key="index">
+        <view class="add_cat_title">{{item.Name}}</view>
+        <view class="add_cat_label_ist">
+          <view class="{{val.isChecked?'add_cat_active':''}}" a:for="{{item.item}}" a:for-item="val" a:for-index="idx" a:key="idx" data-idx="{{idx}}" data-index="{{index}}" onTap="setLabel">
+            {{val.CategoryName}}
+          </view>
+        </view>
+      </view>
+      <view class="add_cat_box">
+        <view>数量</view>
+        <view class="add_cat_numBxo">
+          <view class="add_cat_left" onTap="eddNum"></view>
+          <view class="add_cat_nums">{{goodsNum}}</view>
+          <view class="add_cat_right" onTap="addNum"></view>
+        </view>
+      </view>
+      <form onSubmit="onSubmit" report-submit="{{true}}" data-id="{{ProductId}}">
+        <button formType="submit" hover-class="button-hover">
+          <view class="add_cat_btn {{isAddShopCat==false?'huise':''}}" onTap="addShopCat" a:if="{{ispay!=1}}">加入购物车</view>
+          <view class="add_cat_btn {{isAddShopCat==false?'huise':''}}" onTap="pay" a:if="{{ispay==1}}">立即购买</view>
         </button>
       </form>
     </view>
-  </view>
-</view>
-<view class="tuijian_box2" id='storeDetail'>
-  <view class="tuijian_box2_view">商品详情</view>
-</view>
-<form onSubmit="onSubmit" report-submit="{{true}}" data-id="{{ProductId}}">
-  <button formType="submit" hover-class="button-hover">
-    <image src="{{item.ImageUrl}}" lazy-load="{{index>2}}" a:for="{{DetailImagesView}}" class="adetailImage" a:key="index" mode="widthFix" onTap="showImages"></image>
-  </button>
-</form>
-<!--  -->
-<view class="foot_box">
-  <view class="foot_left">
-    <view onTap="goHome">
-      <image src="/images/icon/home.svg" class="home"></image>
-      <view>首页</view>
-    </view>
-    <view onTap="goShopCart">
-      <image src="/images/icon/cart.svg" class="home"></image>
-      <view>购物车</view>
-      <view class="shopNum">{{shopNum}}</view>
-    </view>
-    <view onTap>
-      <contact-button tnt-inst-id="3p3_vrqX" scene="SCE00067269" alipay-card-no="{{user_id}}" size="48rpx" icon="/images/icon/kefu.svg"></contact-button>
-      <view>客服</view>
-    </view>
-  </view>
-  <view class="foot_right">
-    <view class="addShop" onTap="addShop" data-ispay="0">加入购物车</view>
-    <view class="pay" onTap="addShop" data-ispay="1">立即购买</view>
-  </view>
-</view>
-<!-- 领券组件 -->
-<quan-popup MinAmount='{{MinAmount}}' ref='quanpoup'></quan-popup>
-<!-- 购买选择弹框 -->
-<popup position="bottom" zIndex="{{200}}" show="{{shopModel}}" onClose="closeShopmodel">
-  <view class="add_cat">
-    <image src="/images/icon/close2.svg" class="close2" onTap="closeShopmodel"></image>
-    <view class="add_cat_header">
-      <image src="{{difference.ImageUrl}}" class="add_cat_Image"></image>
-      <view class="add_cat_info">
-        <view class="add_cat_price_box">
-          <view class="add_cat_price price_app">{{difference.SalesPrice}}</view>
-          <!-- <view class="add_cat_old price_app">¥{{difference.Price}}</view> -->
-          <view class="goods_label" a:if="{{jfbData.Registered==true||jfbData.Registered==false}}">
-            <view>返利</view>
-            <view>{{jfbData.RebateJfb||0}}集分宝</view>
-          </view>
-        </view>
-        <view class="add_cat_kucu">库存{{difference.Nums}}件</view>
-        <view class="yuxuanze">已选择：{{guige}}</view>
-      </view>
-    </view>
-    <view a:for="{{specifications}}" a:key="index">
-      <view class="add_cat_title">{{item.Name}}</view>
-      <view class="add_cat_label_ist">
-        <view class="{{val.isChecked?'add_cat_active':''}}" a:for="{{item.item}}" a:for-item="val" a:for-index="idx" a:key="idx" data-idx="{{idx}}" data-index="{{index}}" onTap="setLabel">
-          {{val.CategoryName}}
-        </view>
-      </view>
-    </view>
-    <view class="add_cat_box">
-      <view>数量</view>
-      <view class="add_cat_numBxo">
-        <view class="add_cat_left" onTap="eddNum"></view>
-        <view class="add_cat_nums">{{goodsNum}}</view>
-        <view class="add_cat_right" onTap="addNum"></view>
-      </view>
-    </view>
-    <form onSubmit="onSubmit" report-submit="{{true}}" data-id="{{ProductId}}">
-      <button formType="submit" hover-class="button-hover">
-        <view class="add_cat_btn" onTap="addShopCat" a:if="{{ispay!=1}}">加入购物车</view>
-        <view class="add_cat_btn" onTap="pay" a:if="{{ispay==1}}">立即购买</view>
-      </button>
-    </form>
-  </view>
-</popup>
+  </popup>
+</block>

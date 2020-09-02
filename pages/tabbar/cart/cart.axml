@@ -1,3 +1,5 @@
+
+
 <view class="">
     <view class="shop_top" onTap='choudan'>
         <view class="shop_top_btn">全场搭配</view>
@@ -46,7 +48,7 @@
                         </view>
                         <view class="cart-mcmr">
                             <view class="cart-mcmrt">{{val.ProductName}}</view>
-                            <view class="cart-mcmr_label">{{val.CategoryName}}</view>
+                            <view class="cart-mcmr_label">{{val.SkuName?val.SkuName:val.CategoryName}}</view>
                             <view class="cart-mcmrb">
                                 <view class="cart-mcmrbl price_app">
                                     <text>¥</text>
