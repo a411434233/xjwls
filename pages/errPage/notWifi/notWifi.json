@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "page-result": "mini-ali-ui/es/page-result/index"
+  }
+}
