@@ -20,7 +20,7 @@ Page({
         goodsNum: 1,
         ispay: '',
         user_id: '',
-        guige: [],
+        guige: "",
         specifications: [],
         difference: {},
         id: '',
@@ -29,7 +29,6 @@ Page({
         scrollTop: 0,
         current: 0,
         myadd: {},
-        isAddShopCat: true
     },
     async onLoad(options) {
         getSysTemInfo().then(res => {
@@ -37,7 +36,6 @@ Page({
         });
         let id = options.id;
         await this.getproInfo(id);
-        await this.getProductTaste(id);
         this.getProductsBydptCode(id);
         this.GetBrandInfo(id);
         this.getProductDiscount(id);
@@ -260,7 +258,6 @@ Page({
         if (!guige) return;
         if (typeof difference != 'object') return;
         if (!difference) return;
-        console.log(guige)
         let data = {
             productId: ProductId,
             ProductName: ProductName,
@@ -276,7 +273,6 @@ Page({
     },
     //加入购物车
     async addShopCat(e) {
-        if (!this.data.isAddShopCat) return;
         let data = await this.getAddQuery();
         Post(api.AddShopCart, data, false, true).then(res => {
             if (res.data.Code == 1) {
@@ -326,19 +322,19 @@ Page({
     //根据规格查询价格
     GetSkuInfo(SkuIds) {
         return Get(api.GetSkuInfo, {productId: this.data.ProductId, skuIds: SkuIds}).then(res => {
-            if (typeof res.data.Data != 'object') return;
-            if (res.data.Code == -1) {
+            if (res.data.Code ==-1) {
                 ShowNoneToast(res.data.Msg)
-                this.setData({isAddShopCat: false})
                 return
             }
-            let difference = this.data.difference;
-            difference.SalesPrice = res.data.Data.SkuPrice;
-            this.setData({difference: difference, isAddShopCat: true})
+            if(res.data.Data!=null){
+                let difference = this.data.difference;
+                difference.SalesPrice = res.data.Data.SkuPrice;
+                this.setData({difference: difference, })
+            }
         })
     },
     //获取规格
-    getguige(guige = []) {
+    getguige(guige=[]) {
         return new Promise(async (resolve, reject) => {
             let {specifications} = this.data;
             guige = guige.length ? guige : specifications;
@@ -382,7 +378,10 @@ Page({
     closeShopmodel() {
         this.setData({shopModel: false});
     },
-    addShop(e) {
+   async addShop(e) {
+        if(this.data.guige == ''){
+            await this.getProductTaste(this.data.ProductId);
+        }
         let ispay = e.currentTarget.dataset.ispay;
         this.setData({shopModel: true, ispay});
     },

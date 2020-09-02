@@ -66,7 +66,6 @@ Page({
   },
   //去评价
   goevaluate(e) {
-    // console.log(e)
     my.navigateTo({
       url: '/pages/components/evaluate/evaluate?orderid=' + e.currentTarget.dataset.orderid + '&listlength=' + e.currentTarget.dataset.listlength
     });

@@ -232,7 +232,7 @@
         <view class="add_cat_title">{{item.Name}}</view>
         <view class="add_cat_label_ist">
           <view class="{{val.isChecked?'add_cat_active':''}}" a:for="{{item.item}}" a:for-item="val" a:for-index="idx" a:key="idx" data-idx="{{idx}}" data-index="{{index}}" onTap="setLabel">
-            {{val.CategoryName}}
+            {{val.SkuName?val.SkuName:val.CategoryName}}
           </view>
         </view>
       </view>

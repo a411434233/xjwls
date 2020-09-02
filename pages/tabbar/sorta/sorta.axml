@@ -31,7 +31,7 @@
   </view>
   <view class="vtabs_box_left" a:if="{{productsLeft.length}}">
     <view a:for="{{productsLeft}}" key='{{index}}' a:key="index" class="{{activeTab==index?'vtabs_box_left_active':''}}" data-index="{{index}}" onTap="handleChange">
-      {{item.CategoryName}}
+      {{item.SkuName?item.SkuName:item.CategoryName}}
     </view>
   </view>
   <view class="vtabs_box_right">

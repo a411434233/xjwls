@@ -52,7 +52,7 @@ Page({
     let m = [];
     list.forEach(res => {
       res.subSaleOrder.forEach(val => {
-        m.push({ ProductId: val.ProductId, Qty: val.ShopingCount, AddressId: addressManage.Id });
+        m.push({ ProductId: val.ProductId, Qty: val.ShopingCount, AddressId: addressManage.Id,SkuIds:val.SkuIds });
       });
     });
     const res_1 = await Post(api.GetFreight, m)
@@ -112,6 +112,8 @@ Page({
         ImageUrl: subSaleOrder.ImageUrl,
         IsUseVcoins: isVCoins ? 1 : 0,
         PayChannel: 1,
+        SkuName:subSaleOrder.SkuName,
+        SkuIds:subSaleOrder.SkuIds,
         ProductId: subSaleOrder.ProductId,
         RecordId: RecordId,
         ShopingCount: subSaleOrder.ShopingCount,

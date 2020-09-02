@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.axml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +58,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.常规" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -89,7 +95,7 @@
       <workItem from="1598690293881" duration="2004000" />
       <workItem from="1598856848967" duration="6021000" />
       <workItem from="1598945200168" duration="9255000" />
-      <workItem from="1599008612586" duration="19104000" />
+      <workItem from="1599008612586" duration="26372000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -98,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599033065174</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Default Changelist">
+      <created>1599033739940</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599033739940</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Default Changelist">
+      <created>1599033758843</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599033758843</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,18 +157,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1598952539711" />
-    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2" timestamp="1599033061634">
+    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2" timestamp="1599033757835">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1599033061634" />
+    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1599033757835" />
     <state x="1061" y="455" key="FileChooserDialogImpl" timestamp="1598952468914">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1598952468914" />
-    <state x="1165" y="209" width="992" height="773" key="SettingsEditor" timestamp="1599030833380">
+    <state x="1165" y="209" width="992" height="773" key="SettingsEditor" timestamp="1599034310833">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1165" y="209" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1599030833380" />
+    <state x="1165" y="209" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1599034310833" />
     <state x="1678" y="224" width="603" height="804" key="find.popup" timestamp="1599029801792">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -32,7 +32,7 @@
             </view>
             <view class="goodsinfo-cr" data-ordercode="{{item.OrderCode}}" onTap="goorderdetail">
               <view class="goodsinfo-crt">{{items.ProductName}}</view>
-              <view class="goodsinfo-crm">{{items.CategoryName}}</view>
+              <view class="goodsinfo-crm">{{items.SkuName?items.SkuName:items.CategoryName}}</view>
             </view>
           </view>
           <view class="goodsinfo-crbr">

@@ -1,4 +1,4 @@
-<loading a:if="{{!detail.Status}}"></loading>
+<loading a:if="{{!detail.OrderCode}}"></loading>
 <view class="box-wrap" a:else>
   <view class="order-t">
     <image mode="scaleToFill" src="" />
@@ -98,7 +98,7 @@
       <image mode="scaleToFill" src="{{item.ImageUrl}}" />
       <view class="orderInfo">
         <view class="proName">{{item.ProductName}}</view>
-        <view class="proLabel">{{item.CategoryName}}</view>
+        <view class="proLabel">{{item.SkuName?item.SkuName:item.CategoryName}}</view>
       </view>
       <view class="proPro_box">
         <view class="proSales price_app">¥{{item.ShopingSalesPrice}}</view>
