@@ -9,7 +9,7 @@ class Token {
         this.token = '';
         this.registChannel = '';
     }
-
+    
     getToken(registChannel = '') {
         return new Promise(async res => {
             registChannel = registChannel ? registChannel : this.GetChannelCode();
@@ -97,7 +97,7 @@ const TOKEN = new Token();
  * @param {*} data  参数
  * @param {*} user  是否需要userId,
  * @param {*} token 是否需要token
- * @param {}
+ * @param {*}
  */
 
 function Post(url, data, user, token) {

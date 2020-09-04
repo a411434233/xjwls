@@ -12,7 +12,7 @@
         </view>
       </view>
       <view class="address_edit" catchTap="edit" data-id="{{item.Id}}">
-        <image mode="scaleToFill" src="/images/icon/bianji.png" />
+        <image mode="scaleToFill" src="/images/icon/bianji.png"></image>
       </view>
     </view>
   </scroll-view>

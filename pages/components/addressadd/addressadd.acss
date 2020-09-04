@@ -12,13 +12,6 @@
   margin-top: 10rpx
 }
 
-.address-t {
-  line-height: 80rpx;
-  font-size: 32rpx;
-  color: #333;
-  font-weight: 600;
-  margin-left: 24rpx;
-}
 
 .address-city {
   line-height: 98rpx;
@@ -62,13 +55,6 @@
   line-height: 98rpx;
 }
 
-.address-name, .address-tel, .address-email {
-  line-height: 98rpx;
-  margin-left: 24rpx;
-  border-bottom: 2rpx solid #ebebeb;
-  font-size: 28rpx;
-  color: #333;
-}
 
 .address-moren {
   margin-left: 24rpx;
@@ -92,12 +78,7 @@
   color: #666666;
 }
 
-.delect {
-  line-height: 120rpx;
-  color: #FF7B56;
-  font-size: 28rpx;
-  margin-left: 24rpx;
-}
+
 
 .saveaddress1 {
   margin: 0 auto;

@@ -1,6 +1,6 @@
 <loading a:if="{{!ProductId}}" ></loading>
 <block a:else>
-  <view class="tab_top" style="padding-top:{{statusBarHeight}}px;height:{{titleBarHeight}}px;" id="pageTop">
+  <view class="tab_top" style="padding-top:{{statusBarHeight}}px;height:{{titleBarHeight}}" id="pageTop">
     <view class="{{pageIndex==0?'tab_top_active':''}}" data-index='0' onTap='onPageTab'>宝贝</view>
     <view class="{{pageIndex==1?'tab_top_active':''}}" data-index='1' onTap='onPageTab'>店铺</view>
     <view class="{{pageIndex==2?'tab_top_active':''}}" data-index='2' onTap='onPageTab'>详情</view>
@@ -46,7 +46,6 @@
           <view class="card_price1">
             ¥
             <text>{{(SalesPrice*(1-jfbData.RebateRate)*100/100).toFixed(2) ||0}}</text>
-            <!-- todo -->
             <text>返利后</text>
           </view>
           <view class="card_price2">
@@ -74,7 +73,6 @@
       <view class="card_left">
         <view class="card_money">
           <view class="card_1">
-            <!-- todo -->
             <view class="card_1_big">{{fanliPrice[0]||0}}</view>
             <view class="card_1_small" a:if='{{fanliPrice[1]}}'>.{{fanliPrice[1]}}</view>
             <text>元购</text>
@@ -245,7 +243,7 @@
         </view>
       </view>
       <form onSubmit="onSubmit" report-submit="{{true}}" data-id="{{ProductId}}">
-        <button formType="submit" hover-class="button-hover">
+        <button formType="submit" hover-class="button-hover" >
           <view class="add_cat_btn {{isAddShopCat==false?'huise':''}}" onTap="addShopCat" a:if="{{ispay!=1}}">加入购物车</view>
           <view class="add_cat_btn {{isAddShopCat==false?'huise':''}}" onTap="pay" a:if="{{ispay==1}}">立即购买</view>
         </button>

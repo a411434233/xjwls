@@ -1,6 +1,7 @@
 page {
   padding-bottom: 150rpx;
 }
+
 /* .tab_top */
 
 .tab_top {
@@ -10,7 +11,7 @@ page {
   position: fixed;
   width: 100%;
   font-size: 30rpx;
-  font-family: PingFangSC-Regular, PingFang SC;
+  font-family: PingFangSC-Regular, PingFang SC, sans-serif;
   font-weight: 400;
   color: rgba(51, 51, 51, 1);
   z-index: 1000;
@@ -23,7 +24,7 @@ page {
 }
 
 .tab_top_active {
-  font-family: PingFangSC-Medium, PingFang SC !important;
+  font-family: PingFangSC-Medium, PingFang SC, sans-serif !important;
   font-weight: 500 !important;
   color: rgba(255, 39, 64, 1) !important;
 }
@@ -44,6 +45,7 @@ page {
 /* .tab_top */
 
 /* .banner */
+
 .banner {
   width: 750rpx;
   height: 750rpx;
@@ -134,7 +136,7 @@ page {
   color: #fff;
   font-weight: 700;
   white-space: nowrap;
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue', sans-serif;
   display: flex;
   align-items: baseline;
 }
@@ -150,7 +152,7 @@ page {
 .card_1 text {
   font-size: 20rpx;
   font-weight: normal;
-  font-family: 'PingFang SC';
+  font-family: 'PingFang SC', sans-serif;
   white-space: nowrap;
 }
 
@@ -235,7 +237,7 @@ page {
   vertical-align: middle;
 }
 
-.huise{
+.huise {
   background: #f5f5f5 !important;
   color: #999999 !important;
 }
@@ -250,7 +252,7 @@ page {
   color: #fff;
   font-size: 52rpx;
   font-weight: 700;
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue', sans-serif;
   margin: 0 8rpx;
 }
 
@@ -480,7 +482,7 @@ page {
   margin-left: 30rpx;
 }
 
-.price2 > text {
+.price2>text {
   font-size: 38rpx;
   font-family: DINAlternate-Bold, DINAlternate;
 }
@@ -569,7 +571,7 @@ page {
   width: 100%;
 }
 
-.store_box > view {
+.store_box>view {
   display: flex;
   align-items: center;
 }
@@ -749,7 +751,7 @@ button {
   align-items: flex-end;
 }
 
-.tuijian_price > view::before {
+.tuijian_price>view::before {
   content: '¥';
   font-size: 32rpx;
 }
@@ -804,7 +806,7 @@ button {
   margin-left: 44rpx;
 }
 
-.foot_left > view {
+.foot_left>view {
   position: relative;
 }
 
@@ -816,7 +818,7 @@ button {
   overflow: hidden;
 }
 
-.foot_right > view {
+.foot_right>view {
   width: 210rpx;
   height: 82rpx;
   display: flex;
@@ -878,7 +880,7 @@ button {
 }
 
 .add_cat_price {
-  font-size: 52rpx;
+  font-size: 40rpx;
   font-family: DINAlternate-Bold, DINAlternate;
   font-weight: bold;
   color: #ee1525;
@@ -886,7 +888,6 @@ button {
 
 .add_cat_price::before {
   content: '¥';
-  font-size: 50rpx;
 }
 
 .add_cat_header {
@@ -945,7 +946,8 @@ button {
   font-family: PingFangSC-Regular, PingFang SC;
   color: #999999;
 }
-.yuxuanze{
+
+.yuxuanze {
   margin-top: 5rpx;
 }
 
@@ -964,7 +966,6 @@ button {
 .add_cat_label_ist view {
   font-size: 28rpx;
   font-weight: 400;
-  color: rgba(153, 153, 153, 1);
   height: 52rpx;
   display: flex;
   align-items: center;
@@ -972,7 +973,8 @@ button {
   box-sizing: border-box;
   padding: 0 32rpx;
   border-radius: 4rpx;
-  border: 2rpx solid rgba(232, 232, 232, 1);
+  color: #999999;
+  border: 2rpx solid #E8E8E8;
   margin-top: 13rpx;
   margin-right: 16rpx;
 }
@@ -999,8 +1001,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 2rpx solid rgba(153, 153, 153, 1);
-  border-bottom: 2rpx solid rgba(153, 153, 153, 1);
+  border-top: 2rpx solid #ebebeb;
+  border-bottom: 2rpx solid #ebebeb;
 }
 
 .add_cat_left {
@@ -1009,8 +1011,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2rpx solid #999999;
-  border-radius: 10rpx 0 0 10rpx;
+  border: 2rpx solid #ebebeb;
+  border-radius: 18rpx 0 0 18rpx;
 }
 
 .add_cat_left::after {
@@ -1044,8 +1046,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2rpx solid #999999;
-  border-radius: 0px 10rpx 10rpx 0px;
+  border: 2rpx solid #ebebeb;
+  border-radius: 0px 18rpx 18rpx 0px;
   position: relative;
 }
 
@@ -1077,6 +1079,7 @@ button {
 .add_cat_active {
   border-color: #ff2740 !important;
   color: #ff2740 !important;
+  background: rgba(255, 39, 64, 0.1);
 }
 
 .adetailImage {

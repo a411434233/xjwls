@@ -3,19 +3,19 @@
   padding-bottom: 34rpx;
   min-height: 100vh;
   background:linear-gradient(180deg,rgba(255,0,46,1) 0%,rgba(255,157,97,1) 100%);
-} 
+}
 .boxwrap image{
   width: 100%;
   height: 746rpx;
 }
 .cash-top{
   position: relative;
-} 
+}
 .cash-topb{
   position: absolute;
   left: 0;
   bottom: 20rpx;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   margin: 0 32rpx;
   color: #fff;
@@ -93,7 +93,7 @@
  width: 626rpx;
  height: 131rpx;
  background: #fff;
- border-radius: 22rpx; 
+ border-radius: 22rpx;
  display: flex;
  justify-content: space-between;
  padding: 0 30rpx;
@@ -104,19 +104,14 @@
  width: 626rpx;
  height: 131rpx;
  background: #fff;
- border-radius: 22rpx; 
+ border-radius: 22rpx;
  display: flex;
  justify-content: space-between;
  padding: 0 30rpx;
  color: #333;
 
 }
-.cash-centerbbc{
- position: absolute;
- top: 0;
- left: 0;
- z-index: 99;
-}
+
 .cash-centerbl{
   display: flex;
   align-items: center;
@@ -176,35 +171,22 @@
  border: 2rpx solid #FF8C1A;
  /* margin-top: 15rpx; */
 }
-.cash-centerbrb1{
- /* width: 128rpx; */
- text-align: center;
- height: 39rpx;
- font-size: 24rpx;
- padding: 4rpx 15rpx;
- color: #FC4C4E;
- line-height: 39rpx;
- /* background:linear-gradient(180deg,rgba(254,229,176,1) 0%,rgba(255,193,94,1) 100%); */
- /* border-radius:22rpx; */
- margin-top: 15rpx;
- border: 2rpx solid #FC4C4E;
-}
 .cash-bottomt image{
   width: 500rpx;
   height: 415rpx;
   margin: 21rpx 0 0 94rpx;
 }
-.cash-bottom{ 
-  width: 686rpx; 
+.cash-bottom{
+  width: 686rpx;
   height: 535rpx;
   background: #FFFCF7;
   border-radius: 22rpx;
   margin: 40rpx 0 0 32rpx;
-} 
+}
 .cash-bottomb{
   margin: 0 0 0 168rpx;
   width:350rpx;
-height:73rpx; 
+height:73rpx;
 line-height: 73rpx;
 text-align: center;
 font-size: 32rpx;
@@ -217,14 +199,14 @@ border-radius:36rpx;
 }
 .lifetop lifestyle{
   margin-left: 32rpx;
-  border-radius: 22rpx; 
+  border-radius: 22rpx;
   width: 686rpx;
   height: 131rpx;
   position: absolute;
   top: 20rpx;
   left: 0;
   background: #fff;
-  z-index: 9; 
+  z-index: 9;
 }
 .cash-centerbwrap{
   position: relative;
@@ -247,9 +229,7 @@ border-radius:36rpx;
  font-size: 24rpx;
  color: #333;
 }
-.cash-centerbrb22{
-  border: 2rpx solid #FC4C4E;
-}
+
 .shoucang{
   width: 120rpx;
   text-align: right;
@@ -297,19 +277,15 @@ border-radius:36rpx;
 }
 
 .advert {
-  /* margin: 10rpx 0; */
   overflow: hidden;
   display: flex;
   align-items: center;
   width: 100%;
   height: 42rpx;
-  /* height: 48rpx;
-  line-height: 48rpx; */
   color: #fff;
-  /* background: #fff; */
   border-radius: 24rpx;
 }
- 
+
 .advert-r {
   width: 440rpx;
   overflow: hidden;

@@ -5,14 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xjwls.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xjwls.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/address/address.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/address/address.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/address/address.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/address/address.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/addressadd/addressadd.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/addressadd/addressadd.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/addressadd/addressadd.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/addressadd/addressadd.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/aftersale/aftersale.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/aftersale/aftersale.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/Circle/Circle.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/Circle/Circle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/minea/minea.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/minea/minea.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +31,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/a411434233/xjwls" />
+      </set>
+    </option>
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -38,6 +55,9 @@
   </component>
   <component name="ProjectId" id="1gOK3JeC2Po7eHDAMqaIluw43dJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,7 +78,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -95,7 +115,13 @@
       <workItem from="1598690293881" duration="2004000" />
       <workItem from="1598856848967" duration="6021000" />
       <workItem from="1598945200168" duration="9255000" />
-      <workItem from="1599008612586" duration="26372000" />
+      <workItem from="1599008612586" duration="27326000" />
+      <workItem from="1599093759919" duration="1454000" />
+      <workItem from="1599095954790" duration="2105000" />
+      <workItem from="1599098088594" duration="1063000" />
+      <workItem from="1599099161844" duration="2038000" />
+      <workItem from="1599101271510" duration="851000" />
+      <workItem from="1599112310723" duration="2322000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -118,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599033758843</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Default Changelist">
+      <created>1599042356785</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599042356785</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,10 +162,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="907" y="382" key="#Inspections" timestamp="1598952578922">
+    <state x="907" y="382" key="#Inspections" timestamp="1599099221327">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="907" y="382" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1598952578922" />
+    <state x="907" y="382" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1599099221327" />
     <state x="1029" y="526" key="#Notifications" timestamp="1598322675191">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -157,18 +190,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1598952539711" />
-    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2" timestamp="1599033757835">
+    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2" timestamp="1599042958365">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1599033757835" />
-    <state x="1061" y="455" key="FileChooserDialogImpl" timestamp="1598952468914">
+    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1599042958365" />
+    <state x="1061" y="455" key="FileChooserDialogImpl" timestamp="1599098734801">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1598952468914" />
-    <state x="1165" y="209" width="992" height="773" key="SettingsEditor" timestamp="1599034310833">
+    <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1599098734801" />
+    <state x="514" y="188" width="992" height="773" key="SettingsEditor" timestamp="1599099334831">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1165" y="209" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1599034310833" />
+    <state x="514" y="188" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1599099334831" />
     <state x="1678" y="224" width="603" height="804" key="find.popup" timestamp="1599029801792">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -177,5 +210,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1073" y="559" width="478" height="401" key="scopes/0.0.2560.1400@0.0.2560.1400" timestamp="1598334690976" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1599097244980">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1599097244980" />
   </component>
 </project>

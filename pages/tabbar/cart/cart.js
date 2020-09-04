@@ -15,9 +15,9 @@ Page({
         isLeft: 0
     },
     onShow() {
-        this.getShopCartList();
-        this.getMyProductRecommend();
         this.getActiveGoods();
+        this.getShopCartList()
+        this.getMyProductRecommend()
         // app.iniShopnum();
     },
     async getShopCartList() {

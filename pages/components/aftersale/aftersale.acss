@@ -174,10 +174,6 @@
   color: #999;
 }
 
-.pop-cmactive {
-  background: #efeff4;
-  color: #333;
-}
 
 .thk-sm {
   width: 100%;
@@ -204,14 +200,12 @@
   font-weight: 600;
 }
 
-.uploadImgBtn {
-  width: 4rem;
-  border: none;
-  background-color: #0c9;
-  color: #fff;
-  margin: 0.4rem auto 0;
-  border-radius: 1rem
+
+.pop-cmactive {
+  background: #efeff4;
+  color: #333;
 }
+
 
 .allImgBox {
   width: 740rpx;
