@@ -74,17 +74,16 @@ Page({
     });
   },
   tabqh(e) {
-    let query = {
-      name: this.data.name,
-      pageIndex: this.data.pageIndex,
-      pageSize: this.data.pageSize,
-      condition: 2
-    };
-
     this.setData({
       activeinx: e.currentTarget.dataset.inx,
       pageIndex: 1
     });
+    let query = {
+      name: this.data.name,
+      pageIndex: 1,
+      pageSize: this.data.pageSize,
+      condition: 2
+    };
     if (this.data.activeinx == 0) {
       this.setData({
         condition: 1,

@@ -1,4 +1,4 @@
-<loading a:if="{{!allmoney}}"></loading>
+<loading a:if="{{!allmoney&&allmoney!=0}}"></loading>
 <view class='add_box' a:if="{{SelfRaising==1}}">
   <view class="add_top">
     <view class="{{addFlag?'add_top_active':''}}" onTap='setadd' data-index='1'>到店自取</view>

@@ -100,7 +100,7 @@ page {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 0 24rpx;
+  padding: 0 16rpx;
   box-sizing: border-box;
   margin: 32rpx auto 0;
   border-radius: 16rpx;
@@ -120,7 +120,7 @@ page {
 
 .card_left::before {
   content: '';
-  width: 1rpx;
+  width: 2rpx;
   height: 54rpx;
   background: #656565;
   position: absolute;
@@ -423,7 +423,7 @@ page {
   font-weight: 400;
   color: rgba(153, 153, 153, 1);
   margin-top: 10rpx;
-  width: 350rpx;
+  width: 480rpx;
 }
 
 .price_box {

@@ -1,4 +1,4 @@
-<loading a:if="{{!ProductId}}" ></loading>
+<loading a:if="{{!ProductId}}"></loading>
 <block a:else>
   <view class="tab_top" style="padding-top:{{statusBarHeight}}px;height:{{titleBarHeight}}" id="pageTop">
     <view class="{{pageIndex==0?'tab_top_active':''}}" data-index='0' onTap='onPageTab'>宝贝</view>
@@ -75,7 +75,8 @@
           <view class="card_1">
             <view class="card_1_big">{{fanliPrice[0]||0}}</view>
             <view class="card_1_small" a:if='{{fanliPrice[1]}}'>.{{fanliPrice[1]}}</view>
-            <text>元购</text>
+            <text a:if={{RebateRate-1>=0}}>元购</text>
+            <text a:else>元</text>
           </view>
           <view class="card_2">
             价格
@@ -83,7 +84,7 @@
           </view>
         </view>
         <view class="card_desc">
-          <view class="card_text1">现在领卡 下单后返{{SalesPrice*(jfbData.RebateRate) ||0}}元</view>
+          <view class="card_text1">现在领卡 下单后返{{(SalesPrice*(jfbData.RebateRate) ||0).toFixed(2)}}元</view>
           <view class="card_text2">卡主还能天天领红包</view>
         </view>
       </view>
@@ -120,7 +121,7 @@
     <view class="item_label">运费</view>
     <view class="item_box">
       <image src="/images/icon/express.svg" class="express"></image>
-      <view class="item_fahuodi">满39包邮</view>
+      <view class="item_fahuodi">{{MailPrice==0?'免运费':'满39包邮'}}</view>
     </view>
     <image src="/images/icon/right.svg" class="right"></image>
   </view>
@@ -216,7 +217,7 @@
         <view class="add_cat_info">
           <view class="add_cat_price_box">
             <view class="add_cat_price price_app">{{difference.SalesPrice}}</view>
-            <!-- <view class="add_cat_old price_app">¥{{difference.Price}}</view> -->
+            <!--<view class="add_cat_old price_app">¥{{difference.Price}}</view> -->
             <view class="goods_label" a:if="{{jfbData.Registered==true||jfbData.Registered==false}}">
               <view>返利</view>
               <view>{{jfbData.RebateJfb||0}}集分宝</view>
@@ -243,7 +244,7 @@
         </view>
       </view>
       <form onSubmit="onSubmit" report-submit="{{true}}" data-id="{{ProductId}}">
-        <button formType="submit" hover-class="button-hover" >
+        <button formType="submit" hover-class="button-hover">
           <view class="add_cat_btn {{isAddShopCat==false?'huise':''}}" onTap="addShopCat" a:if="{{ispay!=1}}">加入购物车</view>
           <view class="add_cat_btn {{isAddShopCat==false?'huise':''}}" onTap="pay" a:if="{{ispay==1}}">立即购买</view>
         </button>

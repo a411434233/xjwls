@@ -9,8 +9,7 @@
     </view>
 </view>
 <view class="choudan_box">
-    <view class="choudan_item" a:for="{{ActiveGoodsList}}" a:key='{{index}}' key='index' data-item='{{item}}'
-          onTap='addShop'>
+    <view class="choudan_item" a:for="{{ActiveGoodsList}}" a:key='{{index}}' key='index' data-item='{{item}}' onTap='addShop'>
         <image class="choudan_item_image" src="{{item.ImageUrl}}"></image>
         <view class="choudan_item_box">
             <view class="choudan_item_name">
@@ -29,19 +28,16 @@
     <view class="cart-m">
         <view class="cart-mt">
             <view class="cart-mtl">
-                <checkbox checked="{{item.checked}}" value="{{item.checked}}" data-storeindex="{{index}}"
-                          onChange="setStore"></checkbox>
+                <checkbox checked="{{item.checked}}" value="{{item.checked}}" data-storeindex="{{index}}" onChange="setStore"></checkbox>
                 <text>{{item.BrandNanme}}食品</text>
             </view>
         </view>
         <view class="cart-mc" a:for="{{item.shopCartList}}" a:for-item="val" a:for-index="idx" a:key="idx">
             <movable-area>
-                <movable-view class="movable-view" x="{{isLeft}}" direction="horizontal" inertia="{{true}}"
-                              friction="{{0.1}}" damping="{{0.01}}" animation="{{false}}">
+                <movable-view class="movable-view" x="{{isLeft}}" direction="horizontal" inertia="{{true}}" friction="{{0.1}}" damping="{{0.01}}" animation="{{false}}">
                     <view class="cart-mcm">
-                        <checkbox data-storeindex="{{index}}" data-index="{{idx}}" value="{{val.checked}}"
-                                  checked="{{val.checked}}" onChange="setItem"></checkbox>
-                        <view class="cart-mcmm" onTap="godetail" data-id="{{val.ProductId}}">
+                        <checkbox data-storeindex="{{index}}" data-index="{{idx}}" value="{{val.checked}}" checked="{{val.checked}}" onChange="setItem"></checkbox>
+                        <view class="cart-mcmm" onTap="godetail" data-id="{{val.ProductId}}" data-pid="{{val.ParentId}}" data-skuId="{{val.SkuId}}">
                             <image mode="aspectFill" src="{{val.ImageUrl}}"></image>
                         </view>
                         <view class="cart-mcmr">
@@ -53,11 +49,9 @@
                                     {{val.ShopingSalesPrice}}
                                 </view>
                                 <view class="cart-mcmrbr">
-                                    <view class="add_cat_left" catchTap="reduce" data-storeindex="{{index}}"
-                                          data-index="{{idx}}"></view>
+                                    <view class="add_cat_left" catchTap="reduce" data-storeindex="{{index}}" data-index="{{idx}}"></view>
                                     <view class="ShopingCount">{{val.ShopingCount}}</view>
-                                    <view class="add_cat_right" catchTap="plus" data-storeindex="{{index}}"
-                                          data-index="{{idx}}"></view>
+                                    <view class="add_cat_right" catchTap="plus" data-storeindex="{{index}}" data-index="{{idx}}"></view>
                                 </view>
                             </view>
                         </view>

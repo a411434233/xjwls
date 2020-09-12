@@ -39,7 +39,7 @@ Page({
   },
   getHomeRecommend(item = {}) {
     let ChannelId = item.ChannelId ? item.ChannelId : 0;
-    let [url, data, that] = [api.GetHomeRecommendV2, { pageIndex: 1, pageSize: 6, channelId: ChannelId }, this];
+    let [url, data, that] = [api.GetHomeRecommendV2, { pageIndex: 1, pageSize: 5, channelId: ChannelId }, this];
     Post(url, data).then(res => {
       res.data.Data.forEach(val => {
         if (val.Tag) {
