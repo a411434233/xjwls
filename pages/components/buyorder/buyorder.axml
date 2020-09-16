@@ -57,7 +57,7 @@
   <view class="goodsinfo">
     <view class="goodsinfo-t">
       <view class="goodsinfo-tr">
-         <image mode="scaleToFill" src="/images/icon/storelogo.svg"></image>
+        <image mode="scaleToFill" src="/images/icon/storelogo.svg"></image>
         <text>{{item.BrandNanme}}食品</text>
       </view>
     </view>

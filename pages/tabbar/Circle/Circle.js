@@ -22,5 +22,5 @@ Page({
                 url: '/pages/tabbar/index/index'
             });
         }
-    }
+    },
 });

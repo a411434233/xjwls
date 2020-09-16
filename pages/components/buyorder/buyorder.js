@@ -52,14 +52,16 @@ Page({
     let m = [];
     list.forEach(res => {
       res.subSaleOrder.forEach(val => {
-        m.push({ ProductId: val.ProductId, Qty: val.ShopingCount, AddressId: addressManage.Id,SkuIds:val.SkuIds });
+        m.push({ ProductId: val.ProductId, Qty: val.ShopingCount, AddressId: addressManage.Id, SkuIds: val.SkuIds });
       });
     });
-    const res_1 = await Post(api.GetFreight, m)
+    const res_1 = await Post(api.GetFreight, m);
     if (res_1.data.Code == -1) return ShowNoneToast(res_1.data.Msg);
     if (res_1.data.Code == 1) {
       let ilist = res_1.data.Data;
-      ilist = ilist.filter(value=>{return value.DiscountPrice>0||value.MailPrice>0})
+      ilist = ilist.filter(value => {
+        return value.DiscountPrice > 0 || value.MailPrice > 0;
+      });
       list.forEach(val_1 => {
         let item = ilist.find(a => a.DepositoryCode == val_1.DepositoryCode);
         if (item) {
@@ -101,7 +103,6 @@ Page({
       if (typeof subSaleOrder == 'undefined') {
         return;
       }
-
       let query = {
         AddressId: addressManage.Id,
         AddressName: addressManage.Province,
@@ -112,8 +113,8 @@ Page({
         ImageUrl: subSaleOrder.ImageUrl,
         IsUseVcoins: isVCoins ? 1 : 0,
         PayChannel: 1,
-        SkuName:subSaleOrder.SkuName,
-        SkuIds:subSaleOrder.SkuIds,
+        SkuName: subSaleOrder.SkuName,
+        SkuIds: subSaleOrder.SkuIds,
         ProductId: subSaleOrder.ProductId,
         RecordId: RecordId,
         ShopingCount: subSaleOrder.ShopingCount,
@@ -232,7 +233,6 @@ Page({
       if (res.DiscountPrice > 0) {
         sum = sum.minus(res.DiscountPrice);
       }
-
 
       res.AllOrderPrice = sum.toFixed(2);
       res.goodsNum = goodsNum;

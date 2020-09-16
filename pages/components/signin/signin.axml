@@ -3,8 +3,8 @@
   <form onSubmit="onSubmit" report-submit="true" data-id="">
     <view class="moneyBox">
       <image class="money" src="/images/icon/money.svg"></image>
-      <text class="moneyNum">{{VCoinNum}}</text>
-      <view class="moenyLabel" a:if='{{VCoinNum}}'>支付时可抵扣{{(VCoinNum/100).toFixed(2)}}元</view>
+      <text class="moneyNum">{{VCoinsView.VCoinNum}}</text>
+      <view class="moenyLabel" a:if='{{VCoinsView.VCoinNum}}'>支付时可抵扣{{(VCoinsView.VCoinNum/100).toFixed(2)}}元</view>
     </view>
     <view class="sinBox">
       <button class="singin_Btn" onTap='gosingin' a:if='{{ToDayIsClockIn==0&&checkFollow}}'>
@@ -52,7 +52,7 @@
 <view class="model" a:if='{{showqd}}'>
   <image class="close" src="/images/icon/close01.png" catchTap='closeModel'></image>
   <image class="pro3Image" src="{{SignRecProduct.ImageUrl}}" mode="aspectFit" onTap='detail'></image>
-  <view class="pro3_weibi">恭喜你今日获得{{NextDayPrizeVal}}{{NextPrizeType==1?'味币':'现金红包'}}</view>
+  <view class="pro3_weibi">恭喜你今日获得{{ToDayPrizeVal}}{{PrizeType==1?'味币':'现金红包'}}</view>
   <view class="pro3_info" onTap='detail'>
     <text class="pro3Name">{{SignRecProduct.ProductName}}</text>
     <view class="pro3Time">{{SignRecProduct.Remark}}</view>
@@ -62,9 +62,9 @@
     <view class="pro3_in">
       <text class='qingcang'>清仓价</text>
       <text class="pro3_price price_app">
-        ￥{{(SignRecProduct.SalesPrice-SignRecProduct.DiscountAmount).toFixed(2)}}
+        ￥{{(SignRecProduct.SalesPrice-SignRecProduct.DiscountAmount).toFixed(2)||0}}
       </text>
-      <text class="pro3_oldprice price_app">￥{{SignRecProduct.Price}}</text>
+      <text class="pro3_oldprice price_app">￥{{SignRecProduct.Price||0}}</text>
     </view>
   </view>
   <button class="btnPay" onTap='detail'>立即购买</button>

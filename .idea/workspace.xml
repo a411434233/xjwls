@@ -7,21 +7,13 @@
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/xjwls.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xjwls.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/address/address.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/address/address.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/address/address.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/address/address.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/addressadd/addressadd.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/addressadd/addressadd.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/addressadd/addressadd.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/addressadd/addressadd.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/aftersale/aftersale.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/aftersale/aftersale.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.axml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/tabbar/Circle/Circle.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/Circle/Circle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/minea/minea.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/minea/minea.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.axml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,6 +114,9 @@
       <workItem from="1599099161844" duration="2038000" />
       <workItem from="1599101271510" duration="851000" />
       <workItem from="1599112310723" duration="2322000" />
+      <workItem from="1599895015905" duration="1906000" />
+      <workItem from="1599903903689" duration="38000" />
+      <workItem from="1600048690782" duration="48000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -166,10 +161,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="907" y="382" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1599099221327" />
-    <state x="1029" y="526" key="#Notifications" timestamp="1598322675191">
+    <state x="1029" y="526" key="#Notifications" timestamp="1599898439864">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1029" y="526" key="#Notifications/0.0.2560.1400@0.0.2560.1400" timestamp="1598322675191" />
+    <state x="1029" y="526" key="#Notifications/0.0.2560.1400@0.0.2560.1400" timestamp="1599898439864" />
     <state x="736" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598403707932">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

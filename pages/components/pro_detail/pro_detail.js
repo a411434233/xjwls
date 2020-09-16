@@ -1,17 +1,4 @@
-import {
-  api,
-  Debounce,
-  Get,
-  GetChannelCode,
-  getSysTemInfo,
-  NavigateTo,
-  Post,
-  Product,
-  SetStorage,
-  ShowNoneToast,
-  SwitchTab,
-  Token,
-} from '../../../utils/common';
+import { api, Debounce, Get, GetChannelCode, getSysTemInfo, NavigateTo, Post, Product, SetStorage, ShowNoneToast, SwitchTab, Token } from '../../../utils/common';
 
 Page({
   data: {
@@ -20,7 +7,7 @@ Page({
     goodsNum: 1,
     ispay: '',
     user_id: '',
-    guige: "",
+    guige: '',
     specifications: [],
     difference: {},
     id: '',
@@ -28,11 +15,14 @@ Page({
     pageIndex: 0,
     scrollTop: 0,
     current: 0,
-    myadd: {},
+    myadd: {}
   },
   async onLoad(options) {
     getSysTemInfo().then(res => {
       this.setData({ statusBarHeight: res.statusBarHeight, titleBarHeight: res.titleBarHeight });
+    });
+    await Token.getToken().then(res => {
+      this.setData({ user_id: res.user_id });
     });
     let id = options.id;
     await this.getproInfo(id);
@@ -40,9 +30,7 @@ Page({
     this.GetBrandInfo(id);
     this.getProductDiscount(id);
     this.getAddress();
-    Token.getToken().then(res => {
-      this.setData({ user_id: res.user_id });
-    });
+
     this.setData({
       id: options.id
     });
@@ -52,7 +40,7 @@ Page({
     setTimeout(() => {
       this.getShopNum();
       this.pointData(['proInfo', '商品详情_' + id]);
-    }, 1200)
+    }, 1200);
   },
   getMyadd() {
     if (!my.getAddress) {
@@ -176,7 +164,7 @@ Page({
         });
       }
       let data = await this.getguige(info.specifications);
-      this.GetSkuInfo(data.SkuIds);//计算价格
+      this.GetSkuInfo(data.SkuIds); //计算价格
       this.setData(info);
     });
   },
@@ -221,11 +209,15 @@ Page({
     let info = await Token.getToken();
     this.pointData(['GetCoupons', '详情页领券_' + this.data.ProductId + '_' + discountId]);
     let channelCode = GetChannelCode();
-    let [url, data, that] = [api.GetCoupons, {
-      Token: info.token,
-      DiscountId: discountId,
-      channelCode: channelCode
-    }, this];
+    let [url, data, that] = [
+      api.GetCoupons,
+      {
+        Token: info.token,
+        DiscountId: discountId,
+        channelCode: channelCode
+      },
+      this
+    ];
     Post(url, data).then(res => {
       let code = res.data.Code;
       if (code == 1 || code == -2) {
@@ -250,7 +242,7 @@ Page({
   },
   //获取商品信息
   async getAddQuery() {
-    let guige = await this.getguige() || {};
+    let guige = (await this.getguige()) || {};
     let { ProductId, goodsNum, ProductName, difference } = this.data;
     let channelCode = GetChannelCode();
     if (typeof guige != 'object') return;
@@ -321,25 +313,25 @@ Page({
       res.isChecked = idx == index ? !res.isChecked : false;
     });
     this.getguige(specifications).then(res => {
-      this.GetSkuInfo(res.SkuIds)
-    })
+      this.GetSkuInfo(res.SkuIds);
+    });
     this.setData({ specifications });
   },
   //根据规格查询价格
   GetSkuInfo(SkuIds) {
     return Get(api.GetSkuInfo, { productId: this.data.ProductId, skuIds: SkuIds }).then(res => {
       if (res.data.Code == -1) {
-        ShowNoneToast(res.data.Msg)
-        return
+        ShowNoneToast(res.data.Msg);
+        return;
       }
       if (res.data.Data != null) {
         let difference = this.data.difference;
         difference.SalesPrice = res.data.Data.SkuPrice;
         difference.ImageUrl = res.data.Data.ProImageUrl;
         difference.Nums = res.data.Data.StockNum;
-        this.setData({ difference: difference, })
+        this.setData({ difference: difference });
       }
-    })
+    });
   },
   //获取规格
   getguige(guige = []) {
@@ -347,25 +339,25 @@ Page({
       let { specifications } = this.data;
       guige = guige.length ? guige : specifications;
       if (guige && !guige.length) return {};
-      if (typeof guige != "object") return {};
+      if (typeof guige != 'object') return {};
       let p = guige.map(res => {
         return res.item.filter(val => val.isChecked).pop();
       });
       let SkuName = p.map(val => (val || '').CategoryName || '').join(',');
-      let SkuIds = p.map(value => (value || '').CategoryId || '').join(',')
+      let SkuIds = p.map(value => (value || '').CategoryId || '').join(',');
       let difference = this.data.difference;
       this.setData({
         guige: SkuName == ',' ? '' : SkuName
       });
-      let filter = p.filter(item => typeof item != "object");
+      let filter = p.filter(item => typeof item != 'object');
       if (filter.length > 0) return;
       resolve({
         SkuIds: SkuIds,
         SkuName: SkuName,
         CategoryId: difference.CategoryId,
         CategoryName: difference.CategoryName
-      })
-    })
+      });
+    });
   },
   //推荐商品详情页
   goodsDetail(e) {
@@ -427,8 +419,7 @@ Page({
   pointData([PageName, ClickPlace]) {
     let url = api.PostStatisticSystem;
     let data = { PageName: PageName, ClickPlace: ClickPlace, SoureChannel: GetChannelCode() };
-    Post(url, data, true).then(res => {
-    });
+    Post(url, data, true).then(res => {});
   },
   //订阅模板消息
   async onSubmit(e) {
@@ -442,7 +433,6 @@ Page({
     };
     Get(api.SaveTemplateMessageInfo, data, true);
   },
-
   onShareAppMessage() {
     return {
       title: this.data.ProductName,

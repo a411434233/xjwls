@@ -4,7 +4,7 @@ const api = {
   //生产地址
   BASE_URL: 'https://api.smjpin.cn/',
   // 开发地址
-  //BASE_URL: 'https://apitest.smjpin.cn/',
+  // BASE_URL: 'https://apitest.smjpin.cn/',
 
   //首页轮播
   GetBannerConfig: '/Home/GetBannerConfig',
@@ -132,6 +132,8 @@ const api = {
   SignIn: 'DailyClockIn/SignIn',
 
   ReSignIn: 'DailyClockIn/ReSignIn',
+
+  InitV2:"DailyClockIn/InitV2",
 
   DoVCoinsExchangePrizes: 'DailyClockIn/DoVCoinsExchangePrizes',
 

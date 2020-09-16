@@ -57,9 +57,6 @@
     </view>
   </scroll-view>
   <view class="Index_list">
-    <!-- <view class="newActive" onTap='newActive' data-index='1'>
-      <image src="http://image.smjpin.cn/activity/pubuliu.png" mode="aspectFill" />
-    </view> -->
     <block a:for="{{newlist}}">
       <view class="newActive" a:if='{{index==4}}' onTap='newActive' data-index='2'>
         <image src="http://image.smjpin.cn/activity/active1.png" mode='aspectFill' lazy-load="{{true}}" />
