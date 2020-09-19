@@ -66,7 +66,7 @@ Page({
     });
   },
   //信息授权
-  async onGetAuthorize(res) {
+  async onGetAuthorize() {
     let info = await Token.getToken();
     my.getOpenUserInfo({
       fail: () => {

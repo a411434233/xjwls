@@ -37,7 +37,7 @@ Page({
       this.setData({
         listarr: res.data.Data[0].subOrderList
       });
-      for (var i = 0; i < res.data.Data[0].subOrderList.length; i++) {
+      for (let i = 0; i < res.data.Data[0].subOrderList.length; i++) {
         valuearr.push('');
         imgUrls[i] = [];
       }
@@ -72,7 +72,7 @@ Page({
   },
   addImg: function (e) {
     // 上传照片
-    var that = this;
+    const that = this;
     my.chooseImage({
       count: that.data.maxAddImgNum,
       success: res => {
@@ -83,8 +83,8 @@ Page({
     });
   },
   uploadImg: function (index) {
-    var that = this;
-    var ii = that.data.i;
+    const that = this;
+    const ii = that.data.i;
     if (ii < that.data.imgArr.length) {
       my.uploadFile({
         url: 'https://api.smjpin.cn/Evaluate/PostImagesImport', //自己服务器接口地址
@@ -95,7 +95,7 @@ Page({
           //这里写自己服务器接口需要的额外参数
         },
         success: res => {
-          var _imgUrls = that.data.imgUrls;
+          const _imgUrls = that.data.imgUrls;
           _imgUrls[index].push(JSON.parse(res.data).Data); //取到包含所有图片的数组
           that.setData({ imgUrls: _imgUrls });
           _imgUrls[index].length == 0 && that.set_data(that, _imgUrls, '拍照/相册', true);
@@ -113,9 +113,9 @@ Page({
   delImg: function (e) {
     // 删除照片
     // console.log('e', e, this.data.imgUrls)
-    var indexs = e.currentTarget.dataset.indexs;
-    var index = e.currentTarget.dataset.ind;
-    var _imgUrls = this.data.imgUrls;
+    const indexs = e.currentTarget.dataset.indexs;
+    const index = e.currentTarget.dataset.ind;
+    const _imgUrls = this.data.imgUrls;
     _imgUrls[index].splice(indexs, 1);
     // console.log('_imgUrls', _imgUrls)
     _imgUrls[index].length == 0 && this.set_data(this, _imgUrls, '拍照/相册', true);
@@ -134,16 +134,16 @@ Page({
       ShowNoneToast('请对商家食品评分');
       return;
     }
-    for (var i in this.data.valuearr) {
+    for (let i in this.data.valuearr) {
       if (this.data.valuearr[i] == '') {
         ShowNoneToast('请填写评价内容');
         return;
       }
     }
-    var a = Math.ceil((this.data.starId1 + this.data.starId2 + this.data.starId3) / 3 + 1);
-    var arr = [];
+    const a = Math.ceil((this.data.starId1 + this.data.starId2 + this.data.starId3) / 3 + 1);
+    const arr = [];
     this.data.listarr.forEach((el, index) => {
-      var obj = {};
+      const obj = {};
       obj.OrderId = this.data.orderid;
       obj.UserId = info.user_id;
       obj.ProductId = el.ProductId;

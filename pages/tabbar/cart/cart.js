@@ -157,7 +157,7 @@ Page({
         let id = pid > 0 && skuId ? pid : sid;
         my.navigateTo({url: '/pages/components/pro_detail/pro_detail?id=' + id});
     },
-    delall() {
+    delall: function () {
         const losearr = [];
         for (let i in this.data.errlist) {
             losearr.push(this.data.errlist[i].ShopId);

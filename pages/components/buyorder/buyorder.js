@@ -153,7 +153,7 @@ Page({
             Post(api.PostDirectCreateOrder, query, true).then(res => {
                 my.hideLoading();
                 if (res.data.Code == 1) {
-                    var VCoinsNum = res.data.Data.VCoinsNum;
+                    const VCoinsNum = res.data.Data.VCoinsNum;
                     let OrderCode = res.data.Data.OrderCode;
                     this.aliPay(res.data.Data.TradeNo, VCoinsNum, OrderCode);
                 } else {
@@ -204,7 +204,7 @@ Page({
             Post(api.PostShopCartCreateOrder2, query, true).then(res => {
                 my.hideLoading();
                 if (res.data.Code == 1) {
-                    var VCoinsNum = res.data.Data.VCoinsNum;
+                    const VCoinsNum = res.data.Data.VCoinsNum;
                     let OrderCode = res.data.Data.OrderCode;
                     this.aliPay(res.data.Data.TradeNo, VCoinsNum, OrderCode);
                 } else {

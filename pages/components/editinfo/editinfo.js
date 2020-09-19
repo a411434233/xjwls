@@ -32,7 +32,7 @@ Page({
     });
     my.getOpenUserInfo({
       success: async res => {
-        var infomation = JSON.parse(res.response).response;
+        const infomation = JSON.parse(res.response).response;
         let data = {
           AliUserId: info.aliuser_id,
           Avatar: infomation.avatar,

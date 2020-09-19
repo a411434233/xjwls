@@ -27,7 +27,7 @@ Page({
     this.setData({ wuliu: e.detail.value });
   },
   addImg: function () {
-    var that = this;
+    const that = this;
     my.chooseImage({
       count: that.data.maxAddImgNum,
       success: res => {
@@ -37,8 +37,8 @@ Page({
     });
   },
   uploadImg: function () {
-    var that = this;
-    var ii = that.data.i;
+    const that = this;
+    const ii = that.data.i;
     if (ii < that.data.imgArr.length) {
       my.uploadFile({
         url: api.BASE_URL + api.PostImagesImport,
@@ -47,7 +47,7 @@ Page({
         filePath: that.data.imgArr[that.data.i],
         formData: {},
         success: res => {
-          var _imgUrls = that.data.imgUrls;
+          const _imgUrls = that.data.imgUrls;
           _imgUrls.push(JSON.parse(res.data).Data);
           that.setData({ imgUrls: _imgUrls });
           _imgUrls.length == 0 && that.set_data(that, _imgUrls, '拍照/相册', true);
@@ -60,8 +60,8 @@ Page({
     }
   },
   delImg: function (e) {
-    var index = e.currentTarget.dataset.index;
-    var _imgUrls = this.data.imgUrls;
+    const index = e.currentTarget.dataset.index;
+    const _imgUrls = this.data.imgUrls;
     _imgUrls.splice(index, 1);
     _imgUrls.length == 0 && this.set_data(this, _imgUrls, '拍照/相册', true);
     _imgUrls.length > 0 && _imgUrls.length < this.data.maxAddImgNum && this.set_data(this, _imgUrls, '+', true);

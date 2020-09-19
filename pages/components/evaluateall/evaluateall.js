@@ -9,10 +9,10 @@ Page({
   },
   onLoad(options) {
     Get(api.GetAllEvaluate,{productId: options.id, pageIndex: this.data.pageIndex, pageSize: this.data.pageSize}).then(res=>{
-      res.data.Data.forEach((el, i) => {
+      res.data.Data.forEach(el => {
         let len = el.StarLevel
         let array = []
-        for (var j = 0; j < len; j++) {
+        for (let j = 0; j < len; j++) {
           array.push(0)
         }
         el.evaluatearr = array
