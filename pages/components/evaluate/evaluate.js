@@ -1,4 +1,3 @@
-const app = getApp();
 import {api, Get, Post, ShowNoneToast, Token} from '../../../utils/common';
 
 Page({
@@ -105,7 +104,7 @@ Page({
           that.setData({ i: ii + 1 });
           that.uploadImg();
         },
-        fail: res => {
+        fail: () => {
           // console.log('失败', res)
         }
       });
@@ -157,7 +156,7 @@ Page({
       arr.push(obj);
     });
     //上传
-    Post(api.PostOrderEvaluate, arr).then(res => {
+    Post(api.PostOrderEvaluate, arr).then(() => {
       ShowNoneToast('感谢您的评价！');
       my.navigateBack({
         delta: 1

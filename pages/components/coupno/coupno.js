@@ -83,7 +83,7 @@ Page({
   //获取优惠券数据
   GetDiscountList(minAmount, orderid) {
     let data = { status: this.data.activeinx + 1, minAmount: minAmount, orderid: orderid }
-    Get(api.GetDiscountListV1, data, true).then(res => {
+    Get(api.GetDiscountListV1, data, true).then(() => {
 
     })
   },

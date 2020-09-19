@@ -7,7 +7,7 @@ Page({
     hotSearchArr: [{ name: '小鸡腿' }, { name: '鸭舌' }, { name: '鸭掌' }, { name: '鸡翅' }],
     liSh: []
   },
-  onShow(query) {
+  onShow() {
     let liSh = my.getStorageSync({
       key: 'lish'
     }).data;
@@ -48,7 +48,7 @@ Page({
     });
   },
   /* 去搜索 */
-  goSearch(e) {
+  goSearch() {
     let { searchVal } = this.data;
     if (searchVal == '') {
       ShowNoneToast('请输入搜索内容');

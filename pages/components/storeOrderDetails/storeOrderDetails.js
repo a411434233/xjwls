@@ -21,7 +21,7 @@ Page({
       if (res.data.Code == -1) return ShowNoneToast(res.data.Msg);
       let data = res.data.Data;
       let codeUrl = 'https://apiisv001.smjpin.cn/qrcode/getqrcode?ordercode=' + orderCode + '&businessCode=' + Token.appId;
-      this.setData({ ...data, isDelivery: data.OrderType == '2' ? true : false, orderCode, codeUrl });
+      this.setData({ ...data, isDelivery: data.OrderType == '2', orderCode, codeUrl });
     });
   },
   showCode() {

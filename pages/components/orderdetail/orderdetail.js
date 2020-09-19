@@ -37,7 +37,7 @@ Page({
         ShipOrderId: res.data.Data.ShipOrderId,
         order: res.data.Data
       });
-      var shenyu = res.data.Data.previewOrderView[0].CloseTime * 1;
+      let shenyu = res.data.Data.previewOrderView[0].CloseTime * 1;
       shenyu -= new Date().getTime();
       shenyu = parseInt(shenyu / 1000);
       this.TimeClock(shenyu);
@@ -57,7 +57,7 @@ Page({
 
     let S = parseInt(shenyu % 60);
 
-    var time = shengyuD > 0 ? shengyuD + '天' : '' + shengyuH > 0 ? shengyuH + '时' : '' + shengyuM + '分' + S + '秒';
+    const time = shengyuD > 0 ? shengyuD + '天' : '' + shengyuH > 0 ? shengyuH + '时' : '' + shengyuM + '分' + S + '秒';
     this.setData({
       time: time
     });
@@ -117,7 +117,7 @@ Page({
   copydan(e) {
     my.setClipboard({
       text: e.currentTarget.dataset.ShipOrderId, // 剪贴板数据
-      success: res => {
+      success: () => {
         my.alert({
           content: '复制成功！'
         });

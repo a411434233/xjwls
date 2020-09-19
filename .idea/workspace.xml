@@ -25,47 +25,32 @@
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/address/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/address/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kaitian/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.kaitian/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/addressadd/addressadd.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/addressadd/addressadd.axml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/addressadd/addressadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/addressadd/addressadd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/aftersaledetail/aftersaledetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/aftersaledetail/aftersaledetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/cashbonuscopy/cashbonuscopy.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonuscopy/cashbonuscopy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cashbonusmy/cashbonusmy.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonusmy/cashbonusmy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/chajian/chajian.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/chajian/chajian.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/collection/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/collection/collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/collection/onesurprisec/onesurprisec.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/collection/onesurprisec/onesurprisec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/coupno/coupno.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/coupno/coupno.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/coupnoall/coupnoall.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/coupnoall/coupnoall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/coupnosm/coupnosm.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/coupnosm/coupnosm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/couponList/couponList.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/couponList/couponList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/editinfo/editinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/editinfo/editinfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/evaluate/evaluate.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/evaluate/evaluate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/evaluateall/evaluateall.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/evaluateall/evaluateall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/goodslist/goodslist.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/goodslist/goodslist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/lmember/lmember.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/lmember/lmember.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/logisDetail/logisDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/logisDetail/logisDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/logistics/logistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/logistics/logistics.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/paySuccess/paySuccess.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/paySuccess/paySuccess.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pieceTogether/pieceTogether.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pieceTogether/pieceTogether.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pieceTogether/pieceTogether.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pieceTogether/pieceTogether.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/search/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/service/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/service/service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/sigincurrency/sigincurrency.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/sigincurrency/sigincurrency.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/store/store.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/store/store.axml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/storeList/storeList.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/storeList/storeList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/storeOrder/storeOrder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/storeOrder/storeOrder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.acss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typings/wx.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/errPage/notWifi/notWifi.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/errPage/notWifi/notWifi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/Circle/Circle.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/Circle/Circle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/minea/minea.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/minea/minea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +159,7 @@
       <workItem from="1600417784328" duration="233000" />
       <workItem from="1600485051499" duration="5572000" />
       <workItem from="1600499574976" duration="1434000" />
-      <workItem from="1600504578793" duration="2457000" />
+      <workItem from="1600504578793" duration="5866000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -204,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599042356785</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Default Changelist">
+      <created>1600507114553</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600507114553</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,10 +249,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1011" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598322949311" />
-    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1600506483584">
+    <state x="873" y="359" width="814" height="730" key="#意向" timestamp="1600509019701">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1600506483584" />
+    <state x="873" y="359" width="814" height="730" key="#意向/0.0.2560.1400@0.0.2560.1400" timestamp="1600509019701" />
+    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1600509889642">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1600509889642" />
     <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2" timestamp="1599042958365">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -12,7 +12,7 @@ Page({
         my.switchTab({url: "/pages/tabbar/index/index"})
     },
     onTapRight(e) {
-        Get(api.GetHomePageConfig).then(res => {
+        Get(api.GetHomePageConfig).then(() => {
             this.onTapLeft()
         })
     },

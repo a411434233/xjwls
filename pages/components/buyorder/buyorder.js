@@ -35,7 +35,7 @@ Page({
     setadd(e) {
         let index = e.currentTarget.dataset.index;
         if (index == 1 && this.data.SelfRaising == 0) return ShowNoneToast('该商品不支持到店自取');
-        this.setData({addFlag: index == 1 ? true : false});
+        this.setData({addFlag: index == 1});
         if (index == 1) {
             this.getStoreList();
         }
@@ -177,7 +177,7 @@ Page({
     //购物车购买
     payShop() {
         try {
-            let {addressManage, previewOrderView, GroupBuyId, isVCoins} = this.data;
+            let {addressManage, previewOrderView, isVCoins} = this.data;
             let query = {
                 AddressId: addressManage.Id,
                 IsUseVcoins: isVCoins ? 1 : 0,
@@ -243,7 +243,7 @@ Page({
                 let x = new Big(val.ShopingSalesPrice * 1);
                 x = x.times(val.ShopingCount);
                 sum = sum.plus(x);
-                goodsNum += val.ShopingCount * 1;
+                goodsNum += val.ShopingCount *= 1;
             });
             if (res.discountRecord != null) {
                 sum = sum.minus(res.discountRecord.DiscountAmount);
@@ -311,7 +311,7 @@ Page({
         });
     },
     //选择优惠券
-    gocoupon(e) {
+    gocoupon() {
         my.navigateTo({
             url: '/pages/components/coupno/coupno'
         });
@@ -319,7 +319,7 @@ Page({
     //埋点
     pointData(PageName, ClickPlace) {
         let data = {PageName: PageName, ClickPlace: ClickPlace, SoureChannel: GetChannelCode()};
-        Post(api.PostStatisticSystem, data, true).then(res => {
+        Post(api.PostStatisticSystem, data, true).then(() => {
         });
     }
 });

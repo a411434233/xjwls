@@ -58,7 +58,7 @@ Page({
         this.setData({suclist});
         this.watchData();
     },
-    allselect(e) {
+    allselect() {
         let {selcetall} = this.data;
         let suclist = JSON.parse(JSON.stringify(this.data.suclist));
         for (let item of suclist) {
@@ -103,7 +103,7 @@ Page({
         this.setData({allmoney: Sum.toFixed(2)});
     },
     //监听数据
-    watchData(e) {
+    watchData() {
         let proList = JSON.parse(JSON.stringify(this.data.suclist));
         for (let item of proList) {
             let arr = item.shopCartList.filter(res => res.checked);

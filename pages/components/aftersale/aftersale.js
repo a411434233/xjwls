@@ -1,6 +1,5 @@
 import {api, Get, Post, ShowNoneToast} from '../../../utils/common';
 
-const app = getApp();
 Page({
   data: { listyy: ['多拍/拍错/不想要', '其他'], active: 0, popshow: false, yuanyin: '选择退款原因', yuanyin1: '', imgUrls: [], status: '', orderid: '', orderlist: [], shuoming: '', wuliu: '', detail: '', addImgText: '拍照/相册', canAddImg: true, maxAddImgNum: 4, i: 0, imgArr: [] },
   onLoad(options) {
@@ -18,7 +17,7 @@ Page({
   closepop() {
     this.setData({ popshow: false });
   },
-  surepop(e) {
+  surepop() {
     this.setData({ popshow: false, yuanyin: this.data.yuanyin1 });
   },
   shuominginp(e) {

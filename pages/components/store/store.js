@@ -15,7 +15,7 @@ Page({
     if (!e.detail.formId) return;
     let info = await Token.getToken();
     let data = { AliUserId: info.aliuser_id, FormId: e.detail.formId, MessageType: 1, ProductId: e.currentTarget.dataset.id };
-    Get(api.SaveTemplateMessageInfo, data, true).then(res => {});
+    Get(api.SaveTemplateMessageInfo, data, true).then(() => {});
   },
   godetail(e) {
     let id = e.currentTarget.dataset.id;

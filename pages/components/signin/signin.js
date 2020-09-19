@@ -35,7 +35,7 @@ Page({
   },
   //动态加载插件
   loadPlug() {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       my.loadPlugin({
         plugin: '2019102468552682@*', // 指定要加载的插件id和版本号，为*则每次拉取最新版本
         success: () => {
@@ -112,8 +112,8 @@ Page({
   },
   //补卡
   pushclock: app.throttle(async function (e) {
-    var now = new Date();
-    var day = now.getDay();
+    const now = new Date();
+    const day = now.getDay();
     if (day == e.currentTarget.dataset.Week) {
       this.gosingin();
     } else if (day > e.currentTarget.dataset.Week && this.data.ReClockInTimes > 0) {
@@ -141,7 +141,6 @@ Page({
   }, 2000),
   //签到
   async gosingin() {
-    var now = new Date();
     my.showLoading({
       content: '加载中...'
     });
@@ -173,7 +172,7 @@ Page({
         ProductId: e.currentTarget.dataset.id
       }
     ];
-    Get(url, data, true).then(res => {});
+    Get(url, data, true).then(() => {});
   },
   //分享补卡
   onClickShare() {
@@ -204,7 +203,7 @@ Page({
     NavigateTo(url);
   },
   //最后一天打卡
-  pushclock1(e) {
+  pushclock1() {
     if (this.data.TotalClockInTimes == 6) {
       this.gosingin();
     } else {
@@ -229,7 +228,7 @@ Page({
     } else if (index == 2) {
       NavigateToMiniProgram('2018082861122674', 'pages/buyZero/buyZero?scene_id=2261');
     } else if (index == 3) {
-      let p = await this.loadPlug();
+      await this.loadPlug();
       NavigateTo('dynamic-plugin://2019102468552682/index?pid=2088631273892854&appId=2019092367680987');
     }
     let qdcode = GetChannelCode();

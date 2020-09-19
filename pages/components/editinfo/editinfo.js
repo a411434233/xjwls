@@ -23,7 +23,7 @@ Page({
     });
   },
   //信息授权
-  async onGetAuthorize(res) {
+  async onGetAuthorize() {
     my.clearStorageSync();
     await Token.clearToken();
     let info = await Token.getToken();
@@ -77,7 +77,7 @@ Page({
         };
         my.getSetting({
           success: resa => {
-            let debugData = Object.assign({}, data, { 本地存储: Strong }, { 授权信息: info }, { user: user }, { resa }, { Version: '1.9.7' });
+            let debugData = Object.assign({}, data, { "store": Strong }, { "shouquan": info }, { user: user }, { resa }, { Version: '1.9.7' });
             my.setClipboard({
               text: JSON.stringify(debugData)
             });

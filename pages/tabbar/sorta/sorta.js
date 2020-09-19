@@ -96,7 +96,7 @@ Page({
         GetStorage('qdmc').then(res => {
             if (res.success == true) {
                 let [PageName, ClickPlace, SoureChannel] = ['sort', '分类', res.data.qdcode];
-                let [url, data, that] = [api.PostStatisticSystem, {
+                let [url, data] = [api.PostStatisticSystem, {
                     PageName: PageName,
                     ClickPlace: ClickPlace,
                     SoureChannel: SoureChannel

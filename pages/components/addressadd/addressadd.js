@@ -95,9 +95,9 @@ Page({
       return;
     }
     if (this.data.is_default == false) {
-      var defaultis = 0;
+      let defaultis = 0;
     } else {
-      var defaultis = 1;
+      let defaultis = 1;
     }
     let data = { Province: this.data.provinces, City: this.data.city, Area: this.data.area, Address: this.data.addressdetail, UserName: this.data.name, Tel: this.data.telphone, Status: 1, IsDefault: defaultis };
     if (this.data.id != '') {
@@ -108,7 +108,7 @@ Page({
     }
     Post(api.PostAddress, data, true).then(res => {
       if (res.data.Code == -1) return ShowNoneToast(res.data.Msg);
-      ShowNoneToast(res.data.Msg, 'success').then(resa => {
+      ShowNoneToast(res.data.Msg, 'success').then(() => {
         my.navigateBack();
       });
     });
@@ -117,7 +117,7 @@ Page({
     let is_default = e.detail.value;
     this.setData({ is_default });
   },
-  async del(e) {
+  async del() {
     let info = await Token.getToken();
     let res = await Post(api.DeleteAddress, { addressId: this.data.id, token: info.token });
     if (res.data.Code == -1) return;

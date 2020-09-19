@@ -76,7 +76,7 @@ Page({
     });
   },
   // 删除订单
-  async tapCancel(e) {
+  async tapCancel() {
     let info = await Token.getToken();
     Post(api.DeleteOrder, { orderCode: this.data.OrderCode, token: info.token }).then(res => {
       ShowNoneToast(res.data.Msg);

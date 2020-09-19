@@ -1,5 +1,6 @@
 import {AliPay, api, Get, NavigateTo, Post, ShowNoneToast, Token} from '../../../utils/common';
 
+// noinspection JSUnusedLocalSymbols,JSUnusedLocalSymbols,JSUnusedLocalSymbols
 Page({
   data: {
     arr: ['全部', '待付款', '待发货', '待收货', '待评价'],

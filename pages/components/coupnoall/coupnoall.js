@@ -1,4 +1,3 @@
-const app = getApp();
 import {api, Get, Post, Product, SetStorage, Token} from '../../../utils/common';
 
 Page({

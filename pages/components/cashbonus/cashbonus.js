@@ -131,7 +131,7 @@ Page({
       url: '/pages/components/cashbonusmy/cashbonusmy'
     });
   },
-  handleRedPacket1: app.throttle(function (e) {
+  handleRedPacket1: app.throttle(function () {
     my.showLoading({
       content: '摇奖中...'
     });
@@ -193,7 +193,7 @@ Page({
       }
     })
   }, 3000),
-  handleRedPacket2: app.throttle(function (e) {
+  handleRedPacket2: app.throttle(function () {
     my.showLoading({
       content: '摇奖中...'
     });
@@ -257,7 +257,7 @@ Page({
       }
     })
   }, 3000),
-  handleRedPacket3: app.throttle(function (e) {
+  handleRedPacket3: app.throttle(function () {
     my.showLoading({
       content: '摇奖中...'
     });
@@ -335,7 +335,6 @@ Page({
   ontoast() {
     if (this.data.nums == 0) {
       ShowNoneToast('您还没有抽奖机会，请先完成下列任务。')
-      return
     }
   },
   godetail() {

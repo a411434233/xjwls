@@ -1,6 +1,4 @@
 import {api, Get, GetChannelCode, NavigateTo, NavigateToMiniProgram, Post, Token} from '../../../utils/common';
-
-const app = getApp();
 Page({
   data: {
     listarr: [],
@@ -40,7 +38,7 @@ Page({
       userId: this.data.userid,
       discountId: e.currentTarget.dataset.DiscountId,
       channelCode: qdcode
-    }).then(res => {
+    }).then(() => {
       this.setData({
         collectshow: false
       });

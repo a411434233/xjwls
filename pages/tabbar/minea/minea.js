@@ -69,7 +69,7 @@ Page({
   async onGetAuthorize(res) {
     let info = await Token.getToken();
     my.getOpenUserInfo({
-      fail: res => {
+      fail: () => {
         this.setData({
           canIUseAuthButton: false
         });
@@ -78,7 +78,7 @@ Page({
         this.setData({
           canIUseAuthButton: false
         });
-        var infomation = JSON.parse(res.response).response;
+        const infomation = JSON.parse(res.response).response;
         let data = {
           AliUserId: info.aliuser_id,
           Avatar: infomation.avatar,
@@ -88,7 +88,7 @@ Page({
           province: infomation.province,
           city: infomation.city
         };
-        Post(api.PostUserUpdate, data).then(res => {
+        Post(api.PostUserUpdate, data).then(() => {
           Get(api.GetUserInfo, {}, true).then(res => {
             if (res.data.Data) {
               this.setData({

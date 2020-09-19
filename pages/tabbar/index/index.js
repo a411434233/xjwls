@@ -1,4 +1,17 @@
-import { Post, Get, NavigateTo, NavigateToMiniService, api, Token, NavigateToMiniProgram, SetStorage, SwitchTab, ShowNoneToast, Product } from '../../../utils/common';
+import {
+  api,
+  Get,
+  NavigateTo,
+  NavigateToMiniProgram,
+  NavigateToMiniService,
+  Post,
+  Product,
+  SetStorage,
+  ShowNoneToast,
+  SwitchTab,
+  Token
+} from '../../../utils/common';
+
 const app = getApp();
 
 Page({
@@ -108,8 +121,7 @@ Page({
     if (pagetype == 0) {
       my.navigateTo({ url: '/' + pageurl });
     } else if (pagetype == 1) {
-      let id = pageurl.split('=').pop();
-      app.swichQuery = id;
+      app.swichQuery = pageurl.split('=').pop();
       my.switchTab({ url: '/' + pageurl });
     } else if (pagetype == 2) {
       NavigateToMiniProgram(appId, pageurl);
@@ -156,7 +168,7 @@ Page({
           val.Tag = [];
         }
       });
-      that.setData({ pageIndex, newlist: that.data.newlist.concat(res.data.Data), showdb: res.data.Data == '' ? true : false });
+      that.setData({ pageIndex, newlist: that.data.newlist.concat(res.data.Data), showdb: res.data.Data == '' });
     });
   },
   onShareAppMessage() {
