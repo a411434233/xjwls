@@ -1,4 +1,5 @@
-import { loadBC } from 'miniapp-bc-user';
+import {loadBC} from 'miniapp-bc-user';
+
 Page({
   data: {
     shopCard: false,

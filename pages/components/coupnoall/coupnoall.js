@@ -1,5 +1,5 @@
 const app = getApp();
-import { Post, Get, api, SetStorage, Token, Product } from '../../../utils/common';
+import {api, Get, Post, Product, SetStorage, Token} from '../../../utils/common';
 
 Page({
   data: {

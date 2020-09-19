@@ -1,4 +1,5 @@
-import { ShowNoneToast } from '../../../utils/common';
+import {ShowNoneToast} from '../../../utils/common';
+
 Page({
   data: {
     test_data: ['小鸡腿', '鸭舌', '鸭掌', '鸡翅'],

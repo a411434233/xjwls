@@ -1,5 +1,5 @@
+import {api, Get} from '../../../utils/common'
 
-import { api, Get } from '../../../utils/common'
 Page({
   data: {
     activeIndex: 1,

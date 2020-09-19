@@ -1,5 +1,5 @@
+import {api, Get} from '../../../utils/common';
 
-import { Post, api, Get } from '../../../utils/common';
 Page({
   data: {
     detail: "",//

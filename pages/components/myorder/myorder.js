@@ -1,4 +1,4 @@
-import { NavigateTo, Post, Get, ShowNoneToast, Token, api, AliPay } from '../../../utils/common';
+import {AliPay, api, Get, NavigateTo, Post, ShowNoneToast, Token} from '../../../utils/common';
 
 Page({
   data: {

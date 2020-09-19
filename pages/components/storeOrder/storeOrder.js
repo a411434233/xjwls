@@ -1,4 +1,5 @@
-import { Get, api, ShowNoneToast, Token, Post, AliPay, GetStorageSync } from '../../../utils/common';
+import {AliPay, api, Get, GetStorageSync, Post, ShowNoneToast, Token} from '../../../utils/common';
+
 Page({
   data: {
     selectIndex: 2,

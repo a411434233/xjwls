@@ -1,4 +1,5 @@
-import { api, Get, getMyLocations } from '../../../utils/common';
+import {api, Get, getMyLocations} from '../../../utils/common';
+
 Page({
   data: {},
   onLoad(query) {

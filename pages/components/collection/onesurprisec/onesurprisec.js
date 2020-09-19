@@ -1,4 +1,5 @@
-import { api, Post, Token, Get, NavigateToMiniProgram, NavigateTo } from '../../../../utils/common';
+import {api, Get, NavigateTo, NavigateToMiniProgram, Post, Token} from '../../../../utils/common';
+
 Page({
   data: {
     show: my.canIUse('life-follow'),

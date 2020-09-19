@@ -1,4 +1,5 @@
-import { api, Get, Token, ShowNoneToast, Post, GetStorageSync, AliPay, NavigateTo } from '../../../utils/common';
+import {AliPay, api, Get, GetStorageSync, NavigateTo, Post, ShowNoneToast, Token} from '../../../utils/common';
+
 Page({
   data: {
     isHidePart: false,

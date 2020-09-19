@@ -1,4 +1,5 @@
-import { api, Post, ShowNoneToast, Product } from '../../../utils/common';
+import {api, Post, Product} from '../../../utils/common';
+
 Page({
   data: {
     arr: ['综合', '销量', '新品', '价格'],

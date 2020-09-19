@@ -1,4 +1,14 @@
-import { api, Get, GetChannelCode, NavigateTo, NavigateToMiniProgram, Post, Product, ShowNoneToast, Token } from '../../../utils/common';
+import {
+    api,
+    Get,
+    GetChannelCode,
+    NavigateTo,
+    NavigateToMiniProgram,
+    Post,
+    Product,
+    ShowNoneToast,
+    Token
+} from '../../../utils/common';
 
 const app = getApp();
 Page({

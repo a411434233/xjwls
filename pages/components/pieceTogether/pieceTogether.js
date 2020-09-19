@@ -1,4 +1,5 @@
-import { api, Get, Product } from '../../../utils/common';
+import {api, Get, Product} from '../../../utils/common';
+
 Page({
   data: {},
   onLoad() {

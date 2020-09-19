@@ -1,13 +1,13 @@
 import {
-    Post,
-    api,
-    ShowNoneToast,
-    GetChannelCode,
-    NavigateTo,
-    getMyLocations,
-    Get,
     AliPay,
-    SetStorage
+    api,
+    Get,
+    GetChannelCode,
+    getMyLocations,
+    NavigateTo,
+    Post,
+    SetStorage,
+    ShowNoneToast
 } from '../../../utils/common';
 import Big from 'big.js/big';
 
@@ -319,6 +319,7 @@ Page({
     //埋点
     pointData(PageName, ClickPlace) {
         let data = {PageName: PageName, ClickPlace: ClickPlace, SoureChannel: GetChannelCode()};
-        Post(api.PostStatisticSystem, data, true).then(res => {});
+        Post(api.PostStatisticSystem, data, true).then(res => {
+        });
     }
 });

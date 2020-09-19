@@ -1,4 +1,5 @@
-import { SetStorage, Get, api, Product, NavigateTo } from '../../../utils/common';
+import {api, Get, NavigateTo, Product, SetStorage} from '../../../utils/common';
+
 Page({
   data: {
     checkFollow: false

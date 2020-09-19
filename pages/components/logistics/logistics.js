@@ -1,4 +1,5 @@
-import { Get, api } from '../../../utils/common';
+import {api, Get} from '../../../utils/common';
+
 Page({
   data: {},
   onLoad(options) {

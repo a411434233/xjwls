@@ -1,4 +1,5 @@
-import { Get, Post, api, Token } from '../../../utils/common';
+import {api, Get} from '../../../utils/common';
+
 Page({
   data: {
     pageIndex: 1,

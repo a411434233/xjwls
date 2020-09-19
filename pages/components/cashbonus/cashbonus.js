@@ -1,5 +1,6 @@
 const app = getApp();
-import { Post, Get, api, Token, NavigateToMiniProgram, ShowNoneToast } from '../../../utils/common'
+import {api, Get, NavigateToMiniProgram, Post, ShowNoneToast, Token} from '../../../utils/common'
+
 Page({
   data: {
     showcollect: 0, //收藏状态

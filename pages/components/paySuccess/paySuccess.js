@@ -1,4 +1,5 @@
-import { SwitchTab, NavigateTo, Post, Token, ShowNoneToast } from '../../../utils/common';
+import {NavigateTo, Post, SwitchTab, Token} from '../../../utils/common';
+
 Page({
   data: {
     show: my.canIUse('life-follow'),

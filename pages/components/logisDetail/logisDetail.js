@@ -1,4 +1,5 @@
 import {Get} from '../../../utils/common';
+
 Page({
   data: {
     isReady: false

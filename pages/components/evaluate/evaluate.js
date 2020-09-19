@@ -1,5 +1,6 @@
 const app = getApp();
-import { api, Token, Post, Get, ShowNoneToast } from '../../../utils/common';
+import {api, Get, Post, ShowNoneToast, Token} from '../../../utils/common';
+
 Page({
   data: {
     imgs1: [{ id: 0 }, { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],

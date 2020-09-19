@@ -1,4 +1,5 @@
-import { Get, api, Post, ShowNoneToast, Token, GetcouPones, NavigateTo } from '../../../utils/common';
+import {api, Get, NavigateTo, ShowNoneToast} from '../../../utils/common';
+
 Page({
   data: { pageIndex: 1, pageSize: 10, more: false },
   onLoad() {

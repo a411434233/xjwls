@@ -1,4 +1,5 @@
-import { NavigateToMiniService } from '../../../utils/common';
+import {NavigateToMiniService} from '../../../utils/common';
+
 Page({
   data: {
     list: [

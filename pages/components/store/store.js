@@ -1,4 +1,5 @@
-import { Product, NavigateTo, Get, api, Token } from '../../../utils/common';
+import {api, Get, NavigateTo, Product, Token} from '../../../utils/common';
+
 Page({
   data: {
     pageIndex: 1,

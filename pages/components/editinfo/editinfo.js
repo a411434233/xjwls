@@ -1,4 +1,5 @@
-import { api, Post, Get, Token, ShowNoneToast } from '../../../utils/common';
+import {api, Get, Post, ShowNoneToast, Token} from '../../../utils/common';
+
 Page({
   data: {
     nackname: '',

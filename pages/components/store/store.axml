@@ -1,42 +1,40 @@
 <view class="pagebox">
-  <view style="height:{{statusBarHeight}}px;top:0px" class="titleBar"></view>
-  <view style="height:{{titleBarHeight}}px;top:{{statusBarHeight}}px" class="titleBar" onTap='search'>
-    <view class="titleBarHeight">
-      <view class="css_sprites_home sousou"></view>
-      <view class="search_label">虾条</view>
-    </view>
-  </view>
-  <view class="box">
-    <image class="storeImage" src="{{info.BrandLogoUrl}}" mode='aspectFill' />
-    <view class="storeInfo">
-      <view>{{info.BrandName}}</view>
-      <view class="storeRemark">
-        <text>综合评价</text>
-        <view class="store_list_star">
-          <view class="css_sprites_goods star1"></view>
-          <view class="css_sprites_goods star1"></view>
-          <view class="css_sprites_goods star1"></view>
-          <view class="css_sprites_goods star1"></view>
-          <view class="css_sprites_goods star1"></view>
-          <!-- <view class="css_sprites_goods star2"></view> -->
-          <!-- <view class="css_sprites_goods star3"></view> -->
+    <view style="height:{{statusBarHeight}}px;top:0px" class="titleBar"></view>
+    <view style="height:{{titleBarHeight}}px;top:{{statusBarHeight}}px" class="titleBar" onTap='search'>
+        <view class="titleBarHeight">
+            <view class="css_sprites_home sousou"></view>
+            <view class="search_label">虾条</view>
         </view>
+    </view>
+    <view class="box">
+        <image class="storeImage" src="{{info.BrandLogoUrl}}" mode='aspectFill'/>
+        <view class="storeInfo">
+            <view>{{info.BrandName}}</view>
+            <view class="storeRemark">
+                <text>综合评价</text>
+                <view class="store_list_star">
+                    <view class="css_sprites_goods star1"></view>
+                    <view class="css_sprites_goods star1"></view>
+                    <view class="css_sprites_goods star1"></view>
+                    <view class="css_sprites_goods star1"></view>
+                    <view class="css_sprites_goods star1"></view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- <view class="tabbars">
+      <view class="actives">全部</view>
+      <view>推荐</view>
+      <view>
+        <text>销量</text>
+        <view class="css_sprites_store"></view>
       </view>
+      <view>
+        <text>价格</text>
+        <view class="css_sprites_store"></view>
+      </view>
+    </view> -->
+    <view class="boxlist">
+        <goods-item class='item' a:for="{{list}}" a:key='index' key='{{index}}' item="{{item}}"/>
     </view>
-  </view>
-  <!-- <view class="tabbars">
-    <view class="actives">全部</view>
-    <view>推荐</view>
-    <view>
-      <text>销量</text>
-      <view class="css_sprites_store"></view>
-    </view>
-    <view>
-      <text>价格</text>
-      <view class="css_sprites_store"></view>
-    </view>
-  </view> -->
-  <view class="boxlist">
-    <goods-item class='item' a:for="{{list}}" a:key='index' key='{{index}}' item="{{item}}" />
-  </view>
 </view>

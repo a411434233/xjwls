@@ -1,4 +1,5 @@
-import { api, Post, Token, Get, NavigateTo } from '../../../utils/common';
+import {api, Get, NavigateTo} from '../../../utils/common';
+
 Page({
   data: {
     arr: ['未使用', '已使用', '已过期'],

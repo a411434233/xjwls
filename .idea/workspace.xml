@@ -3,11 +3,69 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/goodsItem/goodsItem.axml" beforeDir="false" afterPath="$PROJECT_DIR$/components/goodsItem/goodsItem.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/address/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/address/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/addressadd/addressadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/addressadd/addressadd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/aftersaledetail/aftersaledetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/aftersaledetail/aftersaledetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/cashbonuscopy/cashbonuscopy.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonuscopy/cashbonuscopy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/cashbonusmy/cashbonusmy.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonusmy/cashbonusmy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/chajian/chajian.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/chajian/chajian.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/collection/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/collection/collection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/collection/onesurprisec/onesurprisec.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/collection/onesurprisec/onesurprisec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/coupno/coupno.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/coupno/coupno.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/coupnoall/coupnoall.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/coupnoall/coupnoall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/coupnosm/coupnosm.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/coupnosm/coupnosm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/couponList/couponList.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/couponList/couponList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/editinfo/editinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/editinfo/editinfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/evaluate/evaluate.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/evaluate/evaluate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/evaluateall/evaluateall.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/evaluateall/evaluateall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/goodslist/goodslist.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/goodslist/goodslist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/lmember/lmember.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/lmember/lmember.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/logisDetail/logisDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/logisDetail/logisDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/logistics/logistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/logistics/logistics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/paySuccess/paySuccess.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/paySuccess/paySuccess.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/pieceTogether/pieceTogether.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pieceTogether/pieceTogether.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/pieceTogether/pieceTogether.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pieceTogether/pieceTogether.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/search/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/service/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/service/service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/sigincurrency/sigincurrency.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/sigincurrency/sigincurrency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/store/store.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/store/store.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/storeList/storeList.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/storeList/storeList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/storeOrder/storeOrder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/storeOrder/storeOrder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typings/wx.d.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +123,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
+    <property name="ts.external.directory.path" value="D:\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -113,7 +172,9 @@
       <workItem from="1600048690782" duration="48000" />
       <workItem from="1600329518457" duration="4952000" />
       <workItem from="1600417784328" duration="233000" />
-      <workItem from="1600485051499" duration="4239000" />
+      <workItem from="1600485051499" duration="5572000" />
+      <workItem from="1600499574976" duration="1434000" />
+      <workItem from="1600504578793" duration="2457000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -149,15 +210,33 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Default Changelist" />
     <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="907" y="382" key="#Inspections" timestamp="1599099221327">
+    <state x="907" y="382" key="#Inspections" timestamp="1600506536755">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="907" y="382" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1599099221327" />
+    <state x="907" y="382" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1600506536755" />
     <state x="1029" y="526" key="#Notifications" timestamp="1599898439864">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -178,10 +257,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1011" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598322949311" />
-    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1598952539711">
+    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1600506483584">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1598952539711" />
+    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1600506483584" />
     <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2" timestamp="1599042958365">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

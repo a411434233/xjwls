@@ -1,5 +1,6 @@
-import { ShowNoneToast, Post, Get, api, Token, GetChannelCode } from '../../../utils/common';
+import {api, Get, GetChannelCode, Post, ShowNoneToast, Token} from '../../../utils/common';
 import CITY from '../../../data/city.json';
+
 Page({
   data: { provinces: '请选择地址', city: '', area: '', addressdetail: '', name: '', telphone: '', is_default: false, telpopup: false, namepopup: false, citypopup: false, addressdetailpopup: false, successpopup: false, failpopup: false, user_ids: '', id: '', showsave: true, isShowDel: false },
   async onLoad(options) {
