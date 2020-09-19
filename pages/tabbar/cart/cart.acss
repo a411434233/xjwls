@@ -177,7 +177,7 @@ page {
   align-items: center;
   justify-content: center;
   border: 2rpx solid rgba(153, 153, 153, 1);
-  border-radius: 0px 10rpx 10rpx 0px;
+  border-radius: 0 10rpx 10rpx 0px;
   position: relative;
 }
 
@@ -229,7 +229,7 @@ page {
   position: fixed;
   bottom: 0;
   z-index: 1000;
-  box-shadow: 0px -1px 7px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 -1px 7px 0 rgba(0, 0, 0, 0.07);
 }
 
 .cart-d {
@@ -413,10 +413,9 @@ checkbox .a-icon-success_no_circle {
   display: grid;
   grid-template-columns: auto auto;
   width: 710rpx;
-  margin: 0 auto;
   grid-row-gap: 20rpx;
   grid-column-gap: 20rpx;
-  margin-top: 20rpx;
+  margin: 20rpx auto 0;
 }
 
 /*  */
@@ -490,9 +489,8 @@ checkbox .a-icon-success_no_circle {
   right: 36rpx;
   top: 0;
   bottom: 0;
-  margin: auto;
   line-height: 81rpx;
-  margin-right: 8rpx;
+  margin: auto 8rpx auto auto;
 }
 
 .shop_top_right::after {

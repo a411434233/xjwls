@@ -127,7 +127,7 @@ Page({
     },
     //结算
     async gobuyorder() {
-        var orderlistobj = {};
+        const orderlistobj = {};
         let {suclist} = this.data;
         orderlistobj.shoppingOrderView = [];
         suclist.forEach(res => {
@@ -158,8 +158,8 @@ Page({
         my.navigateTo({url: '/pages/components/pro_detail/pro_detail?id=' + id});
     },
     delall() {
-        var losearr = [];
-        for (var i in this.data.errlist) {
+        const losearr = [];
+        for (let i in this.data.errlist) {
             losearr.push(this.data.errlist[i].ShopId);
         }
         Get(api.GetClearLoseShop, {shopIdStr: losearr.join(',')}).then(res => {
