@@ -40,6 +40,7 @@ App({
             return Promise.resolve(res);
         });
     },
+    orderdata: {},
     swichQuery: '',
     isiPhoneX: false
 });

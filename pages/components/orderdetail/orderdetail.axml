@@ -56,7 +56,6 @@
         <image mode="scaleToFill" src="/images/icon/icon-test2x.png" />
         <text>{{address.Province}}{{address.City}}{{address.Area}}{{address.Address}}</text>
       </view>
-      <!--<view class="kadaoCoupone" a:if='{{order.KadaCode}}'><view class="duihuanma">兑换码</view><view class="kadaoCoupone_left">网易有道卡搭体验课</view><view class="kadaoCoupone_right">{{order.KadaCode}}</view><view class="kadaoCoupone_btn" onTap='looks'>查看</view></view> -->
     </view>
     <!--  -->
     <view class="orderaddress-b flex_sc" a:if="{{detail.Status!=0 && detail.Status!=1 && detail.Status!=5 && detail.Status!=6 && detail.Status!=7}}">

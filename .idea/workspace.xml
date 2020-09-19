@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/actives/actives.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/actives/actives.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.axml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/Circle/Circle.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/Circle/Circle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/service/service.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/service/service.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.axml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.acss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,10 +63,11 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="14.8.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.6.2" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.12.62" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../exp" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -117,6 +124,9 @@
       <workItem from="1599895015905" duration="1906000" />
       <workItem from="1599903903689" duration="38000" />
       <workItem from="1600048690782" duration="48000" />
+      <workItem from="1600329518457" duration="4952000" />
+      <workItem from="1600417784328" duration="233000" />
+      <workItem from="1600485051499" duration="3316000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -169,10 +179,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="736" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598403707932" />
-    <state x="1022" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598318410240">
+    <state x="1022" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600329660605">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1022" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1598318410240" />
+    <state x="1022" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1600329660605" />
     <state x="1346" y="519" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1598349191659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -193,18 +203,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1599098734801" />
-    <state x="514" y="188" width="992" height="773" key="SettingsEditor" timestamp="1599099334831">
+    <state x="514" y="188" width="992" height="773" key="SettingsEditor" timestamp="1600329637982">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="514" y="188" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1599099334831" />
-    <state x="1678" y="224" width="603" height="804" key="find.popup" timestamp="1599029801792">
+    <state x="514" y="188" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1600329637982" />
+    <state x="1678" y="224" width="603" height="804" key="find.popup" timestamp="1600417801850">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1678" y="224" width="603" height="804" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1599029801792" />
-    <state x="1073" y="559" width="478" height="401" key="scopes" timestamp="1598334690976">
+    <state x="1678" y="224" width="603" height="804" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1600417801850" />
+    <state x="1073" y="559" width="478" height="401" key="scopes" timestamp="1600330423286">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1073" y="559" width="478" height="401" key="scopes/0.0.2560.1400@0.0.2560.1400" timestamp="1598334690976" />
+    <state x="1073" y="559" width="478" height="401" key="scopes/0.0.2560.1400@0.0.2560.1400" timestamp="1600330423286" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1599097244980">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

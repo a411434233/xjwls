@@ -5,10 +5,6 @@
   line-height: 24px;
 }
 
-.content1 {
-  height: 200px;
-}
-
 .service_btn {
   width: 660rpx;
   height: 88rpx;
@@ -43,11 +39,6 @@
   line-height: 88rpx
 }
 
-.sercol_title {
-  font-size: 28rpx;
-  color: #2D2D2D;
-  font-weight: 600
-}
 
 .ser_name {
   font-size: 24rpx;

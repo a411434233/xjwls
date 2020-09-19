@@ -268,48 +268,6 @@
   border-radius: 24rpx;
 }
 
-.ordergoods-link {
-  margin: 0 32rpx;
-  display: flex;
-  justify-content: space-between;
-}
-
-.ordergoods-linkl,
-.ordergoods-linkr {
-  text-align: center;
-  line-height: 100rpx;
-  flex: 1;
-}
-
-.ordergoods-linkl {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-contact-button {
-  width: 16px;
-  height: 46px;
-  margin-left: 80rpx;
-}
-
-.ordergoods-linkl {
-  border-right: 2rpx solid #eee;
-}
-
-.ordergoods-linkl image,
-.ordergoods-linkr image {
-  width: 32rpx;
-  height: 32rpx;
-  vertical-align: middle;
-}
-
-.ordergoods-linkl text,
-.ordergoods-linkr text {
-  margin-left: 14rpx;
-  color: #333;
-  font-size: 28rpx;
-}
 
 .ordergoods-foot {
   /* padding-bottom: 10rpx; */
@@ -327,11 +285,7 @@ contact-button {
   border-top: 2rpx solid #eee; */
 }
 
-.ordergoods-foot-toptit {
-  font-size: 28rpx;
-  margin-bottom: 20rpx;
-  color: #333;
-}
+
 
 .ordergoods-foot-topm {
   font-size: 28rpx;
@@ -384,11 +338,7 @@ contact-button {
   justify-content: flex-end;
 }
 
-contact-button {
-  width: auto;
-  height: auto;
-  margin-left: 20rpx;
-}
+
 
 .copydanh {
   width: 120rpx;
@@ -449,69 +399,3 @@ contact-button {
   white-space: nowrap;
 }
 /*  */
-
-.kadaoCoupone {
-  width: 700rpx;
-  height: 112rpx;
-  margin: 0 auto;
-  background: url('/images/icon/coupones.png') no-repeat;
-  background-size: 100%;
-  margin-top: 70rpx;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.kadaoCoupone_left {
-  width: 267rpx;
-  height: 70rpx;
-  line-height: 70rpx;
-  text-align: center;
-  border-right: dashed 2rpx #ff4b34;
-  font-size: 26rpx;
-  font-family: PingFangSC-Regular, PingFang SC;
-  font-weight: 400;
-  color: rgba(255, 39, 64, 1);
-}
-
-.kadaoCoupone_right {
-  font-size: 28rpx;
-  font-family: PingFangSC-Regular, PingFang SC;
-  font-weight: 400;
-  color: rgba(255, 39, 64, 1);
-  margin-left: 34rpx;
-}
-.kadaoCoupone_btn {
-  width: 135rpx;
-  height: 50rpx;
-  background: rgba(255, 39, 64, 1);
-  border-radius: 27rpx;
-  font-size: 26rpx;
-  font-family: PingFangSC-Regular, PingFang SC;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: 20rpx;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-.duihuanma {
-  width: 90rpx;
-  height: 34rpx;
-  font-size: 22rpx;
-  font-family: PingFangSC-Regular, PingFang SC;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(255, 39, 64, 1);
-  border-radius: 8rpx 0px 8rpx 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

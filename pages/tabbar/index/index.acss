@@ -170,29 +170,9 @@
 }
 
 .newindex-icon-mt {
-  width: 114rpx;
-  height: 114rpx;
+  width: 114rpx !important;
+  height: 114rpx !important;
   display: block;
-}
-
-.newindex-icon .newindex-icon-m:nth-child(9) image {
-  width: 90rpx;
-  height: 90rpx;
-  margin-top: 8rpx;
-}
-
-.newindex-icon .newindex-icon-m:nth-child(10) image {
-  width: 90rpx;
-  height: 90rpx;
-  margin-top: 8rpx;
-}
-
-.newindex-icon .newindex-icon-m:nth-child(9) view {
-  margin-top: 28rpx;
-}
-
-.newindex-icon .newindex-icon-m:nth-child(10) view {
-  margin-top: 28rpx;
 }
 
 .newindex-icon-mb {

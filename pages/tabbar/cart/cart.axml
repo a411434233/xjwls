@@ -10,7 +10,7 @@
 </view>
 <view class="choudan_box">
     <view class="choudan_item" a:for="{{ActiveGoodsList}}" a:key='{{index}}' key='index' data-item='{{item}}' onTap='addShop'>
-        <image class="choudan_item_image" src="{{item.ImageUrl}}"></image>
+        <image class="choudan_item_image" src="{{item.ImageUrl}}" lazy-load="{{true}}"></image>
         <view class="choudan_item_box">
             <view class="choudan_item_name">
                 <text number-of-lines='1'>{{item.ProductName}}</text>
@@ -19,7 +19,7 @@
             <view class="choudan_item_info">
                 <view class="choudan_item_price price_app">¥{{item.SalesPrice}}</view>
                 <view class="choudan_item_label">搭配价</view>
-                <image src="/images/icon/plus3.svg" class="plus2"></image>
+                <image src="/images/icon/plus3.svg" class="plus2" lazy-load="{{true}}"></image>
             </view>
         </view>
     </view>
@@ -38,7 +38,7 @@
                     <view class="cart-mcm">
                         <checkbox data-storeindex="{{index}}" data-index="{{idx}}" value="{{val.checked}}" checked="{{val.checked}}" onChange="setItem"></checkbox>
                         <view class="cart-mcmm" onTap="godetail" data-id="{{val.ProductId}}" data-pid="{{val.ParentId}}" data-skuId="{{val.SkuId}}">
-                            <image mode="aspectFill" src="{{val.ImageUrl}}"></image>
+                            <image mode="aspectFill" src="{{val.ImageUrl}}"  lazy-load="{{true}}" ></image>
                         </view>
                         <view class="cart-mcmr">
                             <view class="cart-mcmrt">{{val.ProductName}}</view>

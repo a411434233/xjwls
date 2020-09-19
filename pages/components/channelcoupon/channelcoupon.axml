@@ -24,30 +24,5 @@
         <image mode="scaleToFill" src="/images/icon/channelcoupon02.png" />
       </view>
     </view>
-    <view class="channelcoupon-mf">
-      <image mode="scaleToFill" src="/images/icon/channelcoupon03.png" />
-    </view>
-    <view class="channelcoupon2">
-      <view class="channelcoupon-b">
-        <view class="channelcoupon-bt">
-          <view class="channelcoupon-btl">
-            <view class="channelcoupon-btlt">收藏小程序</view>
-            <view class="channelcoupon-btlb">免费领取各种好礼</view>
-          </view>
-        </view>
-      </view>
-      <view class="channelcoupon-bot">
-        <view class="channelcoupon-botm" a:for="{{listarr}}" a:key="index" data-kpid="{{item.ICouponId}}" onTap="gosc">
-          <view class="channelcoupon-botmt">
-            <form onSubmit="onSubmit" report-submit="true" data-id="">
-              <button formType="submit" hover-class="button-hover">
-                <image mode="scaleToFill" src="{{item.ImageUrl}}" />
-              </button>
-            </form>
-          </view>
-          <view class="channelcoupon-botmb">{{item.ActivitiesName}}</view>
-        </view>
-      </view>
-    </view>
   </view>
 </view>

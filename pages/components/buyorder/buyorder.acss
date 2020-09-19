@@ -72,11 +72,7 @@ page {
   height: 6rpx;
 }
 
-.address-ll image {
-  width: 25rpx;
-  height: 32rpx;
-  vertical-align: middle;
-}
+
 
 .address-r {
   margin-right: 24rpx;
@@ -99,12 +95,7 @@ page {
   color: #fff;
 }
 
-.bckgray {
-  background: #f7f7f7;
-  width: 100%;
-  height: 20rpx;
-  /* margin-top: 40rpx; */
-}
+
 
 .goodsinfo {
   background: #fff;
@@ -222,20 +213,6 @@ page {
   height: 38rpx;
 }
 
-.goodsinfo-b {
-  text-align: right;
-  margin-right: 24rpx;
-  margin-left: 24rpx;
-  line-height: 96rpx;
-  font-size: 28rpx;
-  color: #333;
-  border-bottom: 1px solid #ebebeb;
-}
-
-.goodsinfo-b text {
-  color: #02cfa7;
-}
-
 .coupon-wrap {
   width: 710rpx;
   line-height: 80rpx;
@@ -291,10 +268,6 @@ page {
   align-items: center;
 }
 
-.coupon-rrr1 {
-  height: 60rpx;
-  line-height: 60rpx;
-}
 
 .coupon-rl {
   color: #000;
@@ -333,9 +306,7 @@ page {
   font-size: 24rpx;
 }
 
-.order-dbl {
-  margin-left: 24rpx;
-}
+
 
 .order-dbm text {
   color: #ff2740;
