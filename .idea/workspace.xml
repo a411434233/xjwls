@@ -6,20 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/actives/actives.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/actives/actives.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/channelcoupon/channelcoupon.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/service/service.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/service/service.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/goodsItem/goodsItem.axml" beforeDir="false" afterPath="$PROJECT_DIR$/components/goodsItem/goodsItem.axml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +64,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -126,7 +113,7 @@
       <workItem from="1600048690782" duration="48000" />
       <workItem from="1600329518457" duration="4952000" />
       <workItem from="1600417784328" duration="233000" />
-      <workItem from="1600485051499" duration="3316000" />
+      <workItem from="1600485051499" duration="4239000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -203,10 +190,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1599098734801" />
-    <state x="514" y="188" width="992" height="773" key="SettingsEditor" timestamp="1600329637982">
+    <state x="514" y="188" width="992" height="773" key="SettingsEditor" timestamp="1600494071090">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="514" y="188" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1600329637982" />
+    <state x="514" y="188" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1600494071090" />
     <state x="1678" y="224" width="603" height="804" key="find.popup" timestamp="1600417801850">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

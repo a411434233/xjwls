@@ -2,7 +2,7 @@
   <view class="goodsItem_listbox-cm" onTap="godetail" data-id="{{item.ProductId}}">
     <form onSubmit="onSubmit" report-submit="{{true}}" data-id="{{item.ProductId}}">
       <button formType="submit" hover-class="button-hover" class="goodsItem_listbox_btn">
-        <image src="{{item.ImageUrl}}" class="goodsItem_listbox_image" />
+        <image src="{{item.ImageUrl}}" class="goodsItem_listbox_image" lazy-load="{{true}}"  />
       </button>
     </form>
     <view class="goodsItem_listbox_cmt_box">
@@ -18,9 +18,9 @@
         </view>
       </view>
       <!-- todo -->
-      <!--<view class="goodsItem_coup_box" a:if="{{item.DiscountAmount<=0&&item.DiscountRto}}"><view class="goodsItem_coup_label">{{(item.DiscountRto/10).toFixed(1)}}折</view><view class="goodsItem_coup_label">第二件半价</view></view> -->
+      <!-- <view class="goodsItem_coup_box" a:if="{{item.DiscountAmount<=0&&item.DiscountRto}}"><view class="goodsItem_coup_label">{{(item.DiscountRto/10).toFixed(1)}}折</view><view class="goodsItem_coup_label">第二件半价</view></view> -->
       <!-- todo -->
-      <!--<view class="goodsItem_coup_box"><view class="goodsItem_jifenbao">返144集分宝</view></view> -->
+      <!-- <view class="goodsItem_coup_box"><view class="goodsItem_jifenbao">返144集分宝</view></view> -->
       <view class="goodsItem_listbox-cmbl">
         <view class="goodsItem_listbox-cmblt_newPrice {{item.DiscountAmount>0?'':''}}">
           ¥{{(item.SalesPrice-item.DiscountAmount).toFixed(2)}}
