@@ -22,17 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/editinfo/editinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/editinfo/editinfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/evaluate/evaluate.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/evaluate/evaluate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/evaluateall/evaluateall.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/evaluateall/evaluateall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/minea/minea.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/minea/minea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/sorta/sorta.acss" afterDir="false" />
-    </list>
+    <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,7 +130,7 @@
       <workItem from="1600417784328" duration="233000" />
       <workItem from="1600485051499" duration="5572000" />
       <workItem from="1600499574976" duration="1434000" />
-      <workItem from="1600504578793" duration="6873000" />
+      <workItem from="1600504578793" duration="6905000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -191,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600510987902</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Default Changelist">
+      <created>1600511535390</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600511535390</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

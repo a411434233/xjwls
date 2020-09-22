@@ -1,4 +1,4 @@
-import {api, Get, GetChannelCode, Post, ShowNoneToast, Token} from '../../../utils/common';
+import { api, Get, GetChannelCode, Post, ShowNoneToast, Token } from '../../../utils/common';
 import CITY from '../../../data/city.json';
 
 Page({
@@ -94,10 +94,11 @@ Page({
       ShowNoneToast('电话号码有误');
       return;
     }
+    let defaultis;
     if (this.data.is_default == false) {
-      let defaultis = 0;
+      defaultis = 0;
     } else {
-      let defaultis = 1;
+      defaultis = 1;
     }
     let data = { Province: this.data.provinces, City: this.data.city, Area: this.data.area, Address: this.data.addressdetail, UserName: this.data.name, Tel: this.data.telphone, Status: 1, IsDefault: defaultis };
     if (this.data.id != '') {
