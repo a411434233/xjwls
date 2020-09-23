@@ -10,6 +10,22 @@
   <component name="ChangeListManager">
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kaitian/compileMode.json" beforeDir="false" afterPath="$PROJECT_DIR$/.kaitian/compileMode.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/actives/actives.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/actives/actives.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/addressadd/addressadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/addressadd/addressadd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/evaluate/evaluate.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/evaluate/evaluate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/extbusiness/extbusiness.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/extbusiness/extbusiness.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/goodslist/goodslist.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/goodslist/goodslist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/lmember/lmember.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/lmember/lmember.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/lmember/lmember.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/lmember/lmember.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/logisDetail/logisDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/logisDetail/logisDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/logistics/logistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/logistics/logistics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +82,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="D:\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -120,7 +136,8 @@
       <workItem from="1600499574976" duration="1434000" />
       <workItem from="1600504578793" duration="6905000" />
       <workItem from="1600760497665" duration="88000" />
-      <workItem from="1600829699678" duration="2964000" />
+      <workItem from="1600829699678" duration="6547000" />
+      <workItem from="1600844993016" duration="1419000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -192,7 +209,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600832601923</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Default Changelist">
+      <created>1600832675824</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1600832675824</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Default Changelist">
+      <created>1600832682050</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1600832682050</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,10 +280,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="873" y="359" width="814" height="730" key="#意向/0.0.2560.1400@0.0.2560.1400" timestamp="1600509019701" />
-    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1600830345388">
+    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1600840009550">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1600830345388" />
+    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1600840009550" />
     <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2" timestamp="1599042958365">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -261,10 +292,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1599098734801" />
-    <state x="514" y="188" width="992" height="773" key="SettingsEditor" timestamp="1600831788509">
+    <state x="861" y="435" key="IDE.errors.dialog" timestamp="1600841576796">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="514" y="188" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1600831788509" />
+    <state x="861" y="435" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1600841576796" />
+    <state x="514" y="188" width="992" height="773" key="SettingsEditor" timestamp="1600841461985">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="514" y="188" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1600841461985" />
     <state x="1678" y="224" width="603" height="804" key="find.popup" timestamp="1600417801850">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -20,7 +20,7 @@ App({
     },
     throttle(fn, gapTime) {
         //防止多次点击跳转
-        if (gapTime == null || gapTime == undefined) {
+        if (gapTime == null) {
             gapTime = 1500;
         }
         let _lastTime = null;

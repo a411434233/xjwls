@@ -17,9 +17,9 @@
       "title": "storeDetail"
     },
     {
+      "title": "pro_detail",
       "page": "pages/components/pro_detail/pro_detail",
-      "pageQuery": "id=2007291942272220086",
-      "title": "pro_detail"
+      "pageQuery": "id=2008211935257240058"
     },
     {
       "page": "pages/components/orderdetail/orderdetail",

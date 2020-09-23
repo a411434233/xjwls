@@ -1,76 +1,81 @@
 <!--suppress ALL -->
 <loading a:if="{{!daylist.length}}"></loading>
 <view class="box ">
-  <form onSubmit="onSubmit" report-submit="true" data-id="">
-    <view class="moneyBox">
-      <image class="money" src="/images/icon/money.svg"></image>
-      <text class="moneyNum">{{VCoinsView.VCoinNum}}</text>
-      <view class="moenyLabel" a:if='{{VCoinsView.VCoinNum}}'>支付时可抵扣{{(VCoinsView.VCoinNum/100).toFixed(2)}}元</view>
-    </view>
-    <view class="sinBox">
-      <button class="singin_Btn" onTap='gosingin' a:if='{{ToDayIsClockIn==0&&checkFollow}}'>
-        签到
-      </button>
-      <button a:if='{{ToDayIsClockIn==1&&checkFollow}}' class="singin_Btn" open-type="share" onTap="onClickShare" hover-class="button-hover">
-        分享领补卡
-      </button>
-      <life-follow sceneId="d11b5d1d1ba04c53a0368108c30edaf2" class="life" a:if='{{!checkFollow}}' checkFollow="{{checkFollow}}" onClose="closeCb" />
-      <view class="sin_title">
-        今日打卡可获得
-        <text>{{ToDayPrizeVal}}</text>
-        {{PrizeType==1?'味币':'现金红包'}}
-      </view>
-      <view class="items">
-        <view class="right_line" a:for="{{daylist}}" a:key="index">
-          <view class="show1" onTap="pushclock" data-Week="{{item.Week}}" data-PrizeType="{{item.PrizeType}}">
-            <image class="signin06" src="{{item.ImageUrl}}" mode="aspectFit"></image>
-          </view>
+    <form onSubmit="onSubmit" report-submit="true" data-id="">
+        <view class="moneyBox">
+            <image class="money" src="/images/icon/money.svg"></image>
+            <text class="moneyNum">{{VCoinsView.VCoinNum}}</text>
+            <view class="moenyLabel" a:if='{{VCoinsView.VCoinNum}}'>支付时可抵扣{{(VCoinsView.VCoinNum / 100).toFixed(2)}}元
+            </view>
         </view>
-        <view class="" onTap='pushclock1'>
-          <image class="signin06" src="/images/icon/signin06.png" mode="aspectFit"></image>
+        <view class="sinBox">
+            <button class="singin_Btn" onTap='gosingin' a:if='{{ToDayIsClockIn==0&&checkFollow}}'>
+                签到
+            </button>
+            <button a:if='{{ToDayIsClockIn==1&&checkFollow}}' class="singin_Btn" open-type="share" onTap="onClickShare"
+                    hover-class="button-hover">
+                分享领补卡
+            </button>
+            <life-follow sceneId="d11b5d1d1ba04c53a0368108c30edaf2" class="life" a:if='{{!checkFollow}}'
+                         checkFollow="{{checkFollow}}" onClose="closeCb"/>
+            <view class="sin_title">
+                今日打卡可获得
+                <text>{{ToDayPrizeVal}}</text>
+                {{PrizeType == 1 ? '味币' : '现金红包'}}
+            </view>
+            <view class="items">
+                <view class="right_line" a:for="{{daylist}}" a:key="index">
+                    <view class="show1" onTap="pushclock" data-Week="{{item.Week}}" data-PrizeType="{{item.PrizeType}}">
+                        <image class="signin06" src="{{item.ImageUrl}}" mode="aspectFit"></image>
+                    </view>
+                </view>
+                <view class="" onTap='pushclock1'>
+                    <image class="signin06" src="/images/icon/signin06.png" mode="aspectFit"></image>
+                </view>
+            </view>
         </view>
-      </view>
-    </view>
-  </form>
-  <swiper class="demo-swiper" indicator-dots="{{true}}" autoplay="{{true}}" vertical="{{false}}" interval="{{3000}}" circular="{{true}}">
-    <block a:for="{{bannerArr}}">
-      <swiper-item a:key="index">
-        <view class="swiper_img">
-          <image mode="scaleToFill" src="{{item.bannerImg}}" data-index="{{index}}" onTap="gohl" lazy-load="{{true}}" default-source="/images/icon/default-source.png" />
+    </form>
+    <swiper class="demo-swiper" indicator-dots="{{true}}" autoplay="{{true}}" vertical="{{false}}" interval="{{3000}}"
+            circular="{{true}}">
+        <block a:for="{{bannerArr}}">
+            <swiper-item a:key="index">
+                <view class="swiper_img">
+                    <image mode="scaleToFill" src="{{item.bannerImg}}" data-index="{{index}}" onTap="gohl"
+                           lazy-load="{{true}}" default-source="/images/icon/default-source.png"/>
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+    <!-- 权益专区 -->
+    <view class="proBox">
+        <view class="moneyTitle">精选零食超值购</view>
+        <view class="goods_item_list">
+            <goods-item a:for="{{tabs2Data}}" a:key="index" key='{{index}}' item='{{item}}'/>
         </view>
-      </swiper-item>
-    </block>
-  </swiper>
-  <!-- 权益专区 -->
-  <view class="proBox">
-    <view class="moneyTitle">精选零食超值购</view>
-    <view class="goods_item_list">
-      <goods-item a:for="{{tabs2Data}}" a:key="index" key='{{index}}' item='{{item}}' />
     </view>
-  </view>
 </view>
-<!-- model -->
+        <!-- model -->
 <view class="model" a:if='{{showqd}}'>
-  <image class="close" src="/images/icon/close01.png" catchTap='closeModel'></image>
-  <image class="pro3Image" src="{{SignRecProduct.ImageUrl}}" mode="aspectFit" onTap='detail'></image>
-  <view class="pro3_weibi">恭喜你今日获得{{ToDayPrizeVal}}{{PrizeType==1?'味币':'现金红包'}}</view>
-  <view class="pro3_info" onTap='detail'>
-    <text class="pro3Name">{{SignRecProduct.ProductName}}</text>
-    <view class="pro3Time">{{SignRecProduct.Remark}}</view>
-    <view class="pro3_label" a:if='{{SignRecProduct.Tag!=null}}'>
-      <view a:for='{{SignRecProduct.Tag}}' a:key='index' key='{{index}}'>{{item}}</view>
+    <image class="close" src="/images/icon/close01.png" catchTap='closeModel'></image>
+    <image class="pro3Image" src="{{SignRecProduct.ImageUrl}}" mode="aspectFit" onTap='detail'></image>
+    <view class="pro3_weibi">恭喜你今日获得{{ToDayPrizeVal}}{{PrizeType == 1 ? '味币' : '现金红包'}}</view>
+    <view class="pro3_info" onTap='detail'>
+        <text class="pro3Name">{{SignRecProduct.ProductName}}</text>
+        <view class="pro3Time">{{SignRecProduct.Remark}}</view>
+        <view class="pro3_label" a:if='{{SignRecProduct.Tag!=null}}'>
+            <view a:for='{{SignRecProduct.Tag}}' a:key='index' key='{{index}}'>{{item}}</view>
+        </view>
+        <view class="pro3_in">
+            <text class='qingcang'>清仓价</text>
+            <text class="pro3_price price_app">
+                ￥{{(SignRecProduct.SalesPrice - SignRecProduct.DiscountAmount).toFixed(2) || 0}}
+            </text>
+            <text class="pro3_oldprice price_app">￥{{SignRecProduct.Price || 0}}</text>
+        </view>
     </view>
-    <view class="pro3_in">
-      <text class='qingcang'>清仓价</text>
-      <text class="pro3_price price_app">
-        ￥{{(SignRecProduct.SalesPrice-SignRecProduct.DiscountAmount).toFixed(2)||0}}
-      </text>
-      <text class="pro3_oldprice price_app">￥{{SignRecProduct.Price||0}}</text>
-    </view>
-  </view>
-  <button class="btnPay" onTap='detail'>立即购买</button>
+    <button class="btnPay" onTap='detail'>立即购买</button>
 </view>
 <view class="modelBg" a:if='{{showqd}}'></view>
-<!--  -->
+        <!--  -->
 <view class="guize" onTap='rulers'>规则</view>
-<footer type='normal' a:if="{{showdb}}" content='我是有底线的' />
+<footer type='normal' a:if="{{showdb}}" content='我是有底线的'/>

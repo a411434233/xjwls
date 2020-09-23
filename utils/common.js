@@ -107,7 +107,7 @@ function Get(url, data = {}, user = false, token = false) {
     return HttpRequest(url, 'GET', data, user, token);
 }
 
-function HttpRequest(url, method, data, user = false, token = false) {
+function HttpRequest(url, method, data = {}, user = false, token = false) {
     return new Promise(async (resolve, reject) => {
         let httpUrl = API.BASE_URL + url;
         if (user) {
@@ -367,6 +367,7 @@ function getMyLocations() {
  * @function AliPay  唤起支付
  * @param {String} TradeNo  订单号
  * @param {Number} VCoinsNum  付款成功后获得的味币
+ * @param orderCode
  * @param {Boolean} back   是否返回,默认-true
  */
 
