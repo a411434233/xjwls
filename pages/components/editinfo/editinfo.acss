@@ -60,10 +60,6 @@
     font-weight: 400;
 }
 
-.editinfo-mlr1 {
-    line-height: 120rpx;
-}
-
 .btn{
     width:690rpx;
     height:90rpx;

@@ -1,3 +1,7 @@
+<!--suppress ALL -->
+
+
+
 <view class="page">
   <bc-module a:if="{{ showComponent }}" code="suite://bc.suite.union618/bc.template.banner" name="block-banner" onError="bcError" />
 </view>

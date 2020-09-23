@@ -1,3 +1,4 @@
+<!--suppress ALL -->
 <view>
   <view class="servi-title">猜你想问</view>
   <collapse class="colclass" collapseKey="collapse1">

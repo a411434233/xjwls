@@ -99,11 +99,11 @@ const TOKEN = new Token();
  * @param {*} token 是否需要token
  */
 
-function Post(url, data, user, token) {
+function Post(url, data = {}, user = false, token = false) {
     return HttpRequest(url, 'POST', data, user, token);
 }
 
-function Get(url, data, user, token) {
+function Get(url, data = {}, user = false, token = false) {
     return HttpRequest(url, 'GET', data, user, token);
 }
 

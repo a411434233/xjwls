@@ -1,3 +1,6 @@
+<!--suppress ALL -->
+
+
 <loading a:if="{{!detail.OrderCode}}"></loading>
 <view class="box-wrap" a:else>
   <view class="order-t">

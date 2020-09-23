@@ -5,7 +5,7 @@
         <view class="{{pageIndex==1?'tab_top_active':''}}" data-index='1' onTap='onPageTab'>店铺</view>
         <view class="{{pageIndex==2?'tab_top_active':''}}" data-index='2' onTap='onPageTab'>详情</view>
     </view>
-    <view style="height:{{statusBarHeight+titleBarHeight}}px;"></view>
+    <view style="height:{{statusBarHeight+titleBarHeight}}px"></view>
     <view class="banner_box">
         <swiper class="banner" onChange='bannerChange'>
             <swiper-item a:for="{{LunBoImagesView}}" a:key="index" key='index'>
@@ -22,10 +22,10 @@
         <view class="price_box">
             <view class="price_info">
                 <view class="price">{{SalesPrice}}</view>
-                <view class="quan">{{DiscountAmount?'':''}}</view>
+                <view class="quan">{{DiscountAmount ? '' : ''}}</view>
                 <view class="price2" a:if="{{DiscountAmount}}">
                     券后
-                    <text>{{(SalesPrice -DiscountAmount).toFixed(1)}}</text>
+                    <text>{{(SalesPrice - DiscountAmount).toFixed(1)}}</text>
                     元
                 </view>
             </view>
@@ -46,7 +46,7 @@
                 <view class="card_price">
                     <view class="card_price1">
                         ¥
-                        <text>{{(SalesPrice*(1-jfbData.RebateRate)*100/100).toFixed(2) ||0}}</text>
+                        <text>{{(SalesPrice * (1 - jfbData.RebateRate) * 100 / 100).toFixed(2) || 0}}</text>
                         <text>返利后</text>
                     </view>
                     <view class="card_price2">
@@ -56,7 +56,7 @@
                 </view>
                 <view class="card_status">
                     <view class="status_pic" a:if="{{jfbData.SufficientBalance==true}}">
-                        返{{jfbData.RebateJfb||0}}集分宝
+                        返{{jfbData.RebateJfb || 0}}集分宝
                     </view>
                     <view class="status_net_err" a:if="{{jfbData.SufficientBalance==false}}">
                         <image mode="scaleToFill" src="/images/icon/face.png"></image>
@@ -66,7 +66,7 @@
             </view>
             <view class="card_mes_r">
                 <view>返利卡</view>
-                <view>{{(1-jfbData.RebateRate)<=0?'花多少返多少':'100集分宝=1元'}}</view>
+                <view>{{(1 - jfbData.RebateRate) <= 0 ? '花多少返多少' : '100集分宝=1元'}}</view>
             </view>
         </view>
         <!-- 未开卡 -->
@@ -74,9 +74,9 @@
             <view class="card_left">
                 <view class="card_money">
                     <view class="card_1">
-                        <view class="card_1_big">{{fanliPrice[0]||0}}</view>
+                        <view class="card_1_big">{{fanliPrice[0] || 0}}</view>
                         <view class="card_1_small" a:if='{{fanliPrice[1]}}'>.{{fanliPrice[1]}}</view>
-                        <text a:if={{RebateRate-1>=0}}>元购</text>
+                        <text a:if="{{RebateRate >= 0}}">元购</text>
                         <text a:else>元</text>
                     </view>
                     <view class="card_2">
@@ -85,7 +85,7 @@
                     </view>
                 </view>
                 <view class="card_desc">
-                    <view class="card_text1">现在领卡 下单后返{{(SalesPrice*(jfbData.RebateRate) ||0).toFixed(2)}}元</view>
+                    <view class="card_text1">现在领卡 下单后返{{(SalesPrice * (jfbData.RebateRate) || 0).toFixed(2)}}元</view>
                     <view class="card_text2">卡主还能天天领红包</view>
                 </view>
             </view>
@@ -100,14 +100,14 @@
             <block a:for="{{5}}" a:index="{{index}}" a:if="{{index!=0}}">
                 <image mode="scaleToFill" src="{{'/images/icon/icon'+index+'.png'}}" lazy-load="{{true}}"
                        class="icon"></image>
-                <view class="icon_text">{{['','购买商品','完成支付','返集分宝','领取到账'][index]}}</view>
+                <view class="icon_text">{{['', '购买商品', '完成支付', '返集分宝', '领取到账'][index]}}</view>
                 <image mode="scaleToFill" src="/images/icon/arrowSplit.png" class="split" a:if="{{index!=4}}"></image>
             </block>
         </view>
     </view>
     <view class="items items_line2" onTap="addShop">
         <view class="item_label">已选</view>
-        <view class="item_box is_label">{{guige||'请选择规格'}}</view>
+        <view class="item_box is_label">{{guige || '请选择规格'}}</view>
         <image src="/images/icon/right.svg" class="right"></image>
     </view>
     <view class="items margin_top  items_line2" onTap="lingquan" a:if="{{MinAmount.length}}">
@@ -123,7 +123,7 @@
         <view class="item_label">运费</view>
         <view class="item_box">
             <image src="/images/icon/express.svg" class="express"></image>
-            <view class="item_fahuodi">{{MailPrice==0?'免运费':'满39包邮'}}</view>
+            <view class="item_fahuodi">{{MailPrice == 0 ? '免运费' : '满39包邮'}}</view>
         </view>
         <image src="/images/icon/right.svg" class="right"></image>
     </view>
@@ -166,7 +166,7 @@
                             <view class="tuijian_box_">
                                 <view class="tuijian_price">
                                     <view a:if="{{item.DiscountAmount}}" class="price_app">
-                                        {{(item.SalesPrice-item.DiscountAmount).toFixed(2)}}
+                                        {{(item.SalesPrice - item.DiscountAmount).toFixed(2)}}
                                     </view>
                                     <view class="price_app" a:else>{{item.SalesPrice}}</view>
                                 </view>
@@ -223,10 +223,9 @@
                 <view class="add_cat_info">
                     <view class="add_cat_price_box">
                         <view class="add_cat_price price_app">{{difference.SalesPrice}}</view>
-                        <!--<view class="add_cat_old price_app">¥{{difference.Price}}</view> -->
                         <view class="goods_label" a:if="{{jfbData.Registered==true||jfbData.Registered==false}}">
                             <view>返利</view>
-                            <view>{{jfbData.RebateJfb||0}}集分宝</view>
+                            <view>{{jfbData.RebateJfb || 0}}集分宝</view>
                         </view>
                     </view>
                     <view class="add_cat_kucu">库存{{difference.Nums}}件</view>
@@ -238,7 +237,7 @@
                 <view class="add_cat_label_ist">
                     <view class="{{val.isChecked?'add_cat_active':''}}" a:for="{{item.item}}" a:for-item="val"
                           a:for-index="idx" a:key="idx" data-idx="{{idx}}" data-index="{{index}}" onTap="setLabel">
-                        {{val.SkuName?val.SkuName:val.CategoryName}}
+                        {{val.SkuName ? val.SkuName : val.CategoryName}}
                     </view>
                 </view>
             </view>

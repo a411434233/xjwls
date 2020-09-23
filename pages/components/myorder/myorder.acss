@@ -65,10 +65,6 @@
   font-size: 24rpx;
 }
 
-.myorder-ctr {
-  margin-right: 24rpx;
-  color: #02cfa7;
-}
 
 .myorder-cc {
   margin-top: 10rpx;
@@ -186,18 +182,6 @@
   border-radius: 39rpx;
 }
 
-.anniu-l {
-  margin-right: 24rpx;
-  width: 160rpx;
-  height: 60rpx;
-  line-height: 60rpx;
-  text-align: center;
-  background: #fff;
-  border: 2rpx solid #ebebeb;
-  color: #666;
-  font-size: 28rpx;
-}
-
 .anniu-rsure {
   color: #fff;
   background: #ff2740;
@@ -207,23 +191,6 @@
   color: #ff2740;
   font-size: 24rpx;
   margin-right: 24rpx;
-}
-
-.lease-boxtr1 {
-  color: #333;
-  font-size: 24rpx;
-  margin-right: 24rpx;
-}
-
-.lease-boxtr2 {
-  color: #ff2740;
-  font-size: 24rpx;
-  margin-right: 24rpx;
-}
-
-.lease-boxtr1 text {
-  
-  color: #02cfa7;
 }
 
 .goodsinfo-crbrb {

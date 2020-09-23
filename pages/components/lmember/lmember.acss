@@ -44,38 +44,6 @@
   margin: 0 32rpx;
 }
 
-.member-mm {
-  margin-top: 20rpx;
-  margin-left: 22rpx;
-  width: 205rpx;
-  height: 247rpx;
-  background: url('http://image.smjpin.cn/lmember03.png');
-  background-size: 205rpx 247rpx;
-}
-
-.member-mm:nth-of-type(3n + 1) {
-  margin-left: 0;
-}
-
-.member-mm view {
-  width: 100%;
-  text-align: center;
-  color: #8a0028;
-  line-height: 40rpx;
-}
-
-.member-mm view:nth-of-type(1) {
-  line-height: 130rpx;
-  font-size: 100rpx;
-}
-
-.member-mm view:nth-of-type(1) text {
-  font-size: 64rpx;
-}
-
-.member-mm view:nth-of-type(3) {
-  margin-top: 15rpx;
-}
 
 .member-mmbwrap {
   display: flex;

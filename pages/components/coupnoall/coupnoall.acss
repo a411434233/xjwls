@@ -11,10 +11,6 @@
   color: #999;
   
 }
-.myorderactice{
-  color: #64C5CB;
-  border-bottom: 2rpx solid #02CFA7;
-}
 .coupon1{
   width: 100%;
   margin-top: 30rpx;
@@ -47,22 +43,6 @@
   /* margin-top: 20rpx; */
   width: 631rpx;
   border-radius: 24rpx;
-}
-.coupon2-t{
-  width: 100%;
-  text-align: center;
-  margin-top: 20rpx;
-}
-.coupon2-t text{
-  font-size: 28rpx;
-  color: #666;
-  margin-right: 6rpx;
-  margin-top: 2rpx;
-}
-.coupon2-t image{
-  width: 17rpx;
-  height: 32rpx;
-  vertical-align:middle;
 }
 .coupontop{
   width: 100%;

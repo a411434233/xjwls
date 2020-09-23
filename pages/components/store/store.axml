@@ -1,5 +1,5 @@
 <view class="pagebox">
-    <view style="height:{{statusBarHeight}}px;top:0px" class="titleBar"></view>
+    <view style="height:{{statusBarHeight}}px;top:0" class="titleBar"></view>
     <view style="height:{{titleBarHeight}}px;top:{{statusBarHeight}}px" class="titleBar" onTap='search'>
         <view class="titleBarHeight">
             <view class="css_sprites_home sousou"></view>

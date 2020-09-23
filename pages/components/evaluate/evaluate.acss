@@ -76,15 +76,6 @@ page{
   color: #333;
   font-weight: 600;
 }
-.uploadImgBtn {
-  width: 4rem;
-  border: none;
-  background-color: #0c9;
-  color: #fff;
-  margin: 0.4rem auto 0;
-  border-radius: 1rem;
-}
-
 .allImgBox {
   width: 740rpx;
   margin-top: 10rpx;

@@ -46,7 +46,7 @@ Page({
 
         this.setData({id: id});
         if (options.qdcode) {
-            SetStorage('qdmc', {qdcode: options.qdcode});
+            await SetStorage('qdmc', {qdcode: options.qdcode});
         }
         setTimeout(() => {
             this.getShopNum();
@@ -242,11 +242,10 @@ Page({
         });
     },
     //进入店铺
-    intoStore(e) {
+    intoStore() {
         let {ProductId} = this.data;
         NavigateTo('/pages/components/store/store?ProductId=' + ProductId);
     },
-
     //唤起分享
     share() {
         my.showSharePanel();
@@ -275,7 +274,7 @@ Page({
         return data || false;
     },
     //加入购物车
-    async addShopCat(e) {
+    async addShopCat() {
         let gui = this.data.guige.split(',');
         let arr = gui.filter(item => !item);
         if (arr.length > 0 || gui.length - arr.length < this.data.specifications.length) return ShowNoneToast('请选择规格');
@@ -346,7 +345,7 @@ Page({
     },
     //获取规格
     getguige(guige = []) {
-        return new Promise(async (resolve, reject) => {
+        return new Promise(async (resolve) => {
             let {specifications} = this.data;
             guige = guige.length ? guige : specifications;
             if (guige && !guige.length) return {};
@@ -430,7 +429,7 @@ Page({
     pointData([PageName, ClickPlace]) {
         let url = api.PostStatisticSystem;
         let data = {PageName: PageName, ClickPlace: ClickPlace, SoureChannel: GetChannelCode()};
-        Post(url, data, true).then(res => {
+        Post(url, data, true).then(() => {
         });
     },
     //订阅模板消息

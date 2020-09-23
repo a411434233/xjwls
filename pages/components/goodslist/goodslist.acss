@@ -42,12 +42,6 @@
   height: 29rpx;
 }
 
-.recommendProwrap {
-  background: #fff;
-  margin-top: 88rpx;
-}
-
-/*  */
 
 .listbox {
   margin: 0 24rpx;
@@ -63,76 +57,6 @@
   align-items: center;
   justify-content: center;
   margin: 30rpx 0 10rpx;
-}
-
-.listbox-tl {
-  width: 47rpx;
-  height: 4rpx;
-  background: linear-gradient(138deg, rgba(153, 206, 146, 1) 0%, rgba(89, 193, 200, 1) 100%);
-  box-shadow: 2px 2px 4px 0px rgba(153, 201, 147, 1);
-}
-
-.listbox-tm {
-  padding: 0 20rpx;
-  color: #64c5cb;
-  font-size: 28rpx;
-}
-
-.listbox-c {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.listbox-cm {
-  margin-top: 20rpx;
-  width: 336rpx;
-  height: 499rpx;
-  background: rgba(255, 255, 255, 1);
-  box-shadow: 2rpx 2rpx 4rpx 0rpx rgba(204, 204, 204, 1);
-  border-radius: 24rpx;
-  overflow: hidden;
-}
-
-.listbox-cm:nth-of-type(even) {
-  margin-left: 20rpx;
-}
-
-.listbox-cm image {
-  width: 336rpx;
-  height: 336rpx;
-}
-
-.listbox-cmt {
-  width: 90%;
-  margin: 20rpx 0 0;
-  margin-left: 5%;
-  line-height: 40rpx;
-  font-size: 28rpx;
-  color: #333333;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.listbox-cmm {
-  width: 90%;
-  margin: 10rpx 0 0;
-  margin-left: 5%;
-  line-height: 33rpx;
-  color: #999;
-  font-size: 24rpx;
-  font-weight: 600;
-  text-decoration: line-through;
-  font-family: 'DIN Alternate';
-}
-
-.listbox-cmb {
-  width: 90%;
-  margin-left: 5%;
-  line-height: 40rpx;
-  color: #ff3c3c;
-  font-size: 28rpx;
-  font-weight: 600;
 }
 
 .coupon1 {

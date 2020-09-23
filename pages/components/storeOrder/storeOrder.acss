@@ -133,7 +133,6 @@ page view {
   border-radius: 8rpx;
   color: #333333;
   font-size: 26rpx;
-  display: inline-block;
   margin-left: 10rpx;
   display: flex;
   align-items: center;
