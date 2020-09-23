@@ -1,0 +1,54 @@
+{
+  "current": null,
+  "modes": [
+    {
+      "page": "pages/components/buyorder/buyorder",
+      "pageQuery": "ProductType=1&activetype=0&numbers=1&orderdata=%7B%22UserId%22%3A38662821%2C%22MailPrice%22%3A0%2C%22OrderPrice%22%3A69.9%2C%22DiscountPrice%22%3A0%2C%22ShipOrderId%22%3Anull%2C%22ShipCompany%22%3Anull%2C%22previewOrderView%22%3A%5B%7B%22TransOrderCode%22%3Anull%2C%22OrderCode%22%3Anull%2C%22BrandNanme%22%3A%22%E6%B0%B8%E5%BE%A1%22%2C%22CreateTime%22%3Anull%2C%22CloseTime%22%3Anull%2C%22NowTime%22%3Anull%2C%22DepositoryCode%22%3A%222006231920312670002%22%2C%22HeadUrl%22%3Anull%2C%22OrderPrice%22%3A69.9%2C%22AllOrderPrice%22%3A59.9%2C%22MailPrice%22%3A20%2C%22DiscountPrice%22%3A30%2C%22Status%22%3A0%2C%22subSaleOrder%22%3A%5B%7B%22SubOrderId%22%3A0%2C%22ShopId%22%3A0%2C%22TransOrderCode%22%3Anull%2C%22OrderCode%22%3Anull%2C%22SouceChannel%22%3Anull%2C%22OrderId%22%3A0%2C%22ProductSubId%22%3A0%2C%22ProductSubName%22%3Anull%2C%22ProductSubPrice%22%3A0%2C%22TotalNum%22%3A0%2C%22TotalPrice%22%3A0%2C%22ProductId%22%3A%222006281059350400001%22%2C%22ProductName%22%3A%22%E5%A4%A9%E7%9B%AE%E5%A4%A7%E7%B1%B310%E6%96%A4%E4%B8%B4%E5%AE%89%E7%89%B9%E4%BA%A7%22%2C%22UserId%22%3A38662821%2C%22Status%22%3A1%2C%22CreateTime%22%3A%22%2FDate%28-62135596800000%29%2F%22%2C%22Remark%22%3Anull%2C%22ShopingCount%22%3A1%2C%22ShopingPrice%22%3A75%2C%22ShopingSalesPrice%22%3A69.9%2C%22CategoryCode%22%3Anull%2C%22CategoryId%22%3A222%2C%22CategoryName%22%3A%225kg%22%2C%22ImageUrl%22%3A%22http%3A%2F%2Fimage.smjpin.cn%2Fd6801542-ad5e-45f5-a9d6-e67e98c62be2.png%22%2C%22IsPayOk%22%3A0%2C%22IsDeliverOk%22%3A0%2C%22IsTakeOk%22%3A0%2C%22IsDealOk%22%3A0%2C%22IsCloseOk%22%3A0%2C%22IsRefund%22%3A0%2C%22IsEvaluate%22%3A0%2C%22GroupBuyId%22%3A0%2C%22GroupBuyPrice%22%3A0%7D%5D%2C%22discountRecord%22%3Anull%2C%22shipTrayView%22%3Anull%2C%22VCoinsAmount%22%3A0%2C%22SelfRaising%22%3A0%7D%5D%2C%22addressManage%22%3A%7B%22Id%22%3A103350%2C%22UserId%22%3A%2238662821%22%2C%22UserName%22%3A%22%E7%A8%8B%E4%BD%B3%E4%BC%9F%22%2C%22Tel%22%3A%2218257170967%22%2C%22Province%22%3A%22%E9%9D%92%E6%B5%B7%22%2C%22City%22%3A%22%E6%9E%9C%E6%B4%9B%E8%97%8F%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E%22%2C%22Area%22%3A%22%E7%8F%AD%E7%8E%9B%E5%8E%BF%22%2C%22Address%22%3A%22%E9%9D%92%E6%B5%B7%22%2C%22IsDefault%22%3A1%2C%22Status%22%3A1%2C%22CreateTime%22%3A%22%2FDate%281595501928337%29%2F%22%7D%2C%22discountRecord%22%3A%7B%22DiscountId%22%3A0%2C%22RecordId%22%3A1211460%2C%22DiscountTitle%22%3Anull%2C%22ProductId%22%3A%222006281059350400001%22%2C%22UserId%22%3A38662821%2C%22DiscountDescription%22%3Anull%2C%22DiscountRule%22%3Anull%2C%22DiscountAmount%22%3A30%2C%22MinAmount%22%3A60%2C%22UserDeadline%22%3A0%2C%22Status%22%3A1%2C%22ProductType%22%3A0%2C%22Type%22%3A0%2C%22UseEndTime%22%3Anull%7D%2C%22VCoinsAmount%22%3A20%2C%22GroupBuyId%22%3A0%7D&shop=1",
+      "title": "pro_order"
+    },
+    {
+      "page": "pages/components/buyorder/buyorder",
+      "pageQuery": "orderdata=%7B%22UserId%22%3A38662821%2C%22MailPrice%22%3A0%2C%22OrderPrice%22%3A37%2C%22DiscountPrice%22%3A0%2C%22ShipOrderId%22%3Anull%2C%22ShipCompany%22%3Anull%2C%22previewOrderView%22%3A%5B%7B%22TransOrderCode%22%3Anull%2C%22OrderCode%22%3Anull%2C%22BrandNanme%22%3A%22%E9%A1%B6%E7%9B%8A%22%2C%22CreateTime%22%3Anull%2C%22CloseTime%22%3Anull%2C%22NowTime%22%3Anull%2C%22DepositoryCode%22%3A%222008041626548310061%22%2C%22HeadUrl%22%3Anull%2C%22OrderPrice%22%3A37%2C%22AllOrderPrice%22%3A42%2C%22MailPrice%22%3A5%2C%22DiscountPrice%22%3A0%2C%22Status%22%3A0%2C%22subSaleOrder%22%3A%5B%7B%22SubOrderId%22%3A0%2C%22ShopId%22%3A94974%2C%22TransOrderCode%22%3Anull%2C%22OrderCode%22%3Anull%2C%22SouceChannel%22%3Anull%2C%22OrderId%22%3A0%2C%22ProductSubId%22%3A0%2C%22ProductSubName%22%3Anull%2C%22ProductSubPrice%22%3A0%2C%22TotalNum%22%3A0%2C%22TotalPrice%22%3A0%2C%22ProductId%22%3A%222008110927464070177%22%2C%22ProductName%22%3A%22%E6%97%BA%E4%BB%94%E5%B0%8F%E9%A6%92%E5%A4%B4%E7%BB%8F%E5%85%B8%E5%8E%9F%E5%91%B3210g%22%2C%22UserId%22%3A0%2C%22Status%22%3A0%2C%22CreateTime%22%3A%22%2FDate%28-62135596800000%29%2F%22%2C%22Remark%22%3Anull%2C%22ShopingCount%22%3A1%2C%22ShopingPrice%22%3A22.5%2C%22ShopingSalesPrice%22%3A19.8%2C%22CategoryCode%22%3Anull%2C%22CategoryId%22%3A156%2C%22CategoryName%22%3A%22%E7%89%9B%E5%A5%B6%E5%91%B3%20210g%22%2C%22ImageUrl%22%3A%22http%3A%2F%2Fimage.smjpin.cn%2Fd3b2e0a5-1c79-4852-8cac-45989898a466.jpg%22%2C%22IsPayOk%22%3A0%2C%22IsDeliverOk%22%3A0%2C%22IsTakeOk%22%3A0%2C%22IsDealOk%22%3A0%2C%22IsCloseOk%22%3A0%2C%22IsRefund%22%3A0%2C%22IsEvaluate%22%3A0%2C%22GroupBuyId%22%3A0%2C%22GroupBuyPrice%22%3A0%7D%2C%7B%22SubOrderId%22%3A0%2C%22ShopId%22%3A94973%2C%22TransOrderCode%22%3Anull%2C%22OrderCode%22%3Anull%2C%22SouceChannel%22%3Anull%2C%22OrderId%22%3A0%2C%22ProductSubId%22%3A0%2C%22ProductSubName%22%3Anull%2C%22ProductSubPrice%22%3A0%2C%22TotalNum%22%3A0%2C%22TotalPrice%22%3A0%2C%22ProductId%22%3A%222008110927463870175%22%2C%22ProductName%22%3A%22%E6%97%BA%E6%97%BA%E9%BB%91%E7%B1%B3%E9%9B%AA%E9%A5%BC258g%22%2C%22UserId%22%3A0%2C%22Status%22%3A0%2C%22CreateTime%22%3A%22%2FDate%28-62135596800000%29%2F%22%2C%22Remark%22%3Anull%2C%22ShopingCount%22%3A1%2C%22ShopingPrice%22%3A16.5%2C%22ShopingSalesPrice%22%3A13.2%2C%22CategoryCode%22%3Anull%2C%22CategoryId%22%3A109%2C%22CategoryName%22%3A%22%E7%94%9C%E5%91%B3%20258g%22%2C%22ImageUrl%22%3A%22http%3A%2F%2Fimage.smjpin.cn%2F2022d1de-0ea7-42be-aec9-7f830a2b1f92.jpg%22%2C%22IsPayOk%22%3A0%2C%22IsDeliverOk%22%3A0%2C%22IsTakeOk%22%3A0%2C%22IsDealOk%22%3A0%2C%22IsCloseOk%22%3A0%2C%22IsRefund%22%3A0%2C%22IsEvaluate%22%3A0%2C%22GroupBuyId%22%3A0%2C%22GroupBuyPrice%22%3A0%7D%2C%7B%22SubOrderId%22%3A0%2C%22ShopId%22%3A94972%2C%22TransOrderCode%22%3Anull%2C%22OrderCode%22%3Anull%2C%22SouceChannel%22%3Anull%2C%22OrderId%22%3A0%2C%22ProductSubId%22%3A0%2C%22ProductSubName%22%3Anull%2C%22ProductSubPrice%22%3A0%2C%22TotalNum%22%3A0%2C%22TotalPrice%22%3A0%2C%22ProductId%22%3A%222008110927464430181%22%2C%22ProductName%22%3A%22%E6%97%BA%E4%BB%94%E7%89%B9%E6%B5%93%E5%B0%8F%E9%A6%92%E5%A4%B460g%22%2C%22UserId%22%3A0%2C%22Status%22%3A0%2C%22CreateTime%22%3A%22%2FDate%28-62135596800000%29%2F%22%2C%22Remark%22%3Anull%2C%22ShopingCount%22%3A1%2C%22ShopingPrice%22%3A6.5%2C%22ShopingSalesPrice%22%3A4%2C%22CategoryCode%22%3Anull%2C%22CategoryId%22%3A156%2C%22CategoryName%22%3A%22%E7%89%9B%E5%A5%B6%E5%91%B3%2060g%22%2C%22ImageUrl%22%3A%22http%3A%2F%2Fimage.smjpin.cn%2Ff1be3af3-6ff8-43d2-bb75-7887524134d2.jpg%22%2C%22IsPayOk%22%3A0%2C%22IsDeliverOk%22%3A0%2C%22IsTakeOk%22%3A0%2C%22IsDealOk%22%3A0%2C%22IsCloseOk%22%3A0%2C%22IsRefund%22%3A0%2C%22IsEvaluate%22%3A0%2C%22GroupBuyId%22%3A0%2C%22GroupBuyPrice%22%3A0%7D%5D%2C%22discountRecord%22%3Anull%2C%22shipTrayView%22%3Anull%2C%22VCoinsAmount%22%3A0%7D%5D%2C%22addressManage%22%3A%7B%22Id%22%3A104044%2C%22UserId%22%3A%2238662821%22%2C%22UserName%22%3A%22%E7%A8%8B%E4%BD%B3%E4%BC%9F%22%2C%22Tel%22%3A%2218257170967%22%2C%22Province%22%3A%22%E6%B5%99%E6%B1%9F%22%2C%22City%22%3A%22%E6%9D%AD%E5%B7%9E%22%2C%22Area%22%3A%22%E4%B8%B4%E5%AE%89%E5%8C%BA%22%2C%22Address%22%3A%22%E7%8E%B2%E7%8F%91%E8%A1%97%E9%81%93%E5%B7%A6%E9%82%BB%E5%8F%B3%E9%87%8C21%E5%B9%A2403%22%2C%22IsDefault%22%3A1%2C%22Status%22%3A1%2C%22CreateTime%22%3A%22%2FDate%281595900729143%29%2F%22%7D%2C%22discountRecord%22%3Anull%2C%22VCoinsAmount%22%3A0%2C%22GroupBuyId%22%3A0%2C%22SelfRaising%22%3A0%2C%22KadaCode%22%3Anull%7D",
+      "title": "buyorder"
+    },
+    {
+      "page": "pages/components/storeOrderDetails/storeOrderDetails",
+      "pageQuery": "orderCode=2007281143477560004",
+      "title": "storeDetail"
+    },
+    {
+      "page": "pages/components/pro_detail/pro_detail",
+      "pageQuery": "id=2007291942272220086",
+      "title": "pro_detail"
+    },
+    {
+      "page": "pages/components/orderdetail/orderdetail",
+      "pageQuery": "OrderCode=2008051144135430004",
+      "title": "order_code"
+    },
+    {
+      "page": "pages/components/store/store",
+      "pageQuery": "info=%7B%22BrandId%22%3A640%2C%22ProductId%22%3A%222007291942275450099%22%7D",
+      "title": "店铺"
+    },
+    {
+      "page": "pages/components/orderdetail/orderdetail",
+      "pageQuery": "OrderCode=2008141345139530093",
+      "title": "orderDetail"
+    },
+    {
+      "page": "pages/components/evaluate/evaluate",
+      "pageQuery": "orderid=2007141040421928118",
+      "title": "评价"
+    },
+    {
+      "page": "pages/components/channelcoupon/channelcoupon",
+      "pageQuery": "couponid=10065",
+      "title": "couponid"
+    },
+    {
+      "page": "pages/components/pieceTogether/pieceTogether",
+      "title": "pieceTogether"
+    }
+  ]
+}
