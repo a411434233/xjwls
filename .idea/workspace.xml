@@ -9,39 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/chajian/chajian.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/chajian/chajian.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/collection/onesurprisec/onesurprisec.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/collection/onesurprisec/onesurprisec.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/collection/onesurprisec/onesurprisec.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/collection/onesurprisec/onesurprisec.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/coupno/coupno.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/coupno/coupno.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/coupnoall/coupnoall.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/coupnoall/coupnoall.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/editinfo/editinfo.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/editinfo/editinfo.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/editinfo/editinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/editinfo/editinfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/evaluate/evaluate.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/evaluate/evaluate.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/goodslist/goodslist.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/goodslist/goodslist.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/lmember/lmember.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/lmember/lmember.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/logisDetail/logisDetail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/logisDetail/logisDetail.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/logistics/logistics.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/logistics/logistics.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/search/search.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/search/search.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/service/service.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/service/service.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/store/store.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/store/store.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/store/store.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/store/store.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/storeOrder/storeOrder.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/storeOrder/storeOrder.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/Circle/Circle.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/Circle/Circle.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/Circle/Circle.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/Circle/Circle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +120,7 @@
       <workItem from="1600499574976" duration="1434000" />
       <workItem from="1600504578793" duration="6905000" />
       <workItem from="1600760497665" duration="88000" />
-      <workItem from="1600829699678" duration="2839000" />
+      <workItem from="1600829699678" duration="2964000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -217,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600760517323</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Default Changelist">
+      <created>1600832601923</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1600832601923</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
