@@ -8,25 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.kaitian/compileMode.json" beforeDir="false" afterPath="$PROJECT_DIR$/.kaitian/compileMode.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/actives/actives.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/actives/actives.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/addressadd/addressadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/addressadd/addressadd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/evaluate/evaluate.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/evaluate/evaluate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/extbusiness/extbusiness.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/extbusiness/extbusiness.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/goodslist/goodslist.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/goodslist/goodslist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/lmember/lmember.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/lmember/lmember.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/lmember/lmember.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/lmember/lmember.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/logisDetail/logisDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/logisDetail/logisDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/logistics/logistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/logistics/logistics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/storeOrderDetails/storeOrderDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
-    </list>
+    <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,7 +119,7 @@
       <workItem from="1600504578793" duration="6905000" />
       <workItem from="1600760497665" duration="88000" />
       <workItem from="1600829699678" duration="6547000" />
-      <workItem from="1600844993016" duration="1419000" />
+      <workItem from="1600844993016" duration="1607000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -223,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600832682050</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Default Changelist">
+      <created>1600846524301</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1600846524301</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
