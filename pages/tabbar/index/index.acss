@@ -157,9 +157,8 @@
   /* width: 690rpx; */
   box-sizing: border-box;
   padding: 0 30rpx;
-  margin: 0 auto;
-  grid-row-gap: 30rpx;
-  margin-top: 30rpx;
+    grid-row-gap: 30rpx;
+    margin: 30rpx auto 0;
 }
 
 .newindex-icon-m {
@@ -269,8 +268,7 @@
 .swiper {
   width: 710rpx;
   height: 145rpx;
-  margin: 0 auto;
-  margin-top: 30rpx;
+    margin: 30rpx auto 0;
 }
 
 .swiper image {

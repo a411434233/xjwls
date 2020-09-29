@@ -68,29 +68,37 @@ Page({
         this.setData({suclist, selcetall: !selcetall});
         this.getSumPrice();
     },
-    reduce(e) {
+    reduce: app.throttle(function (e) {
         let {storeindex, index} = e.currentTarget.dataset;
         let suclist = JSON.parse(JSON.stringify(this.data.suclist));
         if (suclist[storeindex].shopCartList[index].ShopingCount <= 1) return;
         let {CategoryId, ShopId} = suclist[storeindex].shopCartList[index];
         Post(api.ModifyQty, {CategoryId, IsAddSub: 2, ShopId}, false, true).then(res => {
-            if (res.data.Code == -1) return ShowNoneToast(res.data.Msg);
+            if (res.data.Code == -1) {
+                this.getShopCartList()
+                ShowNoneToast(res.data.Msg)
+                return
+            }
             suclist[storeindex].shopCartList[index].ShopingCount -= 1;
             this.setData({suclist});
             this.watchData();
         });
-    },
-    plus(e) {
+    }, 200),
+    plus: app.throttle(function(e) {
         let {storeindex, index} = e.currentTarget.dataset;
         let suclist = JSON.parse(JSON.stringify(this.data.suclist));
         let {CategoryId, ShopId} = suclist[storeindex].shopCartList[index];
         Post(api.ModifyQty, {CategoryId, IsAddSub: 1, ShopId}, false, true).then(res => {
-            if (res.data.Code == -1) return ShowNoneToast(res.data.Msg);
+            if (res.data.Code == -1) {
+                this.getShopCartList()
+                ShowNoneToast(res.data.Msg)
+                return
+            }
             suclist[storeindex].shopCartList[index].ShopingCount += 1;
             this.setData({suclist});
             this.watchData();
         });
-    },
+    },200),
     //计算总价
     getSumPrice() {
         let Sum = 0;

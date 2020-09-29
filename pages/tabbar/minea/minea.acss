@@ -118,12 +118,8 @@ page {
   background: white;
   border-radius: 20rpx 20rpx 0 0;
   box-sizing: border-box;
-  margin: 0 auto;
-  margin-top: 103rpx;
-  padding-top: 28rpx;
-  padding-left: 35rpx;
-  padding-right: 24rpx;
-  padding-bottom: 18rpx;
+    margin: 103rpx auto 0;
+  padding: 28rpx 24rpx 18rpx 35rpx;
 }
 
 .order_title {
@@ -232,10 +228,9 @@ page {
 .message {
   width: 60rpx;
   height: 60rpx;
-  margin: auto;
-  background: url('/images/icon/css_sprites.png') -120rpx -60rpx;
-  margin-bottom: 4rpx;
-  background-size: 180rpx 164rpx;
+    background: url('/images/icon/css_sprites.png') -120rpx -60rpx;
+    margin: auto auto 4rpx;
+    background-size: 180rpx 164rpx;
 }
 
 .order_item view {
@@ -362,9 +357,8 @@ page {
   width: 60rpx;
   height: 60rpx;
   background: url('/images/icon/css_sprites.png') -60rpx -60rpx;
-  margin: 0 auto;
-  margin-bottom: 4rpx;
-  background-size: 180rpx 164rpx;
+    margin: 0 auto 4rpx;
+    background-size: 180rpx 164rpx;
 }
 
 

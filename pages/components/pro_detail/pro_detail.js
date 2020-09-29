@@ -31,26 +31,25 @@ Page({
         myadd: {}
     },
     async onLoad(options) {
-        let id = options.id;
         getSysTemInfo().then(res => {
             this.setData({statusBarHeight: res.statusBarHeight, titleBarHeight: res.titleBarHeight});
         });
         await Token.getToken().then(res => {
             this.setData({user_id: res.user_id});
         });
-        await this.getproInfo(id);
-        this.getProductsBydptCode(id);
-        this.GetBrandInfo(id);
-        this.getProductDiscount(id);
+        await this.getproInfo(options.id);
+        this.getProductsBydptCode(options.id);
+        this.GetBrandInfo(options.id);
+        this.getProductDiscount(options.id);
         this.getAddress();
 
-        this.setData({id: id});
+        this.setData({id: options.id});
         if (options.qdcode) {
             await SetStorage('qdmc', {qdcode: options.qdcode});
         }
         setTimeout(() => {
             this.getShopNum();
-            this.pointData(['proInfo', '商品详情_' + id]);
+            this.pointData(['proInfo', '商品详情_' + options.id]);
         }, 1200);
     },
     getMyadd() {

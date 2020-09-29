@@ -12,8 +12,7 @@ page {
   width: 375rpx;
   height: 84rpx;
   display: block;
-  margin: auto;
-  margin-top: 30rpx;
+    margin: 30rpx auto auto;
 }
 
 .goods_image {
@@ -29,9 +28,8 @@ page {
   background: rgba(255, 255, 255, 1);
   border-radius: 16rpx;
   overflow: hidden;
-  margin: auto;
-  margin-top: 24rpx;
-  display: flex;
+    margin: 24rpx auto auto;
+    display: flex;
 }
 .goods_info {
   margin-left: 26rpx;
@@ -103,21 +101,17 @@ page {
 .super2 {
   width: 245rpx;
   height: 84rpx;
-  margin: auto;
-  display: block;
+    display: block;
   background-size: cover;
-  margin-top: 30rpx;
-  margin-bottom: 24rpx;
+    margin: 30rpx auto 24rpx;
 }
 
 .super3 {
   width: 435rpx;
   height: 84rpx;
-  margin: auto;
-  display: block;
+    display: block;
   background-size: cover;
-  margin-top: 30rpx;
-  margin-bottom: 24rpx;
+    margin: 30rpx auto 24rpx;
 }
 
 /*  */
@@ -183,8 +177,7 @@ page {
   width: 500rpx;
   height: 124rpx;
   display: block;
-  margin: auto;
-  margin-top: 30rpx;
+    margin: 30rpx auto auto;
 }
 
 .follow {
@@ -238,6 +231,5 @@ page {
   width: 642rpx;
   height: 72rpx;
   display: block;
-  margin: auto;
-  margin-top: 50rpx;
+    margin: 50rpx auto auto;
 }

@@ -8,7 +8,38 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist" />
+    <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kaitian/compileMode.json" beforeDir="false" afterPath="$PROJECT_DIR$/.kaitian/compileMode.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/actives/actives.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/actives/actives.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/addressadd/addressadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/addressadd/addressadd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/aftersaledetail/aftersaledetail.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/aftersaledetail/aftersaledetail.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/cashbonuscopy/cashbonuscopy.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonuscopy/cashbonuscopy.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/collection/onesurprisec/onesurprisec.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/collection/onesurprisec/onesurprisec.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/coupno/coupno.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/coupno/coupno.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/couponList/couponList.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/couponList/couponList.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/onesurprisec/onesurprisec.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/paySuccess/paySuccess.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/paySuccess/paySuccess.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/signin/signin.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/signin/signin.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/store/store.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/store/store.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/storeList/storeList.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/storeList/storeList.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/errPage/notWifi/notWifi.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/errPage/notWifi/notWifi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/cart/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/minea/minea.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/minea/minea.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +95,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="D:\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -120,6 +151,21 @@
       <workItem from="1600760497665" duration="88000" />
       <workItem from="1600829699678" duration="6547000" />
       <workItem from="1600844993016" duration="1607000" />
+      <workItem from="1600935329531" duration="287000" />
+      <workItem from="1601014342669" duration="10753000" />
+      <workItem from="1601028310898" duration="27000" />
+      <workItem from="1601028346620" duration="18000" />
+      <workItem from="1601028372895" duration="22000" />
+      <workItem from="1601169086971" duration="3085000" />
+      <workItem from="1601258774573" duration="4235000" />
+      <workItem from="1601284903119" duration="90000" />
+      <workItem from="1601285062359" duration="59000" />
+      <workItem from="1601285226748" duration="49000" />
+      <workItem from="1601285407559" duration="1634000" />
+      <workItem from="1601340761267" duration="1688000" />
+      <workItem from="1601342469171" duration="2527000" />
+      <workItem from="1601349912788" duration="198000" />
+      <workItem from="1601350127116" duration="2666000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -257,10 +303,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1022" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1600329660605" />
-    <state x="1346" y="519" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1598349191659">
+    <state x="1346" y="519" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1601028362574">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1346" y="519" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598349191659" />
+    <state x="1346" y="519" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1601028362574" />
+    <state x="961" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1601285247952">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="961" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1601285247952" />
     <state x="1011" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598322949311">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -269,26 +319,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="873" y="359" width="814" height="730" key="#意向/0.0.2560.1400@0.0.2560.1400" timestamp="1600509019701" />
-    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1600840009550">
+    <state x="873" y="341" key="#插件" timestamp="1601342680739">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1600840009550" />
+    <state x="873" y="341" key="#插件/0.0.2560.1400@0.0.2560.1400" timestamp="1601342680739" />
+    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1601015985403">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1601015985403" />
     <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2" timestamp="1599042958365">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1599042958365" />
-    <state x="1061" y="455" key="FileChooserDialogImpl" timestamp="1599098734801">
+    <state x="1061" y="455" key="FileChooserDialogImpl" timestamp="1601028358970">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1599098734801" />
+    <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1601028358970" />
     <state x="861" y="435" key="IDE.errors.dialog" timestamp="1600841576796">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="861" y="435" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1600841576796" />
-    <state x="514" y="188" width="992" height="773" key="SettingsEditor" timestamp="1600841461985">
+    <state x="514" y="188" width="992" height="773" key="SettingsEditor" timestamp="1601286282485">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="514" y="188" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1600841461985" />
+    <state x="514" y="188" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1601286282485" />
     <state x="1678" y="224" width="603" height="804" key="find.popup" timestamp="1600417801850">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

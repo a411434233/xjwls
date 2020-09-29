@@ -1,4 +1,10 @@
 <loading a:if="{{ !allmoney && allmoney != 0 }}"></loading>
+<view class="guangbo" onTap="isact">
+  <image src="/images/icon/laba.png" class="laba"></image>
+  <view>
+    <view class="guangbo_info">中秋国庆放假通知：10月1日~4日暂停发货，5日恢复正常，因放假造成的发货延迟我们对此深感抱歉，敬请谅解！</view>
+  </view>
+</view>
 <view class="add_box" a:if="{{ SelfRaising == 1 }}">
   <view class="add_top">
     <view class="{{ addFlag ? 'add_top_active' : '' }}" onTap="setadd" data-index="1">到店自取</view>
@@ -52,6 +58,7 @@
     <image mode="scaleToFill" src="/images/icon/buyorder02.png"></image>
   </view>
 </view>
+
 <!-- 灰色背景 -->
 <view a:for="{{ previewOrderView }}" a:key="index" class="store">
   <view class="goodsinfo">

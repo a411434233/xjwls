@@ -19,7 +19,7 @@
     {
       "title": "pro_detail",
       "page": "pages/components/pro_detail/pro_detail",
-      "pageQuery": "id=2008211935257240058"
+      "pageQuery": "id=2008211935258840076"
     },
     {
       "page": "pages/components/orderdetail/orderdetail",
@@ -49,6 +49,10 @@
     {
       "page": "pages/components/pieceTogether/pieceTogether",
       "title": "pieceTogether"
+    },
+    {
+      "title": "ac",
+      "page": "pages/actives/actives"
     }
   ]
 }

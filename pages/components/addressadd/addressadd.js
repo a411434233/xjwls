@@ -39,8 +39,7 @@ Page({
         }
     },
     onShow() {
-        let code = GetChannelCode();
-        let data = {PageName: 'addressadd', ClickPlace: '增加地址', SoureChannel: code};
+        let data = {PageName: 'addressadd', ClickPlace: '增加地址', SoureChannel: GetChannelCode()};
         Post(api.PostStatisticSystem, data, true);
     },
     city: function () {
@@ -74,6 +73,7 @@ Page({
     },
     addressdetail(e) {
         this.setData({addressdetail: e.detail.value});
+
         if (this.data.city == '' || this.data.addressdetail == '' || this.data.name == '' || this.data.telphone.length != 11 || this.data.telphone == '') {
             this.setData({showsave: true});
         } else {

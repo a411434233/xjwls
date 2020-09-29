@@ -7,10 +7,7 @@ page {
   height: 140rpx;
   background: white;
   box-sizing: border-box;
-  padding-left:30rpx ;
-  padding-right: 25rpx;
-  padding-top: 23rpx;
-  padding-bottom: 25rpx;
+    padding: 23rpx 25rpx 25rpx 30rpx;
 }
 
 .item_name{

@@ -34,11 +34,10 @@ page {
   display: flex;
   width: 710rpx;
   border-radius: 18rpx;
-  margin: 0 auto;
-  background: #fff;
+    background: #fff;
   position: relative;
   height: 204rpx;
-  margin-bottom: 20rpx;
+    margin: 0 auto 20rpx;
 }
 .item_title {
   font-size: 30rpx;

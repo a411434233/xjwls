@@ -21,9 +21,8 @@ Page({
         imgArr: []
     },
     onLoad(options) {
-        this.setData({status: options.status, orderid: options.orderid});
         Get(api.GetReceiptProducts, {orderCode: this.data.orderid}).then(res => {
-            this.setData({orderlist: res.data.Data});
+            this.setData({orderlist: res.data.Data, status: options.status, orderid: options.orderid});
         });
     },
     tabqh(e) {

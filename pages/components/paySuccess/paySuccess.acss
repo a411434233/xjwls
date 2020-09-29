@@ -60,8 +60,7 @@ page {
   letter-spacing: 2rpx;
   background: rgba(255, 39, 64, 1);
   border-radius: 44rpx;
-  margin: 0 auto;
-  margin-top: 77rpx;
+    margin: 77rpx auto 0;
 }
 
 .success-m4 {

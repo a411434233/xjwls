@@ -8,10 +8,10 @@ Page({
             text: '刷新',
         }],
     },
-    onTapLeft(e) {
+    onTapLeft() {
         my.switchTab({url: "/pages/tabbar/index/index"})
     },
-    onTapRight(e) {
+    onTapRight() {
         Get(api.GetHomePageConfig).then(() => {
             this.onTapLeft()
         })

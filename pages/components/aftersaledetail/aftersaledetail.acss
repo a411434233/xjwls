@@ -3,7 +3,7 @@
   width: 100%;
   border-radius: 24rpx;
   margin-top: 10rpx;
-  box-shadow:2px 2px 4px 0px rgba(204,204,204,1);
+  boxr-shadow:2rpx 2rpx 4rpx 0 rgba(204,204,204,1);
   overflow: hidden;
 }
 .sale-headt{
@@ -19,7 +19,7 @@
   background: #fff;
   margin-top: 10rpx;
   border-radius: 24rpx;
-  box-shadow:2px 2px 4px 0px rgba(204,204,204,1);
+  box-shadow:2px 2px 4px 0 rgba(204,204,204,1);
   overflow: hidden;
 }
 .sale-mt{
@@ -41,7 +41,7 @@
   background: #fff;
   margin-top: 10rpx;
   border-radius: 24rpx;
-  box-shadow:2px 2px 4px 0px rgba(204,204,204,1);
+  box-shadow:2px 2px 4px 0 rgba(204,204,204,1);
   overflow: hidden;
 }
 .dibu{

@@ -64,6 +64,9 @@ Page({
             });
         });
     },
+    isact() {
+        NavigateTo('/pages/actives/actives?src=https://m.smjpin.cn/chihuochang/#/announcement')
+    },
     //获取邮费
     async GetFreight() {
         let {previewOrderView, addressManage} = this.data;

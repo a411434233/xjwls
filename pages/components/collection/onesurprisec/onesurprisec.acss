@@ -258,8 +258,7 @@ image {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 28rpx;
-    margin-top: 10rpx;
+    margin: 10rpx 28rpx 0;
 }
 
 .onesurprisec-elsebl {

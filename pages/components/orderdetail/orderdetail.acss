@@ -133,8 +133,7 @@
   background: #fff;
   border-radius: 24rpx;
   overflow: hidden;
-  margin: 0 auto;
-  margin-top: 20rpx;
+    margin: 20rpx auto 0;
 }
 
 .ordergoods-tl image {
@@ -272,11 +271,10 @@
 .ordergoods-foot {
   /* padding-bottom: 10rpx; */
   width: 710rpx;
-  margin: 0 auto;
-  border-radius: 24rpx;
+    border-radius: 24rpx;
   background: #fff;
   overflow: hidden;
-  margin-top: 20rpx;
+    margin: 20rpx auto 0;
 }
 
 .ordergoods-foot-top {

@@ -91,6 +91,10 @@ class Token {
 
 const TOKEN = new Token();
 
+const REQUESTERR = {
+    msg: "未将对象引用设置到对象的实例"
+}
+
 /**
  *
  * @param {*} url  请求地址
@@ -125,7 +129,16 @@ function HttpRequest(url, method, data = {}, user = false, token = false) {
             headers: {
                 'content-type': 'application/json'
             },
-            success: res => {
+            success: async res => {
+                if (res.data.Code == -1) {
+                    if (res.data.Msg.search(REQUESTERR.msg) >= 0) {
+                        my.removeStorageSync({
+                            key: 'info',
+                        });
+                        await TOKEN.clearToken();
+                        await TOKEN.getToken();
+                    }
+                }
                 if (typeof resolve == 'function') {
                     resolve(res);
                 }
@@ -431,8 +444,8 @@ function getSysTemInfo() {
             }
             my.getSystemInfo({
                 success: res => {
-                    resolve(res);
                     SetStorage('SysTem', res);
+                    resolve(res);
                 }
             });
         });

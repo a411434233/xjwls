@@ -43,8 +43,7 @@
   padding-bottom: 20rpx;
   box-sizing: border-box;
   border-radius: 10rpx;
-  margin: 0 auto;
-  margin-top: 20rpx;
+  margin: 20rpx auto 0;
 }
 
 .top1 {

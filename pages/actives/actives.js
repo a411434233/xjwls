@@ -46,6 +46,8 @@ Page({
             });
         } else {
             let src = 'https://m.smjpin.cn/chihuochang/#/xjwSnacks'
+            // let src = 'https://m.smjpin.cn/chihuochang/#/announcement'
+            // let src = 'http://192.168.0.159:8080/chihuochang/#/announcement'
             if (src.search(/[?]/) > -1) {
                 src += '&id=' + pathId + '&queryData=' + JSON.stringify(info);
             } else {

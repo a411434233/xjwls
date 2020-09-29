@@ -6,13 +6,11 @@ page {
 .cart,
 .closecart {
   width: 710rpx;
-  padding: 28rpx 0 0;
-  background: #fff;
+    background: #fff;
   border-radius: 24rpx;
-  margin: 0 auto;
-  margin-top: 10rpx;
+  margin: 10rpx auto 0;
   overflow: hidden;
-  padding-bottom: 15rpx;
+    padding: 28rpx 0 15rpx;
 }
 
 

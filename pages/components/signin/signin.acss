@@ -37,12 +37,9 @@
   background: rgba(255, 255, 255, 1);
   border-radius: 20rpx;
   box-sizing: border-box;
-  padding: 0 22rpx;
-  padding-top: 26rpx;
-  padding-bottom: 41rpx;
-  margin: 0 auto;
+  padding: 26rpx 22rpx 41rpx;
   position: relative;
-  margin-top: 30rpx;
+    margin: 30rpx auto 0;
 }
 .sin_title {
   font-size: 30rpx;
@@ -119,8 +116,7 @@
 .demo-swiper {
   width: 710rpx;
   height: 148rpx;
-  margin: 0 auto;
-  margin-top: 20rpx;
+    margin: 20rpx auto 0;
 }
 .swiper_img image {
   width: 100%;
@@ -257,8 +253,7 @@
   font-family: PingFangSC-Medium, PingFang SC;
   font-weight: 500;
   color: rgba(255, 255, 255, 1);
-  margin: 0 auto;
-  margin-top: 31rpx;
+    margin: 31rpx auto 0;
 }
 .modelBg {
   width: 100vw;
