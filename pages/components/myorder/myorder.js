@@ -26,12 +26,13 @@ Page({
     },
     async getData() {
         let info = await Token.getToken();
-        let {pageIndex, pageSize, activeinx, showdbguss} = this.data;
-        let url = `OrderForm/GetOrderList2?userId=${info.user_id}&pageIndex=${pageIndex}&pageSize=${pageSize}&status=${activeinx}`;
+        let {pageSize, activeinx, showdbguss} = this.data;
+        let url = `OrderForm/GetOrderList2?userId=${info.user_id}&pageIndex=1&pageSize=${pageSize}&status=${activeinx}`;
         let res = await Post(url);
         if (res.data.Data.length < 10) showdbguss = true;
         this.setData({
             list: res.data.Data,
+            pageIndex: 1,
             showdbguss
         });
     },
