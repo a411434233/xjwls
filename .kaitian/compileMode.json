@@ -19,7 +19,7 @@
     {
       "title": "pro_detail",
       "page": "pages/components/pro_detail/pro_detail",
-      "pageQuery": "id=2008211935258840076"
+      "pageQuery": "id=2008110927454970073"
     },
     {
       "page": "pages/components/orderdetail/orderdetail",
@@ -53,6 +53,10 @@
     {
       "title": "ac",
       "page": "pages/actives/actives"
+    },
+    {
+      "title": "address",
+      "page": "pages/components/addressadd/addressadd"
     }
   ]
 }

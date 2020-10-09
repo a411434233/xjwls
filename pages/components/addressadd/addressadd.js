@@ -3,12 +3,12 @@ import CITY from '../../../data/city.json';
 
 Page({
     data: {
-        provinces: '请选择省市区',
-        city: '',
-        area: '',
-        addressdetail: '',
-        name: '',
-        telphone: '',
+        provinces: '河北省',
+        city: '衡水市',
+        area: '桃城区',
+        addressdetail: '人民西路322号工商银行衡水分行',
+        name: '杜源',
+        telphone: '13831885750',
         is_default: false,
         telpopup: false,
         namepopup: false,

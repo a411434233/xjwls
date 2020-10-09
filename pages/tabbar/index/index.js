@@ -68,7 +68,7 @@ Page({
         if (index == '1') {
             NavigateTo('/pages/actives/actives?src=https://m.smjpin.cn/chihuochang/#/youdao');
         } else {
-            NavigateTo('/pages/actives/actives?src=https://m.smjpin.cn/chihuochang/#/daysActivity');
+            NavigateTo(`/pages/actives/actives?src=https://m.smjpin.cn/chihuochang/#/daysActivity`);
         }
     },
     getHomeRecommend(item = {}) {

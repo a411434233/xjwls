@@ -225,7 +225,7 @@ Page({
         NavigateTo('/pages/actives/actives?src=https://m.smjpin.cn/chihuochang/#/youdao');
     },
     aliPay(TradeNo, VCoinsNum, OrderCode) {
-        AliPay(TradeNo, VCoinsNum, OrderCode);
+        AliPay(TradeNo, VCoinsNum, OrderCode,false);
     },
     goaddress() {
         NavigateTo('/pages/components/address/address');

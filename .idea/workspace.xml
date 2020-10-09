@@ -10,7 +10,13 @@
   <component name="ChangeListManager">
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/actives/actives.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/actives/actives.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kaitian/compileMode.json" beforeDir="false" afterPath="$PROJECT_DIR$/.kaitian/compileMode.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/addressadd/addressadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/addressadd/addressadd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -59,15 +68,21 @@
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.62" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../exp" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="D:\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -138,6 +153,14 @@
       <workItem from="1601342469171" duration="2527000" />
       <workItem from="1601349912788" duration="198000" />
       <workItem from="1601350127116" duration="6382000" />
+      <workItem from="1601364507670" duration="422000" />
+      <workItem from="1601364971161" duration="100000" />
+      <workItem from="1601433185841" duration="8494000" />
+      <workItem from="1601459746421" duration="91000" />
+      <workItem from="1602118323136" duration="107000" />
+      <workItem from="1602118452234" duration="2357000" />
+      <workItem from="1602141522142" duration="1252000" />
+      <workItem from="1602145552327" duration="2067000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -277,10 +300,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="907" y="382" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1600506536755" />
-    <state x="1029" y="526" key="#Notifications" timestamp="1599898439864">
+    <state x="1029" y="526" key="#Notifications" timestamp="1601459825564">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1029" y="526" key="#Notifications/0.0.2560.1400@0.0.2560.1400" timestamp="1599898439864" />
+    <state x="1029" y="526" key="#Notifications/0.0.2560.1400@0.0.2560.1400" timestamp="1601459825564" />
     <state x="736" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598403707932">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -293,26 +316,26 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1346" y="519" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1601028362574" />
-    <state x="961" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1601285247952">
+    <state x="961" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602118418415">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="961" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1601285247952" />
+    <state x="961" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1602118418415" />
     <state x="1011" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598322949311">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1011" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598322949311" />
-    <state x="873" y="359" width="814" height="730" key="#意向" timestamp="1600509019701">
+    <state x="873" y="359" width="814" height="778" key="#意向" timestamp="1601446255619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="359" width="814" height="730" key="#意向/0.0.2560.1400@0.0.2560.1400" timestamp="1600509019701" />
-    <state x="873" y="341" key="#插件" timestamp="1601342680739">
+    <state x="873" y="359" width="814" height="778" key="#意向/0.0.2560.1400@0.0.2560.1400" timestamp="1601446255619" />
+    <state x="873" y="341" key="#插件" timestamp="1602120209260">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="341" key="#插件/0.0.2560.1400@0.0.2560.1400" timestamp="1601342680739" />
-    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1601358716192">
+    <state x="873" y="341" key="#插件/0.0.2560.1400@0.0.2560.1400" timestamp="1602120209260" />
+    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1601433385131">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1601358716192" />
+    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1601433385131" />
     <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2" timestamp="1599042958365">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -325,10 +348,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="861" y="435" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1600841576796" />
-    <state x="514" y="188" width="992" height="773" key="SettingsEditor" timestamp="1601359135641">
+    <state x="514" y="188" width="992" height="773" key="SettingsEditor" timestamp="1602120091425">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="514" y="188" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1601359135641" />
+    <state x="514" y="188" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1602120091425" />
     <state x="1678" y="224" width="603" height="804" key="find.popup" timestamp="1600417801850">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -345,5 +368,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1599097244980" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="xjwls" type="b2602c69:ProjectViewProjectNode" />
+        <item name="xjwls" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
   </component>
 </project>

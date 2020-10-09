@@ -109,13 +109,13 @@ Page({
         pageIndex += 1;
         let url = `OrderForm/GetOrderList2?userId=${info.user_id}&pageIndex=${pageIndex}&pageSize=${pageSize}&status=${activeinx}`;
         let res = await Post(url);
-        if (!res.data.Data) {
+        if (res.data.Data.length == 0) {
             this.setData({
                 showdb: true,
                 showdbguss: true
             });
         } else {
-            this.setData({list: this.data.list.concat(res.data.Data)});
+            this.setData({list: this.data.list.concat(res.data.Data), pageIndex: pageIndex});
         }
     }
 });

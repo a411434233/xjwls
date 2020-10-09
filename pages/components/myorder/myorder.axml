@@ -1,79 +1,86 @@
 <view class="box-wrap">
-  <view class="myorder-t">
-    <view class="myorder-tm {{activeinx==index?'myorderactice':''}}" a:for="{{arr}}" a:key="index" onTap="tabqh" data-inx="{{index}}">
-      {{item}}
+    <view class="myorder-t">
+        <view class="myorder-tm {{activeinx==index?'myorderactice':''}}" a:for="{{arr}}" a:key="index" onTap="tabqh"
+              data-inx="{{index}}">
+            {{item}}
+        </view>
     </view>
-  </view>
-  <!-- 头部 -->
-  <view class="coupon1" a:if="{{list.length == 0}}">
-    <image mode="scaleToFill" src="http://image.smjpin.cn/myorder010.png"></image>
-    <view class="coupon1t">暂无订单</view>
-  </view>
-  <!--  -->
-  <view class="top1" a:if="{{list.length != 0}}"></view>
-  <view class="myorder-c" a:for="{{list}}" a:key="index" a:for-item="item" a:if="{{list.length != 0}}">
-    <view>
-      <view class="myorder-ct">
-        <view class="myorder-ctl">下单时间:{{item.CreateTime}}</view>
-        <view class="lease-boxtr" a:if="{{item.Status==0}}">待付款</view>
-        <view class="lease-boxtr" a:if="{{item.Status==1}}">待发货</view>
-        <view class="lease-boxtr" a:if="{{item.Status==2}}">待收货</view>
-        <view class="lease-boxtr" a:if="{{item.Status==3}}">待评价</view>
-        <view class="lease-boxtr" a:if="{{item.Status==4}}">交易完成</view>
-        <view class="lease-boxtr" a:if="{{item.Status==5}}">退款中</view>
-        <view class="lease-boxtr" a:if="{{item.Status==6}}">退款成功</view>
-        <view class="lease-boxtr" a:if="{{item.Status==7}}">退款失败</view>
-      </view>
-      <view class="myorder-cc" a:for="{{item.subOrderList}}" a:key="index" a:for-item="items">
-        <view class="goodsinfo-c">
-          <view class="goodsinfo-cl">
-            <view class="goodsinfo-cll" data-ordercode="{{item.OrderCode}}" onTap="goorderdetail">
-              <image src="{{items.ImageUrl}}" mode="scaleToFill"></image>
-            </view>
-            <view class="goodsinfo-cr" data-ordercode="{{item.OrderCode}}" onTap="goorderdetail">
-              <view class="goodsinfo-crt">{{items.ProductName}}</view>
-              <view class="goodsinfo-crm">{{items.SkuName?items.SkuName:items.CategoryName}}</view>
-            </view>
-          </view>
-          <view class="goodsinfo-crbr">
-            <view class="goodsinfo-crbl price_app">
-              <text>¥</text>
-              {{items.ShopingSalesPrice}}
-            </view>
-            <view class="goodsinfo-crbrb">×{{items.ShopingCount}}</view>
-          </view>
-        </view>
-      </view>
-      <view class="myorder-cb">
-        共{{item.subOrderList.length}}件商品
-        <text>实付款：</text>
-        <text>¥</text>
-        <text class="price_app">{{item.OrderPrice}}</text>
-      </view>
-      <view class="anniu">
-        <view class="anniu-r anniu-rr" a:if="{{item.Status==0}}" onTap="gopay" data-transordercode="{{item.TransOrderCode}}" data-ordercode="{{item.OrderCode}}">
-          去支付
-        </view>
-        <view class="anniu-r" a:if="{{item.Status==0}}" onTap="godel" data-orderid="{{item.OrderCode}}">
-          删除订单
-        </view>
-        <view class="anniu-r" onTap="gothk" a:if="{{item.Status==1}}" data-status="{{item.Status}}" data-orderid="{{item.OrderCode}}">
-          退款
-        </view>
-        <view class="anniu-r anniu-rsure" a:if="{{item.Status==2}}" onTap="gosure" data-orderid="{{item.OrderCode}}">
-          确认收货
-        </view>
-        <view class="anniu-r" onTap="gothk" a:if="{{item.Status==2}}" data-status="{{item.Status}}" data-orderid="{{item.OrderCode}}">
-          退货/款
-        </view>
-        <view class="anniu-r" a:if="{{item.Status==3}}" onTap="goevaluate" data-orderid="{{item.OrderCode}}" data-listlength="{{item.subOrderList.length}}">
-          去评价
-        </view>
-        <view class="anniu-r" a:if="{{item.Status==5}}" onTap="goclosesh" data-orderid="{{item.OrderCode}}">
-          取消售后
-        </view>
-      </view>
+    <!-- 头部 -->
+    <view class="coupon1" a:if="{{list.length == 0}}">
+        <image mode="scaleToFill" src="http://image.smjpin.cn/myorder010.png"></image>
+        <view class="coupon1t">暂无订单</view>
     </view>
-  </view>
+    <!--  -->
+    <view class="top1" a:if="{{list.length != 0}}"></view>
+    <view class="myorder-c" a:for="{{list}}" a:key="index" a:for-item="item" a:if="{{list.length != 0}}">
+        <view>
+            <view class="myorder-ct">
+                <view class="myorder-ctl">下单时间:{{item.CreateTime}}</view>
+                <view class="lease-boxtr" a:if="{{item.Status==0}}">待付款</view>
+                <view class="lease-boxtr" a:if="{{item.Status==1}}">待发货</view>
+                <view class="lease-boxtr" a:if="{{item.Status==2}}">待收货</view>
+                <view class="lease-boxtr" a:if="{{item.Status==3}}">待评价</view>
+                <view class="lease-boxtr" a:if="{{item.Status==4}}">交易完成</view>
+                <view class="lease-boxtr" a:if="{{item.Status==5}}">退款中</view>
+                <view class="lease-boxtr" a:if="{{item.Status==6}}">退款成功</view>
+                <view class="lease-boxtr" a:if="{{item.Status==7}}">退款失败</view>
+            </view>
+            <view class="myorder-cc" a:for="{{item.subOrderList}}" a:key="index" a:for-item="items">
+                <view class="goodsinfo-c">
+                    <view class="goodsinfo-cl">
+                        <view class="goodsinfo-cll" data-ordercode="{{item.OrderCode}}" onTap="goorderdetail">
+                            <image src="{{items.ImageUrl}}" mode="scaleToFill"></image>
+                        </view>
+                        <view class="goodsinfo-cr" data-ordercode="{{item.OrderCode}}" onTap="goorderdetail">
+                            <view class="goodsinfo-crt">{{items.ProductName}}</view>
+                            <view class="goodsinfo-crm">{{items.SkuName ? items.SkuName : items.CategoryName}}</view>
+                        </view>
+                    </view>
+                    <view class="goodsinfo-crbr">
+                        <view class="goodsinfo-crbl price_app">
+                            <text>¥</text>
+                            {{items.ShopingSalesPrice}}
+                        </view>
+                        <view class="goodsinfo-crbrb">×{{items.ShopingCount}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="myorder-cb">
+                共{{item.subOrderList.length}}件商品
+                <text>实付款：</text>
+                <text>¥</text>
+                <text class="price_app">{{item.OrderPrice}}</text>
+            </view>
+            <view class="anniu">
+                <view class="anniu-r anniu-rr" a:if="{{item.Status==0}}" onTap="gopay"
+                      data-transordercode="{{item.TransOrderCode}}" data-ordercode="{{item.OrderCode}}">
+                    去支付
+                </view>
+                <view class="anniu-r" a:if="{{item.Status==0}}" onTap="godel" data-orderid="{{item.OrderCode}}">
+                    删除订单
+                </view>
+                <view class="anniu-r" onTap="gothk" a:if="{{item.Status==1}}" data-status="{{item.Status}}"
+                      data-orderid="{{item.OrderCode}}">
+                    退款
+                </view>
+                <view class="anniu-r anniu-rsure" a:if="{{item.Status==2}}" onTap="gosure"
+                      data-orderid="{{item.OrderCode}}">
+                    确认收货
+                </view>
+                <view class="anniu-r" onTap="gothk" a:if="{{item.Status==2}}" data-status="{{item.Status}}"
+                      data-orderid="{{item.OrderCode}}">
+                    退货/款
+                </view>
+                <view class="anniu-r" a:if="{{item.Status==3}}" onTap="goevaluate" data-orderid="{{item.OrderCode}}"
+                      data-listlength="{{item.subOrderList.length}}">
+                    去评价
+                </view>
+                <view class="anniu-r" a:if="{{item.Status==5}}" onTap="goclosesh" data-orderid="{{item.OrderCode}}">
+                    取消售后
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="bottom_tips" a:if="{{showdbguss}}">没有更多了。。</view>
 </view>
-<!--  -->
+        <!--  -->
