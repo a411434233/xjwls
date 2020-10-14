@@ -1,6 +1,6 @@
 page {
     box-sizing: border-box;
-    /*padding-top: 35rpx;*/
+    padding-top: 25rpx;
     padding-bottom: 160rpx;
 }
 
@@ -495,6 +495,9 @@ checkbox .a-icon-success_no_circle {
     font-size: 26rpx;
     text-align: center;
     display: inline-block;
+
+
+
     vertical-align: middle;
 }
 

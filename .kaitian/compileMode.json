@@ -32,9 +32,9 @@
       "title": "店铺"
     },
     {
+      "title": "orderDetail",
       "page": "pages/components/orderdetail/orderdetail",
-      "pageQuery": "OrderCode=2008141345139530093",
-      "title": "orderDetail"
+      "pageQuery": "OrderCode=2009231510466970135"
     },
     {
       "page": "pages/components/evaluate/evaluate",

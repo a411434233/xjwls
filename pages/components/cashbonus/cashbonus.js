@@ -20,7 +20,6 @@ Page({
     fengmian03: 'http://image.smjpin.cn/fengmian.png',
     popdraw: "",
     detailid: "",//商品ID
-    //控制轮播属性  
   },
   async onLoad() {
     let info = await Token.getToken()
@@ -56,7 +55,6 @@ Page({
   async GetTodayLuckyDraw() {
     let res2 = await Get(api.GetTodayLuckyDraw, {
     }, true);
-
     this.setData({
       nums: res2.data.Data.Times
     })

@@ -65,6 +65,7 @@ Page({
             AliPay(res.data.Data.TradeNo, 20, e.currentTarget.dataset.OrderCode, false);
         });
     },
+
     //退款
     gothk(e) {
         NavigateTo('/pages/components/aftersale/aftersale?status=' + e.currentTarget.dataset.status + '&orderid=' + e.currentTarget.dataset.orderid);
@@ -85,7 +86,7 @@ Page({
     },
     //确认收货
     gosure(e) {
-        Get('ReturnGoods/GetConfirmReceipt', {orderCode: e.currentTarget.dataset.orderid}).then(res => {
+        Get(api.GetConfirmReceipt, {orderCode: e.currentTarget.dataset.orderid}).then(res => {
             ShowNoneToast(res.data.Msg);
             this.getData();
         });

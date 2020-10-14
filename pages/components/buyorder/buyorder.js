@@ -64,9 +64,9 @@ Page({
             });
         });
     },
-    isact() {
-        NavigateTo('/pages/actives/actives?src=https://m.smjpin.cn/chihuochang/#/announcement')
-    },
+    // isact() {
+    //     NavigateTo('/pages/actives/actives?src=https://m.smjpin.cn/chihuochang/#/announcement')
+    // },
     //获取邮费
     async GetFreight() {
         let {previewOrderView, addressManage} = this.data;
@@ -225,7 +225,7 @@ Page({
         NavigateTo('/pages/actives/actives?src=https://m.smjpin.cn/chihuochang/#/youdao');
     },
     aliPay(TradeNo, VCoinsNum, OrderCode) {
-        AliPay(TradeNo, VCoinsNum, OrderCode,false);
+        AliPay(TradeNo, VCoinsNum, OrderCode, false);
     },
     goaddress() {
         NavigateTo('/pages/components/address/address');

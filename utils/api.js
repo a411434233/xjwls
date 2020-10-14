@@ -117,6 +117,7 @@ const api = {
     //
     GetMyRecord: 'CashBonus/GetMyRecord',
 
+    Receive: '/ActiveGoods/Receive',
     // ----------------------------- 签到----------------
 
     GetASurprisesV3: 'CashBonus/GetASurprisesV3',
@@ -133,7 +134,7 @@ const api = {
 
     ReSignIn: 'DailyClockIn/ReSignIn',
 
-    InitV2: "DailyClockIn/InitV2",
+    InitV2: 'DailyClockIn/InitV2',
 
     DoVCoinsExchangePrizes: 'DailyClockIn/DoVCoinsExchangePrizes',
 
@@ -245,7 +246,7 @@ const api = {
     //
     GetActiveGoods: 'ActiveGoods/GetActiveGoods',
     //根据规格返回价格
-    GetSkuInfo: "OrderForm/GetSkuInfo",
+    GetSkuInfo: 'OrderForm/GetSkuInfo'
 };
 
 export default api;

@@ -1,6 +1,7 @@
 import {
     api,
     Get,
+    GetStorage,
     NavigateTo,
     NavigateToMiniProgram,
     NavigateToMiniService,
@@ -28,6 +29,9 @@ Page({
         BannerConfig: undefined
     },
     onLoad(options) {
+        GetStorage('indexHome').then(res => {
+            this.setData(...res)
+        })
         this.getHomeData();
         this.getHomeRecommend();
         if (options.id) {
@@ -37,17 +41,19 @@ Page({
     getHomeData() {
         Get(api.GetHomePageConfig).then(res => {
             res = res.data.Data;
-            res.BannerConfig.splice(1,0,{
-                Pic: "http://image.smjpin.cn/banner-2.png"
-            })
             this.setData({
                 ...res,
-                sorllTabs: [{
-                    ChannelName: '全部',
-                    SubChannelName: '精选好物',
-                    ChannelId: 0
-                }, ...res.ProductSceneConfig], ...app
+                ...app,
+                sorllTabs: [
+                    {
+                        ChannelName: '全部',
+                        SubChannelName: '精选好物',
+                        ChannelId: 0
+                    },
+                    ...res.ProductSceneConfig
+                ]
             });
+            SetStorage("indexHome", this.data)
         });
     },
     onReady() {
@@ -171,12 +177,6 @@ Page({
     goBannerTop(e) {
         let index = e.currentTarget.dataset.index;
         let item = this.data.BannerConfig[index];
-        if (index == 1) {
-            let Pg = '/pages/webView/webView?webSrc=https://benefitlottery-static.shulidata.com/?source=sanfang';
-            let appId = '2018103161898599';
-            NavigateToMiniProgram(appId, Pg)
-            return
-        }
         if (typeof item == 'object') {
             if (item.JumpType == 'NormalPage') {
                 NavigateTo('/' + item.Url);
@@ -184,7 +184,6 @@ Page({
                 SwitchTab('/' + item.Url);
             }
         }
-
     },
     async onPullDownRefresh() {
         this.getHomeData();
@@ -195,11 +194,15 @@ Page({
         let {tabsIndex, sorllTabs} = this.data;
         let item = sorllTabs[tabsIndex];
         let channelId = item ? item.ChannelId : 0;
-        let [url, data, that] = [api.GetHomeRecommendV2, {
-            pageIndex: pageIndex,
-            pageSize: 10,
-            channelId: channelId
-        }, this];
+        let [url, data, that] = [
+            api.GetHomeRecommendV2,
+            {
+                pageIndex: pageIndex,
+                pageSize: 10,
+                channelId: channelId
+            },
+            this
+        ];
         Post(url, data).then(res => {
             if (res.data.Code == -1) return ShowNoneToast(res.data.Msg);
             res.data.Data.forEach(val => {

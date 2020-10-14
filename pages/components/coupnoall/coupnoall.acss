@@ -20,22 +20,7 @@
   width: 290rpx;
   height: 300rpx;
 }
-.coupon1t{
-  margin-top: 10rpx;
-  font-size: 24rpx;
-  color: #666;
-}
-.coupon1b{
-  display: inline-block;
-  margin-top: 10rpx;
-  width: 172rpx;
-  height: 48rpx;
-  line-height: 48rpx;
-  border-radius: 24rpx;
-  color: #fff;
-  font-size: 28rpx;
-  background:linear-gradient(318deg,rgba(153,206,146,1) 0%,rgba(89,193,200,1) 100%);
-}
+
 .coupon2wrap{
   margin-left: 40rpx;
   padding: 20rpx;

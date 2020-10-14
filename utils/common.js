@@ -158,14 +158,14 @@ function HttpRequest(url, method, data = {}, user = false, token = false) {
 
 // 异步获取缓存
 function GetStorage(key) {
-    return new Promise((doSuccess, doComplete) => {
+    return new Promise((resolve, reject) => {
         my.getStorage({
             key: key,
             success: res => {
                 if (res.data) {
-                    return doSuccess(res.data);
+                    return resolve(res.data);
                 }
-                doSuccess(false);
+                reject(false);
             }
         });
     });

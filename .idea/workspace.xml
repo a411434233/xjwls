@@ -10,7 +10,19 @@
   <component name="ChangeListManager">
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kaitian/compileMode.json" beforeDir="false" afterPath="$PROJECT_DIR$/.kaitian/compileMode.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/cashbonuscopy/cashbonuscopy.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonuscopy/cashbonuscopy.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/coupnoall/coupnoall.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/coupnoall/coupnoall.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/goodslist/goodslist.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/goodslist/goodslist.acss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/paySuccess/paySuccess.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/paySuccess/paySuccess.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +91,16 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="D:\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/pages/tabbar/index/index.js" working-dir="$PROJECT_DIR$/pages/tabbar/index">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -155,7 +177,12 @@
       <workItem from="1602118452234" duration="2357000" />
       <workItem from="1602141522142" duration="1252000" />
       <workItem from="1602145552327" duration="2067000" />
-      <workItem from="1602210212438" duration="254000" />
+      <workItem from="1602210212438" duration="6876000" />
+      <workItem from="1602292988690" duration="9472000" />
+      <workItem from="1602466212297" duration="8769000" />
+      <workItem from="1602550901242" duration="2290000" />
+      <workItem from="1602567418548" duration="5689000" />
+      <workItem from="1602642678151" duration="2560000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -334,10 +361,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="873" y="341" key="#插件/0.0.2560.1400@0.0.2560.1400" timestamp="1602120209260" />
-    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1601433385131">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="1243" y="685" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602295772862">
+      <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1601433385131" />
+    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1602293116217" />
+    <state x="1243" y="685" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.3072.1688@0.0.3072.1688" timestamp="1602295772862" />
     <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2" timestamp="1599042958365">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -346,10 +374,26 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1601028358970" />
-    <state x="861" y="435" key="IDE.errors.dialog" timestamp="1600841576796">
+    <state width="3051" height="489" key="GridCell.Tab.0.bottom" timestamp="1602295721176">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3051" height="489" key="GridCell.Tab.0.bottom/0.0.3072.1688@0.0.3072.1688" timestamp="1602295721176" />
+    <state width="3051" height="489" key="GridCell.Tab.0.center" timestamp="1602295721176">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3051" height="489" key="GridCell.Tab.0.center/0.0.3072.1688@0.0.3072.1688" timestamp="1602295721176" />
+    <state width="3051" height="489" key="GridCell.Tab.0.left" timestamp="1602295721176">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3051" height="489" key="GridCell.Tab.0.left/0.0.3072.1688@0.0.3072.1688" timestamp="1602295721176" />
+    <state width="3051" height="489" key="GridCell.Tab.0.right" timestamp="1602295721176">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3051" height="489" key="GridCell.Tab.0.right/0.0.3072.1688@0.0.3072.1688" timestamp="1602295721176" />
+    <state x="861" y="435" key="IDE.errors.dialog" timestamp="1602211622500">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="861" y="435" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1600841576796" />
+    <state x="861" y="435" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1602211622500" />
     <state x="514" y="188" width="992" height="773" key="SettingsEditor" timestamp="1602120091425">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -358,10 +402,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1087" y="610" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1602210256163" />
-    <state x="1678" y="224" width="603" height="804" key="find.popup" timestamp="1600417801850">
+    <state x="1678" y="224" width="603" height="804" key="find.popup" timestamp="1602493676305">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1678" y="224" width="603" height="804" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1600417801850" />
+    <state x="1678" y="224" width="603" height="804" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1602493676305" />
     <state x="1124" y="471" key="refactoring.ChangeSignatureDialog" timestamp="1600830097724">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
