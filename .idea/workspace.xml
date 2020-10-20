@@ -8,22 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.kaitian/compileMode.json" beforeDir="false" afterPath="$PROJECT_DIR$/.kaitian/compileMode.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonus/cashbonus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/cashbonuscopy/cashbonuscopy.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/cashbonuscopy/cashbonuscopy.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/coupnoall/coupnoall.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/coupnoall/coupnoall.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/goodslist/goodslist.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/goodslist/goodslist.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/paySuccess/paySuccess.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/paySuccess/paySuccess.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
-    </list>
+    <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,6 +168,7 @@
       <workItem from="1602550901242" duration="2290000" />
       <workItem from="1602567418548" duration="5689000" />
       <workItem from="1602642678151" duration="2560000" />
+      <workItem from="1602724993500" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
