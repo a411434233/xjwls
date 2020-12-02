@@ -20,7 +20,7 @@ page {
 
 .tab_top view {
   position: relative;
-  margin: 0 33rpx;
+  margin: 0 0.44rem;
 }
 
 .tab_top_active {

@@ -57,6 +57,11 @@
     {
       "title": "address",
       "page": "pages/components/addressadd/addressadd"
+    },
+    {
+      "title": "a",
+      "page": "pages/components/aftersale/aftersale",
+      "pageQuery": "orderCode=2009301615292120069"
     }
   ]
 }

@@ -3,5 +3,6 @@
   "axmlStrictCheck": true,
   "enableDistFileMinify": true,
   "component2": true,
-  "debug": false
+  "debug": false,
+  "enableAppxNg": false
 }

@@ -8,7 +8,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist" />
+    <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kaitian/compileMode.json" beforeDir="false" afterPath="$PROJECT_DIR$/.kaitian/compileMode.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini.project.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini.project.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tabbar/minea/minea.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/minea/minea.axml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,6 +177,9 @@
       <workItem from="1602567418548" duration="5689000" />
       <workItem from="1602642678151" duration="2560000" />
       <workItem from="1602724993500" duration="599000" />
+      <workItem from="1606272767191" duration="775000" />
+      <workItem from="1606291504733" duration="56000" />
+      <workItem from="1606297002172" duration="778000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
