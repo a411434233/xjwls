@@ -1,5 +1,4 @@
 {
-  "current": null,
   "modes": [
     {
       "page": "pages/components/buyorder/buyorder",
@@ -19,7 +18,7 @@
     {
       "title": "pro_detail",
       "page": "pages/components/pro_detail/pro_detail",
-      "pageQuery": "id=2008110927454970073"
+      "pageQuery": "id=2012041719295510007"
     },
     {
       "page": "pages/components/orderdetail/orderdetail",
@@ -63,5 +62,6 @@
       "page": "pages/components/aftersale/aftersale",
       "pageQuery": "orderCode=2009301615292120069"
     }
-  ]
+  ],
+  "current": null
 }
