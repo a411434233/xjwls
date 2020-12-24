@@ -1,4 +1,4 @@
-import { api, Get, Post, ShowNoneToast } from '../../../utils/common';
+import {api, Get, Post, ShowNoneToast} from '../../../utils/common';
 
 Page({
   data: {
@@ -21,9 +21,10 @@ Page({
     imgArr: []
   },
   onLoad(options) {
-    Get(api.GetReceiptProducts, { orderCode: this.data.orderid || options.orderCode }).then(res => {
-      this.setData({ orderlist: res.data.Data, status: options.status, orderid: options.orderid });
+    Get(api.GetReceiptProducts, {orderCode: options.orderid || options.orderCode}).then(res => {
+      this.setData({orderlist: res.data.Data, status: options.status, orderid: options.orderid});
     });
+    this.setData({status: options.status, orderid: options.orderid});
   },
   tabqh(e) {
     this.setData({ active: e.currentTarget.dataset.index, yuanyin1: e.currentTarget.dataset.val });

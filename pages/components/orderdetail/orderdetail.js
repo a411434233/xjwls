@@ -1,4 +1,4 @@
-import {AliPay, api, Get, NavigateTo, Post, ShowNoneToast, SwitchTab, Token} from '../../../utils/common';
+import {AliPay, api, Get, Post, ShowNoneToast, SwitchTab, Token} from '../../../utils/common';
 
 Page({
     data: {
@@ -109,6 +109,7 @@ Page({
             }
         });
     },
+    //退款
     gothk(e) {
         my.navigateTo({
             url: `/pages/components/aftersale/aftersale?status=${e.currentTarget.dataset.status}&orderid=${e.currentTarget.dataset.orderid}`

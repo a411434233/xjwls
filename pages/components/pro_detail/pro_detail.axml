@@ -153,7 +153,7 @@
             </view>
             <view class="into_store" onTap='intoStore' data-id="{{storeInfo.BrandId}}">进店逛逛</view>
         </view>
-        <view class="tuijian_list">
+        <view class="tuijian_list" a:if="{{recProductList.length>0}}">
             <view class="tuijian_item" a:for="{{recProductList}}" a:if='{{index<=2}}' a:key="index" onTap="goodsDetail"
                   data-index="{{index}}">
                 <form onSubmit="onSubmit" report-submit="{{true}}" data-id="{{item.ProductId}}">

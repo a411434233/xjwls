@@ -18,7 +18,7 @@
     {
       "title": "pro_detail",
       "page": "pages/components/pro_detail/pro_detail",
-      "pageQuery": "id=2012041719295510007"
+      "pageQuery": "id=2012241138099340007"
     },
     {
       "page": "pages/components/orderdetail/orderdetail",
@@ -60,7 +60,12 @@
     {
       "title": "a",
       "page": "pages/components/aftersale/aftersale",
-      "pageQuery": "orderCode=2009301615292120069"
+      "pageQuery": "orderCode=2012241715419250076"
+    },
+    {
+      "title": "2",
+      "page": "pages/components/channelcoupon/channelcoupon",
+      "pageQuery": "id=055&couponid=10181"
     }
   ],
   "current": null

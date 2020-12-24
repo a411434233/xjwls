@@ -65,7 +65,6 @@ Page({
             AliPay(res.data.Data.TradeNo, 20, e.currentTarget.dataset.OrderCode, false);
         });
     },
-
     //退款
     gothk(e) {
         NavigateTo('/pages/components/aftersale/aftersale?status=' + e.currentTarget.dataset.status + '&orderid=' + e.currentTarget.dataset.orderid);
@@ -93,13 +92,7 @@ Page({
     },
     // 取消售后
     goclosesh(e) {
-        Post(
-            'ReturnGoods/CancelRefundApply',
-            {
-                OrderCode: e.currentTarget.dataset.orderid
-            },
-            true
-        ).then(res => {
+        Post('ReturnGoods/CancelRefundApply', {OrderCode: e.currentTarget.dataset.orderid}, true).then(res => {
             if (res.data.Code == 1) ShowNoneToast(res.data.Msg);
             this.getData();
         });

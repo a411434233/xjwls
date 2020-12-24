@@ -11,11 +11,13 @@
     <list default="true" id="312bfb5f-1816-4ce8-80d4-0c7d03df4015" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.kaitian/compileMode.json" beforeDir="false" afterPath="$PROJECT_DIR$/.kaitian/compileMode.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini.project.json" beforeDir="false" afterPath="$PROJECT_DIR$/mini.project.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/aftersale/aftersale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/buyorder/buyorder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.axml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.acss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tabbar/minea/minea.axml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tabbar/minea/minea.axml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/myorder/myorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/myorder/myorder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/orderdetail/orderdetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/components/pro_detail/pro_detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +66,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
-    <property name="javascript.nodejs.core.library.typings.version" value="12.12.62" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.19.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../exp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -81,7 +83,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="D:\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -180,6 +182,7 @@
       <workItem from="1606272767191" duration="775000" />
       <workItem from="1606291504733" duration="56000" />
       <workItem from="1606297002172" duration="778000" />
+      <workItem from="1608800893431" duration="2715000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1599033065174</created>
@@ -320,101 +323,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Default Changelist" />
     <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="907" y="382" key="#Inspections" timestamp="1600506536755">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="907" y="382" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1600506536755" />
-    <state x="1029" y="526" key="#Notifications" timestamp="1601459825564">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1029" y="526" key="#Notifications/0.0.2560.1400@0.0.2560.1400" timestamp="1601459825564" />
-    <state x="736" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598403707932">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="736" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598403707932" />
-    <state x="1022" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600329660605">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1022" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1600329660605" />
-    <state x="1346" y="519" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1601028362574">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1346" y="519" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1601028362574" />
-    <state x="961" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602118418415">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="961" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1602118418415" />
-    <state x="1011" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598322949311">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1011" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598322949311" />
-    <state x="873" y="359" width="814" height="778" key="#意向" timestamp="1601446255619">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="873" y="359" width="814" height="778" key="#意向/0.0.2560.1400@0.0.2560.1400" timestamp="1601446255619" />
-    <state x="873" y="341" key="#插件" timestamp="1602120209260">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="873" y="341" key="#插件/0.0.2560.1400@0.0.2560.1400" timestamp="1602120209260" />
-    <state x="1243" y="685" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602295772862">
-      <screen x="0" y="0" width="3072" height="1688" />
-    </state>
-    <state x="1036" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1602293116217" />
-    <state x="1243" y="685" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.3072.1688@0.0.3072.1688" timestamp="1602295772862" />
-    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2" timestamp="1599042958365">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="476" y="124" width="1445" height="1113" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1599042958365" />
-    <state x="1061" y="455" key="FileChooserDialogImpl" timestamp="1601028358970">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1601028358970" />
-    <state width="3051" height="489" key="GridCell.Tab.0.bottom" timestamp="1602295721176">
-      <screen x="0" y="0" width="3072" height="1688" />
-    </state>
-    <state width="3051" height="489" key="GridCell.Tab.0.bottom/0.0.3072.1688@0.0.3072.1688" timestamp="1602295721176" />
-    <state width="3051" height="489" key="GridCell.Tab.0.center" timestamp="1602295721176">
-      <screen x="0" y="0" width="3072" height="1688" />
-    </state>
-    <state width="3051" height="489" key="GridCell.Tab.0.center/0.0.3072.1688@0.0.3072.1688" timestamp="1602295721176" />
-    <state width="3051" height="489" key="GridCell.Tab.0.left" timestamp="1602295721176">
-      <screen x="0" y="0" width="3072" height="1688" />
-    </state>
-    <state width="3051" height="489" key="GridCell.Tab.0.left/0.0.3072.1688@0.0.3072.1688" timestamp="1602295721176" />
-    <state width="3051" height="489" key="GridCell.Tab.0.right" timestamp="1602295721176">
-      <screen x="0" y="0" width="3072" height="1688" />
-    </state>
-    <state width="3051" height="489" key="GridCell.Tab.0.right/0.0.3072.1688@0.0.3072.1688" timestamp="1602295721176" />
-    <state x="861" y="435" key="IDE.errors.dialog" timestamp="1602211622500">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="861" y="435" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1602211622500" />
-    <state x="514" y="188" width="992" height="773" key="SettingsEditor" timestamp="1602120091425">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="514" y="188" width="992" height="773" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1602120091425" />
-    <state x="1087" y="610" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602210256163">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1087" y="610" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1602210256163" />
-    <state x="1678" y="224" width="603" height="804" key="find.popup" timestamp="1602493676305">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1678" y="224" width="603" height="804" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1602493676305" />
-    <state x="1124" y="471" key="refactoring.ChangeSignatureDialog" timestamp="1600830097724">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1124" y="471" key="refactoring.ChangeSignatureDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1600830097724" />
-    <state x="1073" y="559" width="478" height="401" key="scopes" timestamp="1600330423286">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1073" y="559" width="478" height="401" key="scopes/0.0.2560.1400@0.0.2560.1400" timestamp="1600330423286" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1599097244980">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1599097244980" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
