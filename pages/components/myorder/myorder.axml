@@ -58,7 +58,7 @@
                 <view class="anniu-r" a:if="{{item.Status==0}}" onTap="godel" data-orderid="{{item.OrderCode}}">
                     删除订单
                 </view>
-                <view class="anniu-r" onTap="gothk" data-status="{{item.Status}}" data-orderid="{{item.OrderCode}}">
+                <view class="anniu-r" onTap="gothk" a:if="{{item.Status==1}}" data-status="{{item.Status}}" data-orderid="{{item.OrderCode}}">
                     退款
                 </view>
                 <view class="anniu-r anniu-rsure" a:if="{{item.Status==2}}" onTap="gosure" data-orderid="{{item.OrderCode}}">

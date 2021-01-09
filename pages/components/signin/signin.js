@@ -16,8 +16,9 @@ Page({
         bannerArr: [
             {bannerImg: '/images/icon/sigin4.png'},
             {bannerImg: 'http://image.smjpin.cn/lALPD2eDMuuB57XMlM0Cxg_710_148.png'},
-            {bannerImg: 'http://image.smjpin.cn/activity/singin2.png'},
-            {bannerImg: 'http://image.smjpin.cn/sign_middle.png'}],
+            // {bannerImg: 'http://image.smjpin.cn/activity/singin2.png'},
+            // {bannerImg: 'http://image.smjpin.cn/sign_middle.png'}
+          ],
         showqd: false,
         NextDayPrizeVal: 0.5,
         tabs2Index: 0,

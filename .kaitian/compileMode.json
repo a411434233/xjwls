@@ -56,16 +56,6 @@
     {
       "title": "address",
       "page": "pages/components/addressadd/addressadd"
-    },
-    {
-      "title": "a",
-      "page": "pages/components/aftersale/aftersale",
-      "pageQuery": "orderCode=2012241715419250076"
-    },
-    {
-      "title": "2",
-      "page": "pages/components/channelcoupon/channelcoupon",
-      "pageQuery": "id=055&couponid=10181"
     }
   ],
   "current": null
